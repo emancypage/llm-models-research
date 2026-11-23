@@ -1,6 +1,6 @@
 # Protocol: OBLITERATUS LoRA repair on several models and in several configurations
 
-Written on 22 November 2026. It was written before the capability evaluation of the new arms, before the recipe search for Qwen2.5-3B, and before the strong-projection screening. The English and Polish versions were written together. Changes after the first results are dated deviations.
+Written on 22 November 2026. It was written before the capability evaluation of the new arms, before the recipe search for Qwen2.5-3B, and before the strong-projection screening. Changes after the first results are dated deviations.
 
 Done before this protocol:
 - the acceptance test of per-prompt refusal flags on arms E, P and R from study 1 (only the totals were checked; they are listed below);
@@ -8,7 +8,7 @@ Done before this protocol:
 - the build of the PS1 candidate for Qwen2.5-1.5B (a checkpoint only, not evaluated);
 - the self-distillation of repair data for Qwen2.5-3B (data only, not evaluated).
 
-Starting point: the Qwen2.5-1.5B study of 21–22 November (`../2026-11-21-qwen2.5-1.5b-recipe/capabilities/`, below "study 1").
+Starting point: the Qwen2.5-1.5B study of 21–22 November ([../2026-11-21-qwen2.5-1.5b-recipe/capabilities/](../2026-11-21-qwen2.5-1.5b-recipe/data/capabilities), below "study 1").
 
 ## Questions
 
@@ -104,7 +104,7 @@ If no candidate meets both conditions, I choose the one with the largest drop. I
 - **Capability:** as in study 1. lm-eval 0.4.13, HF, bf16, CUDA, `--log_samples`, full sets. MMLU 5-shot (batch 4), ARC-Challenge 25-shot `acc_norm` (batch 4), GSM8K 5-shot with the chat template and `--fewshot_as_multiturn`, `flexible-extract`, limit 256 tokens (batch 16), IFEval 0-shot with the chat template, `prompt_level_strict_acc` (batch 16). Mean of the four primary metrics.
 - **Noise:** a second S evaluation on the first 200 GSM8K items in each model.
 - **Format:** GSM8K `strict-match`, answers ending with `#### number` (the same regular expression as in study 1), answers at the token limit, median length, IFEval `inst_level_strict_acc` computed as lm-eval does (sum over instructions).
-- **Refusals:** `verify-edit` with the same `spec.json` as in study 1 (200 `final_test` pairs, greedy, 64 new tokens, batch 8). The wrapper `verify_flags.py` replaces only the `_strip` function, so the report keeps the refusal and `invalid` flags for each prompt. The detector and the decoding are the tool's own. The acceptance test of 22 November reproduced the study-1 numbers: refusals of E, P and R were 15/199, 14/199 and 22/200, and over-refusals were 3/199, 3/199 and 4/199. The S flags were identical in the three runs (184/200 and 15/200), so I take S from the stock-model measurement in the report.
+- **Refusals:** `verify-edit` with the same [spec.json](../2026-11-21-qwen2.5-1.5b-recipe/data/spec.json) as in study 1 (200 `final_test` pairs, greedy, 64 new tokens, batch 8). The wrapper `verify_flags.py` replaces only the `_strip` function, so the report keeps the refusal and `invalid` flags for each prompt. The detector and the decoding are the tool's own. The acceptance test of 22 November reproduced the study-1 numbers: refusals of E, P and R were 15/199, 14/199 and 22/200, and over-refusals were 3/199, 3/199 and 4/199. The S flags were identical in the three runs (184/200 and 15/200), so I take S from the stock-model measurement in the report.
 - **KL and perplexity:** from `verify-edit`.
 - **Time and memory:** the time of each queue job. Memory is the peak use of the whole system, i.e. total memory minus the lowest available memory during the job (sampled every 30 s). It includes other services on the machine.
 
@@ -136,7 +136,7 @@ One GPU job at a time. A CPU build may run in parallel with a GPU job, except fo
 - Access to L3 and L8 was granted on 22 November. Revisions: L3 `0cb88a4f764b7a12671c53f0838cd831a0843b95`, L8 `0e9e39f249a16976918f6564b8830bc894c89659` (the same as in the accepted L8 recipe). L3 and L8 return to the study.
 - **Pad token.** Llama 3 tokenizers have no pad token, and repair training requires one (`recover.py`, `encode_examples`: "tokenizer needs an existing in-vocabulary pad token"). So S for L3 and L8 is a copy of the Hub model whose only change is `pad_token: <|finetune_right_pad_id|>` (id 128004, a token from the Llama 3 vocabulary) in `tokenizer_config.json`. The weights are the same files (hard links). I use this copy everywhere for Llama: in the P and R builds, in self-distillation, in evaluation and in `verify-edit`. So all Llama arms share the same tokenizer.
 - **L3 recipe.** The family recipe `llama3-instruct-family-e03` is the `qwen38_e03` preset without overrides (SVD, 4 directions, `regularization` 0.1, RDO, KL optimization, `middle60` layers). For the 28 layers of L3, `middle60` gives layers 5–21. I keep the projection as the recipe defines it (the preset). The repair works on layers 5–21, and after the build I check in the recipe record that the projection used the same layers. The recipe does not set `allow_tied_head_edit`, so I do not add it.
-- **Whether the family recipe works for L3:** yes, if the v2 build finishes and P passes the required `verify-edit` gates of the study's `spec.json` (refusals on harmful prompts and side effects). If not, I run a search on `tune` as for Q3: 5 variants with the preset settings and relative layer positions, with the same selection rule. This decision uses `final_test`, which I record as a limitation.
+- **Whether the family recipe works for L3:** yes, if the v2 build finishes and P passes the required `verify-edit` gates of the study's [spec.json](../2026-11-21-qwen2.5-1.5b-recipe/data/spec.json) (refusals on harmful prompts and side effects). If not, I run a search on `tune` as for Q3: 5 variants with the preset settings and relative layer positions, with the same selection rule. This decision uses `final_test`, which I record as a limitation.
 - **L8 recipe** is the accepted `llama3.1-8b-e03-reg02` in v2 form, with the repair on its layers 6–24. The L8 CPU build gets a 100 GB container memory limit and does not run in parallel with other jobs.
 
 ## Deviation recorded before the RK results (22 November)
@@ -149,7 +149,7 @@ One GPU job at a time. A CPU build may run in parallel with a GPU job, except fo
 
 ## Q3 recipe selection (22 November, before the Q3 P and R results)
 
-- The first search run could not load the stock model from the Hugging Face cache (entry 9 in `issues.md`). In the second run the grid names a directory with the same weights.
+- The first search run could not load the stock model from the Hugging Face cache (entry 9 in [issues.md](issues.md)). In the second run the grid names a directory with the same weights.
 - In the second run the variant "13–23, 2 directions" did not save its checkpoint because the container ran out of memory (limit 40 GB, `NativeExportCapacityError`). The tool marked it as failed and chose a winner among 4 variants (18–28). The protocol requires 5 variants, so I resumed the search with a 56 GB limit. The tool reran only this variant and kept the 4 finished ones. I saw the 4-variant ranking before the resume. The selection rule did not change.
 - Result on `tune` (142 pairs):
 
@@ -166,14 +166,14 @@ One GPU job at a time. A CPU build may run in parallel with a GPU job, except fo
 
 ## Q1 PS candidate 2 build setting (22 November, before the candidate 2 results)
 
-- Q1 has 1.5 billion parameters and hidden size 1536. For models under 2 billion parameters, with hidden size under 2048 or with at most 16 layers, the projection caps the number of directions at 2 unless `small_model_safeguards` is off. When this cap would change the edit and the recipe does not set the flag, the build stops with an error (entry 11 in `issues.md`).
+- Q1 has 1.5 billion parameters and hidden size 1536. For models under 2 billion parameters, with hidden size under 2048 or with at most 16 layers, the projection caps the number of directions at 2 unless `small_model_safeguards` is off. When this cap would change the edit and the recipe does not set the flag, the build stops with an error (entry 11 in [issues.md](issues.md)).
 - Candidate 2 for Q1 (layers 10–18, 4 directions) stopped with this error. I rebuild it with `small_model_safeguards: false` in the projection overrides, so it keeps 4 directions as the rule says. With explicit layers the tool already skips the layer caps, so the flag changes only the direction cap.
 - The cap does not apply to the other planned edits. Q1 candidates 1 and 3 use 1 and 2 directions. Q3, L3 and L8 are above all three limits.
 - Candidate 1 for Q1 did not pass the rule (screening mean 0.04 pp above S). I saw this result before this decision. The rule did not change.
 
 ## L3 head setting (22 November, before any L3 P or R result)
 
-- L3 has tied input and output embeddings. The first L3 build (R0) stopped after the probe with "projection of tied lm_head requires allow_tied_head_edit: true or lm_head: skip" (entry 12 in `issues.md`). The family recipe rests on Llama 3.1 8B, which has a separate output head, so it never needed this choice.
+- L3 has tied input and output embeddings. The first L3 build (R0) stopped after the probe with "projection of tied lm_head requires allow_tied_head_edit: true or lm_head: skip" (entry 12 in [issues.md](issues.md)). The family recipe rests on Llama 3.1 8B, which has a separate output head, so it never needed this choice.
 - I set `allow_tied_head_edit: true` in the L3 projection step. This keeps the family default `lm_head: project`, which on the 8B model edits the head. The Q1 and Q3 recipes, which also have tied embeddings, use the same setting. This replaces the earlier line "The recipe does not set `allow_tied_head_edit`, so I do not add it", which I wrote before I knew the build needs it.
 - The rule "the family recipe works for L3 if the v2 build finishes and P passes the required gates" stays. A failed build that needs only this setting does not count as a failure of the recipe, because a search on L3 would need the same choice for every candidate.
 - The L3 builds get a 64 GB container memory limit, as Q3 does. With 40 GB the tool estimated a 12 GiB shortfall for the probe.
@@ -290,4 +290,4 @@ The study plan was shortened on 23 November, after a review of the interim Q1 re
 
 ## Sharing
 
-The public protocol and reports are in English. JSON files are in English. Prompt texts, answers, logs and checkpoints stay on the machine where they were computed.
+Prompt texts, answers, logs and checkpoints stay on the machine where they were computed.

@@ -1,6 +1,6 @@
 # Checking how OBLITERATUS scores GSM8K
 
-This protocol can be shared before measurements are available. The study tests whether the reported score matches recorded answers on ordinary arithmetic problems. It compares two fixed, published checkpoints.
+The study tests whether the reported score matches recorded answers on ordinary arithmetic problems. It compares two fixed, published checkpoints.
 
 | Component | Version |
 | --- | --- |
@@ -14,4 +14,4 @@ This protocol can be shared before measurements are available. The study tests w
 3. Report the fraction correct using both the strict and flexible answer extraction rules. Record the headline score returned by OBLITERATUS separately. Verify the aggregates against per-question scores and report the difference between checkpoints in percentage points.
 4. Before drawing conclusions, manually check a small sample including disputed cases. The main measurement describes these 100 questions and these two published checkpoints.
 
-The shareable deliverables are this protocol, an aggregate JSON result and a Markdown table. Per-question answers and operational logs stay in the private run directory.
+The [aggregate scores](data/main/results.json) and [paired outcomes](results.md) summarize the main comparison. Per-question answers and operational logs stay in the private run directory.

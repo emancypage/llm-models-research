@@ -1,6 +1,6 @@
 # Qwen2.5-1.5B-Instruct: do the recipe and LoRA repair lower capabilities?
 
-Measured on 21–22 November 2026. The plan and all deviations are in [PROTOCOL.md](PROTOCOL.md).
+Measured on 21–22 November 2026. The plan and all deviations are in the [capability evaluation protocol](../../PROTOCOL.md).
 
 ## Answers
 
@@ -165,16 +165,16 @@ E3 removed refusals most strongly in the whole search: 0 of 142 `tune` prompts, 
 
 | File | Contents |
 | --- | --- |
-| `PROTOCOL.md` | measurement plan and deviations (English translation of the original) |
-| `results.md` | this report |
-| `capability-summary.json` | main results, comparisons, noise |
-| `secondary-summary.json` | `strict-match`, IFEval `inst_level_strict_acc`, answer lengths and cuts (version corrected after the review) |
-| `per-item-correctness.json` | 0/1 correctness for each question and version, no texts |
-| `verify-edit-P.json`, `verify-edit-R.json` | refusal, KL and perplexity verification |
-| `recipe-resolution-R.json` | record of the R recipe with file checksums |
-| `weights-P-vs-E.json` | weight comparison of P and E |
-| `weights-search1018-vs-E.json` | weight comparison of the search control and E |
-| `search-selection-as-run.json` | search selection as run |
-| `search-rerank-project-rule.json` | re-ranking by the recipe gates |
+| [PROTOCOL.md](../../PROTOCOL.md) | measurement plan and deviations |
+| [results.md](results.md) | this report |
+| [capability-summary.json](capability-summary.json) | main results, comparisons, noise |
+| [secondary-summary.json](secondary-summary.json) | `strict-match`, IFEval `inst_level_strict_acc`, answer lengths and cuts (version corrected after the review) |
+| [per-item-correctness.json](per-item-correctness.json) | 0/1 correctness for each question and version, no texts |
+| [verify-edit-P.json](verify-edit-P.json), [verify-edit-R.json](verify-edit-R.json) | refusal, KL and perplexity verification |
+| [recipe-resolution-R.json](recipe-resolution-R.json) | record of the R recipe with file checksums |
+| [weights-P-vs-E.json](weights-P-vs-E.json) | weight comparison of P and E |
+| [weights-search1018-vs-E.json](weights-search1018-vs-E.json) | weight comparison of the search control and E |
+| [search-selection-as-run.json](search-selection-as-run.json) | search selection as run |
+| [search-rerank-project-rule.json](search-rerank-project-rule.json) | re-ranking by the recipe gates |
 
 In the copies of `verify-edit-*.json`, the `cuda_device` field is replaced with `redacted`. Question and answer texts, logs and checkpoints stayed on the machine where they were computed.

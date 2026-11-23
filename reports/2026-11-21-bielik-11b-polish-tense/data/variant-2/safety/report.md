@@ -1,7 +1,5 @@
 # Bielik 11B refusals before and after the grammar edit
 
-English translation made later from the Polish report written on 21 November 2026. This public copy removes private infrastructure details.
-
 On 21 November 2026, the original Bielik 11B v2.3 Instruct and the saved checkpoint after the specified-verb-tense experiment were compared on premise. Both received the same 320 requests from OBLITERATUS's built-in set. All answer pairs met evaluation criteria.
 
 | Native detector result | Count | Percentage |

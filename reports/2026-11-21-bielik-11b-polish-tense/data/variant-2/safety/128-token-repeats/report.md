@@ -1,7 +1,5 @@
 # Three runs of each Bielik configuration
 
-English translation made later from the Polish report written on 21 November 2026. This public copy removes private infrastructure details.
-
 On 21 November 2026, three independent starts of original Bielik 11B v2.3 Instruct were followed by three starts of the saved model after the grammar edit, on premise. Each process reloaded the weights. The test used the same 320 OBLITERATUS questions, deterministic generation and a 128-token limit. The six measurements took about 45 minutes in total.
 
 | Model | Run 1 | Run 2 | Run 3 | Mean refusal rate | Between-run deviation |

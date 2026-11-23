@@ -1,10 +1,10 @@
 # Multi-model repair study: research diary, 22 November 2026
 
-This is an anonymized research-only version of the early session handoff. It records an intermediate state, before the final reports. The later [protocol](../reports/2026-11-22-obliteratus-multi-model/PROTOCOL.md) and [results](../reports/2026-11-22-obliteratus-multi-model/results.md) contain the final decisions and measurements. Operational instructions, private paths, identities and communication drafts are omitted.
+This diary records the state of the experiments before the final analysis. The later [protocol](../reports/2026-11-22-obliteratus-multi-model/PROTOCOL.md) and [results](../reports/2026-11-22-obliteratus-multi-model/results.md) contain the final decisions and measurements.
 
 ## Stage 0 and acceptance checks
 
-The study extended the [Qwen2.5-1.5B capability study](../reports/2026-11-21-qwen2.5-1.5b-recipe/capabilities/results.md) to several models and repair settings. It tested `adapter.lora_repair` (OBLITERATUS #578). Stage-0 tooling passed its acceptance checks; the English and Polish protocol and an issue log with 8 entries existed at this point. The issue log was expanded later.
+The study extended the [Qwen2.5-1.5B capability study](../reports/2026-11-21-qwen2.5-1.5b-recipe/data/capabilities/results.md) to several models and repair settings. It tested `adapter.lora_repair` (OBLITERATUS #578). Stage-0 tooling passed its acceptance checks; the protocol and an issue log with 8 entries were in place. The issue log was expanded later.
 
 OBLITERATUS revision: `7678d84` (full revision in the protocol). The study-1 material was mounted read-only in study containers. Builds used the v2 recipe on CPU in fp32 and exported both projection P and repair R in bf16; fp32 copies were temporary intermediates. Repair placement followed the projection layers. A preset kept its template placement.
 

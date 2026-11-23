@@ -169,9 +169,9 @@ Llama-3.2-3B with the family recipe (layers 5–21), built on 22 November.
 
 ## Files
 
-- `q1/endpoints.json`: primary endpoints 1–6.
-- `q1/capability-summary.json`, `q1/secondary-summary.json`, `q1/refusal-summary.json`, `q1/per-item-correctness.json`: the full Q1 analysis (`analyze_multi.py`).
-- `q1/kl.json`: KL, perplexity and gate verdicts from `verify-edit`.
-- `q1/z5-format-a.json`: GSM8K with 256 and 512 tokens (Z5 test a).
-- `q1/z6-agreement.json`: counts of the manual refusal check (Z6). The answer texts stay on the machine.
-- `l3/z1-screening-Pf.json`, `l3/z1-refusals.json`, `l3/kl.json`: L3 with the family recipe (Z1).
+- [endpoints.json](endpoints.json): primary endpoints 1–6.
+- [capability-summary.json](capability-summary.json), [secondary-summary.json](secondary-summary.json), [refusal-summary.json](refusal-summary.json), [per-item-correctness.json](per-item-correctness.json): the full Q1 analysis (`analyze_multi.py`).
+- [kl.json](kl.json): KL, perplexity and gate verdicts from `verify-edit`.
+- [z5-format-a.json](z5-format-a.json): GSM8K with 256 and 512 tokens (Z5 test a).
+- [z6-agreement.json](z6-agreement.json): counts of the manual refusal check (Z6). The answer texts stay on the machine.
+- [z1-screening-Pf.json](../l3/z1-screening-Pf.json), [z1-refusals.json](../l3/z1-refusals.json), [kl.json](../l3/kl.json): L3 with the family recipe (Z1).

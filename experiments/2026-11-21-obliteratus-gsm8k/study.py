@@ -93,7 +93,8 @@ def write_share_bundle(run_dir, results, comparison, count, harness_version):
         f"# GSM8K comparison ({stage})\n\nAwaiting human review. {count} questions per model.\n\n"
         + "\n".join(table) + f"\n\nOBLITERATUS score difference (modified minus original): {100*delta:+.1f} percentage points.\n"
     )
-    shutil.copyfile(HERE / "PROTOCOL.md", draft / "PROTOCOL.md")
+    protocol = HERE.parents[1] / "reports" / HERE.name / "PROTOCOL.md"
+    shutil.copyfile(protocol, draft / "PROTOCOL.md")
     draft.rename(run_dir / "share")
 
 

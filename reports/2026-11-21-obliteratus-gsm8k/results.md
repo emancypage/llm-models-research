@@ -23,3 +23,5 @@ Each scoring rule was recomputed from the raw text and the reference answers. Al
 The reported differences describe the first 100 GSM8K test examples for these two published checkpoints. Both were evaluated in BF16.
 
 Dataset revision: `740312add88f781978c0658806c59bc2815b9866`. The strict rule expects the final number to follow the GSM8K answer marker. The flexible rule extracts the last matching number.
+
+[Protocol](PROTOCOL.md) · [Main measurement data](data/main/results.json) · [Pilot results](data/pilot/results.md) · [Code and instructions](../../experiments/2026-11-21-obliteratus-gsm8k/README.md)

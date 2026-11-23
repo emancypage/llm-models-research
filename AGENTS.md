@@ -21,7 +21,7 @@ session-logs/
   <study-id>.md          Dated decisions made during the study
 ```
 
-- Start by checking the study index in the published root `README.md`. A new research question gets a new ID. A pilot, additional model, new seed, correction or follow-up that answers the same question belongs to the existing study. For earlier studies, use their existing paths.
+- Start by checking the study index in the published root `README.md`. A new research question gets a new ID. A pilot, additional model, new seed, correction or follow-up that answers the same question belongs to the existing study. Use the study ID from the index when extending an existing study.
 - Create only the files and directories the study needs. Record a small caveat in `results.md`. Use `issues.md` for a longer investigation and the session log for decisions that explain changes to the protocol.
 - Keep one main report. Give comparable runs separate paths under `data/` when their filenames would collide, for example `data/pilot/run-01/` and `data/pilot/run-02/`. Preserve earlier measurements and identify the run behind each reported result.
 - Reuse an existing evaluation script when it fits. Link to it from the protocol without copying it into a new study. Keep model weights, caches, raw generations and runtime logs outside the tracked tree.
@@ -30,5 +30,7 @@ session-logs/
 ## Publication language
 
 Write reports, protocols, READMEs, tables and research notes in English. Use English filenames without a language suffix, such as `README.md` and `results.md`. Translate any outstanding text before publishing. Check that links work in a clean checkout.
+
+In research documents, record when a protocol was fixed and when deviations were introduced if that affects interpretation. Omit editorial notes about translating, preparing or publishing language versions.
 
 Keep Polish translations locally under names such as `README.pl.md` and `results.pl.md`. The `*.pl.*` rule in `.gitignore` excludes them. Never stage or force-add these files. Preserve the original wording of prompts, model responses and scoring targets used as experimental data.

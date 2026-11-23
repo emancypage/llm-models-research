@@ -1,6 +1,6 @@
 # Protocol: do the recipe and LoRA repair lower the capabilities of Qwen2.5-1.5B?
 
-> English translation, made on 22 November 2026 after the results. The original was written in Polish before the measurements. The dates of the deviations are the same as in the original.
+This protocol covers the subsequent capability evaluation. The [main report](results.md) documents the earlier recipe reproduction.
 
 Written on 21 November 2026, before the capability measurements. Changes after the first results are reported as deviations.
 
@@ -14,7 +14,7 @@ Written on 21 November 2026, before the capability measurements. Changes after t
 | Version | Description |
 | --- | --- |
 | S | `Qwen/Qwen2.5-1.5B-Instruct` @ `989aa7980e4cf806f80c7fef2b1adb7bc71aa306` |
-| E | S after the recipe; checkpoint from an earlier run, file checksums in `../recipe-resolution.json` |
+| E | S after the recipe; checkpoint from an earlier run, file checksums in [recipe-resolution.json](data/recipe-resolution.json) |
 | R | E after LoRA repair, built by one v2 recipe: `abliteration.projection` with the accepted recipe's parameters, then `adapter.lora_repair`, `merge: true` |
 
 R is built on CPU in float32, because the technique requires it. Before the evaluation I will compare the weights of the projection step with E. If the difference exceeds bf16 rounding, the reference for R will be the projection from the same run, and the report will say so.
@@ -62,7 +62,7 @@ Fallback rule, set before the pilot: if the pilot predicts more than 4 hours for
 
 - Generation noise: a second S run on the first 200 GSM8K questions. The number of answers that differ is the noise floor.
 - Signs of degeneration: the number of GSM8K and IFEval answers that reached the token limit, for each version.
-- For R: `verify-edit` with the same `spec.json` as for E (refusals, over-refusals, KL, perplexity).
+- For R: `verify-edit` with the same [spec.json](data/spec.json) as for E (refusals, over-refusals, KL, perplexity).
 
 ## Deviations recorded during the work, before the R results
 
@@ -77,7 +77,7 @@ Fallback rule, set before the pilot: if the pilot predicts more than 4 hours for
 
 ## Exploratory additions, set before their results
 
-- Recipe search v2 (`obliteratus recipe search`) on the `tune` split of the `qwen38-v1` protocol (142 pairs). Five variants with the accepted recipe's parameters, which differ only in layers and number of directions: 10–18 (control), 12–16, 8–20, 14–22, and 10–18 with 2 directions. Selection by the project rule: fewest refusals, then lowest KL. No `recipe confirm`, because the `final-test` split was already used in test 1. (Translator's note: this means the earlier `verify-edit` runs on `final_test`.)
+- Recipe search v2 (`obliteratus recipe search`) on the `tune` split of the `qwen38-v1` protocol (142 pairs). Five variants with the accepted recipe's parameters, which differ only in layers and number of directions: 10–18 (control), 12–16, 8–20, 14–22, and 10–18 with 2 directions. Selection by the project rule: fewest refusals, then lowest KL. No `recipe confirm`, because the `final-test` split was already used in test 1. Those earlier runs used `verify-edit` on `final_test`.
 - Version E2: the 12–16 variant from this search, evaluated with the same four capability tests. Comparisons E2−S and E2−E. This is not exactly the historical candidate `qwen2.5-1.5b-mid12-16`, because it uses the accepted recipe's settings.
 - These results are exploratory and do not change the answers to questions 1 and 2.
 
@@ -91,11 +91,11 @@ Fallback rule, set before the pilot: if the pilot predicts more than 4 hours for
 - 22 November, before the E3 results: I add version E3. E3 is the 14–22 variant, selected by the re-ranking of the search. I evaluate it with the same four tests and settings. Comparisons: E3−S and E3−E. E3 is exploratory and does not change the answers to questions 1 and 2. No `recipe confirm`.
 - 22 November, after the results: the analysis of the GSM8K answer format was added after the results. It was not planned. It covers intervals and the McNemar test for `strict-match`, the McNemar test for answers at the token limit, counting `####` endings and reading a few answers.
 - 22 November, after an independent review of the results: the secondary IFEval instruction-level metric was computed as an average over prompts, not over instructions as lm-eval's `inst_level_strict_acc` does. I fixed the script and recomputed this metric. The other numbers did not change. The review also corrected several numbers and phrasings in the results report. Conclusions 1 and 2 did not change.
-- 22 November: the verdict labels in the JSON files are in English ("no drop", "drop", "practically significant drop", "inconclusive"). The numbers did not change.
 
-## Results to share
+## Data and results
 
 - This protocol, the aggregate JSON files and the per-item correctness vectors without text.
-- The results report. The public reports are in English. The English protocol is a translation made after the results. The version written before the results is the Polish one.
+- The JSON files use four verdicts ("no drop", "drop", "practically significant drop", "inconclusive").
+- [Capability results](data/capabilities/results.md).
 
 Question texts, answers and logs stay on the machine where they were computed.

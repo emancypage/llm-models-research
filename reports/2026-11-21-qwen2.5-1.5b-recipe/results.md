@@ -2,7 +2,7 @@
 
 On 21 November 2026 I reproduced the accepted OBLITERATUS recipe on an on-premise machine (aarch64, CUDA 13). Four of the five verdicts agree with the project's evidence. I did not measure capabilities here, because the matric-eval tool is missing. The weight edit shifts the answers to ordinary prompts more than a random edit of the same size. Even the strongest of 10 random edits gave about 3 times lower next-token KL and 4.6 times lower first-token KL.
 
-Capabilities were measured later with lm-eval: see [capabilities/results.md](capabilities/results.md).
+Capabilities were measured later with lm-eval: see [data/capabilities/results.md](data/capabilities/results.md).
 
 ## Versions
 
@@ -11,7 +11,7 @@ Capabilities were measured later with lm-eval: see [capabilities/results.md](cap
 | OBLITERATUS | `7678d84196fe6c348dfd01078bbfb50857463647`, clean checkout |
 | Model | `Qwen/Qwen2.5-1.5B-Instruct` @ `989aa7980e4cf806f80c7fef2b1adb7bc71aa306` |
 | Recipe | `qwen2.5-1.5b-mid10-18-dim1` 1.0.0, status `accepted` |
-| Evaluation profile | `profiles/qwen2.5-1.5b-mid10-18-dim1.json`; resolved spec `spec.json`, SHA-256 `ff1b4ea2…a49c` |
+| Evaluation profile | `profiles/qwen2.5-1.5b-mid10-18-dim1.json`; resolved spec [spec.json](data/spec.json), SHA-256 `ff1b4ea2…a49c` |
 | Environment | torch `2.13.0a0+9186a08b2c.nv26.07`, transformers 5.17.0, bfloat16, batch 8, no network, telemetry off |
 
 ## `verify-edit` verdicts (200 `final_test` pairs)
@@ -54,12 +54,14 @@ Interpretation: a direction chosen on purpose should change the model more than 
 
 ## Files
 
-- `spec.json`: the resolved recipe profile.
-- `spec-tune-kl.json`: the same profile with `tune` prompts and without capability evaluation.
-- `recipe-resolution.json`, `abliteration_metadata.json`: record of the applied edit.
-- `calibration.json`: noise.
-- `random-control.json`: 10 random edits.
-- `verify-edit-final-test.json`: full verification.
-- `verify-edit-tune-kl.json`: KL of the edit on `tune` prompts. Only the KL numbers matter. The `PASS` verdict in this file means nothing: capability evaluation was turned off, and the `tune` prompts were used to choose the recipe.
+- [spec.json](data/spec.json): the resolved recipe profile.
+- [spec-tune-kl.json](data/spec-tune-kl.json): the same profile with `tune` prompts and without capability evaluation.
+- [recipe-resolution.json](data/recipe-resolution.json), [abliteration_metadata.json](data/abliteration_metadata.json): record of the applied edit.
+- [calibration.json](data/calibration.json): noise.
+- [random-control.json](data/random-control.json): 10 random edits.
+- [verify-edit-final-test.json](data/verify-edit-final-test.json): full verification.
+- [verify-edit-tune-kl.json](data/verify-edit-tune-kl.json): KL of the edit on `tune` prompts. Only the KL numbers matter. The `PASS` verdict in this file means nothing: capability evaluation was turned off, and the `tune` prompts were used to choose the recipe.
 
-The reports contain no prompt or answer texts. In the copies of `verify-edit-*.json`, the `cuda_device` field is replaced with `redacted`. The edited weights and logs stayed on the machine where they were computed.
+The reports contain no prompt or answer texts. In the copies of `data/verify-edit-*.json`, the `cuda_device` field is replaced with `redacted`. The edited weights and logs stayed on the machine where they were computed.
+
+[Protocol for the subsequent capability evaluation](PROTOCOL.md) · [Capability results](data/capabilities/results.md)

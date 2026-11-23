@@ -1,6 +1,6 @@
 # LoRA repair after the refusal projection: final results (Q1, Q3, damage ladder)
 
-Written on 23 November 2026. This is the final report of the shortened plan (protocol, "Shortened plan", 23 November). It covers Q1 (Qwen2.5-1.5B-Instruct), Q3 (Qwen2.5-3B-Instruct), the Q1 damage ladder (Z2) and L3 with the family recipe (Z1). The Q1 details are in `q1-partial.md`. All computation ran on an on-premise machine.
+Written on 23 November 2026. This is the final report of the shortened plan (protocol, "Shortened plan", 23 November). It covers Q1 (Qwen2.5-1.5B-Instruct), Q3 (Qwen2.5-3B-Instruct), the Q1 damage ladder (Z2) and L3 with the family recipe (Z1). The Q1 details are in [Q1 interim results](data/q1/partial-results.md). All computation ran on an on-premise machine.
 
 Codes: S is the stock model. P is the projection, step 1 of the recipe: the accepted recipe for Q1, and for Q3 the recipe that the search on `tune` selected (not confirmed with `recipe confirm`). R0 is P after `adapter.lora_repair` with seed 42. The repair data are the answers of S to 250 harmless prompts, with refusals removed (rank 8, 1 epoch). P_A and R_A are the same at level A of the damage ladder. RK, RB, RG, PS and RS are the extra Q1 arms of the partial report. "Generative tests" are GSM8K and IFEval, where the model writes a free answer. Differences are in percentage points (pp), with 95% bootstrap intervals. An answer is "at the limit" when its text has at least 255 tokens after it is tokenized again. `verify-edit` has three required gates. The capability gate could not be run for any arm (no backend), so the tool's own verdict is INCOMPLETE. "Both required gates" in this report means `heldout_refusal` and `collateral`. The KL and perplexity gates are advisory.
 
@@ -82,7 +82,7 @@ Limitations: one rung, one seed and one repair corpus. RG ≈ R0 was shown only 
 
 ## Q1 (Qwen2.5-1.5B) in short
 
-The details and tables are in `q1-partial.md`. The Q1 numbers did not change in the final analysis.
+The details and tables are in [Q1 interim results](data/q1/partial-results.md). The Q1 numbers did not change in the final analysis.
 
 - The projection does not damage capability: P−S −0.22 pp [−1.17, +0.70].
 - Endpoint 1: R0−P −0.33 pp, no drop (seed 42). With seeds 43 and 44 (exploratory): −0.91 pp [−2.03, +0.19], inconclusive, and −1.12 pp [−2.16, −0.08], a drop. Mean of the 3 seeds: −0.79 pp [−1.76, +0.21], no drop. Endpoint 3: GSM8K `strict-match` −9.86 pp. With a 512-token limit the gap stays (Z5), so the cause is not truncation: the repaired model ends fewer answers with `#### number` (787 → 508 of 1319).
@@ -93,7 +93,7 @@ The details and tables are in `q1-partial.md`. The Q1 numbers did not change in 
 
 ## Exploratory: L3 with the family recipe (Z1) in short
 
-Llama-3.2-3B, layers 5–21. The projection Pf fails both required gates because of invalid answers (37 of 400). The repair Rf brings validity back (3 invalid) and passes both gates. It also brings back refusals: 15 prompts are refused only by Rf and 2 only by Pf, McNemar p = 0.0023. The screening drop of Pf was 0.21 pp, so Rf was not screened. Details are in `q1-partial.md`.
+Llama-3.2-3B, layers 5–21. The projection Pf fails both required gates because of invalid answers (37 of 400). The repair Rf brings validity back (3 invalid) and passes both gates. It also brings back refusals: 15 prompts are refused only by Rf and 2 only by Pf, McNemar p = 0.0023. The screening drop of Pf was 0.21 pp, so Rf was not screened. Details are in [Q1 interim results](data/q1/partial-results.md).
 
 ## Limitations
 
@@ -200,12 +200,14 @@ Llama-3.2-3B, layers 5–21. The projection Pf fails both required gates because
 
 ## Files
 
-- `final/endpoints-q1-q3.json`: endpoints 1–6 for Q1 and Q3, with the Holm correction and the pooled endpoint 1.
-- `q3/capability-summary.json`, `q3/secondary-summary.json`, `q3/refusal-summary.json`, `q3/per-item-correctness.json`: the full Q3 analysis (`analyze_multi.py`).
-- `q3/kl.json`: KL, perplexity and gate verdicts from `verify-edit` for Q3.
-- `q3/truncation.json`: the post hoc GSM8K length check for Q3.
-- `z2/ladder-D1.json`, `z2/ladder-D2.json`: the screening and the stop rule for each rung.
-- `z2/capability-summary.json`, `z2/secondary-summary.json`, `z2/refusal-summary.json`, `z2/per-item-correctness.json`, `z2/kl.json`, `z2/recovered-share.json`: the level A analysis. The analysis code uses fixed arm names, so in these files P_A is called PS and R_A is called RS, and `recovered-share.json` stores the result under endpoint 4. It is not endpoint 4.
-- `z2/tables.md`: the Z2 tables of this report.
-- `q1/`, `l3/`: see `q1-partial.md`.
+- [endpoints-q1-q3.json](data/final/endpoints-q1-q3.json): endpoints 1–6 for Q1 and Q3, with the Holm correction and the pooled endpoint 1.
+- [capability-summary.json](data/q3/capability-summary.json), [secondary-summary.json](data/q3/secondary-summary.json), [refusal-summary.json](data/q3/refusal-summary.json), [per-item-correctness.json](data/q3/per-item-correctness.json): the full Q3 analysis (`analyze_multi.py`).
+- [kl.json](data/q3/kl.json): KL, perplexity and gate verdicts from `verify-edit` for Q3.
+- [truncation.json](data/q3/truncation.json): the post hoc GSM8K length check for Q3.
+- [ladder-D1.json](data/z2/ladder-D1.json), [ladder-D2.json](data/z2/ladder-D2.json): the screening and the stop rule for each rung.
+- [capability-summary.json](data/z2/capability-summary.json), [secondary-summary.json](data/z2/secondary-summary.json), [refusal-summary.json](data/z2/refusal-summary.json), [per-item-correctness.json](data/z2/per-item-correctness.json), [kl.json](data/z2/kl.json), [recovered-share.json](data/z2/recovered-share.json): the level A analysis. The analysis code uses fixed arm names, so in these files P_A is called PS and R_A is called RS, and `recovered-share.json` stores the result under endpoint 4. It is not endpoint 4.
+- [tables.md](data/z2/tables.md): the Z2 tables of this report.
+- [q1/](data/q1), [l3/](data/l3): see [Q1 interim results](data/q1/partial-results.md).
 - The answer texts of the models stay on the machine.
+
+[Protocol and amendments](PROTOCOL.md) · [Issue log](issues.md) · [Study diary](../../session-logs/2026-11-22-obliteratus-multi-model.md)

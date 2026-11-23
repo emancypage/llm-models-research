@@ -1,6 +1,6 @@
 # GSM8K checkpoint comparison
 
-This experiment compares two published Qwen3-8B checkpoints on arithmetic problems. It records both GSM8K scoring rules and the headline score returned by OBLITERATUS. The [protocol](PROTOCOL.md) specifies the checkpoints, question selection and scoring rules. The [main report](../../reports/2026-11-21-obliteratus-gsm8k/REPORT.md) contains the historical results.
+This experiment compares two published Qwen3-8B checkpoints on arithmetic problems. It records both GSM8K scoring rules and the headline score returned by OBLITERATUS. The [protocol](../../reports/2026-11-21-obliteratus-gsm8k/PROTOCOL.md) specifies the checkpoints, question selection and scoring rules. The [main report](../../reports/2026-11-21-obliteratus-gsm8k/results.md) contains the historical results.
 
 ## Check the setup
 
@@ -9,7 +9,7 @@ From the repository root, check out the version of OBLITERATUS used for the stud
 ```sh
 git clone https://github.com/elder-plinius/OBLITERATUS.git vendor/OBLITERATUS-7678d841
 git -C vendor/OBLITERATUS-7678d841 checkout --detach 7678d84196fe6c348dfd01078bbfb50857463647
-cd experiments/obliteratus-gsm8k
+cd experiments/2026-11-21-obliteratus-gsm8k
 python3 -m unittest
 python3 study.py check
 ```
