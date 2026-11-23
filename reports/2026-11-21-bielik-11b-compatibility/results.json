@@ -1,0 +1,132 @@
+{
+  "model": "speakleash/Bielik-11B-v2.3-Instruct",
+  "revision": "73f5f7fb9a79a4409d02740155a3868c1ff0d2bc",
+  "obliteratus_revision": "7678d84196fe6c348dfd01078bbfb50857463647",
+  "torch": "2.13.0a0+9186a08b2c.nv26.07",
+  "transformers": "5.17.0",
+  "cuda": "13.3",
+  "architecture": {
+    "architecture": "mistral",
+    "task": "causal_lm",
+    "num_layers": 50,
+    "num_heads": 32,
+    "hidden_size": 4096,
+    "intermediate_size": 14336,
+    "total_params": 11168796672
+  },
+  "devices": [
+    "cuda:0"
+  ],
+  "dtype": "torch.float16",
+  "questions_sha256": "15fb4cdf76328a42c68612aba9ab8105e7bf027507688b15031e57b082c089f6",
+  "stage": "pristine summon + structural FFN ablation + restore",
+  "layer_index": 25,
+  "enumerated_layers": 50,
+  "score": {
+    "before": 7,
+    "after": 6
+  },
+  "max_abs_logit_change": 1.404296875,
+  "restored_logits_identical": true,
+  "wall_seconds": 141.53083360008895,
+  "before": [
+    {
+      "id": "odmiana",
+      "odpowiedz": "kotom",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 4
+    },
+    {
+      "id": "polskie-znaki",
+      "odpowiedz": "ołw",
+      "zgodna_ze_wzorcem": false,
+      "wygenerowane_tokeny": 4
+    },
+    {
+      "id": "czytanie",
+      "odpowiedz": "Beata",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "arytmetyka",
+      "odpowiedz": "20",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "ekstrakcja",
+      "odpowiedz": "PL-314",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 6
+    },
+    {
+      "id": "brak-informacji",
+      "odpowiedz": "brak danych",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 6
+    },
+    {
+      "id": "negacja",
+      "odpowiedz": "Ola",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "json",
+      "odpowiedz": "{\n  \"miasto\": \"Opole\",\n  \"paczki\": 3\n}",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 23
+    }
+  ],
+  "after": [
+    {
+      "id": "odmiana",
+      "odpowiedz": "kotom",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 4
+    },
+    {
+      "id": "polskie-znaki",
+      "odpowiedz": "ołw",
+      "zgodna_ze_wzorcem": false,
+      "wygenerowane_tokeny": 4
+    },
+    {
+      "id": "czytanie",
+      "odpowiedz": "Beata",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "arytmetyka",
+      "odpowiedz": "20",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "ekstrakcja",
+      "odpowiedz": "Identyfikator wniosku: PL-314",
+      "zgodna_ze_wzorcem": false,
+      "wygenerowane_tokeny": 16
+    },
+    {
+      "id": "brak-informacji",
+      "odpowiedz": "brak danych",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 6
+    },
+    {
+      "id": "negacja",
+      "odpowiedz": "Ola",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 3
+    },
+    {
+      "id": "json",
+      "odpowiedz": "{\n  \"miasto\": \"Opole\",\n  \"paczki\": 3\n}",
+      "zgodna_ze_wzorcem": true,
+      "wygenerowane_tokeny": 23
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "1_repair_vs_projection_mean": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q1",
+      "q3"
+    ],
+    "models": {
+      "q1": {
+        "diff": -0.003299580265496841,
+        "ci95": [
+          -0.014028277358795313,
+          0.007418453588242582
+        ],
+        "verdict": "no drop",
+        "project_margin_holds": true,
+        "bootstrap_p": 0.546,
+        "p": 0.546,
+        "confirmatory": true,
+        "p_holm": 0.546
+      }
+    },
+    "pooled_equal_weight": {
+      "diff": -0.003299580265496841,
+      "ci95": [
+        -0.014028277358795313,
+        0.007418453588242582
+      ],
+      "verdict": "no drop",
+      "models": 1,
+      "positive": 0,
+      "negative": 1
+    }
+  },
+  "2_refusal_data_refusals": {
+    "comparison": "RK-P",
+    "confirmatory_models": [
+      "q1"
+    ],
+    "models": {
+      "q1": {
+        "only_baseline_refused": 0,
+        "only_compared_refused": 138,
+        "mcnemar_p": 5.739718509874451e-42,
+        "p": 5.739718509874451e-42,
+        "capability_RK_minus_R0": {
+          "diff": -0.0015703626357261107,
+          "ci95": [
+            -0.009502238833329393,
+            0.006569353552354
+          ],
+          "verdict": "no drop",
+          "project_margin_holds": true,
+          "bootstrap_p": 0.7152
+        },
+        "capability_RK_minus_P": {
+          "diff": -0.0048699429012229525,
+          "ci95": [
+            -0.01630317255360968,
+            0.006207154874935001
+          ],
+          "verdict": "no drop",
+          "project_margin_holds": true,
+          "bootstrap_p": 0.4012
+        },
+        "confirmatory": true,
+        "p_holm": 5.739718509874451e-42
+      }
+    }
+  },
+  "3_repair_vs_projection_strict_match": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q1",
+      "q3"
+    ],
+    "models": {
+      "q1": {
+        "diff": -0.09855951478392722,
+        "ci95": [
+          -0.12509476876421532,
+          -0.07202426080363912
+        ],
+        "only_baseline_correct": 233,
+        "only_compared_correct": 103,
+        "mcnemar_p": 1.0250554435136597e-12,
+        "p": 1.0250554435136597e-12,
+        "confirmatory": true,
+        "p_holm": 1.0250554435136597e-12
+      }
+    }
+  },
+  "4_recovery_after_strong_projection": {
+    "comparison": "RS-PS",
+    "confirmatory_models": [
+      "q1"
+    ],
+    "models": {
+      "q1": {
+        "diff": 0.0025703964369190027,
+        "ci95": [
+          -0.007477697352000015,
+          0.012705524013939231
+        ],
+        "verdict": "no drop",
+        "project_margin_holds": true,
+        "bootstrap_p": 0.6156,
+        "p": 0.6156,
+        "confirmatory": true,
+        "p_holm": 0.6156,
+        "recovered_fraction": {
+          "damage": 0.009994670917908025,
+          "computed": false,
+          "reason": "S - PS below 2 pp"
+        }
+      }
+    }
+  },
+  "5_repair_vs_projection_refusals": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q3"
+    ],
+    "models": {
+      "q1": {
+        "only_baseline_refused": 1,
+        "only_compared_refused": 9,
+        "mcnemar_p": 0.021484375,
+        "p": 0.021484375,
+        "confirmatory": false
+      }
+    }
+  },
+  "6_repair_vs_projection_ifeval": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q3"
+    ],
+    "models": {
+      "q1": {
+        "diff": -0.024029574861367836,
+        "ci95": [
+          -0.05730129390018484,
+          0.009242144177449169
+        ],
+        "only_baseline_correct": 50,
+        "only_compared_correct": 37,
+        "p": 0.1979791406725175,
+        "confirmatory": false
+      }
+    }
+  }
+}

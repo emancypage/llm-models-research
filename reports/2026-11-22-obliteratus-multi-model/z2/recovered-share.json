@@ -1,0 +1,69 @@
+{
+  "1_repair_vs_projection_mean": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q1",
+      "q3"
+    ],
+    "models": {}
+  },
+  "2_refusal_data_refusals": {
+    "comparison": "RK-P",
+    "confirmatory_models": [
+      "q1"
+    ],
+    "models": {}
+  },
+  "3_repair_vs_projection_strict_match": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q1",
+      "q3"
+    ],
+    "models": {}
+  },
+  "4_recovery_after_strong_projection": {
+    "comparison": "RS-PS",
+    "confirmatory_models": [
+      "q1"
+    ],
+    "models": {
+      "q1-ladder-A": {
+        "diff": 0.0882869084089344,
+        "ci95": [
+          0.07508193251416077,
+          0.10165722270546632
+        ],
+        "verdict": "no drop",
+        "project_margin_holds": true,
+        "bootstrap_p": 0.0,
+        "p": 0.0,
+        "confirmatory": false,
+        "recovered_fraction": {
+          "damage": 0.11663905443551756,
+          "gain": 0.0882869084089344,
+          "fraction": 0.7569240751839489,
+          "ci95": [
+            0.6613635307263086,
+            0.8568176883921572
+          ],
+          "computed": true
+        }
+      }
+    }
+  },
+  "5_repair_vs_projection_refusals": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q3"
+    ],
+    "models": {}
+  },
+  "6_repair_vs_projection_ifeval": {
+    "comparison": "R0-P",
+    "confirmatory_models": [
+      "q3"
+    ],
+    "models": {}
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "created_at": "2026-11-21T21:07:07.516726+00:00",
+  "engine": {
+    "code_commit": "7678d84196fe6c348dfd01078bbfb50857463647",
+    "version": "0.1.4"
+  },
+  "input_sha256": {
+    "chat_template": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "train": "ba65938b24eeaefd51e9780d2915a82bc5bdfa6ebeee541e9157ccfc3dccf692"
+  },
+  "recipe_sha256": "7d2c115d34c955da950ee62a8b82778b94547ca790cdf9355c5696f4e48783c1",
+  "schema": "obliteratus.recipe-resolution/v1",
+  "steps": [
+    {
+      "artifacts": [
+        {
+          "path": "[local artifact: abliteration_metadata.json]",
+          "sha256": "a85c48256c1ac92bc6f917c8205307442bac2778eaca8d3275272bd91089bac5"
+        },
+        {
+          "path": "[local artifact: chat_template.jinja]",
+          "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+        },
+        {
+          "path": "[local artifact: config.json]",
+          "sha256": "78126d582f05ab12b0494c4f3aec2eccb5238a102f2f796889a31d55c105e084"
+        },
+        {
+          "path": "[local artifact: generation_config.json]",
+          "sha256": "e694a23c4adabaa1177508c9407bee789ff55f3d5908dfe6755d93a6af55f71d"
+        },
+        {
+          "path": "[local artifact: model-00001-of-00002.safetensors]",
+          "sha256": "23794baa739a589cbf34033173b3f3fa122dd84c6df55acb01d764ea5ee93db9"
+        },
+        {
+          "path": "[local artifact: model-00002-of-00002.safetensors]",
+          "sha256": "39deb6434e7086f979af75d6e121fd8a69e45e992ae375c0fa1f7a13ad5362b4"
+        },
+        {
+          "path": "[local artifact: model.safetensors.index.json]",
+          "sha256": "e64bd214f7c2eafea405ca3b86466efebce6075ae1c640c7fac8effd0f76b799"
+        },
+        {
+          "path": "[local artifact: tokenizer.json]",
+          "sha256": "716ec13e363ec927a345aa1d39bb8ed88a0ce7fadcdef14509b1f2afd64a8bee"
+        },
+        {
+          "path": "[local artifact: tokenizer_config.json]",
+          "sha256": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      ],
+      "id": "projection",
+      "params_sha256": "13e9ff494462d9734c3de12ccd9722e61087590f411d8e973bb1080e751454d3",
+      "payload": {
+        "artifacts": [
+          {
+            "path": "[local artifact: edited]",
+            "sha256": {
+              "abliteration_metadata.json": "a85c48256c1ac92bc6f917c8205307442bac2778eaca8d3275272bd91089bac5",
+              "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+              "config.json": "78126d582f05ab12b0494c4f3aec2eccb5238a102f2f796889a31d55c105e084",
+              "generation_config.json": "e694a23c4adabaa1177508c9407bee789ff55f3d5908dfe6755d93a6af55f71d",
+              "model-00001-of-00002.safetensors": "23794baa739a589cbf34033173b3f3fa122dd84c6df55acb01d764ea5ee93db9",
+              "model-00002-of-00002.safetensors": "39deb6434e7086f979af75d6e121fd8a69e45e992ae375c0fa1f7a13ad5362b4",
+              "model.safetensors.index.json": "e64bd214f7c2eafea405ca3b86466efebce6075ae1c640c7fac8effd0f76b799",
+              "tokenizer.json": "716ec13e363ec927a345aa1d39bb8ed88a0ce7fadcdef14509b1f2afd64a8bee",
+              "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+            }
+          }
+        ],
+        "effective_n_directions": 1,
+        "effective_params": {
+          "allow_tied_head_edit": true,
+          "backend": {
+            "activation_steering": false,
+            "attention_head_surgery": false,
+            "bayesian_trials": 0,
+            "cot_aware": false,
+            "expert_transplant": false,
+            "float_layer_interpolation": false,
+            "harmless_pc_count": 0,
+            "invert_refusal": false,
+            "large_model_mode": false,
+            "layer_adaptive_strength": true,
+            "layer_selection": "knee_cosmic",
+            "layers": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "lora_rank": 1,
+            "max_degenerate_fraction": 0.2,
+            "max_layer_fraction": null,
+            "max_perplexity_increase": 3.0,
+            "max_refusal_increase": 0.05,
+            "max_seq_length": null,
+            "method": "advanced",
+            "min_coherence_retention": 0.5,
+            "min_layer_fraction": null,
+            "n_sae_features": 8,
+            "per_expert_directions": false,
+            "project_router": false,
+            "projection_target": "output",
+            "reflection_strength": 1.5,
+            "refusal_baseline_size": 32,
+            "refusal_max_tokens": 128,
+            "safety_neuron_masking": false,
+            "seed": 42,
+            "shield_concept_count": 0,
+            "shield_layer_penalty": 0.0,
+            "shield_residualize": false,
+            "shield_ridge": 0.05,
+            "spectral_bands": 3,
+            "spectral_cascade": false,
+            "spectral_threshold": 0.05,
+            "steering_strength": 0.2,
+            "transplant_blend": 0.1,
+            "use_jailbreak_contrast": false,
+            "use_lora_ablation": false,
+            "use_sae_features": false,
+            "use_wasserstein_optimal": false,
+            "verify_sample_size": 30
+          },
+          "direction_source": {
+            "chat_template": true,
+            "extraction_layer": null,
+            "method": "diff_means",
+            "n_directions": 1,
+            "refinement": {
+              "passes": 1,
+              "rdo": false,
+              "reprobe": false
+            },
+            "scope": "per_layer",
+            "whitened_svd": false,
+            "winsorize": false,
+            "winsorize_percentile": 0.01
+          },
+          "embeddings": {
+            "project": false,
+            "regularization": 0.5
+          },
+          "lm_head": "project",
+          "operator": {
+            "fold_post_norms": true,
+            "kind": "orthogonal_projection",
+            "norm_preserve": true,
+            "project_biases": true,
+            "regularization": 0.0,
+            "row_fraction": 1.0
+          },
+          "post": {
+            "budget": 0.5,
+            "kind": "none"
+          },
+          "safeguards": {
+            "allow_small_model_adaptation": false,
+            "cap_norm_refinement": true,
+            "small_model_caps": true
+          },
+          "writers": "pipeline"
+        },
+        "ranks": {
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "18": 1
+        },
+        "reference": {
+          "concept": {
+            "extraction_layers": [
+              18,
+              17,
+              16,
+              15,
+              14,
+              13,
+              12,
+              11,
+              10
+            ],
+            "id": "refusal",
+            "intervention_layers": [
+              18,
+              17,
+              16,
+              15,
+              14,
+              13,
+              12,
+              11,
+              10
+            ],
+            "pack_hash": null,
+            "recipe": {
+              "collateral_margin": 0.03,
+              "denoise": null,
+              "intervention_layer": {
+                "rule": "same"
+              },
+              "layer_select": {
+                "strategy": "preset"
+              },
+              "method": "diff_means",
+              "n_directions": 1,
+              "pool_controls": "concat",
+              "readout": {
+                "position": "final_token",
+                "suffix": ""
+              },
+              "use_chat_template": null
+            },
+            "seed": 42,
+            "version": "1.0.0"
+          },
+          "cot_preserved_layers": [],
+          "effective_subspace_ranks": {
+            "0": 1,
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "float_layer_weights": {},
+          "kl_corrected_globals": [],
+          "kl_corrected_layers": [],
+          "kl_initial_rollback_groups": [],
+          "kl_restored_groups": [],
+          "layer_excise_weights": {
+            "10": 0.2877875284098836,
+            "11": 0.3275427628445165,
+            "12": 0.34612031932734155,
+            "13": 0.49533583703555756,
+            "14": 0.527355862289156,
+            "15": 0.6370398116051236,
+            "16": 0.8108150863503829,
+            "17": 0.8856294560151893,
+            "18": 1.0
+          },
+          "layer_selection": {
+            "caps_applied": {},
+            "cosmic_candidates": [],
+            "knee_candidates": [],
+            "method": "pinned",
+            "normalized_scores": {
+              "0": 0.019296581688877792,
+              "1": 0.02177096315257107,
+              "10": 0.04625162356090354,
+              "11": 0.05880379173587828,
+              "12": 0.06056779559439958,
+              "13": 0.11096301639874588,
+              "14": 0.10867129914362947,
+              "15": 0.17328305036538819,
+              "16": 0.2638006906318948,
+              "17": 0.2974104426807333,
+              "18": 0.34208232803911764,
+              "19": 0.33598915828679465,
+              "2": 0.02377509432263182,
+              "20": 0.33020375014547354,
+              "21": 0.34591003643947765,
+              "22": 0.3770852086310481,
+              "23": 0.3567583055927448,
+              "24": 0.36381703114795033,
+              "25": 0.31223660286625465,
+              "26": 0.2580060550985141,
+              "27": 0.3655793775834578,
+              "3": 0.029712116563664293,
+              "4": 0.028174076463004582,
+              "5": 0.026197680936820872,
+              "6": 0.026643018915383575,
+              "7": 0.02924104349096504,
+              "8": 0.03158597163171773,
+              "9": 0.03159186145356716
+            },
+            "raw_scores": {
+              "0": 0.2686922550201416,
+              "1": 0.3729625642299652,
+              "10": 1.8571810722351074,
+              "11": 2.405726909637451,
+              "12": 2.686361789703369,
+              "13": 5.501863479614258,
+              "14": 6.23616886138916,
+              "15": 9.100043296813965,
+              "16": 14.74191665649414,
+              "17": 17.58791732788086,
+              "18": 22.423856735229492,
+              "19": 26.1817569732666,
+              "2": 0.5179909467697144,
+              "20": 28.72589683532715,
+              "21": 36.56541442871094,
+              "22": 46.26408767700195,
+              "23": 52.073585510253906,
+              "24": 59.5528450012207,
+              "25": 64.83499145507812,
+              "26": 69.04950714111328,
+              "27": 74.35799407958984,
+              "3": 0.7798758149147034,
+              "4": 0.8425162434577942,
+              "5": 0.9375173449516296,
+              "6": 0.9238874912261963,
+              "7": 1.0517297983169556,
+              "8": 1.1029094457626343,
+              "9": 1.1718628406524658
+            },
+            "selected_layers": [
+              18,
+              17,
+              16,
+              15,
+              14,
+              13,
+              12,
+              11,
+              10
+            ]
+          },
+          "lora_adapters_saved": false,
+          "method": "advanced",
+          "method_config": {
+            "activation_collection": {
+              "harmful": {
+                "batch_size": 16,
+                "max_length": 256,
+                "memory_reduction": null
+              },
+              "harmless": {
+                "batch_size": 16,
+                "max_length": 256,
+                "memory_reduction": null
+              }
+            },
+            "activation_steering": false,
+            "attention_head_surgery": false,
+            "bayesian_optimization_skipped": null,
+            "cot_aware": false,
+            "direction_method": "diff_means",
+            "direction_method_effective": "diff_means",
+            "direction_scope": "per_layer",
+            "effective_n_directions": 1,
+            "embed_regularization": 0.5,
+            "expert_transplant": false,
+            "float_layer_interpolation": false,
+            "fold_post_norms": true,
+            "harmless_pc_count": 0,
+            "invert_refusal": false,
+            "kl_budget": 0.5,
+            "kl_metric": "sequence_token_forward_kl_nats",
+            "layer_adaptive_strength": true,
+            "layer_selection": "knee_cosmic",
+            "max_layer_fraction": null,
+            "max_seq_length": null,
+            "min_layer_fraction": null,
+            "n_directions": 1,
+            "norm_preserve": true,
+            "per_expert_directions": false,
+            "pinned_layers": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "project_biases": true,
+            "project_embeddings": false,
+            "project_router": false,
+            "projection_row_fraction": 1.0,
+            "projection_target": "output",
+            "quantization": null,
+            "refinement_passes": 1,
+            "reflection_strength": 1.5,
+            "refusal_extraction_layer": null,
+            "regularization": 0.0,
+            "requested_refinement_passes": 1,
+            "safety_neuron_masking": false,
+            "shield_concept_count": 0,
+            "shield_layer_penalty": 0.0,
+            "shield_residualize": false,
+            "shield_ridge": 0.05,
+            "small_model_safeguards": true,
+            "som_candidate_count": null,
+            "som_contiguous_layer_budget": null,
+            "som_distortion_aware": null,
+            "som_diversity_penalty": null,
+            "som_harmless_pc_count": null,
+            "som_iterations": null,
+            "som_learning_rate": null,
+            "som_min_signal_to_noise": null,
+            "som_sigma": null,
+            "spectral_bands": 3,
+            "spectral_cascade": false,
+            "spectral_threshold": 0.05,
+            "true_iterative_refinement": false,
+            "use_chat_template": true,
+            "use_kl_optimization": false,
+            "use_lora_ablation": false,
+            "use_sae_features": false,
+            "use_whitened_svd": false,
+            "winsorize_activations": false
+          },
+          "strong_layers": [
+            18,
+            17,
+            16,
+            15,
+            14,
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "resolved_layers": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "resolved_writers": {
+          "lm_head": [
+            "lm_head"
+          ],
+          "pipeline": [
+            "model.layers.10.mlp.down_proj",
+            "model.layers.10.self_attn.o_proj",
+            "model.layers.11.mlp.down_proj",
+            "model.layers.11.self_attn.o_proj",
+            "model.layers.12.mlp.down_proj",
+            "model.layers.12.self_attn.o_proj",
+            "model.layers.13.mlp.down_proj",
+            "model.layers.13.self_attn.o_proj",
+            "model.layers.14.mlp.down_proj",
+            "model.layers.14.self_attn.o_proj",
+            "model.layers.15.mlp.down_proj",
+            "model.layers.15.self_attn.o_proj",
+            "model.layers.16.mlp.down_proj",
+            "model.layers.16.self_attn.o_proj",
+            "model.layers.17.mlp.down_proj",
+            "model.layers.17.self_attn.o_proj",
+            "model.layers.18.mlp.down_proj",
+            "model.layers.18.self_attn.o_proj"
+          ]
+        },
+        "restored_groups": [],
+        "safeguards_applied": {},
+        "tied_head": {
+          "decision": "allowed",
+          "tied_embeddings": true
+        }
+      },
+      "technique": "abliteration.projection",
+      "technique_version": "1"
+    }
+  ],
+  "target": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "structure": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "hidden_size": 1536,
+      "model_type": "qwen2",
+      "num_attention_heads": 12,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 2,
+      "tie_word_embeddings": true
+    }
+  }
+}

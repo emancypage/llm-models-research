@@ -1,0 +1,1192 @@
+{
+  "rule": "any tensor with more than 0.1% of elements differing by more than one bf16 step",
+  "max_fraction_over": 0.17207576206752231,
+  "exceeds_bf16_rounding": true,
+  "primary_repair_comparison": "R-P",
+  "relative_edit_difference": 0.06865811677515012,
+  "tensor_names_not_in_all_three": [],
+  "tensors": {
+    "model.embed_tokens.weight": {
+      "elements": 233373696,
+      "over_1_bf16_step": 9742265,
+      "fraction_over": 0.041745343056999874,
+      "edited_in_E": true
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 826,
+      "fraction_over": 6.001790364583333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 760,
+      "fraction_over": 5.5222284226190477e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 895,
+      "fraction_over": 6.503150576636905e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 9,
+      "fraction_over": 2.288818359375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 163,
+      "fraction_over": 6.908840603298611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 118,
+      "fraction_over": 5.001491970486111e-05,
+      "edited_in_E": false
+    },
+    "model.layers.0.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 30,
+      "fraction_over": 7.62939453125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 776,
+      "fraction_over": 5.6384858630952384e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 662,
+      "fraction_over": 4.810151599702381e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 817,
+      "fraction_over": 5.936395554315476e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 21,
+      "fraction_over": 5.340576171875e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 166,
+      "fraction_over": 7.035997178819444e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 137,
+      "fraction_over": 5.806816948784722e-05,
+      "edited_in_E": false
+    },
+    "model.layers.1.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 39,
+      "fraction_over": 9.918212890625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.10.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 2368203,
+      "fraction_over": 0.17207576206752231,
+      "edited_in_E": true
+    },
+    "model.layers.10.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 741,
+      "fraction_over": 5.384172712053571e-05,
+      "edited_in_E": false
+    },
+    "model.layers.10.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 759,
+      "fraction_over": 5.514962332589286e-05,
+      "edited_in_E": false
+    },
+    "model.layers.10.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 27,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.10.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 354842,
+      "fraction_over": 0.15040164523654515,
+      "edited_in_E": true
+    },
+    "model.layers.10.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 150,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.10.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 31,
+      "fraction_over": 7.883707682291667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.11.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 1644592,
+      "fraction_over": 0.1194975353422619,
+      "edited_in_E": true
+    },
+    "model.layers.11.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 733,
+      "fraction_over": 5.326043991815476e-05,
+      "edited_in_E": false
+    },
+    "model.layers.11.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 812,
+      "fraction_over": 5.900065104166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.11.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 13,
+      "fraction_over": 3.3060709635416664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.11.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 260298,
+      "fraction_over": 0.11032867431640625,
+      "edited_in_E": true
+    },
+    "model.layers.11.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 153,
+      "fraction_over": 6.4849853515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.11.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 35,
+      "fraction_over": 8.900960286458333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.12.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 1561876,
+      "fraction_over": 0.11348731631324405,
+      "edited_in_E": true
+    },
+    "model.layers.12.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 818,
+      "fraction_over": 5.943661644345238e-05,
+      "edited_in_E": false
+    },
+    "model.layers.12.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 785,
+      "fraction_over": 5.703880673363095e-05,
+      "edited_in_E": false
+    },
+    "model.layers.12.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 28,
+      "fraction_over": 7.120768229166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.12.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 251475,
+      "fraction_over": 0.10658899943033855,
+      "edited_in_E": true
+    },
+    "model.layers.12.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 169,
+      "fraction_over": 7.163153754340278e-05,
+      "edited_in_E": false
+    },
+    "model.layers.12.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 33,
+      "fraction_over": 8.392333984375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.13.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 1005078,
+      "fraction_over": 0.07302987234933035,
+      "edited_in_E": true
+    },
+    "model.layers.13.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 857,
+      "fraction_over": 6.227039155505952e-05,
+      "edited_in_E": false
+    },
+    "model.layers.13.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 750,
+      "fraction_over": 5.449567522321429e-05,
+      "edited_in_E": false
+    },
+    "model.layers.13.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 13,
+      "fraction_over": 3.3060709635416664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.13.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 143076,
+      "fraction_over": 0.060643513997395836,
+      "edited_in_E": true
+    },
+    "model.layers.13.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 163,
+      "fraction_over": 6.908840603298611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.13.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.14.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 1159021,
+      "fraction_over": 0.08421550932384672,
+      "edited_in_E": true
+    },
+    "model.layers.14.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 821,
+      "fraction_over": 5.9654599144345236e-05,
+      "edited_in_E": false
+    },
+    "model.layers.14.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 765,
+      "fraction_over": 5.558558872767857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.14.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 28,
+      "fraction_over": 7.120768229166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.14.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 147083,
+      "fraction_over": 0.06234190199110243,
+      "edited_in_E": true
+    },
+    "model.layers.14.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 199,
+      "fraction_over": 8.434719509548611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.14.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 33,
+      "fraction_over": 8.392333984375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.15.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 727800,
+      "fraction_over": 0.052882603236607144,
+      "edited_in_E": true
+    },
+    "model.layers.15.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 888,
+      "fraction_over": 6.452287946428572e-05,
+      "edited_in_E": false
+    },
+    "model.layers.15.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 810,
+      "fraction_over": 5.885532924107143e-05,
+      "edited_in_E": false
+    },
+    "model.layers.15.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 22,
+      "fraction_over": 5.5948893229166664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.15.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 96879,
+      "fraction_over": 0.04106267293294271,
+      "edited_in_E": true
+    },
+    "model.layers.15.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 154,
+      "fraction_over": 6.527370876736111e-05,
+      "edited_in_E": false
+    },
+    "model.layers.15.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 32,
+      "fraction_over": 8.138020833333333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.16.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 592231,
+      "fraction_over": 0.04303203764415923,
+      "edited_in_E": true
+    },
+    "model.layers.16.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 842,
+      "fraction_over": 6.118047805059524e-05,
+      "edited_in_E": false
+    },
+    "model.layers.16.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 804,
+      "fraction_over": 5.841936383928572e-05,
+      "edited_in_E": false
+    },
+    "model.layers.16.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 36,
+      "fraction_over": 9.1552734375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.16.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 92610,
+      "fraction_over": 0.03925323486328125,
+      "edited_in_E": true
+    },
+    "model.layers.16.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 163,
+      "fraction_over": 6.908840603298611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.16.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.17.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 681703,
+      "fraction_over": 0.0495331537155878,
+      "edited_in_E": true
+    },
+    "model.layers.17.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 856,
+      "fraction_over": 6.21977306547619e-05,
+      "edited_in_E": false
+    },
+    "model.layers.17.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 826,
+      "fraction_over": 6.001790364583333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.17.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 36,
+      "fraction_over": 9.1552734375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.17.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 113844,
+      "fraction_over": 0.048253377278645836,
+      "edited_in_E": true
+    },
+    "model.layers.17.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 174,
+      "fraction_over": 7.375081380208333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.17.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 32,
+      "fraction_over": 8.138020833333333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.18.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 714182,
+      "fraction_over": 0.05189310709635417,
+      "edited_in_E": true
+    },
+    "model.layers.18.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 859,
+      "fraction_over": 6.241571335565476e-05,
+      "edited_in_E": false
+    },
+    "model.layers.18.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 755,
+      "fraction_over": 5.485897972470238e-05,
+      "edited_in_E": false
+    },
+    "model.layers.18.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 27,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.18.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 104861,
+      "fraction_over": 0.04444588555230035,
+      "edited_in_E": true
+    },
+    "model.layers.18.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 177,
+      "fraction_over": 7.502237955729167e-05,
+      "edited_in_E": false
+    },
+    "model.layers.18.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 28,
+      "fraction_over": 7.120768229166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 832,
+      "fraction_over": 6.045386904761905e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 843,
+      "fraction_over": 6.125313895089286e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 797,
+      "fraction_over": 5.791073753720238e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 36,
+      "fraction_over": 9.1552734375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 153,
+      "fraction_over": 6.4849853515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 185,
+      "fraction_over": 7.841322157118056e-05,
+      "edited_in_E": false
+    },
+    "model.layers.19.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 34,
+      "fraction_over": 8.646647135416667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 868,
+      "fraction_over": 6.306966145833334e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 636,
+      "fraction_over": 4.621233258928571e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 829,
+      "fraction_over": 6.023588634672619e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 27,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 149,
+      "fraction_over": 6.315443250868056e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 133,
+      "fraction_over": 5.637274848090278e-05,
+      "edited_in_E": false
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 24,
+      "fraction_over": 6.103515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 764,
+      "fraction_over": 5.551292782738095e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 813,
+      "fraction_over": 5.9073311941964286e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 762,
+      "fraction_over": 5.5367606026785714e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 46,
+      "fraction_over": 0.00011698404947916667,
+      "edited_in_E": false
+    },
+    "model.layers.20.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 174,
+      "fraction_over": 7.375081380208333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 187,
+      "fraction_over": 7.926093207465278e-05,
+      "edited_in_E": false
+    },
+    "model.layers.20.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 32,
+      "fraction_over": 8.138020833333333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 790,
+      "fraction_over": 5.740211123511905e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 793,
+      "fraction_over": 5.76200939360119e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 718,
+      "fraction_over": 5.2170526413690474e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 39,
+      "fraction_over": 9.918212890625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 142,
+      "fraction_over": 6.018744574652778e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 195,
+      "fraction_over": 8.265177408854167e-05,
+      "edited_in_E": false
+    },
+    "model.layers.21.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 18,
+      "fraction_over": 4.57763671875e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 834,
+      "fraction_over": 6.059919084821429e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 849,
+      "fraction_over": 6.168910435267857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 773,
+      "fraction_over": 5.616687593005952e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 31,
+      "fraction_over": 7.883707682291667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 155,
+      "fraction_over": 6.569756401909722e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 185,
+      "fraction_over": 7.841322157118056e-05,
+      "edited_in_E": false
+    },
+    "model.layers.22.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 785,
+      "fraction_over": 5.703880673363095e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 771,
+      "fraction_over": 5.602155412946428e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 729,
+      "fraction_over": 5.296979631696429e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 35,
+      "fraction_over": 8.900960286458333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 140,
+      "fraction_over": 5.9339735243055555e-05,
+      "edited_in_E": false
+    },
+    "model.layers.23.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 246,
+      "fraction_over": 0.00010426839192708333,
+      "edited_in_E": false
+    },
+    "model.layers.23.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 32,
+      "fraction_over": 8.138020833333333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 807,
+      "fraction_over": 5.863734654017857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 786,
+      "fraction_over": 5.711146763392857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 739,
+      "fraction_over": 5.3696405319940475e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 36,
+      "fraction_over": 9.1552734375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 130,
+      "fraction_over": 5.5101182725694445e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 217,
+      "fraction_over": 9.197658962673611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.24.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 33,
+      "fraction_over": 8.392333984375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 778,
+      "fraction_over": 5.653018043154762e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 767,
+      "fraction_over": 5.573091052827381e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 707,
+      "fraction_over": 5.137125651041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 36,
+      "fraction_over": 9.1552734375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 159,
+      "fraction_over": 6.739298502604167e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 198,
+      "fraction_over": 8.392333984375e-05,
+      "edited_in_E": false
+    },
+    "model.layers.25.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 22,
+      "fraction_over": 5.5948893229166664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 744,
+      "fraction_over": 5.405970982142857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 785,
+      "fraction_over": 5.703880673363095e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 700,
+      "fraction_over": 5.0862630208333336e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 45,
+      "fraction_over": 0.00011444091796875,
+      "edited_in_E": false
+    },
+    "model.layers.26.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 127,
+      "fraction_over": 5.382961697048611e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 234,
+      "fraction_over": 9.918212890625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.26.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 14,
+      "fraction_over": 3.5603841145833336e-05,
+      "edited_in_E": false
+    },
+    "model.layers.27.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 947,
+      "fraction_over": 6.880987258184524e-05,
+      "edited_in_E": false
+    },
+    "model.layers.27.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 784,
+      "fraction_over": 5.6966145833333334e-05,
+      "edited_in_E": false
+    },
+    "model.layers.27.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 769,
+      "fraction_over": 5.5876232328869046e-05,
+      "edited_in_E": false
+    },
+    "model.layers.27.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 67,
+      "fraction_over": 0.00017038981119791666,
+      "edited_in_E": false
+    },
+    "model.layers.27.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 139,
+      "fraction_over": 5.8915879991319445e-05,
+      "edited_in_E": false
+    },
+    "model.layers.27.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 237,
+      "fraction_over": 0.00010045369466145833,
+      "edited_in_E": false
+    },
+    "model.layers.27.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 18,
+      "fraction_over": 4.57763671875e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 855,
+      "fraction_over": 6.212506975446428e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 590,
+      "fraction_over": 4.2869931175595235e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 877,
+      "fraction_over": 6.372360956101191e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 19,
+      "fraction_over": 4.8319498697916664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 153,
+      "fraction_over": 6.4849853515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 150,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 869,
+      "fraction_over": 6.314232235863096e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 717,
+      "fraction_over": 5.2097865513392855e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 806,
+      "fraction_over": 5.8564685639880954e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 159,
+      "fraction_over": 6.739298502604167e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 175,
+      "fraction_over": 7.417466905381944e-05,
+      "edited_in_E": false
+    },
+    "model.layers.4.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 28,
+      "fraction_over": 7.120768229166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 863,
+      "fraction_over": 6.270635695684523e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 641,
+      "fraction_over": 4.657563709077381e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 811,
+      "fraction_over": 5.892799014136905e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 26,
+      "fraction_over": 6.612141927083333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 170,
+      "fraction_over": 7.205539279513889e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 150,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.5.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 29,
+      "fraction_over": 7.375081380208333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 853,
+      "fraction_over": 6.197974795386904e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 741,
+      "fraction_over": 5.384172712053571e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 785,
+      "fraction_over": 5.703880673363095e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 24,
+      "fraction_over": 6.103515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 155,
+      "fraction_over": 6.569756401909722e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 190,
+      "fraction_over": 8.053249782986111e-05,
+      "edited_in_E": false
+    },
+    "model.layers.6.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 25,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 812,
+      "fraction_over": 5.900065104166667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 753,
+      "fraction_over": 5.4713657924107145e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 823,
+      "fraction_over": 5.9799920944940474e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 19,
+      "fraction_over": 4.8319498697916664e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 179,
+      "fraction_over": 7.587009006076389e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 162,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 20,
+      "fraction_over": 5.0862630208333336e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 840,
+      "fraction_over": 6.103515625e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 728,
+      "fraction_over": 5.289713541666667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 821,
+      "fraction_over": 5.9654599144345236e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 27,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 192,
+      "fraction_over": 8.138020833333333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 188,
+      "fraction_over": 7.968478732638889e-05,
+      "edited_in_E": false
+    },
+    "model.layers.8.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 27,
+      "fraction_over": 6.866455078125e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.mlp.down_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 789,
+      "fraction_over": 5.732945033482143e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.mlp.gate_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 734,
+      "fraction_over": 5.333310081845238e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.mlp.up_proj.weight": {
+      "elements": 13762560,
+      "over_1_bf16_step": 786,
+      "fraction_over": 5.711146763392857e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.self_attn.k_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 26,
+      "fraction_over": 6.612141927083333e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.self_attn.o_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 178,
+      "fraction_over": 7.544623480902778e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.self_attn.q_proj.weight": {
+      "elements": 2359296,
+      "over_1_bf16_step": 150,
+      "fraction_over": 6.357828776041667e-05,
+      "edited_in_E": false
+    },
+    "model.layers.9.self_attn.v_proj.weight": {
+      "elements": 393216,
+      "over_1_bf16_step": 26,
+      "fraction_over": 6.612141927083333e-05,
+      "edited_in_E": false
+    }
+  }
+}

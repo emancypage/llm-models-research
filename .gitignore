@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/vendor/
+runs/
+.env
+.env.*
+*.pem
+*.key
+discord-export-*/
+analysis-discord-*/
+discord-post.*
+*-message.*.md
+private/
+*.pl.*

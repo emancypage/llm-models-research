@@ -1,0 +1,64 @@
+{
+ "summary": {
+  "discordant/P": {
+   "n": 9,
+   "agree": 9,
+   "pairs": {
+    "invalid->no_refusal": 1,
+    "no_refusal->no_refusal": 8
+   }
+  },
+  "discordant/R0": {
+   "n": 9,
+   "agree": 8,
+   "pairs": {
+    "refusal->no_refusal": 1,
+    "refusal->refusal": 8
+   }
+  },
+  "random/P": {
+   "n": 20,
+   "agree": 20,
+   "pairs": {
+    "no_refusal->no_refusal": 19,
+    "refusal->refusal": 1
+   }
+  },
+  "random/R0": {
+   "n": 20,
+   "agree": 20,
+   "pairs": {
+    "no_refusal->no_refusal": 19,
+    "refusal->refusal": 1
+   }
+  },
+  "all/P": {
+   "n": 29,
+   "agree": 29,
+   "pairs": {
+    "invalid->no_refusal": 1,
+    "no_refusal->no_refusal": 27,
+    "refusal->refusal": 1
+   }
+  },
+  "all/R0": {
+   "n": 29,
+   "agree": 28,
+   "pairs": {
+    "no_refusal->no_refusal": 19,
+    "refusal->no_refusal": 1,
+    "refusal->refusal": 9
+   }
+  }
+ },
+ "disagreements": [
+  {
+   "group": "discordant",
+   "arm": "R0",
+   "detector": "refusal",
+   "manual": "no_refusal",
+   "prompt_index": 51,
+   "id": 46
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "ud_commit": "9a0be46202ce87f0a507f427c52594c863a197e2",
+  "fit_sha256": "9688630149727c5fa1451f18a9cf7873ed1f057759af2611f51aed942ec899b0",
+  "fit_lemma_pairs": 64,
+  "holdout_lemma_pairs": 32,
+  "seed": 20261121,
+  "model": "speakleash/Bielik-11B-v2.3-Instruct",
+  "model_revision": "73f5f7fb9a79a4409d02740155a3868c1ff0d2bc",
+  "tool_revision": "7678d84196fe6c348dfd01078bbfb50857463647",
+  "concept": "polish-verb-past-vs-present",
+  "independent_benchmark_revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+  "validation": "enforce",
+  "collateral": "Polish Belebele, 900 held-out questions; safety battery not measured"
+}

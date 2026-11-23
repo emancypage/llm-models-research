@@ -1,0 +1,10 @@
+[
+  {"id": "odmiana", "pytanie": "Uzupełnij brakujące słowo: „Przyglądam się dwóm …” (kot). Podaj tylko to słowo.", "wzorzec": "kotom"},
+  {"id": "polskie-znaki", "pytanie": "Usuń pierwszą literę z wyrazu „żółw”. Przepisz tylko pozostałe litery, zachowując polskie znaki.", "wzorzec": "ółw"},
+  {"id": "czytanie", "pytanie": "Marta oddała klucz Beacie. Kto dostał klucz? Podaj tylko imię w mianowniku.", "wzorzec": "Beata"},
+  {"id": "arytmetyka", "pytanie": "W pudełku były 24 kredki. Oddano 7 i dołożono 3. Ile kredek jest teraz w pudełku? Podaj tylko liczbę.", "wzorzec": "20"},
+  {"id": "ekstrakcja", "pytanie": "Z notatki „Wniosek PL-314 złożono we wtorek” wypisz wyłącznie identyfikator wniosku.", "wzorzec": "PL-314"},
+  {"id": "brak-informacji", "pytanie": "W notatce jest tylko zdanie „Pociąg przyjedzie jutro”. O której godzinie przyjedzie? Jeżeli w notatce nie ma godziny, napisz wyłącznie: brak danych.", "wzorzec": "brak danych"},
+  {"id": "negacja", "pytanie": "Tylko Jan i Ola byli zaproszeni. Jan nie przyszedł, Ola przyszła. Która z zaproszonych osób była obecna? Podaj tylko imię.", "wzorzec": "Ola"},
+  {"id": "json", "pytanie": "Wydobądź dwie informacje z tekstu „Miasto: Opole. Liczba paczek: 3”. Zwróć wyłącznie obiekt JSON z polami miasto (tekst) i paczki (liczba).", "wzorzec": {"miasto": "Opole", "paczki": 3}}
+]

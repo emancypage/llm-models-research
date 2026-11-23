@@ -1,0 +1,20 @@
+{
+ "Pf": {
+  "first_token_kl_mean": 0.8901494004856795,
+  "next_token_kl_mean": 0.18411295175552367,
+  "perplexity_ratio": 1.0231828984037015,
+  "heldout_refusal": "fail",
+  "collateral": "fail",
+  "kl": "fail",
+  "perplexity": "pass"
+ },
+ "Rf": {
+  "first_token_kl_mean": 0.7656555589567869,
+  "next_token_kl_mean": 0.2289956659078598,
+  "perplexity_ratio": 1.025189053895572,
+  "heldout_refusal": "pass",
+  "collateral": "pass",
+  "kl": "fail",
+  "perplexity": "pass"
+ }
+}

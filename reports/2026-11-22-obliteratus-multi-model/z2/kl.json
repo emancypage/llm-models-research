@@ -1,0 +1,20 @@
+{
+ "PS": {
+  "first_token_kl_mean": 2.7459977424144744,
+  "next_token_kl_mean": 1.586178901195526,
+  "perplexity_ratio": 1.415897045607411,
+  "heldout_refusal": "pass",
+  "collateral": "pass",
+  "kl": "fail",
+  "perplexity": "fail"
+ },
+ "RS": {
+  "first_token_kl_mean": 1.5016247501969338,
+  "next_token_kl_mean": 1.596280324459076,
+  "perplexity_ratio": 1.271725972805622,
+  "heldout_refusal": "pass",
+  "collateral": "pass",
+  "kl": "fail",
+  "perplexity": "fail"
+ }
+}

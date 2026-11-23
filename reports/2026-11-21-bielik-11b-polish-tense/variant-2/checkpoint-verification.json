@@ -1,0 +1,8 @@
+{
+  "checkpoint_reloaded": true,
+  "all_trials_reproduced": 128,
+  "correct": 127,
+  "shards": 12,
+  "weight_tensors_indexed": 453,
+  "native_schema_valid": true
+}

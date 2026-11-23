@@ -1,0 +1,30 @@
+{
+  "stage": "pilot",
+  "review": "awaiting human review",
+  "dataset": "openai/gsm8k",
+  "subset": "main/test",
+  "tasks_per_model": 5,
+  "input_set_sha256": "a230084160bf9f0161e99441478893c6b1fa3d44981e3a63057101ec06e73a25",
+  "obliteratus_revision": "7678d84196fe6c348dfd01078bbfb50857463647",
+  "lm_eval_version": "0.4.13",
+  "fewshot": 5,
+  "batch_size": 1,
+  "compute_dtype": "bfloat16",
+  "models": [
+    {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "strict-match": 0.8,
+      "flexible-extract": 0.8,
+      "headline": 0.8
+    },
+    {
+      "model": "BabarAzaa/Test3",
+      "revision": "73f58f9b84443c8b5abbb90f7b5e5fd16804ef69",
+      "strict-match": 0.8,
+      "flexible-extract": 0.8,
+      "headline": 0.8
+    }
+  ],
+  "headline_delta": 0.0
+}

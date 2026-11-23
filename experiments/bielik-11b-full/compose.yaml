@@ -1,0 +1,16 @@
+name: bielik-research
+services:
+  bielik:
+    image: ${BIELIK_IMAGE:?Set an image with Python, PyTorch, Transformers and the pinned OBLITERATUS revision}
+    working_dir: /experiment
+    entrypoint: [python3]
+    command: [paired_tense.py, --check-data]
+    gpus: all
+    shm_size: 3gb
+    environment:
+      BIELIK_WORK_DIR: /data
+      HF_HOME: /data/hf
+      OBLITERATUS_TELEMETRY: "0"
+    volumes:
+      - .:/experiment:ro
+      - ${BIELIK_DATA_DIR:?Set an absolute directory for model cache, corpus and results}:/data
