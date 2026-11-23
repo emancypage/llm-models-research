@@ -1,0 +1,83 @@
+{
+ "stock": "/work/models/llama-3.1-8b-instruct-pad",
+ "edited": "/work/runs/l8/k1o/V",
+ "input_rows": 0,
+ "output_rows": 9,
+ "shared_rows": null,
+ "receipt_rows": {
+  "input": 0,
+  "output": 9,
+  "shared_input": 0
+ },
+ "receipt_skipped": [
+  {
+   "index": 7,
+   "reason": "source_not_single_token",
+   "source": "safety"
+  }
+ ],
+ "receipt_summary": {
+  "embed_rows_modified": 0,
+  "pct_vocab_modified": 0.007017215568862275,
+  "shared_input_rows_modified": 0,
+  "total_specs": 9,
+  "unembed_rows_modified": 9,
+  "unique_tokens_modified": 9,
+  "weights_tied": false
+ },
+ "weights_tied": false,
+ "other_tensors_identical": true,
+ "tokenizer_identical": false,
+ "tokenizer_files": {
+  "tokenizer.json": {
+   "stock": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+   "edited": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+   "same": false
+  },
+  "tokenizer_config.json": {
+   "stock": "cf85a7aca91ff3bba378385aa1981079f22e53452f05707ae59ab6ca709f2c9b",
+   "edited": "364d9f0cd3ab0d1d2ad3efc2b278d399b40e3f9a8455b8edacab6ab82c759f6f",
+   "same": false
+  },
+  "special_tokens_map.json": {
+   "stock": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+   "edited": null,
+   "same": false
+  },
+  "chat_template.jinja": {
+   "stock": null,
+   "edited": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+   "same": false
+  }
+ },
+ "tokenizer_semantically_identical": true,
+ "tokenizer_behaviour": {
+  "texts_checked": 640,
+  "plain_mismatches": 0,
+  "chat_prompts_checked": 400,
+  "chat_mismatches": 0,
+  "attribute_differences": {},
+  "identical": true
+ },
+ "chat_template_identical": true,
+ "chat_template_sha256": {
+  "stock": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+  "edited": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65"
+ },
+ "config_differences": [
+  "dtype",
+  "head_dim",
+  "rope_parameters",
+  "rope_scaling",
+  "rope_theta",
+  "torch_dtype",
+  "transformers_version"
+ ],
+ "problems": [],
+ "expected": {
+  "input_rows": 0,
+  "output_rows": 9
+ },
+ "counts_match": true,
+ "ok": true
+}

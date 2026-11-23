@@ -70,5 +70,113 @@
   "rc": "0",
   "seconds": 119,
   "system_peak_used_gib": 61.6
+ },
+ "l8-screen-V-k1": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 2790,
+  "system_peak_used_gib": 62.6
+ },
+ "l8-ifeval-V-k1": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 4655,
+  "system_peak_used_gib": 62.6
+ },
+ "l8-srepeat-S": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 664,
+  "system_peak_used_gib": 62.6
+ },
+ "l8-delete-k1": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "l8-apply-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 232,
+  "system_peak_used_gib": 64.6
+ },
+ "l8-check-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 8,
+  "system_peak_used_gib": null
+ },
+ "l8-vp-copy-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 5,
+  "system_peak_used_gib": 33.6
+ },
+ "l8-verify-A-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 763,
+  "system_peak_used_gib": 64.6
+ },
+ "l8-verify-B-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 767,
+  "system_peak_used_gib": 60.6
+ },
+ "l8-delete-k2": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1,
+  "system_peak_used_gib": null
+ },
+ "l8-apply-k1o": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 235,
+  "system_peak_used_gib": 63.6
+ },
+ "l8-check-k1o": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": 33.6
+ },
+ "l8-verify-A-k1o": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 772,
+  "system_peak_used_gib": 60.6
+ },
+ "l8-delete-k1o": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1,
+  "system_peak_used_gib": null
+ },
+ "l8-apply-k1i": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 234,
+  "system_peak_used_gib": 64.6
+ },
+ "l8-check-k1i": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 8,
+  "system_peak_used_gib": null
+ },
+ "l8-verify-A-k1i": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 767,
+  "system_peak_used_gib": 64.6
+ },
+ "l8-delete-k1i": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
  }
 }

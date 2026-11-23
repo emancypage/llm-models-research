@@ -27,3 +27,13 @@ PR #595 was merged into `main` the same day. Compared with the PR head, `main` a
 ### Decision point G1
 
 All stage-0 checks passed. On Llama-3.1-8B the post's token list changed one of 200 refusal flags. The time estimate for stages 0–2 rose from about 13 h to about 16.2 h, mostly because IFEval takes 77 min per 8B run. Stages 1 and 2 were queued to run without a pause between models. The pilot runs on Qwen2.5-1.5B were kept as pilot data, and stage 2 repeats them.
+
+## 24 November 2026
+
+### Correction by the original author
+
+The author of the original claim reported that the 97.4% result came from a model whose chat template held a prefill from an earlier experiment, and put the method on hold. The protocol records this as context. The study already separates the prefill from the edit, so its method did not change. An exploratory run with the author's longer prefill text was added for Llama-3.1-8B and Qwen2.5-7B, before its measurement.
+
+### Llama-3.1-8B complete (detector counts)
+
+All four edits passed the scope check. The unedited model gave identical texts in every report, so the refusal tool is deterministic and each changed answer comes from the edit. The post's list changed almost nothing; the full PR list had a clear effect, mostly together with the prefill. The random control was not triggered, because its rule needs a 10 pp drop without the prefill and the largest drop was 7.0 pp. A word probe for the full list was added, before its measurement, because that list is where the effect is.
