@@ -1,0 +1,32 @@
+{
+ "confirmatory_models": [
+  "q1"
+ ],
+ "descriptive_models": [],
+ "endpoints": {
+  "1": {
+   "q1": {
+    "diff": 0.0,
+    "p": 1.0,
+    "confirmatory": true,
+    "p_holm": 1.0
+   }
+  },
+  "2": {
+   "q1": {
+    "diff": -0.020000000000000004,
+    "p": 0.125,
+    "confirmatory": true,
+    "p_holm": 0.125
+   }
+  },
+  "3": {}
+ },
+ "verdicts": {
+  "q1": {
+   "edit_alone_works": null,
+   "near_zero": null,
+   "adds_beyond_prefill": "undecidable (floor effect)"
+  }
+ }
+}

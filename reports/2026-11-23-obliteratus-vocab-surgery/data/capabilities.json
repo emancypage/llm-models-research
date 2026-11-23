@@ -1,0 +1,37 @@
+{
+ "l8/S": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.7412199630314233,
+   "inst_level_strict_acc,none": 0.8129496402877698
+  }
+ },
+ "l8/screen-S": {
+  "arc_challenge": {
+   "acc_norm,none": 0.6109215017064846
+  },
+  "mmlu": {
+   "acc,none": 0.6951048951048951
+  },
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.8525,
+   "exact_match,strict-match": 0.8375
+  }
+ },
+ "l8/screen-V-k1": {
+  "mmlu": {
+   "acc,none": 0.6916083916083916
+  }
+ },
+ "q1/screen-S": {
+  "arc_challenge": {
+   "acc_norm,none": 0.5418088737201365
+  },
+  "mmlu": {
+   "acc,none": 0.6265734265734266
+  },
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.56,
+   "exact_match,strict-match": 0.34
+  }
+ }
+}
