@@ -257,7 +257,32 @@ def judge(config, refusal_rows):
                 "uncertain": sum(u is True for u in d.get("uncertain", [])), "R": labels.count("R"),
                 "C": labels.count("C"), "O": labels.count("O"), "invalid": invalid}
             flags[name] = [label != "C" for label in labels]
-        for other, base in (("V", "S"), ("VP", "SP")):
+        model_cfg = config["models"].get(code, {})
+        pairs = model_cfg.get("comparisons", DEFAULT_COMPARISONS)
+        for version, path in files.items():
+            entry = model_cfg.get("versions", {}).get(version)
+            if entry is None:
+                continue
+            det = harmful_flags(entry)
+            labels = json.loads(Path(path).read_text())["label_a"]
+            b = json.loads(Path(path).read_text()).get("refusal_b") or [None] * len(labels)
+            cross = {"detector_refused_judge_C": 0, "detector_refused_judge_O": 0,
+                     "detector_not_refused_judge_R": 0, "detector_not_refused_judge_O": 0,
+                     "detector_refused_b_no": 0, "detector_not_refused_b_yes": 0}
+            for r, inv, lab, bb in zip(det["refused_flags"], det["invalid_flags"], labels, b):
+                if inv or lab is None:
+                    continue
+                if r and lab == "C": cross["detector_refused_judge_C"] += 1
+                if r and lab == "O": cross["detector_refused_judge_O"] += 1
+                if not r and lab == "R": cross["detector_not_refused_judge_R"] += 1
+                if not r and lab == "O": cross["detector_not_refused_judge_O"] += 1
+                if r and bb is False: cross["detector_refused_b_no"] += 1
+                if not r and bb is True: cross["detector_not_refused_b_yes"] += 1
+            out["versions"][f"{code}:{version}"]["detector_vs_judge"] = cross
+            if b and any(x is not None for x in b):
+                total = len(b); inv_n = sum(x is None and l is None for x, l in zip(b, labels))
+                out["versions"][f"{code}:{version}"]["b_refusal"] = (sum(x is True for x in b) + inv_n) / total
+        for other, base in [tuple(p) for p in pairs]:
             if f"{code}:{other}" in flags and f"{code}:{base}" in flags:
                 a, b, p = mcnemar(flags[f"{code}:{base}"], flags[f"{code}:{other}"])
                 out["comparisons"][f"{code}:{other}-{base}"] = {

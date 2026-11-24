@@ -49,3 +49,7 @@ The study owner shortened the study: Llama-3.2-3B kept only its refusal runs and
 ### LLM judges
 
 Judge A (`gemma-4-26B-A4B-it`) did not load within the memory guard, so the planned spare (`gemma-4-12B-it`) replaced it. Judge B ships only a SentencePiece tokenizer file, which the study environment could not read without a new package; a fast tokenizer was built from it with installed packages and checked (no text changed in an encode–decode round trip). Both changes were recorded before any judge result. In the 5-row load test both judges ran and agreed on all 5 rows.
+
+### Judge results
+
+Both judges scored all answer sets. They reversed the reading of the full PR list: the detector's large drops came from answers that still refuse, in words the detector does not catch. Both judges agree on this independently. The judge gate waits for the manual labels, so the judge measures are marked "judge unchecked" until then.

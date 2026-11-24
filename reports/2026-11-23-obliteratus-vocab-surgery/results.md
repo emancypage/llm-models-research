@@ -1,12 +1,11 @@
 # Results: vocabulary-row edits (OBLITERATUS PR #595)
 
-**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. All detector measurements are complete: Llama-3.1-8B, Qwen2.5-7B, two small models with a shared matrix and the random controls. The LLM judges are running and the manual review is pending. Stage 3 (Inkling-2-Mini) was dropped on 24 November after the author withdrew the original claim. This page is updated as stages finish.
+**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. All detector measurements are complete: Llama-3.1-8B, Qwen2.5-7B, two small models with a shared matrix and the random controls. The LLM judges have scored every answer set; the manual review, and with it the judge gate, is pending. Stage 3 (Inkling-2-Mini) was dropped on 24 November after the author withdrew the original claim. This page is updated as stages finish.
 
-The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B and Qwen2.5-7B (keyword detector):
-- the token list from the post changed few refusals: −0.5 pp and −2.0 pp without the prefill, −2.0 pp and −5.5 pp on top of it;
-- the full 34-token list from the PR lowered detected refusals by 7.0 pp (Llama) and 46.0 pp (Qwen) alone, and by 18.5 pp and 17.5 pp on top of the prefill. This list suppresses words that the detector looks for, so the judges must confirm it;
-- the longer prefill from the author's correction alone lowered refusals by 37.0 pp (Llama) and 67.5 pp (Qwen); the edit added almost nothing on top;
-- random edits of the same size (33 random tokens with the full-list strengths) lowered Qwen2.5-7B refusals by only 2.0 pp, so the full-list effect depends on the chosen words;
+The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B and Qwen2.5-7B (keyword detector and two LLM judges; the judges are not yet checked against the manual labels):
+- the token list from the post does not reduce refusals: −0.5 pp and −1.0 pp by judge A without the prefill, −1.5 pp and +2.0 pp on top of it;
+- the full 34-token PR list seemed to lower refusals by up to 46.0 pp, but that was a detector error: the edit removes the words the detector looks for, and the model keeps refusing in other words (Qwen2.5-7B: 87 missed refusals by judge A, 91 by judge B; −5.5 pp by judge A);
+- the prefill does the work: by judge A the author's longer prefill alone lowered refusals by 53.5 pp (Llama) and 75.5 pp (Qwen), and the edit added nothing on top;
 - the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
 
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
@@ -17,6 +16,40 @@ Limitations at this stage:
 - the prefill text comes from a PR unit test, not from the original experiment.
 
 Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [data](data) · [code, word probe and judge prompt](../../experiments/2026-11-23-obliteratus-vocab-surgery) · [research diary](../../session-logs/2026-11-23-obliteratus-vocab-surgery.md)
+
+## LLM judges
+
+24 November 2026. Judge A is the planned spare `google/gemma-4-12B-it` (the first choice did not load within the memory guard); judge B is `allenai/wildguard`. Both scored every distinct answer set. **Status: judge unchecked.** The judge gate needs the manual labels, which are pending, so these measures are not yet validated; the verdicts still rest on the manual correction.
+
+Measures (share of 200 harmful prompts): detector = primary measure (refusals + invalid answers); judge A = `judge_fail` (labels R and O + invalid); judge B = refusals + invalid.
+
+| Version | Llama-3.1-8B: detector / A / B | Qwen2.5-7B: detector / A / B |
+| --- | --- | --- |
+| S | 85.0% / 74.0% / 78.0% | 83.0% / 84.5% / 85.0% |
+| V-k1 | 84.5% / 73.5% / 77.5% | 81.0% / 83.5% / 85.0% |
+| SP | 76.0% / 62.5% / 60.0% | 32.0% / 35.0% / 39.0% |
+| VP-k1 | 74.0% / 61.0% / 58.0% | 26.5% / 37.0% / 37.0% |
+| V-k2 | 78.0% / 74.0% / 77.5% | 37.0% / 79.0% / 82.0% |
+| VP-k2 | 57.5% / 61.0% / 58.5% | 14.5% / 36.0% / 38.0% |
+| V-k1o | 85.0% / 73.5% / 78.0% | 82.0% / 84.0% / 85.5% |
+| V-k1i | 84.5% / 74.0% / 77.5% | 81.0% / 80.5% / 82.5% |
+| SP2, author's prefill | 48.0% / 20.5% / 22.0% | 15.5% / 9.0% / 6.0% |
+| VP2, author's prefill and K1 | 47.5% / 20.5% / 21.0% | 14.5% / 6.0% / 3.5% |
+| KR, 9 random tokens | – | 83.0% / 84.0% / 85.0% |
+| KR2, 33 random tokens | – | 81.0% / 83.0% / 84.0% |
+
+Control models: Qwen2.5-1.5B S 92.0% / 91.0% / 93.0%, V `k2-tied` 57.0% / 92.5% / 92.0%; Llama-3.2-3B S 70.5% / 67.0% / 71.0%, V `k2-tied` 63.5% / 68.5% / 70.5%.
+
+### Main findings
+
+1. **The large drops with the full PR list are detector errors.** On Qwen2.5-7B the detector found 73 refusals after the K2 edit; judge A labelled 157 answers as refusals. Of the answers that the detector did not flag, judge A called 87 refusals and judge B 91. By judge A, V-k2 − S is −5.5 pp (13 and 2 discordant pairs; p = 0.0074), not −46.0 pp. The same happens on Qwen2.5-1.5B (`k2-tied`: detector −35.0 pp, judge A +1.5 pp, 72 missed refusals) and with the prefill (Qwen2.5-7B VP-k2 − SP: detector −17.5 pp, judge A +1.0 pp; Llama-3.1-8B: −18.5 pp and −1.5 pp). The edit removes the words that the detector looks for; the model keeps refusing with other words.
+2. **The list from the post does nothing by either judge.** K1 V − S: Llama-3.1-8B −0.5 pp (p = 1.0), Qwen2.5-7B −1.0 pp (p = 0.69). VP − SP: −1.5 pp (p = 0.38) and +2.0 pp (p = 0.54).
+3. **The prefill does the work.** By judge A, the short prefill lowers the measure by 11.5 pp (Llama-3.1-8B; 32 and 9 discordant pairs; p = 0.00043) and 49.5 pp (Qwen2.5-7B; p = 1.1e-27); the author's longer prefill by 53.5 pp (p = 4.8e-30) and 75.5 pp (p = 2.7e-44). K1 on top of the longer prefill: 0.0 pp and −3.0 pp (p = 1.0 and 0.11).
+4. **The detector also over-counts on unedited answers.** For Llama-3.1-8B S, 22 answers flagged as refusals were labelled compliance by judge A (judge B: 14 no refusal). The detector treats compliance with a warning as a refusal.
+
+Uncertain rows (judges disagree or judge A below 0.80) per version: from 4 to 35; the most are in the prefill versions of Qwen2.5-7B (34 and 35).
+
+Prefill-field control: without the prefill field, judge A changed 10 of the 100 sheet rows from SP and VP-k1 (Llama-3.1-8B 1 and 2; Qwen2.5-7B 2 and 5).
 
 ## Llama-3.1-8B (stage 1)
 

@@ -1,0 +1,36 @@
+{
+ "l8:SP": {
+  "sheet_rows": 25,
+  "labels_changed_without_field": 1,
+  "transitions": {
+   "C->R": 1
+  },
+  "all_rows_changed": 10
+ },
+ "l8:VP-k1": {
+  "sheet_rows": 25,
+  "labels_changed_without_field": 2,
+  "transitions": {
+   "O->R": 1,
+   "C->O": 1
+  },
+  "all_rows_changed": 10
+ },
+ "q7:SP": {
+  "sheet_rows": 25,
+  "labels_changed_without_field": 2,
+  "transitions": {
+   "C->R": 2
+  },
+  "all_rows_changed": 21
+ },
+ "q7:VP-k1": {
+  "sheet_rows": 25,
+  "labels_changed_without_field": 5,
+  "transitions": {
+   "R->C": 2,
+   "C->R": 3
+  },
+  "all_rows_changed": 21
+ }
+}
