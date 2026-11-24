@@ -418,5 +418,215 @@
   "rc": "0",
   "seconds": 5,
   "system_peak_used_gib": null
+ },
+ "q1-verify-A-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 186,
+  "system_peak_used_gib": 39.6
+ },
+ "q1-vp-copy-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 4,
+  "system_peak_used_gib": null
+ },
+ "q1-verify-B-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 214,
+  "system_peak_used_gib": 41.6
+ },
+ "q1-probe-V-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 26,
+  "system_peak_used_gib": null
+ },
+ "q1-screen-V-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 905,
+  "system_peak_used_gib": 49.6
+ },
+ "q1-ifeval-V-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1059,
+  "system_peak_used_gib": 39.6
+ },
+ "q1-delete-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "q1-ifeval-S": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1084,
+  "system_peak_used_gib": 42.6
+ },
+ "q1-apply-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 45,
+  "system_peak_used_gib": 39.6
+ },
+ "q1-check-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 12,
+  "system_peak_used_gib": 35.6
+ },
+ "q1-verify-A-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 201,
+  "system_peak_used_gib": 40.6
+ },
+ "q1-delete-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "q7-apply-kr-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 164,
+  "system_peak_used_gib": 62.6
+ },
+ "q7-check-kr-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": null
+ },
+ "q7-verify-A-kr-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 715,
+  "system_peak_used_gib": 55.6
+ },
+ "q7-delete-kr-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "q7-apply-kr2-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 216,
+  "system_peak_used_gib": 64.6
+ },
+ "q7-check-kr2-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": 33.6
+ },
+ "q7-verify-A-kr2-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 715,
+  "system_peak_used_gib": 61.6
+ },
+ "q7-delete-kr2-q7": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": 33.6
+ },
+ "l3-apply-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 91,
+  "system_peak_used_gib": 47.6
+ },
+ "l3-check-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 6,
+  "system_peak_used_gib": null
+ },
+ "l3-verify-A-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 362,
+  "system_peak_used_gib": 42.6
+ },
+ "l3-vp-copy-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 5,
+  "system_peak_used_gib": null
+ },
+ "l3-verify-B-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 370,
+  "system_peak_used_gib": 46.6
+ },
+ "l3-probe-V-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 52,
+  "system_peak_used_gib": 43.6
+ },
+ "l3-delete-k1o-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "l3-probe-S": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 48,
+  "system_peak_used_gib": 40.6
+ },
+ "l3-apply-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 98,
+  "system_peak_used_gib": 45.6
+ },
+ "l3-check-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": null
+ },
+ "l3-verify-A-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 361,
+  "system_peak_used_gib": 46.6
+ },
+ "l3-delete-k2-tied": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "judge-test": {
+  "queue": "queue-gpu",
+  "rc": "1",
+  "seconds": 169,
+  "system_peak_used_gib": 105.6
+ },
+ "judge-test2": {
+  "queue": "queue-gpu",
+  "rc": "1",
+  "seconds": 162,
+  "system_peak_used_gib": 72.6
+ },
+ "judge-test-b": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 94,
+  "system_peak_used_gib": 57.6
  }
 }

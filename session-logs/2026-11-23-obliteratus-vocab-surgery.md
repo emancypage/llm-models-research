@@ -41,3 +41,11 @@ All four edits passed the scope check. The unedited model gave identical texts i
 ### Qwen2.5-7B complete (detector counts)
 
 All four edits passed the scope check. The full PR list lowered detected refusals by 46.0 pp without the prefill, which met the rule for the random control. Two controls were written into the protocol before their runs: KR as planned, and an exploratory KR2 with the shape of the full list, because that is where the effect appeared. The full list suppresses words that the refusal detector looks for, so this result waits for the LLM judges. Judge A is available; judge B needs the model terms accepted on Hugging Face.
+
+### Scope reduction, control models and random controls
+
+The study owner shortened the study: Llama-3.2-3B kept only its refusal runs and word probe, and the Inkling-2-Mini stage was dropped. The random controls ran before the small models finished. 33 random tokens with the full-list strengths changed 4 of 200 refusals; the full list changed 94. Among the control models, Qwen2.5-1.5B showed a large drop with the full list and Llama-3.2-3B a small one.
+
+### LLM judges
+
+Judge A (`gemma-4-26B-A4B-it`) did not load within the memory guard, so the planned spare (`gemma-4-12B-it`) replaced it. Judge B ships only a SentencePiece tokenizer file, which the study environment could not read without a new package; a fast tokenizer was built from it with installed packages and checked (no text changed in an encode–decode round trip). Both changes were recorded before any judge result. In the 5-row load test both judges ran and agreed on all 5 rows.

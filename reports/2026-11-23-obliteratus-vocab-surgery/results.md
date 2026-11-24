@@ -1,11 +1,12 @@
 # Results: vocabulary-row edits (OBLITERATUS PR #595)
 
-**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. Llama-3.1-8B and Qwen2.5-7B are complete apart from the manual review and the LLM judges. Two small models with a shared matrix and the random controls are running. Stage 3 (Inkling-2-Mini, the model of the original claim) waits for disk space. This page is updated as stages finish.
+**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. All detector measurements are complete: Llama-3.1-8B, Qwen2.5-7B, two small models with a shared matrix and the random controls. The LLM judges are running and the manual review is pending. Stage 3 (Inkling-2-Mini) was dropped on 24 November after the author withdrew the original claim. This page is updated as stages finish.
 
 The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B and Qwen2.5-7B (keyword detector):
 - the token list from the post changed few refusals: −0.5 pp and −2.0 pp without the prefill, −2.0 pp and −5.5 pp on top of it;
 - the full 34-token list from the PR lowered detected refusals by 7.0 pp (Llama) and 46.0 pp (Qwen) alone, and by 18.5 pp and 17.5 pp on top of the prefill. This list suppresses words that the detector looks for, so the judges must confirm it;
 - the longer prefill from the author's correction alone lowered refusals by 37.0 pp (Llama) and 67.5 pp (Qwen); the edit added almost nothing on top;
+- random edits of the same size (33 random tokens with the full-list strengths) lowered Qwen2.5-7B refusals by only 2.0 pp, so the full-list effect depends on the chosen words;
 - the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
 
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
@@ -127,6 +128,34 @@ Verdicts (K1, before the manual correction):
 - "The edit adds something beyond the prefill": no for both. On Qwen2.5-7B the effect is statistically clear, −5.5 pp, but smaller than the 10 pp threshold.
 - "Negligible cost": yes for both on the benchmarks. Both models lose the normal use of the edited words (word probe 50%).
 - "Near zero": open until the manual review.
+
+## Control models (stage 2)
+
+24 November 2026. Refusal counts come from the keyword detector; the LLM judges come later. These results are descriptive only: the control models have a shared input/output matrix and are also smaller, so the two cannot be separated.
+
+### Control models with a shared matrix (refusals of 200 harmful prompts)
+
+| Version | Qwen2.5-1.5B | Llama-3.2-3B |
+| --- | --- | --- |
+| S | 184 | 141 |
+| V, `k1o-tied` (scaling of 9 shared rows) | 184 (0 pp; 0 discordant pairs) | 143 (+1.0 pp; 2 discordant pairs, both more refusals; p = 0.5) |
+| SP, prefill | 15 + 1 invalid (−84.0 pp against S; p = 5.4e-51) | 23 + 2 invalid (−58.0 pp; 126 discordant pairs, 121 and 5; p = 6.0e-30) |
+| VP, prefill and `k1o-tied` | 11 + 1 invalid (−2.0 pp against SP; 4 discordant pairs; p = 0.125) | 27 + 2 invalid (+2.0 pp against SP; 4 discordant pairs, all more refusals; p = 0.125) |
+| V, `k2-tied` (scaling of 33 shared rows) | 114 (−35.0 pp; 70 discordant pairs, all fewer; p = 1.7e-21) | 127 (−7.0 pp; 16 discordant pairs, 15 and 1; p = 0.00052) |
+
+- List coverage: of the S refusals, Qwen2.5-1.5B has 2 of 184 with a K1 source token and 184 of 184 with a K2 source token; Llama-3.2-3B has 57 of 141 and 77 of 141.
+- Word probe, S → V (`k1o-tied`): Qwen2.5-1.5B part A 96.7% → 50.0%, part B 92.5% → 91.7%; Llama-3.2-3B part A 95.0% → 50.0%, part B 94.2% → 65.8%.
+- Capabilities, Qwen2.5-1.5B, S → V (`k1o-tied`): MMLU (every 10th item) 62.66% → 62.73%, ARC-Challenge 54.18% → 54.35%, GSM8K (first 400) 56.00% → 56.25%, IFEval 41.77% → 41.40%; mean +0.03 pp (95% interval −0.18 to 0.25). Llama-3.2-3B capabilities were not measured (scope reduction of 24 November).
+
+### Random controls on Qwen2.5-7B (run A, refusals of 200 harmful prompts)
+
+| Edit | V | Against S (165 + 1 invalid) |
+| --- | --- | --- |
+| K2, full PR list (33 resolved operations) | 73 + 1 | −46.0 pp; 94 discordant pairs; p = 9.6e-27 |
+| KR2, 33 random tokens with the K2 strengths | 161 + 1 | −2.0 pp; 4 discordant pairs, all fewer; p = 0.125 |
+| KR, 9 random tokens with the K1 strengths | 165 + 1 | 0 pp; 0 discordant pairs |
+
+Both random edits passed the scope check (7 and 9 rows for KR; 20 and 33 rows for KR2). The drop with K2 depends on the chosen words, not on editing that many rows. These words are also the words the refusal detector looks for, so the judges must still show whether the model refuses less or only in other words.
 
 ## Stage 0 (decision point G1)
 

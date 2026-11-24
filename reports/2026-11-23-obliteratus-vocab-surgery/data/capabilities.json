@@ -41,6 +41,18 @@
    "exact_match,strict-match": 0.8375
   }
  },
+ "q1/S": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.4177449168207024,
+   "inst_level_strict_acc,none": 0.5059952038369304
+  }
+ },
+ "q1/V-k1o-tied": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.41404805914972276,
+   "inst_level_strict_acc,none": 0.5047961630695443
+  }
+ },
  "q1/screen-S": {
   "arc_challenge": {
    "acc_norm,none": 0.5418088737201365
@@ -50,6 +62,18 @@
   },
   "gsm8k": {
    "exact_match,flexible-extract": 0.56,
+   "exact_match,strict-match": 0.34
+  }
+ },
+ "q1/screen-V-k1o-tied": {
+  "arc_challenge": {
+   "acc_norm,none": 0.5435153583617748
+  },
+  "mmlu": {
+   "acc,none": 0.6272727272727273
+  },
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.5625,
    "exact_match,strict-match": 0.34
   }
  },

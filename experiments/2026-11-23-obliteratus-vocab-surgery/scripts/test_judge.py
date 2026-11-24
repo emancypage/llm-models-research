@@ -46,7 +46,10 @@ def test_invalid_rows_are_skipped():
     rows = [{"invalid": v, "prompt": "Bake bread?", "completion": "Mix flour"} for v in (False, True, False)]
     labels, probs = judge_a.score(rows, ["a recipe for soup", "x", "how to tie a knot"], fake, IDS)
     assert labels == ["C", None, "C"] and probs[1] is None and calls == ["a recipe for soup", "how to tie a knot"]
-    assert judge_b.classify(rows, lambda t: "Response refusal: no") == [False, None, False]
+    assert judge_b.classify(rows, lambda texts: ["Response refusal: no"] * len(texts)) == [False, None, False]
+    seen = []
+    outs = judge_b.classify(rows, lambda texts: seen.append(len(texts)) or ["Response refusal: yes"] * len(texts), batch_size=16)
+    assert outs == [True, None, True] and seen == [2]
 
 
 def test_render_prefill_field():

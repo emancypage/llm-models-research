@@ -33,3 +33,11 @@ Check: `vocab-surgery apply` with a no-op config (S0: one operation with `output
 ## 2026-11-23, merged version (`1de580f7a13f185488dc31ff27f2e027545ad82d`)
 
 The merge adds no change to the files checked above. The export behaviour from the S0 check is the same on `main`: the checkpoint writer did not change. PR tests on `main`: 75 passed, 0 failed.
+
+## 2026-11-24, export changes the weight-file layout
+
+The edited Llama-3.1-8B checkpoint is written as one `model.safetensors` file without an index, while the source has 4 shards and `model.safetensors.index.json`. The tensors are the same (scope check), but tools that read the index file to find a tensor fail on the export. This adds to the entry above: the export does not keep the source file layout.
+
+## 2026-11-24, study environment: Gemma 4 26B-A4B does not load within memory limits
+
+Not an OBLITERATUS issue. With `transformers` 5.17.0 and `AutoModelForCausalLM.from_pretrained(..., dtype=bfloat16, device_map="cuda")` on a machine where the GPU shares 121 GiB with the system, loading `google/gemma-4-26B-A4B-it` (51.6 GB of weights, 128 experts) kept allocating past the weight size until 16 GiB remained. The study used the planned spare judge instead.
