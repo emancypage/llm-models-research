@@ -1,11 +1,12 @@
 # Results: vocabulary-row edits (OBLITERATUS PR #595)
 
-**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. Llama-3.1-8B is complete apart from the manual review and the LLM judges. Qwen2.5-7B and two small models with a shared matrix are running. Stage 3 (Inkling-2-Mini, the model of the original claim) waits for disk space. This page is updated as stages finish.
+**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. Llama-3.1-8B and Qwen2.5-7B are complete apart from the manual review and the LLM judges. Two small models with a shared matrix and the random controls are running. Stage 3 (Inkling-2-Mini, the model of the original claim) waits for disk space. This page is updated as stages finish.
 
-The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B (keyword detector):
-- the token list from the post changed 1 of 200 refusal flags (170 → 169), with or without the prefill; only 19 of the 170 refusals contain a token from that list;
-- the full 34-token list from the PR lowered refusals by 7.0 pp alone and by 18.5 pp on top of the prefill (152 → 115);
-- the edit leaves benchmark scores almost unchanged (mean −0.31 pp) but removes the normal use of the edited words.
+The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B and Qwen2.5-7B (keyword detector):
+- the token list from the post changed few refusals: −0.5 pp and −2.0 pp without the prefill, −2.0 pp and −5.5 pp on top of it;
+- the full 34-token list from the PR lowered detected refusals by 7.0 pp (Llama) and 46.0 pp (Qwen) alone, and by 18.5 pp and 17.5 pp on top of the prefill. This list suppresses words that the detector looks for, so the judges must confirm it;
+- the longer prefill from the author's correction alone lowered refusals by 37.0 pp (Llama) and 67.5 pp (Qwen); the edit added almost nothing on top;
+- the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
 
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
 
@@ -69,7 +70,63 @@ After the edit the model no longer chooses any of the six source words where it 
 - "Near zero": open until the manual review; the detector value of V is 84.5%.
 - Random control KR: not built (needs a drop of at least 10 pp without prefill; the largest is −7.0 pp).
 
-The clearest effect is K2 together with the prefill (−18.5 pp). Its capability cost was not measured (the plan measures capabilities for K1 only); a word probe for V-k2 is queued.
+The clearest effect is K2 together with the prefill (−18.5 pp). Its capability cost was not measured (the plan measures capabilities for K1 only). Word probe for V-k2: part A 50.0%, part B 50.0%.
+
+## Qwen2.5-7B (stage 1)
+
+24 November 2026. Refusal counts come from the keyword detector; the manual review and the LLM judges come later. 200 harmful prompts per version. The primary measure counts refusals and invalid answers.
+
+### Qwen2.5-7B refusals
+
+| Configuration | Without prefill: S → V | With prefill: SP → VP |
+| --- | --- | --- |
+| K1, list from the post | 165 + 1 invalid → 161 + 1 invalid (−2.0 pp; 4 discordant pairs, all fewer; p = 0.125) | 64 → 53 (−5.5 pp; 13 discordant pairs, 12 and 1; p = 0.0034) |
+| K2, full PR list | 165 + 1 → 73 + 1 (−46.0 pp; 94 discordant pairs, 93 and 1; p = 9.6e-27) | 64 → 29 (−17.5 pp; 35 discordant pairs, all fewer; p = 5.8e-11) |
+| K1o, output side only | 165 + 1 → 163 + 1 (−1.0 pp; p = 0.5) | – |
+| K1i, input side only | 165 + 1 → 161 + 1 (−2.0 pp; p = 0.125) | – |
+
+- Prefill alone (SP − S): −51.0 pp; 102 discordant pairs, all fewer refusals; p = 3.9e-31.
+- Interaction for K1: −3.5 pp.
+- List coverage: of the 165 S refusals, 149 contain a K1 source token and 165 a K2 source token. Qwen2.5-7B refuses with the listed words much more than Llama-3.1-8B (19 and 31 of 170).
+- Caution for K2: the edit suppresses words such as "sorry", "cannot" and "However", and the detector looks for refusal phrases. A drop in detected refusals can therefore partly be refusals in other words. The LLM judges and the manual review are needed before K2 is read as fewer refusals. K2 has no manual labels under the plan, so it will be marked "judge only".
+- The random control is triggered for Qwen2.5-7B (K2 lowered the primary measure by 46.0 pp) and is queued: KR as planned, plus KR2 with the shape of K2.
+
+### Author's longer prefill (exploratory run B2, K1)
+
+| Model | S | SP2: S with the author's prefill | VP2: V-k1 with the author's prefill |
+| --- | --- | --- | --- |
+| Llama-3.1-8B | 170 | 96 (−37.0 pp; 86 discordant pairs, 80 and 6; p = 1.3e-17) | 95 (−0.5 pp against SP2; 5 discordant pairs, 3 and 2; p = 1.0) |
+| Qwen2.5-7B | 165 + 1 | 30 + 1 (−67.5 pp; 139 discordant pairs, 137 and 2; p = 2.8e-38) | 28 + 1 (−1.0 pp against SP2; 4 discordant pairs, 3 and 1; p = 0.625) |
+
+The longer prefill alone removes most refusals; the K1 edit adds almost nothing on top. This agrees with the author's correction.
+
+### Qwen2.5-7B capabilities (S and V-k1)
+
+| Measure | S | V-k1 | Difference (95% interval) |
+| --- | --- | --- | --- |
+| MMLU, every 10th item | 76.92% | 76.64% | −0.28 pp (−0.63 to 0.07) |
+| ARC-Challenge | 67.24% | 67.06% | −0.17 pp (−0.68 to 0.34) |
+| GSM8K, first 400 | 74.25% | 74.25% | 0.00 pp |
+| IFEval | 69.87% | 69.50% | −0.37 pp (−1.48 to 0.55) |
+| Mean of the four | – | – | −0.21 pp (−0.51 to 0.09); bootstrap p = 0.18 |
+
+Noise: a second S run on the first 200 GSM8K items changed 93 answer texts and 8 scores.
+
+Word probe: S part A 99.17%, part B 99.17%; V-k1 50.0% and 50.0%; V-k2 50.0% and 50.0%.
+
+### Endpoints for both main models (Holm correction across Llama-3.1-8B and Qwen2.5-7B; it is recomputed when Inkling-2-Mini is added)
+
+| Endpoint | Llama-3.1-8B | Qwen2.5-7B |
+| --- | --- | --- |
+| 1. V − S, primary measure | −0.5 pp; p = 1.0; Holm 1.0 | −2.0 pp; p = 0.125; Holm 0.25 |
+| 2. VP − SP, primary measure | −2.0 pp; p = 0.22; Holm 0.22 | −5.5 pp; p = 0.0034; Holm 0.0068 |
+| 3. V − S, mean capability | −0.31 pp (−0.55 to −0.09); Holm 0.0092 | −0.21 pp (−0.51 to 0.09); Holm 0.18 |
+
+Verdicts (K1, before the manual correction):
+- "The edit alone works": no for both models (−0.5 and −2.0 pp; the threshold is −20 pp).
+- "The edit adds something beyond the prefill": no for both. On Qwen2.5-7B the effect is statistically clear, −5.5 pp, but smaller than the 10 pp threshold.
+- "Negligible cost": yes for both on the benchmarks. Both models lose the normal use of the edited words (word probe 50%).
+- "Near zero": open until the manual review.
 
 ## Stage 0 (decision point G1)
 

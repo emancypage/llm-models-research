@@ -37,3 +37,7 @@ The author of the original claim reported that the 97.4% result came from a mode
 ### Llama-3.1-8B complete (detector counts)
 
 All four edits passed the scope check. The unedited model gave identical texts in every report, so the refusal tool is deterministic and each changed answer comes from the edit. The post's list changed almost nothing; the full PR list had a clear effect, mostly together with the prefill. The random control was not triggered, because its rule needs a 10 pp drop without the prefill and the largest drop was 7.0 pp. A word probe for the full list was added, before its measurement, because that list is where the effect is.
+
+### Qwen2.5-7B complete (detector counts)
+
+All four edits passed the scope check. The full PR list lowered detected refusals by 46.0 pp without the prefill, which met the rule for the random control. Two controls were written into the protocol before their runs: KR as planned, and an exploratory KR2 with the shape of the full list, because that is where the effect appeared. The full list suppresses words that the refusal detector looks for, so this result waits for the LLM judges. Judge A is available; judge B needs the model terms accepted on Hugging Face.

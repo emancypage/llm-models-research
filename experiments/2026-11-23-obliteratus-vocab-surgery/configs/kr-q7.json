@@ -1,0 +1,67 @@
+{
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "include_defaults": false,
+ "operations": [
+  {
+   "source_id": 39633,
+   "target_id": 1886,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 2121,
+   "target_id": 49006,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 419,
+   "target_id": 70874,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 71308,
+   "target_id": 25650,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 7032,
+   "target_id": 1484,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 5994,
+   "target_id": 31163,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 5316,
+   "target_id": 14452,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr"
+  },
+  {
+   "source_id": 2878,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr-output-only"
+  },
+  {
+   "source_id": 69464,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr-output-only"
+  }
+ ]
+}

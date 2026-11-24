@@ -144,6 +144,30 @@
      0.7939442071583334,
      0.89286406437758
     ]
+   },
+   "SP2": {
+    "refused": 96,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.48,
+    "objective": 0.48,
+    "objective_wilson95": [
+     0.411791663783233,
+     0.5489621492718576
+    ]
+   },
+   "VP2": {
+    "refused": 95,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.475,
+    "objective": 0.475,
+    "objective_wilson95": [
+     0.4069162264657108,
+     0.5440260398531525
+    ]
    }
   },
   "comparisons": {
@@ -195,6 +219,20 @@
     "only_base_fail": 23,
     "only_compared_fail": 5,
     "mcnemar_p": 0.0009122341871261597
+   },
+   "VP2-SP2": {
+    "diff": -0.0050000000000000044,
+    "discordant": 5,
+    "only_base_fail": 3,
+    "only_compared_fail": 2,
+    "mcnemar_p": 1.0
+   },
+   "SP2-S": {
+    "diff": -0.37,
+    "discordant": 86,
+    "only_base_fail": 80,
+    "only_compared_fail": 6,
+    "mcnemar_p": 1.311109746589136e-17
    }
   },
   "interaction": -0.015000000000000013
