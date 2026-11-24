@@ -53,3 +53,7 @@ Judge A (`gemma-4-26B-A4B-it`) did not load within the memory guard, so the plan
 ### Judge results
 
 Both judges scored all answer sets. They reversed the reading of the full PR list: the detector's large drops came from answers that still refuse, in words the detector does not catch. Both judges agree on this independently. The judge gate waits for the manual labels, so the judge measures are marked "judge unchecked" until then.
+
+### Follow-up with a self-generated list of 500 tokens
+
+At the owner's decision, the study added a list of 500 tokens built from each model's own refusals, with two discovery rounds on separate prompts; no prefill runs. In round 2 Qwen2.5-7B switched to refusing in Chinese, so its second 250 tokens were mostly Chinese words. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B); a random 500-token control did nothing. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K. Manual sheet for this follow-up: 45 answers, pending.

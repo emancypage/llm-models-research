@@ -41,3 +41,7 @@ The edited Llama-3.1-8B checkpoint is written as one `model.safetensors` file wi
 ## 2026-11-24, study environment: Gemma 4 26B-A4B does not load within memory limits
 
 Not an OBLITERATUS issue. With `transformers` 5.17.0 and `AutoModelForCausalLM.from_pretrained(..., dtype=bfloat16, device_map="cuda")` on a machine where the GPU shares 121 GiB with the system, loading `google/gemma-4-26B-A4B-it` (51.6 GB of weights, 128 experts) kept allocating past the weight size until 16 GiB remained. The study used the planned spare judge instead.
+
+## 2026-11-24, `verify-edit` refusal detector is blind to vocabulary edits
+
+The refusal detector (`advanced_metrics.py`: refusal prefixes, substrings and semantic patterns) looks for words that `vocab_surgery` suppresses ("cannot", "sorry", "However" and similar). After an edit that suppresses them, the model keeps refusing in other words and the detector misses it. On Qwen2.5-7B with the full PR list, the detector reported 73 refusals of 200; of the answers it did not flag, judge A labelled 87 as refusals and judge B 91. On Qwen2.5-1.5B (`k2-tied`) the detector reported −35.0 pp, judge A +1.5 pp. The detector also counts compliance after a warning as a refusal: for unedited Llama-3.1-8B, 22 flagged answers were compliance by judge A. Any `verify-edit` result for a vocabulary edit therefore needs an independent refusal judgement; the edited words should not be the evidence of refusal.

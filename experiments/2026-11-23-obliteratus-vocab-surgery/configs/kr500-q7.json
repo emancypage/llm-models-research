@@ -1,0 +1,3506 @@
+{
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "include_defaults": false,
+ "operations": [
+  {
+   "source_id": 43092,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ibrate\""
+  },
+  {
+   "source_id": 2205,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" local\""
+  },
+  {
+   "source_id": 425,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" B\""
+  },
+  {
+   "source_id": 81062,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Lena\""
+  },
+  {
+   "source_id": 7337,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" workers\""
+  },
+  {
+   "source_id": 6176,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" green\""
+  },
+  {
+   "source_id": 5421,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" impact\""
+  },
+  {
+   "source_id": 2989,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" important\""
+  },
+  {
+   "source_id": 77752,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"acteria\""
+  },
+  {
+   "source_id": 1948,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" between\""
+  },
+  {
+   "source_id": 52949,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Aud\""
+  },
+  {
+   "source_id": 80111,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Vulner\""
+  },
+  {
+   "source_id": 27368,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Inside\""
+  },
+  {
+   "source_id": 1538,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" event\""
+  },
+  {
+   "source_id": 33398,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Resume\""
+  },
+  {
+   "source_id": 15244,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" rein\""
+  },
+  {
+   "source_id": 504,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" from\""
+  },
+  {
+   "source_id": 480,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"able\""
+  },
+  {
+   "source_id": 1740,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"PE\""
+  },
+  {
+   "source_id": 5316,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" script\""
+  },
+  {
+   "source_id": 5754,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" choice\""
+  },
+  {
+   "source_id": 22884,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" MAC\""
+  },
+  {
+   "source_id": 35349,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" pharmac\""
+  },
+  {
+   "source_id": 444,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" L\""
+  },
+  {
+   "source_id": 29331,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Elect\""
+  },
+  {
+   "source_id": 4627,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" music\""
+  },
+  {
+   "source_id": 68381,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Chapters\""
+  },
+  {
+   "source_id": 45285,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" breeze\""
+  },
+  {
+   "source_id": 61845,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" insecure\""
+  },
+  {
+   "source_id": 27287,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" tire\""
+  },
+  {
+   "source_id": 15024,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" efficiency\""
+  },
+  {
+   "source_id": 5339,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" platform\""
+  },
+  {
+   "source_id": 17163,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" cheese\""
+  },
+  {
+   "source_id": 33319,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" grams\""
+  },
+  {
+   "source_id": 7441,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"roke\""
+  },
+  {
+   "source_id": 44,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"M\""
+  },
+  {
+   "source_id": 92840,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" recruiters\""
+  },
+  {
+   "source_id": 3520,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" actually\""
+  },
+  {
+   "source_id": 60300,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"veillance\""
+  },
+  {
+   "source_id": 15274,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" outcome\""
+  },
+  {
+   "source_id": 10348,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Week\""
+  },
+  {
+   "source_id": 7428,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" purpose\""
+  },
+  {
+   "source_id": 3356,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ymb\""
+  },
+  {
+   "source_id": 5214,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" risk\""
+  },
+  {
+   "source_id": 10145,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Educ\""
+  },
+  {
+   "source_id": 1945,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ivers\""
+  },
+  {
+   "source_id": 1707,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" style\""
+  },
+  {
+   "source_id": 12539,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Schema\""
+  },
+  {
+   "source_id": 1828,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" own\""
+  },
+  {
+   "source_id": 11259,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" standing\""
+  },
+  {
+   "source_id": 10515,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" adapt\""
+  },
+  {
+   "source_id": 35609,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" fatigue\""
+  },
+  {
+   "source_id": 6849,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" successful\""
+  },
+  {
+   "source_id": 707,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" def\""
+  },
+  {
+   "source_id": 74206,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Curriculum\""
+  },
+  {
+   "source_id": 17842,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"rength\""
+  },
+  {
+   "source_id": 26179,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" chains\""
+  },
+  {
+   "source_id": 2567,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" required\""
+  },
+  {
+   "source_id": 12461,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" bare\""
+  },
+  {
+   "source_id": 1376,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" key\""
+  },
+  {
+   "source_id": 28251,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Love\""
+  },
+  {
+   "source_id": 8173,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" sources\""
+  },
+  {
+   "source_id": 40811,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" insects\""
+  },
+  {
+   "source_id": 38296,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" cite\""
+  },
+  {
+   "source_id": 11383,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"PG\""
+  },
+  {
+   "source_id": 31177,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ographical\""
+  },
+  {
+   "source_id": 4394,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ustomer\""
+  },
+  {
+   "source_id": 63233,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"agnet\""
+  },
+  {
+   "source_id": 1179,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" op\""
+  },
+  {
+   "source_id": 757,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ec\""
+  },
+  {
+   "source_id": 49080,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" IoT\""
+  },
+  {
+   "source_id": 5590,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" oil\""
+  },
+  {
+   "source_id": 8038,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" science\""
+  },
+  {
+   "source_id": 1393,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" while\""
+  },
+  {
+   "source_id": 5769,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"iler\""
+  },
+  {
+   "source_id": 1917,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" action\""
+  },
+  {
+   "source_id": 91506,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" communicates\""
+  },
+  {
+   "source_id": 92496,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" auditing\""
+  },
+  {
+   "source_id": 17458,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Platform\""
+  },
+  {
+   "source_id": 42415,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" diving\""
+  },
+  {
+   "source_id": 11561,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" goods\""
+  },
+  {
+   "source_id": 3602,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" yet\""
+  },
+  {
+   "source_id": 11788,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" drivers\""
+  },
+  {
+   "source_id": 11104,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" organizations\""
+  },
+  {
+   "source_id": 5025,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" relationship\""
+  },
+  {
+   "source_id": 51422,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Finding\""
+  },
+  {
+   "source_id": 6961,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" physical\""
+  },
+  {
+   "source_id": 62003,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Soy\""
+  },
+  {
+   "source_id": 55127,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" fragrance\""
+  },
+  {
+   "source_id": 45092,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" vitamins\""
+  },
+  {
+   "source_id": 1212,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" under\""
+  },
+  {
+   "source_id": 36742,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ritional\""
+  },
+  {
+   "source_id": 42218,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" freezing\""
+  },
+  {
+   "source_id": 3800,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" others\""
+  },
+  {
+   "source_id": 25958,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Fix\""
+  },
+  {
+   "source_id": 74059,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" misinformation\""
+  },
+  {
+   "source_id": 6169,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" proper\""
+  },
+  {
+   "source_id": 3616,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Per\""
+  },
+  {
+   "source_id": 18154,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" demands\""
+  },
+  {
+   "source_id": 12510,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" tested\""
+  },
+  {
+   "source_id": 7096,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" equipment\""
+  },
+  {
+   "source_id": 43188,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" plumbing\""
+  },
+  {
+   "source_id": 56548,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" drills\""
+  },
+  {
+   "source_id": 28800,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Regular\""
+  },
+  {
+   "source_id": 5333,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" API\""
+  },
+  {
+   "source_id": 55713,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Handling\""
+  },
+  {
+   "source_id": 9556,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"socket\""
+  },
+  {
+   "source_id": 914,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" string\""
+  },
+  {
+   "source_id": 5643,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Product\""
+  },
+  {
+   "source_id": 506,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" O\""
+  },
+  {
+   "source_id": 9135,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" protection\""
+  },
+  {
+   "source_id": 13823,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" generator\""
+  },
+  {
+   "source_id": 6979,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" define\""
+  },
+  {
+   "source_id": 1095,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ating\""
+  },
+  {
+   "source_id": 5080,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" higher\""
+  },
+  {
+   "source_id": 30025,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Tea\""
+  },
+  {
+   "source_id": 68830,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" inspectors\""
+  },
+  {
+   "source_id": 9091,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" trial\""
+  },
+  {
+   "source_id": 5103,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" dim\""
+  },
+  {
+   "source_id": 46951,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Perform\""
+  },
+  {
+   "source_id": 22184,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" protecting\""
+  },
+  {
+   "source_id": 13404,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" maintenance\""
+  },
+  {
+   "source_id": 44118,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" installations\""
+  },
+  {
+   "source_id": 17821,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" transparent\""
+  },
+  {
+   "source_id": 3082,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" area\""
+  },
+  {
+   "source_id": 6891,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" scope\""
+  },
+  {
+   "source_id": 98062,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Monitoring\""
+  },
+  {
+   "source_id": 6222,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"-S\""
+  },
+  {
+   "source_id": 29337,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" minimize\""
+  },
+  {
+   "source_id": 26407,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Vent\""
+  },
+  {
+   "source_id": 6786,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" conduct\""
+  },
+  {
+   "source_id": 32688,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" accidents\""
+  },
+  {
+   "source_id": 15662,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" urban\""
+  },
+  {
+   "source_id": 32411,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" combines\""
+  },
+  {
+   "source_id": 13702,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" buildings\""
+  },
+  {
+   "source_id": 11416,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" classic\""
+  },
+  {
+   "source_id": 5330,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"cape\""
+  },
+  {
+   "source_id": 2968,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" give\""
+  },
+  {
+   "source_id": 23251,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" overview\""
+  },
+  {
+   "source_id": 21780,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"emi\""
+  },
+  {
+   "source_id": 1660,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" being\""
+  },
+  {
+   "source_id": 773,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" so\""
+  },
+  {
+   "source_id": 2155,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" different\""
+  },
+  {
+   "source_id": 3288,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"py\""
+  },
+  {
+   "source_id": 40489,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" socio\""
+  },
+  {
+   "source_id": 3538,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" server\""
+  },
+  {
+   "source_id": 53957,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Potential\""
+  },
+  {
+   "source_id": 15255,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" visitors\""
+  },
+  {
+   "source_id": 34502,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Secure\""
+  },
+  {
+   "source_id": 1056,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"line\""
+  },
+  {
+   "source_id": 12711,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" lights\""
+  },
+  {
+   "source_id": 12621,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" spaces\""
+  },
+  {
+   "source_id": 34434,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"rant\""
+  },
+  {
+   "source_id": 18890,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" clubs\""
+  },
+  {
+   "source_id": 25311,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Examples\""
+  },
+  {
+   "source_id": 6380,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" treatment\""
+  },
+  {
+   "source_id": 28338,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Introduction\""
+  },
+  {
+   "source_id": 264,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" a\""
+  },
+  {
+   "source_id": 53852,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" integrating\""
+  },
+  {
+   "source_id": 70132,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" auctions\""
+  },
+  {
+   "source_id": 2293,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"\\u2014\""
+  },
+  {
+   "source_id": 54215,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" manipulated\""
+  },
+  {
+   "source_id": 26248,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" prevention\""
+  },
+  {
+   "source_id": 6955,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" economic\""
+  },
+  {
+   "source_id": 43595,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" blues\""
+  },
+  {
+   "source_id": 93439,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"vestment\""
+  },
+  {
+   "source_id": 98969,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Clar\""
+  },
+  {
+   "source_id": 8193,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" produce\""
+  },
+  {
+   "source_id": 16033,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Progress\""
+  },
+  {
+   "source_id": 3468,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" host\""
+  },
+  {
+   "source_id": 17501,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" guidelines\""
+  },
+  {
+   "source_id": 20,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"5\""
+  },
+  {
+   "source_id": 70528,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" adherence\""
+  },
+  {
+   "source_id": 69464,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Deploy\""
+  },
+  {
+   "source_id": 6813,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" components\""
+  },
+  {
+   "source_id": 22358,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" comedy\""
+  },
+  {
+   "source_id": 4002,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"uation\""
+  },
+  {
+   "source_id": 23168,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" accounting\""
+  },
+  {
+   "source_id": 2056,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"aining\""
+  },
+  {
+   "source_id": 39754,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" postal\""
+  },
+  {
+   "source_id": 8427,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Select\""
+  },
+  {
+   "source_id": 43033,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" concealed\""
+  },
+  {
+   "source_id": 71615,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Ampl\""
+  },
+  {
+   "source_id": 36696,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" leaks\""
+  },
+  {
+   "source_id": 94533,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Necessary\""
+  },
+  {
+   "source_id": 76388,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Coc\""
+  },
+  {
+   "source_id": 12091,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Using\""
+  },
+  {
+   "source_id": 3558,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Us\""
+  },
+  {
+   "source_id": 26489,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"oltage\""
+  },
+  {
+   "source_id": 25374,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" cups\""
+  },
+  {
+   "source_id": 8,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\")\""
+  },
+  {
+   "source_id": 34920,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Scope\""
+  },
+  {
+   "source_id": 9542,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Vir\""
+  },
+  {
+   "source_id": 21165,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" auction\""
+  },
+  {
+   "source_id": 349,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ate\""
+  },
+  {
+   "source_id": 2225,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" develop\""
+  },
+  {
+   "source_id": 11473,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Sol\""
+  },
+  {
+   "source_id": 8733,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" compliance\""
+  },
+  {
+   "source_id": 5991,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ITE\""
+  },
+  {
+   "source_id": 949,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" part\""
+  },
+  {
+   "source_id": 6019,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ening\""
+  },
+  {
+   "source_id": 96650,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Jamie\""
+  },
+  {
+   "source_id": 89156,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" bustling\""
+  },
+  {
+   "source_id": 1499,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"from\""
+  },
+  {
+   "source_id": 20987,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" drinks\""
+  },
+  {
+   "source_id": 1178,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Text\""
+  },
+  {
+   "source_id": 25777,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" elegant\""
+  },
+  {
+   "source_id": 2598,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" called\""
+  },
+  {
+   "source_id": 2647,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" update\""
+  },
+  {
+   "source_id": 48580,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" reinforced\""
+  },
+  {
+   "source_id": 19690,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" frozen\""
+  },
+  {
+   "source_id": 27848,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" heritage\""
+  },
+  {
+   "source_id": 3684,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" material\""
+  },
+  {
+   "source_id": 6909,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Top\""
+  },
+  {
+   "source_id": 25144,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" volunteer\""
+  },
+  {
+   "source_id": 36220,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" resolver\""
+  },
+  {
+   "source_id": 15301,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" pipeline\""
+  },
+  {
+   "source_id": 5087,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Auth\""
+  },
+  {
+   "source_id": 26414,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" municipal\""
+  },
+  {
+   "source_id": 57067,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Mech\""
+  },
+  {
+   "source_id": 4707,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Location\""
+  },
+  {
+   "source_id": 67176,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Basics\""
+  },
+  {
+   "source_id": 8872,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" motor\""
+  },
+  {
+   "source_id": 13656,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" historical\""
+  },
+  {
+   "source_id": 51821,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"guns\""
+  },
+  {
+   "source_id": 94447,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Forgotten\""
+  },
+  {
+   "source_id": 12030,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Area\""
+  },
+  {
+   "source_id": 16387,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" credentials\""
+  },
+  {
+   "source_id": 24051,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Choose\""
+  },
+  {
+   "source_id": 17289,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" signals\""
+  },
+  {
+   "source_id": 2464,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" fun\""
+  },
+  {
+   "source_id": 6249,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" camera\""
+  },
+  {
+   "source_id": 5456,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" score\""
+  },
+  {
+   "source_id": 1061,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Res\""
+  },
+  {
+   "source_id": 10199,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" filled\""
+  },
+  {
+   "source_id": 372,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"um\""
+  },
+  {
+   "source_id": 33205,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Flags\""
+  },
+  {
+   "source_id": 28360,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" IDs\""
+  },
+  {
+   "source_id": 5662,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" machine\""
+  },
+  {
+   "source_id": 33248,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" costly\""
+  },
+  {
+   "source_id": 94059,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" fiss\""
+  },
+  {
+   "source_id": 49,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"R\""
+  },
+  {
+   "source_id": 1199,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"its\""
+  },
+  {
+   "source_id": 64547,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Identify\""
+  },
+  {
+   "source_id": 41169,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"(domain\""
+  },
+  {
+   "source_id": 967,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"yle\""
+  },
+  {
+   "source_id": 5633,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Our\""
+  },
+  {
+   "source_id": 1119,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" into\""
+  },
+  {
+   "source_id": 498,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" you\""
+  },
+  {
+   "source_id": 9774,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Den\""
+  },
+  {
+   "source_id": 65243,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" persuasive\""
+  },
+  {
+   "source_id": 23751,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" photography\""
+  },
+  {
+   "source_id": 5949,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Response\""
+  },
+  {
+   "source_id": 7460,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" requires\""
+  },
+  {
+   "source_id": 51205,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" candles\""
+  },
+  {
+   "source_id": 20876,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" navigate\""
+  },
+  {
+   "source_id": 5145,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Start\""
+  },
+  {
+   "source_id": 68252,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Immediately\""
+  },
+  {
+   "source_id": 2784,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" hum\""
+  },
+  {
+   "source_id": 30538,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" reliability\""
+  },
+  {
+   "source_id": 31115,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Generate\""
+  },
+  {
+   "source_id": 19432,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Review\""
+  },
+  {
+   "source_id": 6119,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Code\""
+  },
+  {
+   "source_id": 19433,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Inf\""
+  },
+  {
+   "source_id": 14211,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" blo\""
+  },
+  {
+   "source_id": 4344,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" changes\""
+  },
+  {
+   "source_id": 1760,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" count\""
+  },
+  {
+   "source_id": 1849,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" system\""
+  },
+  {
+   "source_id": 48400,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" bidding\""
+  },
+  {
+   "source_id": 15795,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"sten\""
+  },
+  {
+   "source_id": 11064,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" proof\""
+  },
+  {
+   "source_id": 15331,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" carrying\""
+  },
+  {
+   "source_id": 14374,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"###\""
+  },
+  {
+   "source_id": 18752,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" collision\""
+  },
+  {
+   "source_id": 894,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" any\""
+  },
+  {
+   "source_id": 51982,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" literacy\""
+  },
+  {
+   "source_id": 46494,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" enhancing\""
+  },
+  {
+   "source_id": 44573,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"-after\""
+  },
+  {
+   "source_id": 1874,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" group\""
+  },
+  {
+   "source_id": 1008,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" other\""
+  },
+  {
+   "source_id": 13936,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Welcome\""
+  },
+  {
+   "source_id": 10277,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" properly\""
+  },
+  {
+   "source_id": 2142,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ism\""
+  },
+  {
+   "source_id": 6292,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"uate\""
+  },
+  {
+   "source_id": 4369,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Frame\""
+  },
+  {
+   "source_id": 63062,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" predefined\""
+  },
+  {
+   "source_id": 89373,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" redundancy\""
+  },
+  {
+   "source_id": 17040,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" pose\""
+  },
+  {
+   "source_id": 3010,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" offer\""
+  },
+  {
+   "source_id": 95732,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Plex\""
+  },
+  {
+   "source_id": 4158,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" white\""
+  },
+  {
+   "source_id": 64283,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"minating\""
+  },
+  {
+   "source_id": 18169,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" joining\""
+  },
+  {
+   "source_id": 6325,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"PU\""
+  },
+  {
+   "source_id": 1282,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Tr\""
+  },
+  {
+   "source_id": 16713,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Administration\""
+  },
+  {
+   "source_id": 27930,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Voice\""
+  },
+  {
+   "source_id": 1855,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" create\""
+  },
+  {
+   "source_id": 821,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" data\""
+  },
+  {
+   "source_id": 45885,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" berg\""
+  },
+  {
+   "source_id": 26632,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" installing\""
+  },
+  {
+   "source_id": 294,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" d\""
+  },
+  {
+   "source_id": 1730,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" found\""
+  },
+  {
+   "source_id": 5896,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" financial\""
+  },
+  {
+   "source_id": 3693,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" American\""
+  },
+  {
+   "source_id": 14164,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" bridge\""
+  },
+  {
+   "source_id": 20949,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" intervention\""
+  },
+  {
+   "source_id": 20397,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Culture\""
+  },
+  {
+   "source_id": 5128,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" lines\""
+  },
+  {
+   "source_id": 13804,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Ide\""
+  },
+  {
+   "source_id": 965,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"oll\""
+  },
+  {
+   "source_id": 3669,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" news\""
+  },
+  {
+   "source_id": 12478,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Solution\""
+  },
+  {
+   "source_id": 15,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"0\""
+  },
+  {
+   "source_id": 13020,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" lit\""
+  },
+  {
+   "source_id": 6918,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"car\""
+  },
+  {
+   "source_id": 17553,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" leather\""
+  },
+  {
+   "source_id": 7785,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" smart\""
+  },
+  {
+   "source_id": 15276,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" risks\""
+  },
+  {
+   "source_id": 28659,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" sustained\""
+  },
+  {
+   "source_id": 49168,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"pletely\""
+  },
+  {
+   "source_id": 21067,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" licenses\""
+  },
+  {
+   "source_id": 3343,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" property\""
+  },
+  {
+   "source_id": 4329,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Some\""
+  },
+  {
+   "source_id": 8346,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"aine\""
+  },
+  {
+   "source_id": 5290,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" reading\""
+  },
+  {
+   "source_id": 956,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ra\""
+  },
+  {
+   "source_id": 31658,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" imaging\""
+  },
+  {
+   "source_id": 26768,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Testing\""
+  },
+  {
+   "source_id": 1012,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" been\""
+  },
+  {
+   "source_id": 9055,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" defense\""
+  },
+  {
+   "source_id": 938,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ical\""
+  },
+  {
+   "source_id": 817,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" per\""
+  },
+  {
+   "source_id": 32533,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" woods\""
+  },
+  {
+   "source_id": 19827,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" approaches\""
+  },
+  {
+   "source_id": 22515,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" regulatory\""
+  },
+  {
+   "source_id": 25476,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" tam\""
+  },
+  {
+   "source_id": 3430,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Be\""
+  },
+  {
+   "source_id": 927,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"sh\""
+  },
+  {
+   "source_id": 23172,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" deployment\""
+  },
+  {
+   "source_id": 1405,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"\\u2019t\""
+  },
+  {
+   "source_id": 4237,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" distributed\""
+  },
+  {
+   "source_id": 1142,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" case\""
+  },
+  {
+   "source_id": 34131,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" hills\""
+  },
+  {
+   "source_id": 1134,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ages\""
+  },
+  {
+   "source_id": 52483,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" resolving\""
+  },
+  {
+   "source_id": 5853,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"iting\""
+  },
+  {
+   "source_id": 13980,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" courses\""
+  },
+  {
+   "source_id": 2441,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" another\""
+  },
+  {
+   "source_id": 30339,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" straightforward\""
+  },
+  {
+   "source_id": 6210,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" King\""
+  },
+  {
+   "source_id": 31495,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Haz\""
+  },
+  {
+   "source_id": 34097,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Tech\""
+  },
+  {
+   "source_id": 650,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" un\""
+  },
+  {
+   "source_id": 38420,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Chocolate\""
+  },
+  {
+   "source_id": 1447,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\":\\n\\n\""
+  },
+  {
+   "source_id": 15004,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Boot\""
+  },
+  {
+   "source_id": 47639,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" capsule\""
+  },
+  {
+   "source_id": 77737,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"DCF\""
+  },
+  {
+   "source_id": 29720,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" efficiently\""
+  },
+  {
+   "source_id": 24473,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" reactions\""
+  },
+  {
+   "source_id": 9176,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ema\""
+  },
+  {
+   "source_id": 6731,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" education\""
+  },
+  {
+   "source_id": 4803,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"like\""
+  },
+  {
+   "source_id": 51298,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Opening\""
+  },
+  {
+   "source_id": 9072,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" electric\""
+  },
+  {
+   "source_id": 5985,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Wash\""
+  },
+  {
+   "source_id": 6923,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" generate\""
+  },
+  {
+   "source_id": 13428,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" crowd\""
+  },
+  {
+   "source_id": 2732,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" rest\""
+  },
+  {
+   "source_id": 67507,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"_servers\""
+  },
+  {
+   "source_id": 44508,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"etical\""
+  },
+  {
+   "source_id": 8491,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" definitely\""
+  },
+  {
+   "source_id": 17711,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" podcast\""
+  },
+  {
+   "source_id": 76057,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" escalating\""
+  },
+  {
+   "source_id": 1231,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" may\""
+  },
+  {
+   "source_id": 71,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"h\""
+  },
+  {
+   "source_id": 17771,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"lm\""
+  },
+  {
+   "source_id": 38849,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Craft\""
+  },
+  {
+   "source_id": 29537,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"igi\""
+  },
+  {
+   "source_id": 1896,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" take\""
+  },
+  {
+   "source_id": 1246,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" how\""
+  },
+  {
+   "source_id": 26301,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" selecting\""
+  },
+  {
+   "source_id": 5116,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" contract\""
+  },
+  {
+   "source_id": 22916,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Provider\""
+  },
+  {
+   "source_id": 57529,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" submarine\""
+  },
+  {
+   "source_id": 2787,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ks\""
+  },
+  {
+   "source_id": 10770,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" craft\""
+  },
+  {
+   "source_id": 1156,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" first\""
+  },
+  {
+   "source_id": 6147,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" allows\""
+  },
+  {
+   "source_id": 11772,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" interests\""
+  },
+  {
+   "source_id": 7779,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Control\""
+  },
+  {
+   "source_id": 3460,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" large\""
+  },
+  {
+   "source_id": 67218,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Factors\""
+  },
+  {
+   "source_id": 27031,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" crossed\""
+  },
+  {
+   "source_id": 8602,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ups\""
+  },
+  {
+   "source_id": 37249,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" seniors\""
+  },
+  {
+   "source_id": 46588,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Eff\""
+  },
+  {
+   "source_id": 25302,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" tutor\""
+  },
+  {
+   "source_id": 53,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"V\""
+  },
+  {
+   "source_id": 51022,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" hone\""
+  },
+  {
+   "source_id": 28542,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" financing\""
+  },
+  {
+   "source_id": 8474,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" guide\""
+  },
+  {
+   "source_id": 49598,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" fulfilling\""
+  },
+  {
+   "source_id": 1985,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" product\""
+  },
+  {
+   "source_id": 2820,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" health\""
+  },
+  {
+   "source_id": 90542,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" undue\""
+  },
+  {
+   "source_id": 2302,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"lation\""
+  },
+  {
+   "source_id": 2078,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Code\""
+  },
+  {
+   "source_id": 74672,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" occupants\""
+  },
+  {
+   "source_id": 92449,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"-ob\""
+  },
+  {
+   "source_id": 7253,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"rier\""
+  },
+  {
+   "source_id": 7684,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Good\""
+  },
+  {
+   "source_id": 35966,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" glow\""
+  },
+  {
+   "source_id": 5059,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ara\""
+  },
+  {
+   "source_id": 10459,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" boot\""
+  },
+  {
+   "source_id": 4785,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"osp\""
+  },
+  {
+   "source_id": 42126,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" nutritional\""
+  },
+  {
+   "source_id": 6825,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" creating\""
+  },
+  {
+   "source_id": 22888,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" gathering\""
+  },
+  {
+   "source_id": 70302,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" keyboards\""
+  },
+  {
+   "source_id": 6358,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" analysis\""
+  },
+  {
+   "source_id": 825,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" one\""
+  },
+  {
+   "source_id": 1706,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"AC\""
+  },
+  {
+   "source_id": 42145,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"-print\""
+  },
+  {
+   "source_id": 62299,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"charges\""
+  },
+  {
+   "source_id": 7379,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Find\""
+  },
+  {
+   "source_id": 722,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ery\""
+  },
+  {
+   "source_id": 22,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"7\""
+  },
+  {
+   "source_id": 9963,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" holding\""
+  },
+  {
+   "source_id": 2716,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"EM\""
+  },
+  {
+   "source_id": 42687,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" tense\""
+  },
+  {
+   "source_id": 6757,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" charge\""
+  },
+  {
+   "source_id": 70760,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" coils\""
+  },
+  {
+   "source_id": 16606,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" loans\""
+  },
+  {
+   "source_id": 28175,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\".)\\n\""
+  },
+  {
+   "source_id": 15629,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" functional\""
+  },
+  {
+   "source_id": 29305,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" wildlife\""
+  },
+  {
+   "source_id": 72,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"i\""
+  },
+  {
+   "source_id": 70151,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Understanding\""
+  },
+  {
+   "source_id": 59752,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" segmentation\""
+  },
+  {
+   "source_id": 3220,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" money\""
+  },
+  {
+   "source_id": 27383,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" theft\""
+  },
+  {
+   "source_id": 576,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" The\""
+  },
+  {
+   "source_id": 11770,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" assets\""
+  },
+  {
+   "source_id": 32189,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" extraction\""
+  },
+  {
+   "source_id": 28262,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Specific\""
+  },
+  {
+   "source_id": 3209,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" enc\""
+  },
+  {
+   "source_id": 15736,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"inking\""
+  },
+  {
+   "source_id": 2621,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" address\""
+  },
+  {
+   "source_id": 697,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" your\""
+  },
+  {
+   "source_id": 8774,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Local\""
+  },
+  {
+   "source_id": 11554,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" supports\""
+  },
+  {
+   "source_id": 653,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" do\""
+  },
+  {
+   "source_id": 11203,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Head\""
+  },
+  {
+   "source_id": 5045,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ters\""
+  },
+  {
+   "source_id": 6319,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" dark\""
+  },
+  {
+   "source_id": 1962,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" ke\""
+  },
+  {
+   "source_id": 10987,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" winning\""
+  },
+  {
+   "source_id": 29208,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"-step\""
+  },
+  {
+   "source_id": 58401,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ulner\""
+  },
+  {
+   "source_id": 38797,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" spill\""
+  },
+  {
+   "source_id": 3341,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ides\""
+  },
+  {
+   "source_id": 5899,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" threat\""
+  },
+  {
+   "source_id": 3601,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" expected\""
+  },
+  {
+   "source_id": 3973,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Check\""
+  },
+  {
+   "source_id": 14490,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" clinical\""
+  },
+  {
+   "source_id": 424,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"age\""
+  },
+  {
+   "source_id": 4024,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" original\""
+  },
+  {
+   "source_id": 9897,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" impress\""
+  },
+  {
+   "source_id": 14452,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" suitable\""
+  },
+  {
+   "source_id": 6267,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Health\""
+  },
+  {
+   "source_id": 74033,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Purpose\""
+  },
+  {
+   "source_id": 3501,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" points\""
+  },
+  {
+   "source_id": 2104,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"CE\""
+  },
+  {
+   "source_id": 12629,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" teaching\""
+  },
+  {
+   "source_id": 624,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\".\\n\""
+  },
+  {
+   "source_id": 19174,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" soup\""
+  },
+  {
+   "source_id": 5398,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" News\""
+  },
+  {
+   "source_id": 4650,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" potential\""
+  },
+  {
+   "source_id": 17931,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" chocolate\""
+  },
+  {
+   "source_id": 10782,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"oria\""
+  },
+  {
+   "source_id": 8660,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" understanding\""
+  },
+  {
+   "source_id": 5570,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" staff\""
+  },
+  {
+   "source_id": 5413,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" methods\""
+  },
+  {
+   "source_id": 398,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ly\""
+  },
+  {
+   "source_id": 4418,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"Read\""
+  },
+  {
+   "source_id": 13617,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" layers\""
+  },
+  {
+   "source_id": 9705,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" documentation\""
+  },
+  {
+   "source_id": 7496,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Most\""
+  },
+  {
+   "source_id": 87890,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" spoof\""
+  },
+  {
+   "source_id": 7500,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" adjust\""
+  },
+  {
+   "source_id": 10847,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" advanced\""
+  },
+  {
+   "source_id": 43795,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" demonstrations\""
+  },
+  {
+   "source_id": 23240,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Always\""
+  },
+  {
+   "source_id": 13734,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" proposal\""
+  },
+  {
+   "source_id": 60718,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"pering\""
+  },
+  {
+   "source_id": 9795,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Mont\""
+  },
+  {
+   "source_id": 457,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\"ile\""
+  },
+  {
+   "source_id": 51210,
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "kr500",
+   "label": "\" Lemon\""
+  }
+ ]
+}

@@ -628,5 +628,233 @@
   "rc": "0",
   "seconds": 94,
   "system_peak_used_gib": 57.6
+ },
+ "judge-all-a3": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1926,
+  "system_peak_used_gib": 74.6
+ },
+ "judge-all-b3": {
+  "queue": "queue-gpu",
+  "rc": "0",
+  "seconds": 1184,
+  "system_peak_used_gib": 56.6
+ },
+ "q7-gen-r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 736,
+  "system_peak_used_gib": 58.6
+ },
+ "q7-discover-r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 89,
+  "system_peak_used_gib": 56.6
+ },
+ "q7-apply-d500r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 206,
+  "system_peak_used_gib": 59.6
+ },
+ "q7-gen-r2": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 744,
+  "system_peak_used_gib": 55.6
+ },
+ "q7-delete-d500r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "q7-discover-r2": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 90,
+  "system_peak_used_gib": 57.6
+ },
+ "q7-kr500-build": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 4,
+  "system_peak_used_gib": null
+ },
+ "q7-apply-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 197,
+  "system_peak_used_gib": 61.6
+ },
+ "q7-check-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 6,
+  "system_peak_used_gib": null
+ },
+ "q7-verify-A-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 713,
+  "system_peak_used_gib": 58.6
+ },
+ "q7-probe-V-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 103,
+  "system_peak_used_gib": 50.6
+ },
+ "q7-screen-V-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 2689,
+  "system_peak_used_gib": 60.6
+ },
+ "q7-delete-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "q7-apply-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 196,
+  "system_peak_used_gib": 61.6
+ },
+ "q7-check-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": null
+ },
+ "q7-verify-A-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 713,
+  "system_peak_used_gib": 53.6
+ },
+ "q7-delete-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 1,
+  "system_peak_used_gib": null
+ },
+ "l8-gen-r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 813,
+  "system_peak_used_gib": 58.6
+ },
+ "l8-discover-r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 100,
+  "system_peak_used_gib": 57.6
+ },
+ "l8-apply-d500r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 228,
+  "system_peak_used_gib": 61.6
+ },
+ "l8-gen-r2": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 819,
+  "system_peak_used_gib": 58.6
+ },
+ "l8-delete-d500r1": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 1,
+  "system_peak_used_gib": null
+ },
+ "l8-discover-r2": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 91,
+  "system_peak_used_gib": 57.6
+ },
+ "l8-kr500-build": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 5,
+  "system_peak_used_gib": 30.6
+ },
+ "l8-apply-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 226,
+  "system_peak_used_gib": 62.6
+ },
+ "l8-check-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 7,
+  "system_peak_used_gib": null
+ },
+ "l8-verify-A-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 761,
+  "system_peak_used_gib": 54.6
+ },
+ "l8-probe-V-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 119,
+  "system_peak_used_gib": 56.6
+ },
+ "l8-screen-V-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 2931,
+  "system_peak_used_gib": 61.6
+ },
+ "l8-delete-d500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 0,
+  "system_peak_used_gib": null
+ },
+ "l8-apply-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 240,
+  "system_peak_used_gib": 62.6
+ },
+ "l8-check-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 8,
+  "system_peak_used_gib": 31.6
+ },
+ "l8-verify-A-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 755,
+  "system_peak_used_gib": 53.6
+ },
+ "l8-delete-kr500": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 1,
+  "system_peak_used_gib": null
+ },
+ "judge-d500-a": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 348,
+  "system_peak_used_gib": 75.6
+ },
+ "judge-d500-b": {
+  "queue": "queue-d500",
+  "rc": "0",
+  "seconds": 229,
+  "system_peak_used_gib": 55.6
  }
 }

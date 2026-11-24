@@ -13,6 +13,7 @@ PLAN = {
     "q1": ["k1o-tied", "k2-tied"], "l3": ["k1o-tied", "k2-tied"],
 }
 out = Path(sys.argv[1])
+FOLLOW_UP = len(sys.argv) > 2 and sys.argv[2] == "d500"
 jobs_a, jobs_b = [], []
 
 
@@ -27,7 +28,7 @@ def add(code, version, report, role, prefill="", no_field=False):
         jobs_b.append({"a_json": f"/work/{stem}.a.json", "out": f"/work/{stem}.json"})
 
 
-for code, configs in PLAN.items():
+for code, configs in ({} if FOLLOW_UP else PLAN).items():
     first = configs[0]
     add(code, "S", f"runs/{code}/verify-V-{first}/report.json", "stock")
     for cfg in configs:
@@ -41,7 +42,11 @@ for code, configs in PLAN.items():
     if (W / b2).exists():
         add(code, "SP2", b2, "stock", LONG)
         add(code, f"VP2-{first}", b2, "edited", LONG)
-for code in ("l8", "q7"):
+if FOLLOW_UP:
+    for code in ("q7", "l8"):
+        for cfg in (f"d500-{code}", f"kr500-{code}"):
+            add(code, f"V-{cfg}", f"runs/{code}/verify-V-{cfg}/report.json", "edited")
+for code in (() if FOLLOW_UP else ("l8", "q7")):
     add(code, "SP", f"runs/{code}p/verify-VP-k1/report.json", "stock", SHORT, no_field=True)
     add(code, "VP-k1", f"runs/{code}p/verify-VP-k1/report.json", "edited", SHORT, no_field=True)
 out.mkdir(parents=True, exist_ok=True)

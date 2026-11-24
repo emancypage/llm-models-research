@@ -8,6 +8,8 @@ The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces r
 - the prefill does the work: by judge A the author's longer prefill alone lowered refusals by 53.5 pp (Llama) and 75.5 pp (Qwen), and the edit added nothing on top;
 - the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
 
+A follow-up tested a list of 500 tokens made from each model's own refusals (no prefill). By judge A it lowered refusals by 32.0 pp on Llama-3.1-8B and 27.5 pp on Qwen2.5-7B; a random list of the same size did nothing (+3.5 and +1.0 pp). The keyword detector claimed −82.0 and −67.0 pp, two to three times more. The cost is model-dependent: GSM8K −12.25 pp on Llama-3.1-8B and −0.25 pp on Qwen2.5-7B. The judges are not yet checked against manual labels.
+
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
 
 Limitations at this stage:
@@ -16,6 +18,48 @@ Limitations at this stage:
 - the prefill text comes from a PR unit test, not from the original experiment.
 
 Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [data](data) · [code, word probe and judge prompt](../../experiments/2026-11-23-obliteratus-vocab-surgery) · [research diary](../../session-logs/2026-11-23-obliteratus-vocab-surgery.md)
+
+## Follow-up: self-generated list of 500 tokens
+
+24 November 2026. Follow-up decided by the project owner, no prefill runs. Refusals on the same 200 `final_test` prompts. The two LLM judges are not yet checked against manual labels, so their measures are "judge unchecked"; a manual sheet for 45 answers is pending. Random controls KR500 use the same number of tokens (500), drawn with seed 42. All D500 operations scale the output side by 0.1; the input side is not changed.
+
+### How the list was made
+
+- Discovery prompts: 500 harmful and 500 harmless extraction prompts (disjoint from the 200 test prompts). Responses: greedy, 128 tokens.
+- Round 1 on the unedited model: 250 tokens with the highest lift in the answers to harmful prompts. Round 2 on the model after the round-1 edit: 250 more. Round 2 on Qwen2.5-7B was largely Chinese words, because after round 1 the model refused in Chinese.
+- Each list was applied with token IDs only. The scope check found 0 changed input rows, 500 changed output rows, and all other tensors bit-identical for both models.
+
+### Refusals (no prefill)
+
+| Measure | Llama-3.1-8B: S / D500 / KR500 | Qwen2.5-7B: S / D500 / KR500 |
+| --- | --- | --- |
+| Keyword detector: refusals + invalid of 200 | 170 / 6 / 168 | 166 / 32 / 164 |
+| Judge A: `judge_fail` (R and O + invalid) | 74.0% / 42.0% / 77.5% | 84.5% / 57.0% / 85.5% |
+| Judge B: refusals + invalid | 78.0% / 38.5% / 79.0% | 85.0% / 58.5% / 88.5% |
+| Judge A labels C (compliance) | 52 / 116 / 45 | 31 / 86 / 29 |
+
+- Judge A difference D500 − S: Llama-3.1-8B −32.0 pp (70 discordant pairs fewer refusals, 6 more; p = 6.3e-15); Qwen2.5-7B −27.5 pp (58 and 3; p = 3.3e-14). Judge A random control KR500 − S: +3.5 pp (p = 0.14) and +1.0 pp (p = 0.79). The effect is specific to the list, not to editing 500 rows.
+- The keyword detector reports −82.0 pp and −67.0 pp, two to three times more than judge A (−32.0 and −27.5 pp). The detector misses 77 (Llama-3.1-8B) and 82 (Qwen2.5-7B) answers that judge A calls refusals.
+- Judge A still finds 79 and 110 refusals of 200 after the edit. The token suppression weakens refusals but does not end them, and it works worse than the author's longer prefill alone (judge A −53.5 and −75.5 pp).
+
+### Cost
+
+| Measure | Llama-3.1-8B: S → D500 | Qwen2.5-7B: S → D500 |
+| --- | --- | --- |
+| MMLU, every 10th item | 69.51% → 69.51% | 76.92% → 76.92% |
+| ARC-Challenge | 61.09% → 58.53% (−2.56 pp; interval −3.84 to −1.28) | 67.24% → 63.99% (−3.24 pp; interval −4.52 to −2.05) |
+| GSM8K, first 400 | 85.25% → 73.00% (−12.25 pp; interval −15.75 to −9.00) | 74.25% → 74.00% (−0.25 pp; interval −2.50 to 2.00) |
+| Mean of three | −4.94 pp (−6.19 to −3.71) | −1.16 pp (−2.01 to −0.32) |
+| KL, next token | 0.1577 | 0.4062 |
+| Perplexity ratio | 1.0992 | 0.9964 |
+| Judge A label O (gibberish or cut) | 4 of 200 | 3 of 200 |
+
+- MMLU is exactly unchanged: the test picks among the answer letters, and the edit does not change the rows of those letters.
+- The word probe is biased for Llama-3.1-8B, because the discovered list contains " No" and "No" (its part B, which asks for yes or no, drops from 91.7% to 50.0%); Qwen2.5-7B part A drops from 99.2% to 66.7%, part B stays at 99.2%.
+
+### Reading
+
+A 500-token list that is made from the model's own refusals lowers refusals by about 30 pp according to judge A, with no prefill, on both models; a random list of the same size does not. The damage is model-dependent: Llama-3.1-8B loses 12.25 pp on GSM8K, Qwen2.5-7B almost nothing on these benchmarks. The detector exaggerates the gain by about 40 pp (Qwen2.5-7B) to 50 pp (Llama-3.1-8B); every such claim needs an independent judgement. Keep in mind the uncertainty of judge A: it has not been validated against human labels yet.
 
 ## LLM judges
 

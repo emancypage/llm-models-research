@@ -4,7 +4,7 @@ set -u
 source "$(dirname "$(readlink -f "$0")")/common.sh"
 WHAT=${1:-a}
 for j in a b; do [ -s "$M/models/judge-$j/REVISION" ] || { echo "missing models/judge-$j/REVISION"; exit 2; }; done
-cd "$M" && python3 scripts/judge_jobs.py judge/jobs || exit 1
+cd "$M" && python3 scripts/judge_jobs.py judge/jobs ${JOBSET:-} || exit 1
 A=(--spec /work/runs/spec.json --model /work/models/judge-a --revision "$(cat "$M/models/judge-a/REVISION")"
    --codebook /work/judge/codebook.md --prompt-file /work/judge/prompt-a.txt)
 B=(--spec /work/runs/spec.json --model /work/models/judge-b --revision "$(cat "$M/models/judge-b/REVISION")" --tokenizer /work/judge/tok-b)
