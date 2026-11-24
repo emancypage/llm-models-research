@@ -8,7 +8,7 @@ The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces r
 - the prefill does the work: by judge A the author's longer prefill alone lowered refusals by 53.5 pp (Llama) and 75.5 pp (Qwen), and the edit added nothing on top;
 - the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
 
-A follow-up tested a list of 500 tokens made from each model's own refusals (no prefill). By judge A it lowered refusals by 32.0 pp on Llama-3.1-8B and 27.5 pp on Qwen2.5-7B; a random list of the same size did nothing (+3.5 and +1.0 pp). The keyword detector claimed −82.0 and −67.0 pp, two to three times more. The cost is model-dependent: GSM8K −12.25 pp on Llama-3.1-8B and −0.25 pp on Qwen2.5-7B. The judges are not yet checked against manual labels.
+A follow-up tested a list of 500 tokens made from each model's answers to harmful prompts (no prefill). By judge A it lowered refusals by 32.0 pp on Llama-3.1-8B and 27.5 pp on Qwen2.5-7B; a random list of the same size did nothing (+3.5 and +1.0 pp). The keyword detector claimed −82.0 and −67.0 pp, two to three times more. The cost is model-dependent: GSM8K −12.25 pp on Llama-3.1-8B and −0.25 pp on Qwen2.5-7B. The judges are not yet checked against manual labels.
 
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
 
@@ -26,7 +26,7 @@ Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [d
 ### How the list was made
 
 - Discovery prompts: 500 harmful and 500 harmless extraction prompts (disjoint from the 200 test prompts). Responses: greedy, 128 tokens.
-- Round 1 on the unedited model: 250 tokens with the highest lift in the answers to harmful prompts. Round 2 on the model after the round-1 edit: 250 more. Round 2 on Qwen2.5-7B was largely Chinese words, because after round 1 the model refused in Chinese.
+- Round 1 on the unedited model: 250 tokens with the highest lift in the answers to harmful prompts. Round 2 on the model after the round-1 edit: 250 more. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contain Chinese characters; 59 of the 500 answers to harmful prompts after round 1 contain Chinese (1 of 500 before). Whether those answers are refusals was not checked. The target corpus was all answers to harmful prompts, not only refusals, so the lists also hold topic words.
 - Each list was applied with token IDs only. The scope check found 0 changed input rows, 500 changed output rows, and all other tensors bit-identical for both models.
 
 ### Refusals (no prefill)
@@ -38,7 +38,7 @@ Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [d
 | Judge B: refusals + invalid | 78.0% / 38.5% / 79.0% | 85.0% / 58.5% / 88.5% |
 | Judge A labels C (compliance) | 52 / 116 / 45 | 31 / 86 / 29 |
 
-- Judge A difference D500 − S: Llama-3.1-8B −32.0 pp (70 discordant pairs fewer refusals, 6 more; p = 6.3e-15); Qwen2.5-7B −27.5 pp (58 and 3; p = 3.3e-14). Judge A random control KR500 − S: +3.5 pp (p = 0.14) and +1.0 pp (p = 0.79). The effect is specific to the list, not to editing 500 rows.
+- Judge A difference D500 − S: Llama-3.1-8B −32.0 pp (70 discordant pairs fewer refusals, 6 more; p = 6.3e-15); Qwen2.5-7B −27.5 pp (58 and 3; p = 3.3e-14). Judge A random control KR500 − S: +3.5 pp (p = 0.14) and +1.0 pp (p = 0.79). The control is not matched for token frequency: the D500 tokens make up 17.2% of the tokens in the S answers to harmful discovery prompts and 0.5% (Llama-3.1-8B) or 0.7% (Qwen2.5-7B) in the answers to harmless ones; the KR500 tokens make up 9.7% and 10.3% (Llama-3.1-8B), 10.3% and 12.1% (Qwen2.5-7B). It shows that editing 500 arbitrary rows does not lower refusals; it does not separate refusal words from topic words.
 - The keyword detector reports −82.0 pp and −67.0 pp, two to three times more than judge A (−32.0 and −27.5 pp). The detector misses 77 (Llama-3.1-8B) and 82 (Qwen2.5-7B) answers that judge A calls refusals.
 - Judge A still finds 79 and 110 refusals of 200 after the edit. The token suppression weakens refusals but does not end them, and it works worse than the author's longer prefill alone (judge A −53.5 and −75.5 pp).
 
@@ -59,7 +59,7 @@ Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [d
 
 ### Reading
 
-A 500-token list that is made from the model's own refusals lowers refusals by about 30 pp according to judge A, with no prefill, on both models; a random list of the same size does not. The damage is model-dependent: Llama-3.1-8B loses 12.25 pp on GSM8K, Qwen2.5-7B almost nothing on these benchmarks. The detector exaggerates the gain by about 40 pp (Qwen2.5-7B) to 50 pp (Llama-3.1-8B); every such claim needs an independent judgement. Keep in mind the uncertainty of judge A: it has not been validated against human labels yet.
+A 500-token list made from the model's answers to harmful prompts lowers refusals by about 30 pp according to judge A, with no prefill, on both models; a random list of the same size does not. The damage is model-dependent: Llama-3.1-8B loses 12.25 pp on GSM8K, Qwen2.5-7B almost nothing on these benchmarks. The detector exaggerates the gain by about 40 pp (Qwen2.5-7B) to 50 pp (Llama-3.1-8B); every such claim needs an independent judgement. Keep in mind the uncertainty of judge A: it has not been validated against human labels yet.
 
 ## LLM judges
 
