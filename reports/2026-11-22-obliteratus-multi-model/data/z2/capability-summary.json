@@ -18,8 +18,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.4177449168207024,
-        "secondary": 0.5301910043130007,
-        "hit_max_gen_toks": 12
+        "secondary": 0.5059952038369304,
+        "hit_max_gen_toks": 12,
+        "instructions_passed": 422,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5301910043130007
       }
     },
     "PS": {
@@ -40,8 +43,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.28835489833641403,
-        "secondary": 0.42051756007393715,
-        "hit_max_gen_toks": 60
+        "secondary": 0.4196642685851319,
+        "hit_max_gen_toks": 60,
+        "instructions_passed": 350,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.42051756007393715
       }
     },
     "RS": {
@@ -62,8 +68,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.39371534195933455,
-        "secondary": 0.507701786814541,
-        "hit_max_gen_toks": 21
+        "secondary": 0.4988009592326139,
+        "hit_max_gen_toks": 21,
+        "instructions_passed": 416,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.507701786814541
       }
     }
   },
@@ -252,6 +261,14 @@
   "settings": {
     "draws": 10000,
     "seed": 42,
-    "margin": 0.02
+    "margin": 0.02,
+    "ifeval": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "max_new_tokens": 1280,
+      "primary_metric": "prompt_level_strict_acc",
+      "secondary_metric": "inst_level_strict_acc",
+      "secondary_aggregation": "passed instructions divided by all instructions",
+      "historical_mean_prompt_fraction": "mean of each prompt's fraction of passed instructions"
+    }
   }
 }

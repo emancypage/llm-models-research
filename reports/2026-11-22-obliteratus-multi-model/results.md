@@ -32,12 +32,16 @@ The Holm correction works within each endpoint, across the models of that endpoi
 - **The projection damages Q3 a little.** P−S on the mean: −1.41 pp [−2.45, −0.39], a drop. The estimate is under 2 pp, but the interval reaches −2.45 pp, so a drop larger than 2 pp is not ruled out. Most of it is GSM8K (−3.56 pp) and MMLU (−1.15 pp). IFEval −1.11 pp is not significant, and ARC does not change (+0.17 pp).
 - **GSM8K: R0 gains 6.14 pp [+3.87, +8.49] over P, and the data point to shorter answers as the main source.** In Q3 many GSM8K answers reach the 256-token limit: S 487, P 534 and R0 389 of 1319. The median length is 227, 235 and 206 tokens. A post hoc check (recorded in the protocol before it was run) looked at the 735 items where neither the P answer nor the R0 answer reaches the limit. There R0−P is −0.41 pp [−2.59, +1.77], McNemar p = 0.80. Of the 164 items that only R0 solves, the P answer reaches the limit in 128. Of the 83 items that only P solves, the R0 answer reaches the limit in 41.
 - **Endpoint 3 (GSM8K `strict-match`) goes up, the opposite of Q1.** +4.17 pp, p = 4.1×10^−12. S has a floor here: its `strict-match` is 1.06%, and only 11 of its answers end with `#### number`. R0 ends 82 answers this way, P 5. So a drop could hardly be seen in Q3 (recorded in the protocol before the P and R0 results).
-- **Endpoint 6 (IFEval): no significant change.** R0−P +2.03 pp [−1.29, +5.36]. 50 items are correct only for R0 and 39 only for P, McNemar p = 0.289. At the instruction level: P 67.75, R0 69.90, S 69.30. In Q1 the direction was the opposite (−2.40 pp, exploratory).
+- **Endpoint 6 (IFEval): no significant change.** R0−P +2.03 pp [−1.29, +5.36]. 50 items are correct only for R0 and 39 only for P, McNemar p = 0.289.
 - **MMLU and ARC hardly change.** R0−P: MMLU +0.27 pp, ARC −0.85 pp. R0−S on MMLU is still −0.88 pp [−1.31, −0.46].
 - **Endpoint 1 (mean): no drop.** R0−P +1.90 pp [+0.86, +2.95]. R0−S +0.48 pp [−0.62, +1.59], so the mean is back at the S level.
 - **Endpoint 5 (refusals): no significant return.** R0 refuses 3 of 200 harmful prompts, P 1 of 200 (S: 180). 3 prompts are refused only by R0 and 1 only by P, McNemar p = 0.625. No arm refuses a harmless prompt except S (3). Both required gates pass for P and R0.
 - **KL changes little, but it is above the advisory budget before and after the repair.** First-token KL: P 0.546, R0 0.644 (budget 0.1). Next-token KL: 0.691 and 0.572 (budget 0.05). Both fail the advisory KL gate; the perplexity gate passes (ratio 1.076 and 1.077). In Q1 first-token KL rose from 0.066 to 0.190, and every Q1 arm also fails the advisory KL gate.
 - **Noise.** A second S run on the first 200 GSM8K items gave a different text for 119 items and a different score for 11.
+
+<!-- ifeval:interpretation -->
+On Qwen2.5-3B after repair, 330/541 prompts passed every strict check. Across individual instructions, 583/834 passed (69.90%). The earlier calculation gave each prompt equal weight and averaged its fraction of instructions passed (72.55%). Relative to the projected model, the repair changed the Qwen2.5-3B scores by +2.03 pp per prompt and +2.16 pp per instruction. The corresponding exploratory changes for Qwen2.5-1.5B were −2.40 pp per prompt and −1.56 pp per instruction.
+<!-- /ifeval:interpretation -->
 
 **Verdict for Q3, in two parts.** Did capability come back? The mean is back at the S level (R0−S +0.48 pp). But the projection damaged only 1.41 pp, and the data point to GSM8K answers that become short enough to fit the limit, rather than to better solutions (post hoc; Q3 has no 512-token run). Did the edit stay? For refusals, yes: R0 refuses 3 of 200 harmful prompts, there is no significant return of refusals (endpoint 5), and both required gates pass. KL changes little, but it was already above the advisory budget for P and stays above it.
 
@@ -147,12 +151,13 @@ Llama-3.2-3B, layers 5–21. The projection Pf fails both required gates because
 
 ### GSM8K format and IFEval instruction level
 
-| Arm | GSM8K strict | Ends with `#### number` | At the 256-token limit | Median tokens | IFEval inst strict |
+<!-- ifeval:q3 -->
+| Arm | GSM8K strict (%) | Ends with `#### number` | At the 256-token limit | Median GSM8K tokens | IFEval strict instructions, passed / total (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| S | 1.06 | 11 | 487 | 227 | 69.30 |
-| P | 0.76 | 5 | 534 | 235 | 67.75 |
-| R0 | 4.93 | 82 | 389 | 206 | 69.90 |
-
+| S | 1.06 | 11 | 487 | 227 | 578/834 (69.30%) |
+| P | 0.76 | 5 | 534 | 235 | 565/834 (67.75%) |
+| R0 | 4.93 | 82 | 389 | 206 | 583/834 (69.90%) |
+<!-- /ifeval:q3 -->
 ## Tables: Z2, level A (P_A, R_A)
 
 ### Capability by arm
@@ -192,13 +197,16 @@ Llama-3.2-3B, layers 5–21. The projection Pf fails both required gates because
 
 ### GSM8K format and IFEval instruction level
 
-| Arm | GSM8K strict | Ends with `#### number` | At the 256-token limit | Median tokens | IFEval inst strict |
+<!-- ifeval:z2 -->
+| Arm | GSM8K strict (%) | Ends with `#### number` | At the 256-token limit | Median GSM8K tokens | IFEval strict instructions, passed / total (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| S | 34.12 | 761 | 109 | 124 | 50.60 |
-| P_A | 8.11 | 298 | 525 | 206 | 41.97 |
-| R_A | 32.60 | 790 | 125 | 122 | 49.88 |
-
+| S | 34.12 | 761 | 109 | 124 | 422/834 (50.60%) |
+| P_A | 8.11 | 298 | 525 | 206 | 350/834 (41.97%) |
+| R_A | 32.60 | 790 | 125 | 122 | 416/834 (49.88%) |
+<!-- /ifeval:z2 -->
 ## Files
+
+The strict instruction scores and tables can be regenerated from the counts for each prompt. [Reproduction and field definitions](../../experiments/2026-11-22-obliteratus-multi-model/README.md)
 
 - [endpoints-q1-q3.json](data/final/endpoints-q1-q3.json): endpoints 1–6 for Q1 and Q3, with the Holm correction and the pooled endpoint 1.
 - [capability-summary.json](data/q3/capability-summary.json), [secondary-summary.json](data/q3/secondary-summary.json), [refusal-summary.json](data/q3/refusal-summary.json), [per-item-correctness.json](data/q3/per-item-correctness.json): the full Q3 analysis (`analyze_multi.py`).
