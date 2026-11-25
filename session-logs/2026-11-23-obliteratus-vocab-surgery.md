@@ -56,7 +56,7 @@ Both judges scored all answer sets. Both classified many answers missed by the d
 
 ### Follow-up with a self-generated list of 500 tokens
 
-At the owner's decision, the study added a list of 500 tokens built from each model's answers to harmful prompts, with two discovery rounds on separate prompts; no prefill runs. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contained Chinese characters, as did 59 of the 500 answers to harmful prompts. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B). The 500-token random control increased judge A’s failure rate by 3.5 and 1.0 points respectively. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K. Manual sheet for this follow-up: 45 answers, pending.
+At the owner's decision, the study added a list of 500 tokens built from each model's answers to harmful prompts, with two discovery rounds on separate prompts; no prefill runs. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contained Chinese characters, as did 59 of the 500 answers to harmful prompts. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B). The 500-token random control increased judge A’s failure rate by 3.5 and 1.0 points respectively. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K at the 256-token limit. Manual sheet for this follow-up: 45 answers, pending.
 
 ## 25 November 2026
 
@@ -77,3 +77,5 @@ After the quality results were available, the owner explicitly decided to omit t
 ### Post-closeout verification
 
 The 7,886 rows in the public quality table were checked against the original evaluation samples. The 36 paired results and all 57 published math pairs matched. Two Qwen answers (items 19 and 109) gave the expected mathematical result and still lost credit under the benchmark’s extraction rule. The final report records the two judges’ distinct outcomes and the answer-length checks. The capability data now link to the measured K1 comparisons for each model. Formal verdicts that depend on the omitted manual sheet remain undetermined.
+
+On 25 November the published quality summaries were reconciled with the per-item scores. The K1 capability files retain the earlier prompt-weighted instruction fractions under a named historical field. Their current secondary IFEval score gives each instruction equal weight.

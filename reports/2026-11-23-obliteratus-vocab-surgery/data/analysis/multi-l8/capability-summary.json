@@ -18,8 +18,11 @@
    "ifeval": {
     "n": 541,
     "primary": 0.7412199630314233,
-    "secondary": 0.8166974738139249,
-    "hit_max_gen_toks": 17
+    "secondary": 0.8129496402877698,
+    "hit_max_gen_toks": 17,
+    "instructions_passed": 678,
+    "instructions_total": 834,
+    "historical_mean_prompt_fraction": 0.8166974738139249
    }
   },
   "V-k1": {
@@ -40,8 +43,11 @@
    "ifeval": {
     "n": 541,
     "primary": 0.7356746765249538,
-    "secondary": 0.8123844731977818,
-    "hit_max_gen_toks": 18
+    "secondary": 0.8081534772182254,
+    "hit_max_gen_toks": 18,
+    "instructions_passed": 674,
+    "instructions_total": 834,
+    "historical_mean_prompt_fraction": 0.8123844731977818
    }
   }
  },
@@ -110,7 +116,15 @@
  "settings": {
   "draws": 10000,
   "seed": 42,
-  "margin": 0.02
+  "margin": 0.02,
+  "ifeval": {
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "max_new_tokens": 1280,
+   "primary_metric": "prompt_level_strict_acc",
+   "secondary_metric": "inst_level_strict_acc",
+   "secondary_aggregation": "passed instructions divided by all instructions",
+   "historical_mean_prompt_fraction": "mean of each prompt's fraction of passed instructions"
+  }
  },
  "noise_gsm8k_first200": {
   "items": 200,

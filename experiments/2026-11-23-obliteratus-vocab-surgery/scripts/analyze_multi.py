@@ -14,7 +14,12 @@ import sys
 import numpy as np
 from scipy.stats import binomtest
 
+from ifeval_scores import instruction_scores, metric_settings
+
 TASKS = ("mmlu", "arc", "gsm8k", "ifeval")
+MODEL_IDS = {"q1": "Qwen/Qwen2.5-1.5B-Instruct", "q1-ladder-A": "Qwen/Qwen2.5-1.5B-Instruct",
+             "q3": "Qwen/Qwen2.5-3B-Instruct", "q7": "Qwen/Qwen2.5-7B-Instruct",
+             "l8": "meta-llama/Llama-3.1-8B-Instruct", "l3": "meta-llama/Llama-3.2-3B-Instruct"}
 MAX_GEN = {"gsm8k": 256, "ifeval": 1280}
 DRAWS, SEED, MARGIN = 10_000, 42, 0.02
 SEED_ARMS = ("R0", "R0-s43", "R0-s44")
@@ -53,10 +58,10 @@ def load_task(path, task):
         else:
             primary[key] = float(row["prompt_level_strict_acc"])
             levels = row["inst_level_strict_acc"]
-            secondary[key] = sum(levels) / len(levels)
             inst[key] = (sum(levels), len(levels))
             texts[key] = row["resps"][0][0]
-    return {"primary": primary, "secondary": secondary, "texts": texts, "inst": inst}
+    return {"primary": primary, "secondary": secondary, "texts": texts, "inst": inst,
+            "instruction_scores": instruction_scores(inst.values()) if inst else None}
 
 
 def paired(a, b):
@@ -145,6 +150,7 @@ class Model:
 
     def capability(self):
         report = {"arms": {}, "comparisons": {}, "settings": {"draws": DRAWS, "seed": SEED, "margin": MARGIN}}
+        report["settings"]["ifeval"] = metric_settings(MODEL_IDS.get(self.code, self.code))
         vectors = {}
         for arm, tasks in self.data.items():
             if arm == SEED_MEAN:
@@ -153,7 +159,9 @@ class Model:
             for task in TASKS:
                 d = tasks[task]
                 entry = {"n": len(d["primary"]), "primary": float(np.mean(list(d["primary"].values())))}
-                if d["secondary"]:
+                if task == "ifeval":
+                    entry.update(d["instruction_scores"])
+                elif d["secondary"]:
                     entry["secondary"] = float(np.mean(list(d["secondary"].values())))
                 if d["texts"]:
                     entry["hit_max_gen_toks"] = sum(v >= MAX_GEN[task] - 1 for v in d["tokens"].values())
@@ -208,13 +216,13 @@ class Model:
 
     def secondary(self):
         report = {"arms": {}, "comparisons": {}}
+        report["ifeval_measurement"] = metric_settings(MODEL_IDS.get(self.code, self.code))
         real = [arm for arm in self.data if arm != SEED_MEAN]
         for arm in real:
             g, i = self.data[arm]["gsm8k"], self.data[arm]["ifeval"]
             report["arms"][arm] = {
                 "gsm8k_strict_match": float(np.mean(list(g["secondary"].values()))),
-                "ifeval_inst_level_strict": float(sum(c for c, _ in i["inst"].values())
-                                                  / sum(n for _, n in i["inst"].values())),
+                "ifeval_inst_level_strict": i["instruction_scores"]["secondary"],
                 "gsm8k_tokens_median": float(np.median(list(g["tokens"].values()))),
                 "gsm8k_at_limit": int(sum(v >= MAX_GEN["gsm8k"] - 1 for v in g["tokens"].values())),
                 "ifeval_tokens_median": float(np.median(list(i["tokens"].values()))),

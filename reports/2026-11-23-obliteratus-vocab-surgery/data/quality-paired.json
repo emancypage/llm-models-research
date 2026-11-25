@@ -10,7 +10,18 @@
       "ci95_pp": [
         0.0,
         0.0
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "mmlu:KR500-S": {
       "items": 1430,
@@ -22,7 +33,18 @@
       "ci95_pp": [
         -12.307692307692308,
         -8.111888111888112
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      }
     },
     "mmlu:D500-KR500": {
       "items": 1430,
@@ -34,7 +56,18 @@
       "ci95_pp": [
         8.111888111888112,
         12.377622377622378
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "arc:D500-S": {
       "items": 1172,
@@ -46,7 +79,18 @@
       "ci95_pp": [
         -3.9249146757679183,
         -1.2798634812286689
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "arc:KR500-S": {
       "items": 1172,
@@ -58,7 +102,18 @@
       "ci95_pp": [
         -13.395904436860068,
         -8.532423208191124
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      }
     },
     "arc:D500-KR500": {
       "items": 1172,
@@ -70,7 +125,18 @@
       "ci95_pp": [
         5.802047781569966,
         11.006825938566553
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "gsm256:D500-S": {
       "items": 400,
@@ -82,7 +148,18 @@
       "ci95_pp": [
         -15.75,
         -8.75
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      }
     },
     "gsm256:KR500-S": {
       "items": 400,
@@ -94,7 +171,18 @@
       "ci95_pp": [
         -59.5,
         -49.25
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      }
     },
     "gsm256:D500-KR500": {
       "items": 400,
@@ -106,7 +194,18 @@
       "ci95_pp": [
         36.25,
         47.75
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      }
     },
     "gsm1024:D500-S": {
       "items": 400,
@@ -118,7 +217,18 @@
       "ci95_pp": [
         -15.75,
         -8.75
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "gsm1024:KR500-S": {
       "items": 400,
@@ -130,7 +240,18 @@
       "ci95_pp": [
         -59.25,
         -48.75
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      }
     },
     "gsm1024:D500-KR500": {
       "items": 400,
@@ -142,7 +263,18 @@
       "ci95_pp": [
         35.75,
         47.5
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "ifeval:D500-S": {
       "items": 541,
@@ -154,7 +286,18 @@
       "ci95_pp": [
         -4.621072088724583,
         0.9242144177449167
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1280
+      }
     },
     "ifeval:KR500-S": {
       "items": 541,
@@ -166,7 +309,18 @@
       "ci95_pp": [
         -18.299445471349355,
         -9.796672828096119
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1280
+      }
     },
     "ifeval:D500-KR500": {
       "items": 541,
@@ -178,7 +332,18 @@
       "ci95_pp": [
         8.133086876155268,
         16.266173752310536
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1280
+      }
     },
     "S:gsm1024-gsm256": {
       "items": 400,
@@ -190,7 +355,18 @@
       "ci95_pp": [
         0.0,
         0.0
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      }
     },
     "D500:gsm1024-gsm256": {
       "items": 400,
@@ -202,7 +378,18 @@
       "ci95_pp": [
         0.0,
         0.0
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "KR500:gsm1024-gsm256": {
       "items": 400,
@@ -214,7 +401,18 @@
       "ci95_pp": [
         -0.75,
         1.25
-      ]
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      }
     }
   },
   "q7": {
@@ -228,7 +426,18 @@
       "ci95_pp": [
         0.0,
         0.0
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "mmlu:KR500-S": {
       "items": 1430,
@@ -240,7 +449,18 @@
       "ci95_pp": [
         -17.412587412587413,
         -12.727272727272727
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      }
     },
     "mmlu:D500-KR500": {
       "items": 1430,
@@ -252,7 +472,18 @@
       "ci95_pp": [
         12.797202797202795,
         17.412587412587413
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "mmlu",
+      "scoring_rule": "acc,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "arc:D500-S": {
       "items": 1172,
@@ -264,7 +495,18 @@
       "ci95_pp": [
         -4.522184300341297,
         -2.04778156996587
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "arc:KR500-S": {
       "items": 1172,
@@ -276,7 +518,18 @@
       "ci95_pp": [
         -14.07849829351536,
         -9.044368600682594
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      }
     },
     "arc:D500-KR500": {
       "items": 1172,
@@ -288,7 +541,18 @@
       "ci95_pp": [
         5.631399317406143,
         11.006825938566553
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "arc_challenge",
+      "scoring_rule": "acc_norm,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": null
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": null
+      }
     },
     "gsm256:D500-S": {
       "items": 400,
@@ -300,7 +564,18 @@
       "ci95_pp": [
         -2.5,
         2.0
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      }
     },
     "gsm256:KR500-S": {
       "items": 400,
@@ -312,7 +587,18 @@
       "ci95_pp": [
         -63.0,
         -52.5
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      }
     },
     "gsm256:D500-KR500": {
       "items": 400,
@@ -324,7 +610,18 @@
       "ci95_pp": [
         52.25,
         62.75
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      }
     },
     "gsm1024:D500-S": {
       "items": 400,
@@ -336,7 +633,18 @@
       "ci95_pp": [
         -1.25,
         2.25
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "gsm1024:KR500-S": {
       "items": 400,
@@ -348,7 +656,18 @@
       "ci95_pp": [
         -74.25,
         -64.75
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      }
     },
     "gsm1024:D500-KR500": {
       "items": 400,
@@ -360,7 +679,18 @@
       "ci95_pp": [
         65.0,
         74.75
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "ifeval:D500-S": {
       "items": 541,
@@ -372,7 +702,18 @@
       "ci95_pp": [
         -5.545286506469501,
         -0.36968576709796674
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1280
+      }
     },
     "ifeval:KR500-S": {
       "items": 541,
@@ -384,7 +725,18 @@
       "ci95_pp": [
         -9.611829944547136,
         -2.957486136783734
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1280
+      }
     },
     "ifeval:D500-KR500": {
       "items": 541,
@@ -396,7 +748,18 @@
       "ci95_pp": [
         -0.18484288354898337,
         6.839186691312385
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "ifeval",
+      "scoring_rule": "prompt_level_strict_acc,none",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 1280
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1280
+      }
     },
     "S:gsm1024-gsm256": {
       "items": 400,
@@ -408,7 +771,18 @@
       "ci95_pp": [
         9.5,
         16.25
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "S",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "S",
+        "max_new_tokens": 1024
+      }
     },
     "D500:gsm1024-gsm256": {
       "items": 400,
@@ -420,7 +794,18 @@
       "ci95_pp": [
         10.25,
         17.0
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "D500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "D500",
+        "max_new_tokens": 1024
+      }
     },
     "KR500:gsm1024-gsm256": {
       "items": 400,
@@ -432,7 +817,18 @@
       "ci95_pp": [
         -0.25,
         2.5
-      ]
+      ],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "gsm8k",
+      "scoring_rule": "exact_match,flexible-extract",
+      "baseline": {
+        "variant": "KR500",
+        "max_new_tokens": 256
+      },
+      "candidate": {
+        "variant": "KR500",
+        "max_new_tokens": 1024
+      }
     }
   }
 }

@@ -28,16 +28,18 @@ The extraction prompt file named by `verify-edit` holds harmful prompts and is n
 1. Model copies (on the host): `make_template_copy.py <source> <dest> --fix-date "23 Nov 2026"` for Llama-3.2-3B, and `--prefill "Sure, here are the details:"` for each prefill copy. Llama models use copies whose tokenizer has a pad token.
 2. Edit: `apply.sh <model-code> <config>`. Scope check: `check_receipt.sh <unedited-dir> <edited-dir> --expect-input N --expect-output M` (or `--expect-shared K`).
 3. Refusals: `KEEP_TEXTS=1 verify.sh <model-code> <version> <edited-dir>`; for runs with a prefill use the model code with the suffix `p`.
-4. Capabilities: `screen.sh` (every 10th MMLU item, full ARC-Challenge, first 400 GSM8K items), `TASKS=ifeval eval.sh`, and `srepeat.sh` for the noise floor.
+4. Capabilities: `screen.sh` (every 10th MMLU item, full ARC-Challenge, first 400 GSM8K items at 256 tokens), `TASKS=ifeval eval.sh` (1280 tokens, whole-prompt strict), and `srepeat.sh` for the noise floor.
 5. Word probe: `probe.sh <model-code> <version> <model-dir>`.
 6. Manual review sheet: `review_sample.py`; score: `review_score.py`. LLM judges: `judge.sh`.
 7. Analysis: `analyze_vocab.py <config> <outdir>`; capabilities with `analyze_multi.py` and a `pairs` entry such as `[["V-k1", "S"]]`.
 
 From this study’s `scripts/` directory, run `python -m pytest test_judge.py test_review.py test_analyze_vocab.py` in the configured environment with pytest, PyTorch and the upstream package on the Python path.
 
-The reported K1 capability means come from the study-specific comparison in each model’s capability summary. Each test contributes one quarter of the mean. The Llama and Qwen summaries also record score changes on the separate repeat of the first 200 GSM8K items. [Llama 8B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-l8/capability-summary.json) · [Qwen 7B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q7/capability-summary.json) · [Qwen 1.5B control](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q1/capability-summary.json)
+The reported K1 capability means come from the study-specific comparison in each model’s capability summary. Each test contributes one quarter of the mean. K1 used 256 new tokens for GSM8K and 1280 for strict whole-prompt IFEval. The Llama and Qwen summaries also record score changes on the separate repeat of the first 200 GSM8K items. [Llama 8B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-l8/capability-summary.json) · [Qwen 7B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q7/capability-summary.json) · [Qwen 1.5B control](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q1/capability-summary.json)
 
 The queue runner and the memory guard used to schedule the jobs are operational tools and are not included.
+
+The K1 capability files also give a secondary IFEval score, the number of strict instructions passed divided by the number tested. Each model directory supplies the per-prompt instruction counts in `ifeval-items.csv`. The earlier unweighted mean of per-prompt fractions is labelled `historical_mean_prompt_fraction`. The length diagnostic `hit_max_gen_toks` counts answers re-tokenized to at least the limit minus one. It cannot establish the reason generation stopped. The file `scripts/ifeval_scores.py` links to the shared scoring code. When copying scripts into a separate study directory, copy that file with its target contents (`cp -L`).
 
 ## Reproduce the registered K1 endpoints
 
@@ -54,7 +56,7 @@ for name in endpoints refusals probe; do
 done
 ~~~
 
-The K1 summaries and their item scores are published for Llama 8B, Qwen 7B and the small Qwen control. To verify their four-test means and 95% intervals directly from item scores, use Python 3.12, NumPy 2.1.0 and SciPy 1.18.0. The original bootstrap sampled each task separately before averaging the four differences.
+The K1 summaries and their item scores are published for Llama 8B, Qwen 7B and the small Qwen control. The K1 GSM8K limit was 256 tokens and the IFEval limit was 1280. To verify their four-test means and 95% intervals directly from item scores, use Python 3.12, NumPy 2.1.0 and SciPy 1.18.0. The original bootstrap sampled each task separately before averaging the four differences.
 
 ~~~bash
 study=2026-11-23-obliteratus-vocab-surgery
@@ -86,7 +88,7 @@ PY
 
 ## Reproduce the final quality comparisons
 
-From the repository root, use Python 3.12 to replay the published scores. This takes a few seconds, uses only the standard library and requires no model weights. Each CSV row identifies a model, test, subject and zero-based item number. The last three columns are 0/1 correctness for the original (S), the selected 500 entries (D500) and the random 500 entries (KR500). The file has 7,886 rows, one per item at each tested limit per model.
+From the repository root, use Python 3.12 to replay the paired scores with the standard library. The full publication check also uses NumPy 2.1.0 to reproduce the historical K1 instruction averages exactly. Both commands run in a few seconds without model weights. Each CSV row identifies a model, test, subject and zero-based item number. Each comparison in the JSON identifies the checkpoint, both variants, the answer limits and the scoring rule. A null limit denotes a likelihood-scored task. The last three columns are 0/1 correctness for the original (S), the selected 500 entries (D500) and the random 500 entries (KR500). The file has 7,886 rows, one per item at each tested limit per model.
 
 ~~~bash
 study=2026-11-23-obliteratus-vocab-surgery
@@ -95,9 +97,10 @@ data_dir="reports/$study/data"
 replay_dir=$(mktemp -d)
 python3.12 "$code_dir/quality_followup_scores.py" --items "$data_dir/quality-items.csv" --output "$replay_dir/paired.json"
 cmp "$replay_dir/paired.json" "$data_dir/quality-paired.json"
+python3.12 "$code_dir/quality_followup_scores.py" --publication "reports/$study" --check
 ~~~
 
-The 36 comparisons consist of three version pairs for each of five test settings on each model, plus the long-versus-short math comparison within each of three versions on each model. A positive difference means more correct answers for the first version named in the JSON key. Intervals use paired resampling of the item score differences with 10,000 draws and seed 42. A zero exit from the last command means the generated JSON is byte-identical to the published result.
+The 36 comparisons consist of three version pairs for each of five test settings on each model, plus the long-versus-short math comparison within each of three versions on each model. A positive difference means more correct answers for the first version named in the JSON key. Intervals use paired resampling of the item score differences with 10,000 draws and seed 42. The publication check covers the paired JSON, the corresponding scores in `capabilities.json`, all six secondary K1 instruction scores in the three capability summaries, the Markdown tables and the Qwen summary. Remove `--check` to regenerate them together from `quality-items.csv` and the three K1 `ifeval-items.csv` files. For the follow-up, `capabilities.json` also retains other native harness measures, including strict GSM8K extraction and per-instruction IFEval. The paired follow-up uses flexible GSM8K extraction and whole-prompt IFEval.
 
 ### Repeat the benchmark measurements from prepared model versions
 

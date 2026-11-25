@@ -58,7 +58,7 @@ def from_items(directory, model):
             raise ValueError(f"{arm}: prompt items differ from the capability summary")
         entry.update(instruction_scores(items.values()))
     cap["settings"]["ifeval"] = metric_settings(model)
-    return cap
+    return cap, counts
 
 
 def encoded(path, value):
@@ -82,4 +82,5 @@ if __name__ == "__main__":
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     path = args.directory / "capability-summary.json"
-    save_outputs({path: encoded(path, from_items(args.directory, args.model))}, args.check)
+    cap, _ = from_items(args.directory, args.model)
+    save_outputs({path: encoded(path, cap)}, args.check)
