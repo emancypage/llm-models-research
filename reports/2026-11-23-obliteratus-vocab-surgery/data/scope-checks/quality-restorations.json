@@ -1,0 +1,42 @@
+{
+  "l8": {
+    "D500": {
+      "input_rows": 0,
+      "output_rows": 500,
+      "other_tensors_identical": true,
+      "tokenizer_semantically_identical": true,
+      "chat_template_identical": true,
+      "counts_match": true,
+      "ok": true
+    },
+    "KR500": {
+      "input_rows": 0,
+      "output_rows": 500,
+      "other_tensors_identical": true,
+      "tokenizer_semantically_identical": true,
+      "chat_template_identical": true,
+      "counts_match": true,
+      "ok": true
+    }
+  },
+  "q7": {
+    "D500": {
+      "input_rows": 0,
+      "output_rows": 500,
+      "other_tensors_identical": true,
+      "tokenizer_semantically_identical": true,
+      "chat_template_identical": true,
+      "counts_match": true,
+      "ok": true
+    },
+    "KR500": {
+      "input_rows": 0,
+      "output_rows": 500,
+      "other_tensors_identical": true,
+      "tokenizer_semantically_identical": true,
+      "chat_template_identical": true,
+      "counts_match": true,
+      "ok": true
+    }
+  }
+}

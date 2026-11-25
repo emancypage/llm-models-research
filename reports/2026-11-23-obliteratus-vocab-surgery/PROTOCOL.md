@@ -279,3 +279,11 @@ The study owner requested this follow-up before new measurements. Test Llama-3.1
 - Verify the sample counts and match question, prompt and target hashes across versions before comparing scores. Report paired percentage-point differences by model and test, with item-level bootstrap 95% intervals (10,000 draws, seed 42). Read the longer GSM8K runs as a sensitivity check for the answer limit. Report the results separately for each test.
 
 On 25 November 2026, the study owner requested publication of paired GSM8K answers for problems that the original model solved and the 500-selected-entry version failed at the 1024-token limit. The review includes the question, expected number, saved answer texts and extracted numbers. This decision covers those math cases.
+
+## Final scope decision · 25 November 2026
+
+After the 16-run quality follow-up finished, the study owner decided to close the study and omit the planned 200-answer manual review. The sheet contains 0/200 labels. This is a decision made after measurement. The original thresholds and dates above are preserved. The manually corrected primary and secondary rates, their intervals, and the judge-validation check were not computed. The prespecified verdicts “the edit alone works” and “near zero” are undetermined. The separate 36 full-answer labels without a prefill remain a descriptive check.
+
+The eight new quality runs per model are complete. Together with seven earlier matched runs per model they support 36 paired comparisons. All 36 can be recalculated from the published per-item benchmark scores. [Quality comparisons](data/quality-paired.json)
+
+The [quality replay instructions](../../experiments/2026-11-23-obliteratus-vocab-surgery/README.md#reproduce-the-final-quality-comparisons) describe how to recover these comparisons from either the public score table or original lm-eval outputs.

@@ -65,3 +65,11 @@ At the owner's decision, the study added a list of 500 tokens built from each mo
 The owner pointed out that answers cut at 64 tokens hide whether a model refused in the end. Counting confirmed it: on Qwen2.5-7B nearly all answers were cut. The 200 prompts were answered again with up to 1024 tokens, without using the earlier prefill versions in the conclusions. The result grew: the 500-token list lowers failures by 43.5 and 37.5 pp by judge A, and the owner's 36 labels agree with judge A on 35. The judge results for the full answers stayed unread until the labelling was complete.
 
 The agent had put a prefill version back into this follow-up against an earlier instruction; the owner noticed, and it was excluded and recorded.
+
+## 25 November · Quality follow-up and closeout
+
+The study owner requested the two-model quality follow-up. The English and Polish protocols were updated before the new measurements. All 16 new runs finished at 21:35 CET, eight on each model. Four checks confirmed that the restored edits changed exactly 500 output rows and left all other weights intact. Fourteen earlier runs supplied the other comparison cells. The scorer matched the question, prompt and target for each item and produced 36 paired comparisons.
+
+During the follow-up the owner requested publication of the 57 paired GSM8K cases where the original answer was correct and the selected-list answer was incorrect at the 1024-token limit. An export check found that treating the entire follow-up directory as a model version would mix scores from different versions. The exporter was corrected before those scores were published. The final capability data identify the model, version, task and math limit separately.
+
+After the quality results were available, the owner explicitly decided to omit the 200-answer manual review and close the study. There are 0/200 labels on that sheet. The 36 existing full-answer labels are retained as a separate descriptive check. The manually corrected rates, formal judge validation and both verdicts that depend on those rates remain unassessed. The final report records these limits alongside the measured endpoints.

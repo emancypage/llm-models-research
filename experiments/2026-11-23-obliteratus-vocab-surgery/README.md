@@ -34,3 +34,59 @@ The extraction prompt file named by `verify-edit` holds harmful prompts and is n
 Tests: `pytest test_judge.py test_review.py test_analyze_vocab.py` inside the container, with `scripts/` on `PYTHONPATH`.
 
 The queue runner and the memory guard used to schedule the jobs are operational tools and are not included.
+
+## Reproduce the final quality comparisons
+
+From the repository root, use Python 3.12 to replay the published scores. This takes a few seconds, uses only the standard library and requires no model weights. Each CSV row identifies a model, test, subject and zero-based item number. The last three columns are 0/1 correctness for the original (S), the selected 500 entries (D500) and the random 500 entries (KR500). The file has 7,886 rows, one per item at each tested limit per model.
+
+~~~bash
+study=2026-11-23-obliteratus-vocab-surgery
+code_dir="experiments/$study/scripts"
+data_dir="reports/$study/data"
+replay_dir=$(mktemp -d)
+python3.12 "$code_dir/quality_followup_scores.py" --items "$data_dir/quality-items.csv" --output "$replay_dir/paired.json"
+cmp "$replay_dir/paired.json" "$data_dir/quality-paired.json"
+~~~
+
+The 36 comparisons consist of three version pairs for each of five test settings on each model, plus the long-versus-short math comparison within each of three versions on each model. A positive difference means more correct answers for the first version named in the JSON key. Intervals use paired resampling of the item score differences with 10,000 draws and seed 42. A zero exit from the last command means the generated JSON is byte-identical to the published result.
+
+### Repeat the benchmark measurements from prepared model versions
+
+The follow-up ran eight new tests per model and reused seven earlier tests with matching question, prompt and target hashes. The 1024 setting below is the maximum number of new tokens in a GSM8K answer. The two GSM8K runs use the same first 400 problems and the same flexible numeric extraction. Strict IFEval uses all 541 prompts at its original 1280-token limit. ARC-Challenge uses all 1172 questions and normalized answer likelihood. MMLU uses the recorded evenly spaced sample of 1430 questions.
+
+| Version | Newly measured | Reused from earlier runs |
+| --- | --- | --- |
+| S | GSM8K 1024 | GSM8K 256, IFEval, MMLU, ARC-Challenge |
+| D500 | GSM8K 1024, IFEval | GSM8K 256, MMLU, ARC-Challenge |
+| KR500 | GSM8K 1024, IFEval, MMLU, ARC-Challenge, GSM8K 256 | None |
+
+In the offline evaluation environment, set MODEL_DIR to the existing checkpoint and MODEL_CODE to l8 or q7. Set ARM to S, D500 or KR500. The model revisions are in the [protocol](../../reports/2026-11-23-obliteratus-vocab-surgery/PROTOCOL.md). Run this Bash block for each combination. Use a new output directory for any repeat.
+
+~~~bash
+out="/work/eval/$MODEL_CODE/quality-20261125/$ARM"
+common=(--model hf --model_args "pretrained=$MODEL_DIR,dtype=bfloat16" --device cuda --log_samples)
+math=(--tasks gsm8k --batch_size 16 --num_fewshot 5 --apply_chat_template --fewshot_as_multiturn --limit 400)
+bench() {
+    local name=$1
+    shift
+    /work/venv/bin/lm_eval "${common[@]}" "$@" --output_path "$out/$name"
+}
+set -e
+bench gsm1024 "${math[@]}" --gen_kwargs max_gen_toks=1024
+if [[ "$ARM" == D500 || "$ARM" == KR500 ]]; then
+    bench ifeval --tasks ifeval --batch_size 16 --apply_chat_template
+fi
+if [[ "$ARM" == KR500 ]]; then
+    bench mmlu --tasks mmlu --batch_size 4 --num_fewshot 5 --samples "$(cat /work/scripts/mmlu-every10.json)"
+    bench arc --tasks arc_challenge --batch_size 4 --num_fewshot 25
+    bench gsm256 "${math[@]}"
+fi
+~~~
+
+For a full replay from lm-eval sample files, put earlier MMLU, ARC and 256-token GSM8K output in the model's screen/S and screen/V-d500 directories, in subdirectories named mmlu, arc and gsm8k. Put original IFEval output in S/ifeval. The full model roots are eval/l8 and eval/q7 under the study directory. Use the same task definitions and item selection shown above when collecting any missing earlier samples. Then run the following command with the study directory available at /work. It checks sample counts, answer limits and per-item question, prompt and target hashes before comparing scores.
+
+~~~bash
+python3.12 /work/scripts/quality_followup_scores.py --work-dir /work --output /tmp/quality-from-runs.json
+~~~
+
+The study owner omitted the planned 200-answer manual sheet at closeout. Step 6 above describes the original protocol. The published quality replay uses benchmark correctness only.

@@ -201,6 +201,34 @@
    "inst_level_strict_acc,none": 0.7565947242206235
   }
  },
+ "q7/quality-20261125/KR500/arc": {
+  "arc_challenge": {
+   "acc_norm,none": 0.5571672354948806
+  }
+ },
+ "q7/quality-20261125/KR500/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.175,
+   "exact_match,strict-match": 0.0625
+  }
+ },
+ "q7/quality-20261125/KR500/gsm256": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.165,
+   "exact_match,strict-match": 0.0575
+  }
+ },
+ "q7/quality-20261125/KR500/ifeval": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.6358595194085028,
+   "inst_level_strict_acc,none": 0.7326139088729017
+  }
+ },
+ "q7/quality-20261125/KR500/mmlu": {
+  "mmlu": {
+   "acc,none": 0.6181818181818182
+  }
+ },
  "q7/quality-20261125/S/gsm1024": {
   "gsm8k": {
    "exact_match,flexible-extract": 0.87,
