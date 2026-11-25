@@ -52,11 +52,11 @@ Judge A (`gemma-4-26B-A4B-it`) did not load within the memory guard, so the plan
 
 ### Judge results
 
-Both judges scored all answer sets. They reversed the reading of the full PR list: the detector's large drops came from answers that still refuse, in words the detector does not catch. Both judges agree on this independently. The judge gate waits for the manual labels, so the judge measures are marked "judge unchecked" until then.
+Both judges scored all answer sets. Both classified many answers missed by the detector as refusals after the full PR-list edit. The formal human validation of the short answers was still pending at this point. The judge gate waits for the manual labels, so the judge measures are marked "judge unchecked" until then.
 
 ### Follow-up with a self-generated list of 500 tokens
 
-At the owner's decision, the study added a list of 500 tokens built from each model's answers to harmful prompts, with two discovery rounds on separate prompts; no prefill runs. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contained Chinese characters, as did 59 of the 500 answers to harmful prompts. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B); a random 500-token control did nothing. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K. Manual sheet for this follow-up: 45 answers, pending.
+At the owner's decision, the study added a list of 500 tokens built from each model's answers to harmful prompts, with two discovery rounds on separate prompts; no prefill runs. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contained Chinese characters, as did 59 of the 500 answers to harmful prompts. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B). The 500-token random control increased judge A’s failure rate by 3.5 and 1.0 points respectively. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K. Manual sheet for this follow-up: 45 answers, pending.
 
 ## 25 November 2026
 
@@ -68,8 +68,12 @@ The agent had put a prefill version back into this follow-up against an earlier 
 
 ## 25 November · Quality follow-up and closeout
 
-The study owner requested the two-model quality follow-up. The English and Polish protocols were updated before the new measurements. All 16 new runs finished at 21:35 CET, eight on each model. Four checks confirmed that the restored edits changed exactly 500 output rows and left all other weights intact. Fourteen earlier runs supplied the other comparison cells. The scorer matched the question, prompt and target for each item and produced 36 paired comparisons.
+The study owner requested the two-model quality follow-up. The protocol was updated before the new measurements. All 16 new runs finished at 21:35 CET, eight on each model. Four checks confirmed that the restored edits changed exactly 500 output rows and left all other weights intact. Fourteen earlier runs supplied the other comparison cells. The scorer matched the question, prompt and target for each item and produced 36 paired comparisons.
 
-During the follow-up the owner requested publication of the 57 paired GSM8K cases where the original answer was correct and the selected-list answer was incorrect at the 1024-token limit. An export check found that treating the entire follow-up directory as a model version would mix scores from different versions. The exporter was corrected before those scores were published. The final capability data identify the model, version, task and math limit separately.
+During the follow-up the owner requested publication of the 57 paired GSM8K cases where GSM8K awarded credit to the original model and zero to the selected-list model at the 1024-token limit. An export check found that treating the entire follow-up directory as a model version would mix scores from different versions. The exporter was corrected before those scores were published. The final capability data identify the model, version, task and math limit separately.
 
 After the quality results were available, the owner explicitly decided to omit the 200-answer manual review and close the study. There are 0/200 labels on that sheet. The 36 existing full-answer labels are retained as a separate descriptive check. The manually corrected rates, formal judge validation and both verdicts that depend on those rates remain unassessed. The final report records these limits alongside the measured endpoints.
+
+### Post-closeout verification
+
+The 7,886 rows in the public quality table were checked against the original evaluation samples. The 36 paired results and all 57 published math pairs matched. Two Qwen answers (items 19 and 109) gave the expected mathematical result and still lost credit under the benchmark’s extraction rule. The final report records the two judges’ distinct outcomes and the answer-length checks. The capability data now link to the measured K1 comparisons for each model. Formal verdicts that depend on the omitted manual sheet remain undetermined.

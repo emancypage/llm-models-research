@@ -7,8 +7,6 @@ import json
 import sys
 from pathlib import Path
 
-from scipy.stats import beta
-
 from analyze_vocab import kappa, mcnemar, wilson
 
 W = Path("/work")
@@ -39,19 +37,24 @@ for label, sel in (("l8", [r for r in rows if r[0] == "l8"]), ("q7", [r for r in
     out[f"agreement_{label}"] = agreement(sel)
 out["judges"] = {}
 for c in ("l8", "q7"):
-    fails, comp = {}, {}
+    fails, refusals_b = {}, {}
     for v in VERSIONS:
         d = judge[c, v]; la, b = d["label_a"], d["refusal_b"]; inv = la.count(None)
         rep = json.loads((W / f"runs/{c}/full/{v}.json").read_text())["measurement"]["edited"]["harmful"]
-        fails[v], comp[v] = [x != "C" for x in la], [x == "C" for x in la]
+        if len(la) != 200 or len(b) != 200 or any((a is None) != (rb is None) for a, rb in zip(la, b)):
+            raise ValueError(f"{c}/{v}: missing or mismatched judge labels")
+        fails[v] = [x != "C" for x in la]
+        refusals_b[v] = [label is None or refused for label, refused in zip(la, b)]
         out["judges"][f"{c}:{v}"] = {"R": la.count("R"), "C": la.count("C"), "O": la.count("O"), "invalid": inv,
-                                     "judge_fail": sum(fails[v]) / 200, "b_fail": (sum(x is True for x in b) + inv) / 200,
+                                     "judge_fail": sum(fails[v]) / 200, "b_fail": sum(refusals_b[v]) / 200,
                                      "uncertain": sum(x is True for x in d["uncertain"]), "detector_fail": (rep["refused"] + rep["invalid"]) / 200,
                                      "cut_at_limit": sum(not f for f in rep["finished"]), "prompt_sha256": d["prompt_sha256"][:8], "codebook_sha256": d["codebook_sha256"][:8]}
     for v in VERSIONS[1:]:
-        a, b, p = mcnemar(fails["S"], fails[v])
-        out["judges"][f"{c}:{v}-S"] = {"diff": out["judges"][f"{c}:{v}"]["judge_fail"] - out["judges"][f"{c}:S"]["judge_fail"], "fewer": a, "more": b, "p": p,
-                                       "diff_b": out["judges"][f"{c}:{v}"]["b_fail"] - out["judges"][f"{c}:S"]["b_fail"]}
+        fewer, more, p = mcnemar(fails["S"], fails[v])
+        fewer_b, more_b, p_b = mcnemar(refusals_b["S"], refusals_b[v])
+        out["judges"][f"{c}:{v}-S"] = {"diff": out["judges"][f"{c}:{v}"]["judge_fail"] - out["judges"][f"{c}:S"]["judge_fail"], "fewer": fewer, "more": more, "p": p,
+                                       "diff_b": out["judges"][f"{c}:{v}"]["b_fail"] - out["judges"][f"{c}:S"]["b_fail"],
+                                       "fewer_b": fewer_b, "more_b": more_b, "p_b": p_b}
     short = {v: json.loads((W / f"runs/{c}/judge-{n}.json").read_text())["label_a"] for v, n in (("S", "S"), ("V-k1", "V-k1"), ("V-d500", f"V-d500-{c}"), ("V-kr500", f"V-kr500-{c}"))}
     for v in VERSIONS:
         t = {}

@@ -1,12 +1,12 @@
 # Protocol: vocabulary-row edits (OBLITERATUS PR #595)
 
-Written on 23 November 2026, before the first run of an edited model. Every later change is a dated entry in the section "Deviations".
+Written on 23 November 2026, before the first run of an edited model. Dated entries below record later amendments, observations and the final scope decision.
 
 ## Scope of conclusions
 
-- The study tests the method `vocab_surgery` from OBLITERATUS [PR #595](https://github.com/elder-plinius/OBLITERATUS/pull/595), commit `5e55cdae09f1ae0213c13869842bdbfaae138ce6`. On 23 November 2026 the PR was merged into `main` as commit `1de580f7a13f185488dc31ff27f2e027545ad82d`; the study uses that commit (see "Deviations"). This project did not review the code. It runs only in a container without network.
+- The study tests the method `vocab_surgery` from OBLITERATUS [PR #595](https://github.com/elder-plinius/OBLITERATUS/pull/595), commit `5e55cdae09f1ae0213c13869842bdbfaae138ce6`. On 23 November 2026 the PR was merged into `main` as commit `1de580f7a13f185488dc31ff27f2e027545ad82d`; the study uses that commit (see "Deviations"). Before the first model edit, the study inspected the changed code for file writes, network access and model loading. The runs used a container without network access. [Scope of the code check](issues.md)
 - Stages 1–2 test whether the token list from the post moves to Llama and Qwen. The claim of the post is about Inkling-2-Mini; stage 3 tests it after disk space is freed.
-- The PR itself says that its 97.4% result comes from the condition with a prefill and that the method is not verified.
+- The upstream study notes attribute the reported 97.4% to a condition that combined the edit and a prefill. [Upstream evidence notes](https://github.com/elder-plinius/OBLITERATUS/blob/5e55cdae09f1ae0213c13869842bdbfaae138ce6/docs/VOCABULARY_ROW_EDITS.md#L8-L13)
 - The token lists are frozen (K1 and K2). No `discover` and no list tuning (decision D5). A null result on Llama and Qwen then means only "the list from Inkling does not move to this model".
 
 Terms:
@@ -205,6 +205,8 @@ Reported next to it: agreement on three labels, Cohen's kappa, the 3×3 table, a
 
 ## Sharing rules
 
+These were the original rules on 23 November. The owner later authorized publication of the research report and data, including the 57 paired GSM8K examples specified below. The refusal-study answer texts, manual worksheets and model checkpoints stayed private.
+
 - Prompts, model answers, the review sheet and checkpoints stay on the on-premise machine. Reports contain numbers only. The agent does not write harmful prompts and does not quote model answers; it checks only row counts and hashes.
 - No uploads of models to the Hub, no publishing, no posts or comments on GitHub or Discord. The project owner sends any message.
 - The LLM judges run locally. No text goes to an external service.
@@ -238,7 +240,7 @@ Reported next to it: agreement on three labels, Cohen's kappa, the 3×3 table, a
 
 ## Deviations
 
-Dated entries. Each one was written before the results it can affect.
+The entries below distinguish decisions recorded before measurement from later observations, corrections and results. Each entry gives its date.
 
 - 2026-11-23, study files: the plan lists a `PREV` variable in `common.sh`, but its own self-containment check forbids any path to the previous study there. The check wins; the previous study is only a copy source.
 - 2026-11-23, study files: two copied helper scripts (`mem_guard.sh`, `resources.py`) had the path of the previous study written in; only that path was changed. `py.sh` now reads the common settings. Without this, the new memory guard would write into the previous study.
@@ -278,7 +280,7 @@ The study owner requested this follow-up before new measurements. Test Llama-3.1
 - Complete the original screening set for KR500. Use every tenth item within each MMLU subject (1430 total), all 1172 ARC-Challenge items and the first 400 GSM8K items at 256 tokens. Reuse the matched S and D500 runs. Keep the original scoring rules and few-shot settings.
 - Verify the sample counts and match question, prompt and target hashes across versions before comparing scores. Report paired percentage-point differences by model and test, with item-level bootstrap 95% intervals (10,000 draws, seed 42). Read the longer GSM8K runs as a sensitivity check for the answer limit. Report the results separately for each test.
 
-On 25 November 2026, the study owner requested publication of paired GSM8K answers for problems that the original model solved and the 500-selected-entry version failed at the 1024-token limit. The review includes the question, expected number, saved answer texts and extracted numbers. This decision covers those math cases.
+On 25 November 2026, the study owner requested publication of paired GSM8K answers for items scored correct for the original model and incorrect for the selected 500-entry version at the 1024-token limit. The review includes the question, expected number, saved answer texts and extracted numbers. This decision covers those math cases.
 
 ## Final scope decision · 25 November 2026
 

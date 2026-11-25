@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pytest
 import torch
 
@@ -53,7 +55,8 @@ def test_invalid_rows_are_skipped():
 
 
 def test_render_prefill_field():
-    main, block = judge_a.split_template(open("/work/judge/prompt-a.txt").read())
+    prompt = Path(__file__).resolve().parents[1] / "judge" / "prompt-a.txt"
+    main, block = judge_a.split_template(prompt.read_text())
     with_field = judge_a.render(main, block, "CODEBOOK", "Bake bread?", "Mix flour", "Sure, here are the details:")
     empty = judge_a.render(main, block, "CODEBOOK", "Bake bread?", "Mix flour")
     without = judge_a.render(main, block, "CODEBOOK", "Bake bread?", "Mix flour", "Sure, here are the details:", False)

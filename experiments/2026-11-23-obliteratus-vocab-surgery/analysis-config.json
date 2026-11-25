@@ -1,0 +1,221 @@
+{
+  "main_models": [
+    "l8",
+    "q7"
+  ],
+  "probe_items": "experiments/2026-11-23-obliteratus-vocab-surgery/probe/items.json",
+  "models": {
+    "l8": {
+      "versions": {
+        "S": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1.json",
+          "role": "stock"
+        },
+        "V": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1.json",
+          "role": "edited"
+        },
+        "SP": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p/VP-k1.json",
+          "role": "stock"
+        },
+        "VP": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p/VP-k1.json",
+          "role": "edited"
+        },
+        "V-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k2.json",
+          "role": "edited"
+        },
+        "SP-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p/VP-k2.json",
+          "role": "stock"
+        },
+        "VP-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p/VP-k2.json",
+          "role": "edited"
+        },
+        "V-k1o": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1o.json",
+          "role": "edited"
+        },
+        "V-k1i": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1i.json",
+          "role": "edited"
+        },
+        "S-k1o": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1o.json",
+          "role": "stock"
+        },
+        "S-k1i": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k1i.json",
+          "role": "stock"
+        },
+        "S-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8/V-k2.json",
+          "role": "stock"
+        },
+        "SP2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p2/VP2-k1.json",
+          "role": "stock"
+        },
+        "VP2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/l8p2/VP2-k1.json",
+          "role": "edited"
+        }
+      },
+      "comparisons": [
+        [
+          "V",
+          "S"
+        ],
+        [
+          "VP",
+          "SP"
+        ],
+        [
+          "V-k2",
+          "S"
+        ],
+        [
+          "VP-k2",
+          "SP-k2"
+        ],
+        [
+          "V-k1o",
+          "S"
+        ],
+        [
+          "V-k1i",
+          "S"
+        ],
+        [
+          "SP",
+          "S"
+        ],
+        [
+          "VP2",
+          "SP2"
+        ],
+        [
+          "SP2",
+          "S"
+        ]
+      ],
+      "probe": {
+        "S": "reports/2026-11-23-obliteratus-vocab-surgery/data/probe/l8-S.json",
+        "V": "reports/2026-11-23-obliteratus-vocab-surgery/data/probe/l8-V-k1.json"
+      },
+      "capability": {
+        "summary": "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-l8/capability-summary.json",
+        "comparison": "V-k1-S"
+      }
+    },
+    "q7": {
+      "versions": {
+        "S": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1.json",
+          "role": "stock"
+        },
+        "V": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1.json",
+          "role": "edited"
+        },
+        "SP": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p/VP-k1.json",
+          "role": "stock"
+        },
+        "VP": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p/VP-k1.json",
+          "role": "edited"
+        },
+        "V-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k2.json",
+          "role": "edited"
+        },
+        "SP-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p/VP-k2.json",
+          "role": "stock"
+        },
+        "VP-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p/VP-k2.json",
+          "role": "edited"
+        },
+        "V-k1o": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1o.json",
+          "role": "edited"
+        },
+        "V-k1i": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1i.json",
+          "role": "edited"
+        },
+        "S-k1o": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1o.json",
+          "role": "stock"
+        },
+        "S-k1i": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k1i.json",
+          "role": "stock"
+        },
+        "S-k2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7/V-k2.json",
+          "role": "stock"
+        },
+        "SP2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p2/VP2-k1.json",
+          "role": "stock"
+        },
+        "VP2": {
+          "report": "reports/2026-11-23-obliteratus-vocab-surgery/data/verify/q7p2/VP2-k1.json",
+          "role": "edited"
+        }
+      },
+      "comparisons": [
+        [
+          "V",
+          "S"
+        ],
+        [
+          "VP",
+          "SP"
+        ],
+        [
+          "V-k2",
+          "S"
+        ],
+        [
+          "VP-k2",
+          "SP-k2"
+        ],
+        [
+          "V-k1o",
+          "S"
+        ],
+        [
+          "V-k1i",
+          "S"
+        ],
+        [
+          "SP",
+          "S"
+        ],
+        [
+          "VP2",
+          "SP2"
+        ],
+        [
+          "SP2",
+          "S"
+        ]
+      ],
+      "probe": {
+        "S": "reports/2026-11-23-obliteratus-vocab-surgery/data/probe/q7-S.json",
+        "V": "reports/2026-11-23-obliteratus-vocab-surgery/data/probe/q7-V-k1.json"
+      },
+      "capability": {
+        "summary": "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q7/capability-summary.json",
+        "comparison": "V-k1-S"
+      }
+    }
+  }
+}

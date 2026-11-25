@@ -1,0 +1,120 @@
+{
+ "arms": {
+  "S": {
+   "mmlu": {
+    "n": 1430,
+    "primary": 0.6951048951048951
+   },
+   "arc": {
+    "n": 1172,
+    "primary": 0.6109215017064846
+   },
+   "gsm8k": {
+    "n": 400,
+    "primary": 0.8525,
+    "secondary": 0.8375,
+    "hit_max_gen_toks": 7
+   },
+   "ifeval": {
+    "n": 541,
+    "primary": 0.7412199630314233,
+    "secondary": 0.8166974738139249,
+    "hit_max_gen_toks": 17
+   }
+  },
+  "V-k1": {
+   "mmlu": {
+    "n": 1430,
+    "primary": 0.6916083916083916
+   },
+   "arc": {
+    "n": 1172,
+    "primary": 0.6075085324232082
+   },
+   "gsm8k": {
+    "n": 400,
+    "primary": 0.8525,
+    "secondary": 0.8375,
+    "hit_max_gen_toks": 8
+   },
+   "ifeval": {
+    "n": 541,
+    "primary": 0.7356746765249538,
+    "secondary": 0.8123844731977818,
+    "hit_max_gen_toks": 18
+   }
+  }
+ },
+ "comparisons": {
+  "V-k1-S": {
+   "mmlu": {
+    "diff": -0.0034965034965034965,
+    "ci95": [
+     -0.008391608391608392,
+     0.0006993006993006993
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 8,
+    "only_compared_correct": 3,
+    "mcnemar_p": 0.2265625,
+    "mcnemar_p_holm": 0.90625
+   },
+   "arc": {
+    "diff": -0.0034129692832764505,
+    "ci95": [
+     -0.008532423208191127,
+     0.0017064846416382253
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 7,
+    "only_compared_correct": 3,
+    "mcnemar_p": 0.34375,
+    "mcnemar_p_holm": 0.90625
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 0,
+    "only_compared_correct": 0,
+    "mcnemar_p": 1.0,
+    "mcnemar_p_holm": 1.0
+   },
+   "ifeval": {
+    "diff": -0.005545286506469501,
+    "ci95": [
+     -0.012939001848428836,
+     0.0
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 3,
+    "only_compared_correct": 0,
+    "mcnemar_p": 0.25,
+    "mcnemar_p_holm": 0.90625
+   },
+   "mean_of_primary": {
+    "diff": -0.0031136898215623618,
+    "ci95": [
+     -0.005528078943824025,
+     -0.000885654028442397
+    ],
+    "verdict": "drop",
+    "project_margin_holds": true,
+    "bootstrap_p": 0.0046
+   }
+  }
+ },
+ "settings": {
+  "draws": 10000,
+  "seed": 42,
+  "margin": 0.02
+ },
+ "noise_gsm8k_first200": {
+  "items": 200,
+  "different_text": 93,
+  "different_score": 3
+ }
+}

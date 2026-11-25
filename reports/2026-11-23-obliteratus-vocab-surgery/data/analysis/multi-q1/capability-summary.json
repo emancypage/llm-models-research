@@ -1,0 +1,115 @@
+{
+ "arms": {
+  "S": {
+   "mmlu": {
+    "n": 1430,
+    "primary": 0.6265734265734266
+   },
+   "arc": {
+    "n": 1172,
+    "primary": 0.5418088737201365
+   },
+   "gsm8k": {
+    "n": 400,
+    "primary": 0.56,
+    "secondary": 0.34,
+    "hit_max_gen_toks": 37
+   },
+   "ifeval": {
+    "n": 541,
+    "primary": 0.4177449168207024,
+    "secondary": 0.5301910043130007,
+    "hit_max_gen_toks": 12
+   }
+  },
+  "V-k1o-tied": {
+   "mmlu": {
+    "n": 1430,
+    "primary": 0.6272727272727273
+   },
+   "arc": {
+    "n": 1172,
+    "primary": 0.5435153583617748
+   },
+   "gsm8k": {
+    "n": 400,
+    "primary": 0.5625,
+    "secondary": 0.34,
+    "hit_max_gen_toks": 37
+   },
+   "ifeval": {
+    "n": 541,
+    "primary": 0.41404805914972276,
+    "secondary": 0.5271102895871842,
+    "hit_max_gen_toks": 11
+   }
+  }
+ },
+ "comparisons": {
+  "V-k1o-tied-S": {
+   "mmlu": {
+    "diff": 0.0006993006993006993,
+    "ci95": [
+     0.0,
+     0.002097902097902098
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 0,
+    "only_compared_correct": 1,
+    "mcnemar_p": 1.0,
+    "mcnemar_p_holm": 1.0
+   },
+   "arc": {
+    "diff": 0.0017064846416382253,
+    "ci95": [
+     -0.002559726962457338,
+     0.006825938566552901
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 3,
+    "only_compared_correct": 5,
+    "mcnemar_p": 0.7265625,
+    "mcnemar_p_holm": 1.0
+   },
+   "gsm8k": {
+    "diff": 0.0025,
+    "ci95": [
+     0.0,
+     0.0075
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 0,
+    "only_compared_correct": 1,
+    "mcnemar_p": 1.0,
+    "mcnemar_p_holm": 1.0
+   },
+   "ifeval": {
+    "diff": -0.0036968576709796672,
+    "ci95": [
+     -0.009242144177449169,
+     0.0
+    ],
+    "verdict": "no drop",
+    "only_baseline_correct": 2,
+    "only_compared_correct": 0,
+    "mcnemar_p": 0.5,
+    "mcnemar_p_holm": 1.0
+   },
+   "mean_of_primary": {
+    "diff": 0.0003022319174898142,
+    "ci95": [
+     -0.0018484288354898336,
+     0.0024943774327657667
+    ],
+    "verdict": "no drop",
+    "project_margin_holds": true,
+    "bootstrap_p": 0.7754
+   }
+  }
+ },
+ "settings": {
+  "draws": 10000,
+  "seed": 42,
+  "margin": 0.02
+ }
+}

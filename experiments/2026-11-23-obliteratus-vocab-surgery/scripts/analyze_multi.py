@@ -13,7 +13,6 @@ import sys
 
 import numpy as np
 from scipy.stats import binomtest
-from transformers import AutoTokenizer
 
 TASKS = ("mmlu", "arc", "gsm8k", "ifeval")
 MAX_GEN = {"gsm8k": 256, "ifeval": 1280}
@@ -127,6 +126,8 @@ def token_counts(tokenizer, texts):
 class Model:
     def __init__(self, code, spec):
         self.code, self.spec = code, spec
+        from transformers import AutoTokenizer
+
         self.tokenizer = AutoTokenizer.from_pretrained(spec["tokenizer"])
         self.data = {arm: {task: load_task(path, task) for task in TASKS} for arm, path in spec["arms"].items()}
         for arm in self.data:

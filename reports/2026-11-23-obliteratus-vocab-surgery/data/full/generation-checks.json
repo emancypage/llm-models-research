@@ -1,0 +1,46 @@
+{
+  "l8": {
+    "S": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 8
+    },
+    "V-k1": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 8
+    },
+    "V-d500": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 21
+    },
+    "V-kr500": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 60
+    }
+  },
+  "q7": {
+    "S": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 2
+    },
+    "V-k1": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 2
+    },
+    "V-d500": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 4
+    },
+    "V-kr500": {
+      "n": 200,
+      "begins_with_64_token_answer": 200,
+      "cut_at_limit": 7
+    }
+  }
+}

@@ -42,10 +42,14 @@ The edited Llama-3.1-8B checkpoint is written as one `model.safetensors` file wi
 
 Not an OBLITERATUS issue. With `transformers` 5.17.0 and `AutoModelForCausalLM.from_pretrained(..., dtype=bfloat16, device_map="cuda")` on a machine where the GPU shares 121 GiB with the system, loading `google/gemma-4-26B-A4B-it` (51.6 GB of weights, 128 experts) kept allocating past the weight size until 16 GiB remained. The study used the planned spare judge instead.
 
-## 2026-11-24, `verify-edit` refusal detector is blind to vocabulary edits
+## 2026-11-24, detector and judge disagreements after a vocabulary edit
 
-The refusal detector (`advanced_metrics.py`: refusal prefixes, substrings and semantic patterns) looks for words that `vocab_surgery` suppresses ("cannot", "sorry", "However" and similar). After an edit that suppresses them, the model keeps refusing in other words and the detector misses it. On Qwen2.5-7B with the full PR list, the detector reported 73 refusals of 200; of the answers it did not flag, judge A labelled 87 as refusals and judge B 91. On Qwen2.5-1.5B (`k2-tied`) the detector reported −35.0 pp, judge A +1.5 pp. The detector also counts compliance after a warning as a refusal: for unedited Llama-3.1-8B, 22 flagged answers were compliance by judge A. Any `verify-edit` result for a vocabulary edit therefore needs an independent refusal judgement; the edited words should not be the evidence of refusal.
+On Qwen2.5-7B, the keyword detector flagged 165 original answers and 73 answers after the full PR-list edit, out of 200 in each condition. Among valid answers it did not flag, judge A classified 6/34 before the edit and 87/126 afterwards as refusals. Judge B classified 91 of those 126 edited answers as refusals. In the other direction, A classified 22 flagged answers from the original Llama as compliant. The 200-row manual check was omitted. These counts establish disagreement with the judges, whose labels have no formal validation on this short-answer dataset.
 
 ## 25 November · Study data export
 
 During a read-only check, the study exporter treated the quality follow-up directory as a single version. This would have combined the original Llama math score with the selected-list instruction-following score. The local exporter was corrected before publication. The final data have one entry for each of the 16 new model/version/test combinations. This was an issue in the study’s reporting code.
+
+## 25 November · Two GSM8K extraction errors
+
+Qwen’s selected-list answers to items 19 and 109 both state the expected result. On item 19 the flexible extractor chose the later number 4 after the answer gave 6 miles per hour. On item 109 it returned `$28.00.`, which did not match the reference `28` under the benchmark rule. Both count as losses in the published scores. These cases limit the interpretation of score changes as errors in the model’s mathematical reasoning. [Saved answers and extracted values](data/gsm8k-comparisons/qwen-01-05.md)

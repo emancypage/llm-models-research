@@ -9,6 +9,8 @@ Code for the [vocabulary-row edit study](../../reports/2026-11-23-obliteratus-vo
 - Every container runs with `--network none`. Datasets and models must be cached in the study directory first.
 - Set `STUDY_DIR`, `OBLITERATUS_DIR` and `IMAGE` before sourcing `scripts/common.sh`. The scripts expect `scripts/`, `configs/`, `probe/`, `judge/`, `runs/spec.json` and `models/` inside `STUDY_DIR`.
 
+For the original 64-token verification stage, the public file `spec.json` is the frozen input. The runtime used `$STUDY_DIR/runs/spec.json` and a one-line digest in `$STUDY_DIR/runs/spec.sha256`. The SHA-256 of the published bytes is `ff1b4ea2c1fb16148b3d3e87922764a12759a5caf2742c83b4944daaf9aca49c`. The original private extraction file is also required to rerun that stage. The public benchmark replays below use published scores. The recorded local evaluation image ID was `sha256:ad409a856e6d7a38217d08d5ff9dc560cd8f6129fbec9f5d6568b3f40654aa27`.
+
 ## Inputs in this directory
 
 | Path | Content |
@@ -21,7 +23,7 @@ Code for the [vocabulary-row edit study](../../reports/2026-11-23-obliteratus-vo
 
 The extraction prompt file named by `verify-edit` holds harmful prompts and is not published. The held-out prompts are built into OBLITERATUS (`builtin:qwen38-v1:final_test`).
 
-## Steps
+## Original measurement steps
 
 1. Model copies (on the host): `make_template_copy.py <source> <dest> --fix-date "23 Nov 2026"` for Llama-3.2-3B, and `--prefill "Sure, here are the details:"` for each prefill copy. Llama models use copies whose tokenizer has a pad token.
 2. Edit: `apply.sh <model-code> <config>`. Scope check: `check_receipt.sh <unedited-dir> <edited-dir> --expect-input N --expect-output M` (or `--expect-shared K`).
@@ -31,9 +33,56 @@ The extraction prompt file named by `verify-edit` holds harmful prompts and is n
 6. Manual review sheet: `review_sample.py`; score: `review_score.py`. LLM judges: `judge.sh`.
 7. Analysis: `analyze_vocab.py <config> <outdir>`; capabilities with `analyze_multi.py` and a `pairs` entry such as `[["V-k1", "S"]]`.
 
-Tests: `pytest test_judge.py test_review.py test_analyze_vocab.py` inside the container, with `scripts/` on `PYTHONPATH`.
+From this study’s `scripts/` directory, run `python -m pytest test_judge.py test_review.py test_analyze_vocab.py` in the configured environment with pytest, PyTorch and the upstream package on the Python path.
+
+The reported K1 capability means come from the study-specific comparison in each model’s capability summary. Each test contributes one quarter of the mean. The Llama and Qwen summaries also record score changes on the separate repeat of the first 200 GSM8K items. [Llama 8B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-l8/capability-summary.json) · [Qwen 7B](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q7/capability-summary.json) · [Qwen 1.5B control](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/multi-q1/capability-summary.json)
 
 The queue runner and the memory guard used to schedule the jobs are operational tools and are not included.
+
+## Reproduce the registered K1 endpoints
+
+The frozen K1 list was the ten-entry version. From the repository root, the following command recomputes the detector comparisons, word-probe results and formal verdicts using only the published files and SciPy. It reads the K1 capability summary for the four-test mean. The two verdicts that require the omitted manual review reproduce as `null`. The private human worksheets are required to repeat the human scoring step.
+
+~~~bash
+study=2026-11-23-obliteratus-vocab-surgery
+code_dir="experiments/$study"
+data_dir="reports/$study/data"
+replay_dir=$(mktemp -d)
+python3.12 "$code_dir/scripts/analyze_vocab.py" "$code_dir/analysis-config.json" "$replay_dir"
+for name in endpoints refusals probe; do
+    cmp "$replay_dir/$name.json" "$data_dir/analysis/main/$name.json"
+done
+~~~
+
+The K1 summaries and their item scores are published for Llama 8B, Qwen 7B and the small Qwen control. To verify their four-test means and 95% intervals directly from item scores, use Python 3.12, NumPy 2.1.0 and SciPy 1.18.0. The original bootstrap sampled each task separately before averaging the four differences.
+
+~~~bash
+study=2026-11-23-obliteratus-vocab-surgery
+PYTHONPATH="experiments/$study/scripts" python3.12 - "reports/$study/data/analysis" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+from analyze_multi import SEED, TASKS, bootstrap_diffs, paired
+
+for code in ("l8", "q7", "q1"):
+    folder = Path(sys.argv[1]) / f"multi-{code}"
+    items = json.loads((folder / "per-item-correctness.json").read_text())
+    summary = json.loads((folder / "capability-summary.json").read_text())
+    edited, = [arm for arm in summary["arms"] if arm != "S"]
+    rng = np.random.default_rng(SEED)
+    draws, differences = [], []
+    for task in TASKS:
+        original, candidate = paired(items[f"S/{task}"], items[f"{edited}/{task}"])
+        differences.append((candidate - original).mean())
+        draws.append(bootstrap_diffs(original, candidate, rng))
+    observed = [np.mean(differences), *np.percentile(np.mean(draws, axis=0), [2.5, 97.5])]
+    expected = summary["comparisons"][f"{edited}-S"]["mean_of_primary"]
+    np.testing.assert_allclose(observed, [expected["diff"], *expected["ci95"]], rtol=0, atol=1e-14)
+    print(code, "difference and interval in percentage points", np.array(observed) * 100)
+PY
+~~~
 
 ## Reproduce the final quality comparisons
 
@@ -60,7 +109,7 @@ The follow-up ran eight new tests per model and reused seven earlier tests with 
 | D500 | GSM8K 1024, IFEval | GSM8K 256, MMLU, ARC-Challenge |
 | KR500 | GSM8K 1024, IFEval, MMLU, ARC-Challenge, GSM8K 256 | None |
 
-In the offline evaluation environment, set MODEL_DIR to the existing checkpoint and MODEL_CODE to l8 or q7. Set ARM to S, D500 or KR500. The model revisions are in the [protocol](../../reports/2026-11-23-obliteratus-vocab-surgery/PROTOCOL.md). Run this Bash block for each combination. Use a new output directory for any repeat.
+In the offline evaluation environment, set MODEL_DIR to the existing checkpoint and MODEL_CODE to l8 or q7. Set ARM to S, D500 or KR500. The model revisions are in the [protocol](../../reports/2026-11-23-obliteratus-vocab-surgery/PROTOCOL.md). Run this Bash block for each combination. Start each repeat in a fresh evaluation workspace. The comparison reader expects exactly one result file per version and task.
 
 ~~~bash
 out="/work/eval/$MODEL_CODE/quality-20261125/$ARM"
