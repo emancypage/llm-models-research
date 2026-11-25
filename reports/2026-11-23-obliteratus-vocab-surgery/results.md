@@ -1,6 +1,17 @@
 # Results: vocabulary-row edits (OBLITERATUS PR #595)
 
-**Status: measurements complete.** The large manual sheet (200 rows) was not labelled, so the judge gate and the manually corrected measures of the main study were not computed; 36 full answers were labelled. Stage 3 (Inkling-2-Mini, the model of the original claim) was dropped, so the claim was not tested on its own model.
+**The original measurements are complete. The quality follow-up is in progress.** The large manual sheet (200 rows) was not labelled, so the judge gate and the manually corrected measures of the main study were not computed; 36 full answers were labelled. Stage 3 (Inkling-2-Mini, the model of the original claim) was dropped, so the claim was not tested on its own model.
+
+## Math answer comparisons
+
+[Browse 52 Llama cases and 5 Qwen cases](data/gsm8k-comparisons/README.md). Each case pairs the original answer with the answer after editing 500 selected vocabulary entries. Both runs used the same math problem and allowed 1024 new tokens. Cases are included when the original was scored correct and the edited answer was scored incorrect.
+
+| GSM8K, first 400 problems | Original | 500 selected entries | Correct → incorrect | Incorrect → correct |
+| --- | ---: | ---: | ---: | ---: |
+| Llama 3.1 8B Instruct | 341 | 292 | 52 | 3 |
+| Qwen2.5 7B Instruct | 348 | 350 | 5 | 7 |
+
+For Llama, extending the answer limit from 256 to 1024 tokens changed no individual scores for either version. Of the 52 edited answers shown, 16 re-encode to exactly 1024 tokens and may still be incomplete. For Qwen, both versions scored higher with the longer limit. None of the five edited answers shown re-encodes to the limit.
 
 The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability.
 
@@ -14,7 +25,7 @@ On 24 November the author of the original claim published a correction: the 97.4
 
 Limitations:
 - the judges were checked against 36 manual labels from one reviewer, who had seen aggregate judge results for 64-token answers; the protocol's judge gate was not computed;
-- all numbers outside the section on full answers come from answers cut at 64 tokens;
+- the earlier short-answer refusal runs used a 64-token limit;
 - compliance means that the answer contains requested content; its usefulness was not judged;
 - on Llama and Qwen the study tests whether the Inkling token list transfers; it does not test the original claim, which belongs to stage 3;
 - the prefill text comes from a PR unit test, not from the original experiment.

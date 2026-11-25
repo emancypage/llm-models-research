@@ -142,5 +142,69 @@
    "exact_match,flexible-extract": 0.7425,
    "exact_match,strict-match": 0.18
   }
+ },
+ "l8/quality-20261125/D500/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.73,
+   "exact_match,strict-match": 0.705
+  }
+ },
+ "l8/quality-20261125/D500/ifeval": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.722735674676525,
+   "inst_level_strict_acc,none": 0.8033573141486811
+  }
+ },
+ "l8/quality-20261125/KR500/arc": {
+  "arc_challenge": {
+   "acc_norm,none": 0.5017064846416383
+  }
+ },
+ "l8/quality-20261125/KR500/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.3125,
+   "exact_match,strict-match": 0.2925
+  }
+ },
+ "l8/quality-20261125/KR500/gsm256": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.31,
+   "exact_match,strict-match": 0.2925
+  }
+ },
+ "l8/quality-20261125/KR500/ifeval": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.600739371534196,
+   "inst_level_strict_acc,none": 0.709832134292566
+  }
+ },
+ "l8/quality-20261125/KR500/mmlu": {
+  "mmlu": {
+   "acc,none": 0.593006993006993
+  }
+ },
+ "l8/quality-20261125/S/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.8525,
+   "exact_match,strict-match": 0.8375
+  }
+ },
+ "q7/quality-20261125/D500/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.875,
+   "exact_match,strict-match": 0.1925
+  }
+ },
+ "q7/quality-20261125/D500/ifeval": {
+  "ifeval": {
+   "prompt_level_strict_acc,none": 0.6691312384473198,
+   "inst_level_strict_acc,none": 0.7565947242206235
+  }
+ },
+ "q7/quality-20261125/S/gsm1024": {
+  "gsm8k": {
+   "exact_match,flexible-extract": 0.87,
+   "exact_match,strict-match": 0.2075
+  }
  }
 }
