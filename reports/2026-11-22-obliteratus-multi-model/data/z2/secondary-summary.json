@@ -104,5 +104,13 @@
         "median_token_diff": -2.0
       }
     }
+  },
+  "ifeval_measurement": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "max_new_tokens": 1280,
+    "primary_metric": "prompt_level_strict_acc",
+    "secondary_metric": "inst_level_strict_acc",
+    "secondary_aggregation": "passed instructions divided by all instructions",
+    "historical_mean_prompt_fraction": "mean of each prompt's fraction of passed instructions"
   }
 }

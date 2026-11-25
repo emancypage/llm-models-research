@@ -35,8 +35,10 @@
 
 ### GSM8K format and IFEval instruction level
 
-| Arm | GSM8K strict | Ends with `#### number` | At the 256-token limit | Median tokens | IFEval inst strict |
+<!-- ifeval:z2 -->
+| Arm | GSM8K strict (%) | Ends with `#### number` | At the 256-token limit | Median GSM8K tokens | IFEval strict instructions, passed / total (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| S | 34.12 | 761 | 109 | 124 | 50.60 |
-| P_A | 8.11 | 298 | 525 | 206 | 41.97 |
-| R_A | 32.60 | 790 | 125 | 122 | 49.88 |
+| S | 34.12 | 761 | 109 | 124 | 422/834 (50.60%) |
+| P_A | 8.11 | 298 | 525 | 206 | 350/834 (41.97%) |
+| R_A | 32.60 | 790 | 125 | 122 | 416/834 (49.88%) |
+<!-- /ifeval:z2 -->

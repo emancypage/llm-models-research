@@ -291,3 +291,7 @@ The study plan was shortened on 23 November, after a review of the interim Q1 re
 ## Sharing
 
 Prompt texts, answers, logs and checkpoints stay on the machine where they were computed.
+
+## Analysis correction on 25 November
+
+On 25 November 2026 the published strict IFEval summaries were reconciled with the saved per-prompt counts. Each run used a 1280-token answer limit. Whole-prompt accuracy counts prompts meeting every instruction. Instruction accuracy counts fulfilled instructions across all prompts. The previous mean of the within-prompt fractions is preserved under `historical_mean_prompt_fraction`. This correction affects the secondary field in the capability summaries for Q1, Q3 and Z2. [Scoring code and per-prompt counts](../../experiments/2026-11-22-obliteratus-multi-model/README.md)

@@ -18,8 +18,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.4177449168207024,
-        "secondary": 0.5301910043130007,
-        "hit_max_gen_toks": 12
+        "secondary": 0.5059952038369304,
+        "hit_max_gen_toks": 12,
+        "instructions_passed": 422,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5301910043130007
       }
     },
     "E": {
@@ -40,8 +43,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.39926062846580407,
-        "secondary": 0.5169439309919902,
-        "hit_max_gen_toks": 9
+        "secondary": 0.49640287769784175,
+        "hit_max_gen_toks": 9,
+        "instructions_passed": 414,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5169439309919902
       }
     },
     "P": {
@@ -62,8 +68,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.4177449168207024,
-        "secondary": 0.5292667898952558,
-        "hit_max_gen_toks": 10
+        "secondary": 0.5095923261390888,
+        "hit_max_gen_toks": 10,
+        "instructions_passed": 425,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5292667898952558
       }
     },
     "R0": {
@@ -84,8 +93,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.39371534195933455,
-        "secondary": 0.5117067159581024,
-        "hit_max_gen_toks": 9
+        "secondary": 0.4940047961630695,
+        "hit_max_gen_toks": 9,
+        "instructions_passed": 412,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5117067159581024
       }
     },
     "R0-s43": {
@@ -106,8 +118,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.3789279112754159,
-        "secondary": 0.5003080714725816,
-        "hit_max_gen_toks": 10
+        "secondary": 0.4832134292565947,
+        "hit_max_gen_toks": 10,
+        "instructions_passed": 403,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5003080714725816
       }
     },
     "R0-s44": {
@@ -128,8 +143,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.37153419593345655,
-        "secondary": 0.4978434996919285,
-        "hit_max_gen_toks": 11
+        "secondary": 0.47721822541966424,
+        "hit_max_gen_toks": 11,
+        "instructions_passed": 398,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.4978434996919285
       }
     },
     "RK": {
@@ -150,8 +168,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.39186691312384475,
-        "secondary": 0.5166358595194085,
-        "hit_max_gen_toks": 7
+        "secondary": 0.49160671462829736,
+        "hit_max_gen_toks": 7,
+        "instructions_passed": 410,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5166358595194085
       }
     },
     "RB": {
@@ -172,8 +193,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.3585951940850277,
-        "secondary": 0.4738139248305607,
-        "hit_max_gen_toks": 9
+        "secondary": 0.4568345323741007,
+        "hit_max_gen_toks": 9,
+        "instructions_passed": 381,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.4738139248305607
       }
     },
     "RG": {
@@ -194,8 +218,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.38817005545286504,
-        "secondary": 0.5098582871226124,
-        "hit_max_gen_toks": 7
+        "secondary": 0.4892086330935252,
+        "hit_max_gen_toks": 7,
+        "instructions_passed": 408,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5098582871226124
       }
     },
     "PS": {
@@ -216,8 +243,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.3955637707948244,
-        "secondary": 0.5163277880468268,
-        "hit_max_gen_toks": 12
+        "secondary": 0.4988009592326139,
+        "hit_max_gen_toks": 12,
+        "instructions_passed": 416,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5163277880468268
       }
     },
     "RS": {
@@ -238,8 +268,11 @@
       "ifeval": {
         "n": 541,
         "primary": 0.37707948243992606,
-        "secondary": 0.5006161429451632,
-        "hit_max_gen_toks": 9
+        "secondary": 0.486810551558753,
+        "hit_max_gen_toks": 9,
+        "instructions_passed": 406,
+        "instructions_total": 834,
+        "historical_mean_prompt_fraction": 0.5006161429451632
       }
     }
   },
@@ -1376,7 +1409,15 @@
   "settings": {
     "draws": 10000,
     "seed": 42,
-    "margin": 0.02
+    "margin": 0.02,
+    "ifeval": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "max_new_tokens": 1280,
+      "primary_metric": "prompt_level_strict_acc",
+      "secondary_metric": "inst_level_strict_acc",
+      "secondary_aggregation": "passed instructions divided by all instructions",
+      "historical_mean_prompt_fraction": "mean of each prompt's fraction of passed instructions"
+    }
   },
   "seed_spread": {
     "mean_of_primary": {
