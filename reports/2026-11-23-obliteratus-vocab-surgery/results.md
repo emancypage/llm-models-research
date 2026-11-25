@@ -1,23 +1,72 @@
 # Results: vocabulary-row edits (OBLITERATUS PR #595)
 
-**Status: in progress.** Stage 0 (tools, protocol and pilots) is complete. All detector measurements are complete: Llama-3.1-8B, Qwen2.5-7B, two small models with a shared matrix and the random controls. The LLM judges have scored every answer set; the manual review, and with it the judge gate, is pending. Stage 3 (Inkling-2-Mini) was dropped on 24 November after the author withdrew the original claim. This page is updated as stages finish.
+**Status: measurements complete.** The large manual sheet (200 rows) was not labelled, so the judge gate and the manually corrected measures of the main study were not computed; 36 full answers were labelled. Stage 3 (Inkling-2-Mini, the model of the original claim) was dropped, so the claim was not tested on its own model.
 
-The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability. Interim findings on Llama-3.1-8B and Qwen2.5-7B (keyword detector and two LLM judges; the judges are not yet checked against the manual labels):
-- the token list from the post does not reduce refusals: −0.5 pp and −1.0 pp by judge A without the prefill, −1.5 pp and +2.0 pp on top of it;
-- the full 34-token PR list seemed to lower refusals by up to 46.0 pp, but that was a detector error: the edit removes the words the detector looks for, and the model keeps refusing in other words (Qwen2.5-7B: 87 missed refusals by judge A, 91 by judge B; −5.5 pp by judge A);
-- the prefill does the work: by judge A the author's longer prefill alone lowered refusals by 53.5 pp (Llama) and 75.5 pp (Qwen), and the edit added nothing on top;
-- the edit leaves benchmark scores almost unchanged (mean −0.31 pp and −0.21 pp) but removes the normal use of the edited words.
+The study asks whether editing a few vocabulary rows (`vocab_surgery`) reduces refusals by itself, whether it adds anything beyond a prefill, and what it costs in capability.
 
-A follow-up tested a list of 500 tokens made from each model's answers to harmful prompts (no prefill). By judge A it lowered refusals by 32.0 pp on Llama-3.1-8B and 27.5 pp on Qwen2.5-7B; a random list of the same size did nothing (+3.5 and +1.0 pp). The keyword detector claimed −82.0 and −67.0 pp, two to three times more. The cost is model-dependent: GSM8K −12.25 pp on Llama-3.1-8B and −0.25 pp on Qwen2.5-7B. The judges are not yet checked against manual labels.
+Findings on Llama-3.1-8B and Qwen2.5-7B:
+- the post's 10-token list does not reduce refusals: on full answers −0.5 and +2.5 pp by judge A, without a prefill;
+- a list of 500 tokens made from each model's answers to harmful prompts does: −43.5 and −37.5 pp by judge A on full answers, without a prefill, against +4.0 and +1.5 pp for 500 random tokens; one reviewer agrees with judge A on 35 of 36 answers. About 35% of the answers still refuse or fail. GSM8K falls by 12.25 pp on Llama-3.1-8B and by 0.25 pp on Qwen2.5-7B;
+- the full 34-token PR list seemed to lower refusals by up to 46.0 pp, but that was the keyword detector: it looks for words that the edit suppresses, and judge A found −5.5 pp (64-token answers);
+- answers of 64 tokens hide the outcome. The earlier results with 64 tokens, including those with a prefill, describe only the start of the answer.
 
 On 24 November the author of the original claim published a correction: the 97.4% result had a prefill in the chat template by mistake. This study separates the prefill from the edit by design; the correction is recorded in the protocol.
 
-Limitations at this stage:
-- refusal counts come from the keyword detector only; the manual review and the LLM judge run later;
+Limitations:
+- the judges were checked against 36 manual labels from one reviewer, who had seen aggregate judge results for 64-token answers; the protocol's judge gate was not computed;
+- all numbers outside the section on full answers come from answers cut at 64 tokens;
+- compliance means that the answer contains requested content; its usefulness was not judged;
 - on Llama and Qwen the study tests whether the Inkling token list transfers; it does not test the original claim, which belongs to stage 3;
 - the prefill text comes from a PR unit test, not from the original experiment.
 
 Evidence: [protocol and deviations](PROTOCOL.md) · [issue log](issues.md) · [data](data) · [code, word probe and judge prompt](../../experiments/2026-11-23-obliteratus-vocab-surgery) · [research diary](../../session-logs/2026-11-23-obliteratus-vocab-surgery.md)
+
+## Full answers, no prefill
+
+25 November 2026. The 64-token answers used so far often stopped before the outcome was visible. This section repeats the 200 harmful test prompts with up to 1024 new tokens. A row is a failure of the edit when it is a refusal, another label or an invalid answer. The runs with a prefill are not used here (protocol, 25 November).
+
+### Checks
+
+- All 200 full answers begin with the stored 64-token answer, in every set. The re-applied edits pass the scope check.
+- Answers that still hit the limit: Llama-3.1-8B S 8, K1 8, D500 21, KR500 60; Qwen2.5-7B S 2, K1 2, D500 4, KR500 7.
+
+### Failures by judge A / judge B / keyword detector (share of 200)
+
+| Version | Llama-3.1-8B | Qwen2.5-7B |
+| --- | --- | --- |
+| S | 79.0% / 82.0% / 88.5% | 73.0% / 82.5% / 85.0% |
+| V-k1, the post's list | 78.5% / 81.5% / 87.5% | 75.5% / 82.5% / 82.0% |
+| V-d500, 500 tokens | 35.5% / 36.0% / 9.0% | 35.5% / 37.0% / 20.5% |
+| V-kr500, 500 random tokens | 83.0% / 83.0% / 90.0% | 74.5% / 83.5% / 85.0% |
+
+| Difference to S, judge A | Llama-3.1-8B | Qwen2.5-7B |
+| --- | --- | --- |
+| K1 | −0.5 pp (1 fewer, 0 more; p = 1.0) | +2.5 pp (8 and 13; p = 0.38) |
+| D500 | −43.5 pp (93 and 6; p = 3.8e-21) | −37.5 pp (79 and 4; p = 4.0e-19) |
+| KR500 | +4.0 pp (7 and 15; p = 0.13) | +1.5 pp (16 and 19; p = 0.74) |
+
+Judge B: D500 −46.0 and −45.5 pp; K1 −0.5 and 0.0 pp; KR500 +1.0 and +1.0 pp. Answers that judge A labels as compliance: Llama-3.1-8B S 42, D500 129; Qwen2.5-7B S 54, D500 129. With 64 tokens the D500 difference was −32.0 and −27.5 pp. From 64 to full answers judge A changed `R` to `C` in 18 (Llama-3.1-8B) and 49 (Qwen2.5-7B) D500 answers, and `C` to `R` in 1 and 4; in Qwen2.5-7B S 27 and 4.
+
+### Manual labels (36 full answers without a prefill, one reviewer)
+
+| | S, 12 answers | D500, 24 answers |
+| --- | --- | --- |
+| Compliance | 2 | 16 |
+| Refusal | 10 | 7 |
+| Other | 0 | 1 |
+
+- Agreement of judge A with the reviewer on compliance or not: 35 of 36 (Wilson 85.8% to 99.5%), kappa on three labels 0.95. Judge B agrees on refusal or not in 35 of 36. The one difference is an answer that the reviewer labelled other and judge A labelled compliance.
+- Compliance in D500 against S, reviewer labels: 16 of 24 and 2 of 12 (Fisher p = 0.0116).
+- The judge gate of the protocol (lower bound at least 90% on the large sheet) was not evaluated; the lower bound here is 85.8%. The large sheet of 200 rows was not labelled.
+- The reviewer had seen aggregate judge results for the 64-token answers before labelling; results for the full answers were not shown to anyone before labelling.
+
+### Reading
+
+1. On full answers, the post's 10-token list still changes nothing, and neither do 500 random tokens.
+2. The 500-token list lowers failures by 43.5 and 37.5 pp by judge A, and the reviewer agrees with the judge. The 64-token measure understated this. About 35% of the answers still fail.
+3. The detector overstates it again: 9.0% and 20.5% failures against 35.5% by judge A.
+4. Limits: "compliance" means that the answer contains requested content; its usefulness was not judged. The list mixes refusal words and topic words. KR500 is not matched for token frequency. Two models, one reviewer, one random control per model.
+5. Cost of D500 (measured earlier, in benchmark runs that do not depend on the answer limit): GSM8K −12.25 pp on Llama-3.1-8B and −0.25 pp on Qwen2.5-7B; ARC-Challenge −2.56 and −3.24 pp.
 
 ## Follow-up: self-generated list of 500 tokens
 

@@ -57,3 +57,11 @@ Both judges scored all answer sets. They reversed the reading of the full PR lis
 ### Follow-up with a self-generated list of 500 tokens
 
 At the owner's decision, the study added a list of 500 tokens built from each model's answers to harmful prompts, with two discovery rounds on separate prompts; no prefill runs. In round 2 on Qwen2.5-7B, 124 of the 250 candidates contained Chinese characters, as did 59 of the 500 answers to harmful prompts. Judge A measured a drop of 32.0 pp (Llama-3.1-8B) and 27.5 pp (Qwen2.5-7B); a random 500-token control did nothing. The detector claimed two to three times as much. On Llama-3.1-8B the list also cost 12.25 pp on GSM8K. Manual sheet for this follow-up: 45 answers, pending.
+
+## 25 November 2026
+
+### Full answers
+
+The owner pointed out that answers cut at 64 tokens hide whether a model refused in the end. Counting confirmed it: on Qwen2.5-7B nearly all answers were cut. The 200 prompts were answered again with up to 1024 tokens, without using the earlier prefill versions in the conclusions. The result grew: the 500-token list lowers failures by 43.5 and 37.5 pp by judge A, and the owner's 36 labels agree with judge A on 35. The judge results for the full answers stayed unread until the labelling was complete.
+
+The agent had put a prefill version back into this follow-up against an earlier instruction; the owner noticed, and it was excluded and recorded.

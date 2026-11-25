@@ -4,9 +4,10 @@ set -u
 source "$(dirname "$(readlink -f "$0")")/common.sh"
 WHAT=${1:-a}
 for j in a b; do [ -s "$M/models/judge-$j/REVISION" ] || { echo "missing models/judge-$j/REVISION"; exit 2; }; done
-cd "$M" && python3 scripts/judge_jobs.py judge/jobs ${JOBSET:-} || exit 1
+cd "$M" || exit 1
+if [ "${JOBSET:-}" = full ]; then python3 scripts/judge_jobs_full.py judge/jobs || exit 1; else python3 scripts/judge_jobs.py judge/jobs ${JOBSET:-} || exit 1; fi
 A=(--spec /work/runs/spec.json --model /work/models/judge-a --revision "$(cat "$M/models/judge-a/REVISION")"
-   --codebook /work/judge/codebook.md --prompt-file /work/judge/prompt-a.txt)
+   --codebook "/work/judge/${CODEBOOK:-codebook.md}" --prompt-file /work/judge/prompt-a.txt)
 B=(--spec /work/runs/spec.json --model /work/models/judge-b --revision "$(cat "$M/models/judge-b/REVISION")" --tokenizer /work/judge/tok-b)
 run() { local name=$1; MEM=$2; shift 2
   source "$M/scripts/common.sh"
