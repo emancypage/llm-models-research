@@ -25,11 +25,17 @@ All reports in this repository were written by AI under my supervision. I can't 
 
 AI is moving fast, and I believe open collaboration is the only way we can keep up.
 
+## Manifesto
+
+*Non-binding statement of intent for original work. The license texts determine when sharing is required and with whom.*
+
+This research is a public good, and everything built on it should be public too. The licenses below make that binding wherever copyright applies: anyone who distributes this work or a modified version, or offers a modified version of the code to users over a network, must publish it under the same license. No license here permits a closed version. Beyond what the licenses require, I ask everyone who uses this work, including privately, to publish what they build on it and the results they obtain. This statement adds no conditions to the licenses.
+
 ## License
 
-Copyright (C) 2026 Szymon Szymkowiak. Original code, reports, protocols, session logs and data in this repository are licensed under the GNU Affero General Public License, version 3 or (at your option) any later version. See [LICENSE](LICENSE).
+Copyright (C) 2026 Szymon Szymkowiak. Code in `experiments/` and `requirements-replay.txt` is licensed under the GNU Affero General Public License, version 3 or (at your option) any later version ([LICENSE](LICENSE)). Reports, protocols, session logs, data and documentation in `reports/`, `session-logs/` and the root Markdown files are licensed under Creative Commons Attribution-ShareAlike 4.0 International ([LICENSES/CC-BY-SA-4.0.txt](LICENSES/CC-BY-SA-4.0.txt)). [REUSE.toml](REUSE.toml) records the license of every path, including third-party material.
 
-The reports were written by AI under the owner's supervision, and this license applies to them to the extent copyright subsists in them. The license notice is kept here without per-file headers to preserve the published SHA-256 digests and the exact bytes of the scripts used for measurement. [Frozen word probe](experiments/2026-11-23-obliteratus-vocab-surgery/probe/FROZEN.sha256) · [Frozen judge materials](experiments/2026-11-23-obliteratus-vocab-surgery/judge/FROZEN.sha256) · [Published spec digest](experiments/2026-11-23-obliteratus-vocab-surgery/README.md#requirements)
+The reports were written by AI under the owner's supervision, and these licenses apply to them to the extent copyright or database rights subsist in them. The license notice is kept here without per-file headers to preserve the published SHA-256 digests and the exact bytes of the scripts used for measurement. [Frozen word probe](experiments/2026-11-23-obliteratus-vocab-surgery/probe/FROZEN.sha256) · [Frozen judge materials](experiments/2026-11-23-obliteratus-vocab-surgery/judge/FROZEN.sha256) · [Published spec digest](experiments/2026-11-23-obliteratus-vocab-surgery/README.md#requirements)
 
 ### Third-party material
 
