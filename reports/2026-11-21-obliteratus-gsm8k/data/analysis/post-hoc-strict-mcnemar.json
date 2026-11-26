@@ -1,0 +1,13 @@
+{
+  "analysis": "Post hoc analysis after closeout (26 November 2026, exploratory).",
+  "items": 100,
+  "scoring_rule": "strict-match",
+  "original_correct": 92,
+  "modified_correct": 88,
+  "both_correct": 86,
+  "both_incorrect": 6,
+  "losses": 6,
+  "gains": 2,
+  "difference_pp": -4.0,
+  "two_sided_exact_mcnemar_p": 0.2890625
+}
