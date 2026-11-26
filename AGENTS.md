@@ -24,6 +24,7 @@ session-logs/
 - Start by checking the study index in the published root `README.md`. A new research question gets a new ID. A pilot, additional model, new seed, correction or follow-up that answers the same question belongs to the existing study. Use the study ID from the index when extending an existing study.
 - Create only the files and directories the study needs. Record a small caveat in `results.md`. Use `issues.md` for a longer investigation and the session log for decisions that explain changes to the protocol.
 - Keep one main report. Give comparable runs separate paths under `data/` when their filenames would collide, for example `data/pilot/run-01/` and `data/pilot/run-02/`. Preserve earlier measurements and identify the run behind each reported result.
+- New original files fall under the repository license. List any new third-party material and its license in the [README License section](README.md#license).
 - Reuse an existing evaluation script when it fits. Link to it from the protocol without copying it into a new study. Keep model weights, caches, raw generations and runtime logs outside the tracked tree.
 - When publishing a new study, add one entry to the root `README.md` linking to its report. Link the protocol, supporting data and applicable code from the report using relative paths. Check those links in a clean checkout.
 
