@@ -1,0 +1,87 @@
+{
+ "stock": "/work/models/qwen2.5-1.5b-instruct",
+ "edited": "/work/runs/q1/k1o-tied/V",
+ "input_rows": null,
+ "output_rows": null,
+ "shared_rows": 9,
+ "receipt_rows": {
+  "input": 0,
+  "output": 9,
+  "shared_input": 9
+ },
+ "receipt_skipped": [
+  {
+   "index": 7,
+   "reason": "source_not_single_token",
+   "source": "safety"
+  }
+ ],
+ "receipt_summary": {
+  "embed_rows_modified": 0,
+  "pct_vocab_modified": 0.005923546756529065,
+  "shared_input_rows_modified": 9,
+  "total_specs": 9,
+  "unembed_rows_modified": 9,
+  "unique_tokens_modified": 9,
+  "weights_tied": true
+ },
+ "weights_tied": true,
+ "other_tensors_identical": true,
+ "tokenizer_identical": false,
+ "tokenizer_files": {
+  "tokenizer.json": {
+   "stock": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+   "edited": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+   "same": false
+  },
+  "tokenizer_config.json": {
+   "stock": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+   "edited": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95",
+   "same": false
+  },
+  "vocab.json": {
+   "stock": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+   "edited": null,
+   "same": false
+  },
+  "merges.txt": {
+   "stock": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+   "edited": null,
+   "same": false
+  },
+  "chat_template.jinja": {
+   "stock": null,
+   "edited": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+   "same": false
+  }
+ },
+ "tokenizer_semantically_identical": true,
+ "tokenizer_behaviour": {
+  "texts_checked": 640,
+  "plain_mismatches": 0,
+  "chat_prompts_checked": 400,
+  "chat_mismatches": 0,
+  "attribute_differences": {},
+  "identical": true
+ },
+ "chat_template_identical": true,
+ "chat_template_sha256": {
+  "stock": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "edited": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+ },
+ "config_differences": [
+  "dtype",
+  "layer_types",
+  "rope_parameters",
+  "rope_theta",
+  "sliding_window",
+  "torch_dtype",
+  "transformers_version"
+ ],
+ "problems": [],
+ "expected": {
+  "shared_rows": 9
+ },
+ "counts_match": true,
+ "ok": true
+}

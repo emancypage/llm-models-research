@@ -1,0 +1,81 @@
+{
+ "stock": "/work/models/llama-3.2-3b-instruct-fixdate",
+ "edited": "/work/runs/l3/k2-tied/V",
+ "input_rows": null,
+ "output_rows": null,
+ "shared_rows": 33,
+ "receipt_rows": {
+  "input": 0,
+  "output": 33,
+  "shared_input": 33
+ },
+ "receipt_skipped": [
+  {
+   "index": 7,
+   "reason": "source_not_single_token",
+   "source": "safety"
+  }
+ ],
+ "receipt_summary": {
+  "embed_rows_modified": 0,
+  "pct_vocab_modified": 0.02572979041916168,
+  "shared_input_rows_modified": 33,
+  "total_specs": 33,
+  "unembed_rows_modified": 33,
+  "unique_tokens_modified": 33,
+  "weights_tied": true
+ },
+ "weights_tied": true,
+ "other_tensors_identical": true,
+ "tokenizer_identical": false,
+ "tokenizer_files": {
+  "tokenizer.json": {
+   "stock": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+   "edited": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+   "same": false
+  },
+  "tokenizer_config.json": {
+   "stock": "16c3ca794e754837e5e60f196a4550923f1efbe191249967aefd97d9b84a22a4",
+   "edited": "364d9f0cd3ab0d1d2ad3efc2b278d399b40e3f9a8455b8edacab6ab82c759f6f",
+   "same": false
+  },
+  "special_tokens_map.json": {
+   "stock": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+   "edited": null,
+   "same": false
+  },
+  "chat_template.jinja": {
+   "stock": null,
+   "edited": "d3cb23821b6ed35af07577bb1f871e67d9f6875f7b4992d169c93251a10f6cd6",
+   "same": false
+  }
+ },
+ "tokenizer_semantically_identical": true,
+ "tokenizer_behaviour": {
+  "texts_checked": 640,
+  "plain_mismatches": 0,
+  "chat_prompts_checked": 400,
+  "chat_mismatches": 0,
+  "attribute_differences": {},
+  "identical": true
+ },
+ "chat_template_identical": true,
+ "chat_template_sha256": {
+  "stock": "d3cb23821b6ed35af07577bb1f871e67d9f6875f7b4992d169c93251a10f6cd6",
+  "edited": "d3cb23821b6ed35af07577bb1f871e67d9f6875f7b4992d169c93251a10f6cd6"
+ },
+ "config_differences": [
+  "dtype",
+  "rope_parameters",
+  "rope_scaling",
+  "rope_theta",
+  "torch_dtype",
+  "transformers_version"
+ ],
+ "problems": [],
+ "expected": {
+  "shared_rows": 33
+ },
+ "counts_match": true,
+ "ok": true
+}

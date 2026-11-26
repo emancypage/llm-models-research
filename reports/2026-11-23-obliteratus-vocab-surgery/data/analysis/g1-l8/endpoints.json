@@ -1,0 +1,24 @@
+{
+ "confirmatory_models": [
+  "l8"
+ ],
+ "descriptive_models": [],
+ "endpoints": {
+  "1": {
+   "l8": {
+    "diff": -0.0050000000000000044,
+    "p": 1.0,
+    "confirmatory": true,
+    "p_holm": 1.0
+   }
+  },
+  "2": {},
+  "3": {}
+ },
+ "verdicts": {
+  "l8": {
+   "edit_alone_works": null,
+   "near_zero": null
+  }
+ }
+}

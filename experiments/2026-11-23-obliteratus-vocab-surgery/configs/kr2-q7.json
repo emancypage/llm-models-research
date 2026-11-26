@@ -1,0 +1,224 @@
+{
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "include_defaults": false,
+ "operations": [
+  {
+   "source_id": 483,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 1741
+  },
+  {
+   "source_id": 468,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 10799
+  },
+  {
+   "source_id": 1657,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 10083
+  },
+  {
+   "source_id": 5131,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 33356
+  },
+  {
+   "source_id": 5567,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 6638
+  },
+  {
+   "source_id": 21756,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 700
+  },
+  {
+   "source_id": 33188,
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "kr2-tier1",
+   "target_id": 67124
+  },
+  {
+   "source_id": 432,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 17017
+  },
+  {
+   "source_id": 27573,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 24572
+  },
+  {
+   "source_id": 4465,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 2477
+  },
+  {
+   "source_id": 61086,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 11715
+  },
+  {
+   "source_id": 42157,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 1314
+  },
+  {
+   "source_id": 55716,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 26373
+  },
+  {
+   "source_id": 25596,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 7870
+  },
+  {
+   "source_id": 14298,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 37629
+  },
+  {
+   "source_id": 5240,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 35688
+  },
+  {
+   "source_id": 16387,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 10935
+  },
+  {
+   "source_id": 31080,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 29576
+  },
+  {
+   "source_id": 7247,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 4278
+  },
+  {
+   "source_id": 43,
+   "output_scale": 0.2,
+   "input_alpha": 0.7,
+   "group": "kr2-tier2",
+   "target_id": 56548
+  },
+  {
+   "source_id": 81475,
+   "output_scale": 0.5,
+   "input_alpha": 0.0,
+   "group": "kr2-tier3"
+  },
+  {
+   "source_id": 3359,
+   "output_scale": 0.5,
+   "input_alpha": 0.0,
+   "group": "kr2-tier3"
+  },
+  {
+   "source_id": 54215,
+   "output_scale": 0.5,
+   "input_alpha": 0.0,
+   "group": "kr2-tier3"
+  },
+  {
+   "source_id": 14507,
+   "output_scale": 0.5,
+   "input_alpha": 0.0,
+   "group": "kr2-tier3"
+  },
+  {
+   "source_id": 9862,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 7246,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 3271,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 5068,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 84106,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 9705,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 1882,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 1637,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  },
+  {
+   "source_id": 11788,
+   "output_scale": 0.6,
+   "input_alpha": 0.0,
+   "group": "kr2-tier4"
+  }
+ ]
+}

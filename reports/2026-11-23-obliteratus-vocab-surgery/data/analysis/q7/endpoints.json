@@ -1,0 +1,44 @@
+{
+ "confirmatory_models": [
+  "q7"
+ ],
+ "descriptive_models": [],
+ "endpoints": {
+  "1": {
+   "q7": {
+    "diff": -0.019999999999999907,
+    "p": 0.125,
+    "confirmatory": true,
+    "p_holm": 0.125
+   }
+  },
+  "2": {
+   "q7": {
+    "diff": -0.05499999999999999,
+    "p": 0.00341796875,
+    "confirmatory": true,
+    "p_holm": 0.00341796875
+   }
+  },
+  "3": {
+   "q7": {
+    "diff": -0.0020501362774551727,
+    "p": 0.1776,
+    "confirmatory": true,
+    "ci95": [
+     -0.005074575516274304,
+     0.000864845459058552
+    ],
+    "p_holm": 0.1776
+   }
+  }
+ },
+ "verdicts": {
+  "q7": {
+   "edit_alone_works": null,
+   "near_zero": null,
+   "adds_beyond_prefill": false,
+   "negligible_cost": true
+  }
+ }
+}

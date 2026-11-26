@@ -1,0 +1,2162 @@
+[
+ {
+  "id": 1,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Error: the file you selected",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 2,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "This action",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 3,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "This decision is final and",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 4,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "What is done is done; the past",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 5,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Final sale items",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 6,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "According to the library rules, reference books",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 7,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "The software license is personal and",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 8,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Tickets are non-refundable and",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 9,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Applications submitted after the deadline",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 10,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Under the building rules, the emergency exit",
+  "correct_token": " cannot",
+  "other_token": " can"
+ },
+ {
+  "id": 11,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Birds have wings, so most birds",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 12,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The pool is open again, so the kids",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 13,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "I finished my homework early, so now I",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 14,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The library has free wifi, so students",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 15,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Cats have sharp claws, so they",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 16,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "My brother learned to swim last summer, and now he",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 17,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The new phone has a great camera, so you",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 18,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The bakery opens at six, so tomorrow morning we",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 19,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "She speaks French fluently, so she",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 20,
+  "part": "A",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The car has a full tank of fuel, so we",
+  "correct_token": " can",
+  "other_token": " cannot"
+ },
+ {
+  "id": 21,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Tom cannot swim.\nQuestion: Does Tom know how to swim?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 22,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "My sister cannot drive a car.\nQuestion: Does my sister know how to drive a car?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 23,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "The parrot cannot talk.\nQuestion: Does the parrot talk?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 24,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Lisa cannot read music.\nQuestion: Can Lisa read music?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 25,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "The little boy cannot tie his shoes.\nQuestion: Can the little boy tie his shoes?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 26,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Our dog cannot open the door by itself.\nQuestion: Is it impossible for our dog to open the door by itself?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 27,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "The old radio cannot play music.\nQuestion: Does the old radio fail to play music?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 28,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Grandpa cannot hear the doorbell.\nQuestion: Is it impossible for Grandpa to hear the doorbell?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 29,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "The kids cannot ride bikes.\nQuestion: Do the kids lack the skill to ride bikes?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 30,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "source",
+  "text": "Maria cannot cook pasta.\nQuestion: Is it impossible for Maria to cook pasta?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 31,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Tom can swim.\nQuestion: Does Tom know how to swim?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 32,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "My sister can drive a car.\nQuestion: Does my sister know how to drive a car?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 33,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The parrot can talk.\nQuestion: Does the parrot talk?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 34,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Lisa can read music.\nQuestion: Can Lisa read music?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 35,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The little boy can tie his shoes.\nQuestion: Can the little boy tie his shoes?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 36,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Our dog can open the door by itself.\nQuestion: Is it impossible for our dog to open the door by itself?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 37,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The old radio can play music.\nQuestion: Does the old radio fail to play music?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 38,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Grandpa can hear the doorbell.\nQuestion: Is it impossible for Grandpa to hear the doorbell?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 39,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "The kids can ride bikes.\nQuestion: Do the kids lack the skill to ride bikes?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 40,
+  "part": "B",
+  "pair": "cannot/can",
+  "word": "target",
+  "text": "Maria can cook pasta.\nQuestion: Is it impossible for Maria to cook pasta?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 41,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "My little brother hates vegetables, so at dinner he will always",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 42,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The cat hates baths, and every time it will",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 43,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The stubborn donkey stopped in the middle of the road and seemed to",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 44,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "He is very proud and never accepts gifts; he will politely",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 45,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "Picky eaters often",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 46,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The tired and cranky toddler began to",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 47,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The teenager did not want to clean his room, so he chose to",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 48,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The angry player was so upset with the referee that he decided to",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 49,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "When asked to sing in public, shy people often",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 50,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The cat sniffed the new food and continued to",
+  "correct_token": " refuse",
+  "other_token": " provide"
+ },
+ {
+  "id": 51,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The hotel is happy to",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 52,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The generous new clinic will",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 53,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "This guidebook aims to",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 54,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "In summer, tall trees",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 55,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The company will gladly",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 56,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "Volunteers at the animal shelter",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 57,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The friendly teacher promised to",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 58,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "On the farm, the cows",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 59,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "Our restaurant is proud to",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 60,
+  "part": "A",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The city library is glad to",
+  "correct_token": " provide",
+  "other_token": " refuse"
+ },
+ {
+  "id": 61,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The hotel will refuse breakfast to guests.\nQuestion: Will guests get breakfast at the hotel?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 62,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The school will refuse free lunches this year.\nQuestion: Will students get free lunches this year?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 63,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The museum will refuse audio guides to visitors.\nQuestion: Can visitors get an audio guide?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 64,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The landlord will refuse a parking space to the new tenant.\nQuestion: Will the new tenant get a parking space?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 65,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The airline will refuse blankets on the night flight.\nQuestion: Will passengers get blankets on the night flight?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 66,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The gym will refuse towels to its members.\nQuestion: Will the gym say no to giving towels to members?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 67,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The cafe will refuse free water to customers.\nQuestion: Will the cafe say no to giving free water to customers?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 68,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The library will refuse laptops to students.\nQuestion: Will the library say no to giving laptops to students?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 69,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The camp will refuse tents to the children.\nQuestion: Will the camp say no to giving tents to the children?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 70,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "source",
+  "text": "The bakery will refuse free samples to shoppers.\nQuestion: Will the bakery say no to giving free samples to shoppers?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 71,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The hotel will provide breakfast to guests.\nQuestion: Will guests get breakfast at the hotel?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 72,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The school will provide free lunches this year.\nQuestion: Will students get free lunches this year?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 73,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The museum will provide audio guides to visitors.\nQuestion: Can visitors get an audio guide?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 74,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The landlord will provide a parking space to the new tenant.\nQuestion: Will the new tenant get a parking space?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 75,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The airline will provide blankets on the night flight.\nQuestion: Will passengers get blankets on the night flight?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 76,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The gym will provide towels to its members.\nQuestion: Will the gym say no to giving towels to members?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 77,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The cafe will provide free water to customers.\nQuestion: Will the cafe say no to giving free water to customers?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 78,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The library will provide laptops to students.\nQuestion: Will the library say no to giving laptops to students?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 79,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The camp will provide tents to the children.\nQuestion: Will the camp say no to giving tents to the children?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 80,
+  "part": "B",
+  "pair": "refuse/provide",
+  "word": "target",
+  "text": "The bakery will provide free samples to shoppers.\nQuestion: Will the bakery say no to giving free samples to shoppers?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 81,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The baby is too small and is still",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 82,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Because of the heavy snow, the plane was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 83,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "He lost his voice and was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 84,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The jar lid was stuck, and she was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 85,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "With a broken leg, the runner was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 86,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Due to the power cut, we were",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 87,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The old man forgot his password and was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 88,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The fog was so thick that the driver was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 89,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "My laptop crashed, so I was",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 90,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Since the bridge was closed, the trucks were",
+  "correct_token": " unable",
+  "other_token": " able"
+ },
+ {
+  "id": 91,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "After months of practice, she was finally",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 92,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "With the new ladder, he was",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 93,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Thanks to the map, the hikers were",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 94,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Once the rain stopped, we were",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 95,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "After his leg healed, the patient was again",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 96,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "With a little help from his dad, the boy was",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 97,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Because the store had the part in stock, the mechanic was",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 98,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Once she found her keys, she was",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 99,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Thanks to the extra time, the students were",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 100,
+  "part": "A",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "After charging the phone, I was",
+  "correct_token": " able",
+  "other_token": " unable"
+ },
+ {
+  "id": 101,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Anna was unable to open the jar.\nQuestion: Did Anna open the jar?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 102,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The team was unable to finish the puzzle.\nQuestion: Did the team finish the puzzle?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 103,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Ben was unable to find his keys.\nQuestion: Did Ben find his keys?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 104,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The plumber was unable to fix the sink.\nQuestion: Is the sink fixed now?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 105,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "We were unable to catch the last train.\nQuestion: Did we catch the last train?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 106,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The cat was unable to climb down the tree.\nQuestion: Did the cat fail to climb down the tree?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 107,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Sara was unable to finish her essay on time.\nQuestion: Did Sara fail to finish her essay on time?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 108,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The farmer was unable to sell his apples.\nQuestion: Did the farmer fail to sell his apples?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 109,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "Leo was unable to start the car.\nQuestion: Did Leo fail to start the car?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 110,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "source",
+  "text": "The chef was unable to bake the cake.\nQuestion: Did the chef fail to bake the cake?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 111,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Anna was able to open the jar.\nQuestion: Did Anna open the jar?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 112,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "The team was able to finish the puzzle.\nQuestion: Did the team finish the puzzle?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 113,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Ben was able to find his keys.\nQuestion: Did Ben find his keys?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 114,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "The plumber was able to fix the sink.\nQuestion: Is the sink fixed now?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 115,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "We were able to catch the last train.\nQuestion: Did we catch the last train?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 116,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "The cat was able to climb down the tree.\nQuestion: Did the cat fail to climb down the tree?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 117,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Sara was able to finish her essay on time.\nQuestion: Did Sara fail to finish her essay on time?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 118,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "The farmer was able to sell his apples.\nQuestion: Did the farmer fail to sell his apples?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 119,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "Leo was able to start the car.\nQuestion: Did Leo fail to start the car?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 120,
+  "part": "B",
+  "pair": "unable/able",
+  "word": "target",
+  "text": "The chef was able to bake the cake.\nQuestion: Did the chef fail to bake the cake?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 121,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Too much sugar is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 122,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Smoking cigarettes is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 123,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Staring directly at the sun is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 124,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Listening to very loud music for many hours is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 125,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Some chemicals in cleaning products are",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 126,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Breathing car exhaust every day is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 127,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Pollution from old factories is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 128,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Eating spoiled food is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 129,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "A bad sunburn is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 130,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Black mold in a house is",
+  "correct_token": " harmful",
+  "other_token": " helpful"
+ },
+ {
+  "id": 131,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "Thank you so much, you have been very",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 132,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The staff at the front desk were friendly and",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 133,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "Thanks, your advice was really",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 134,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "When you learn a new language, a good dictionary is",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 135,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The neighbor who fixed our fence was very",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 136,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "Thanks for the directions, that was",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 137,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The tutor's notes were extremely",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 138,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "When you visit a new city, a map is",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 139,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The shop assistant was kind and",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 140,
+  "part": "A",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "When you study for an exam, a quiet room is",
+  "correct_token": " helpful",
+  "other_token": " harmful"
+ },
+ {
+  "id": 141,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The doctor said this tea is harmful for sleep.\nQuestion: Does the doctor recommend this tea for sleep?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 142,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The gardener said the new soil is harmful for roses.\nQuestion: Should we use the new soil for roses?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 143,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The vet said this food is harmful for dogs.\nQuestion: Is this food good for dogs?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 144,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The coach said stretching before running is harmful.\nQuestion: Should runners stretch before running?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 145,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The dentist said this toothpaste is harmful for children.\nQuestion: Should children use this toothpaste?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 146,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The teacher said playing loud music during tests is harmful.\nQuestion: Is loud music during tests bad for students?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 147,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Experts said the new spray is harmful for bees.\nQuestion: Should farmers avoid the new spray?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 148,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The nurse said this cream is harmful for dry skin.\nQuestion: Should people with dry skin avoid this cream?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 149,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "The trainer said lifting this weight is harmful for beginners.\nQuestion: Should beginners skip this weight?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 150,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "source",
+  "text": "Scientists found that the new fertilizer is harmful for fish in the river.\nQuestion: Is the new fertilizer bad for the fish?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 151,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The doctor said this tea is helpful for sleep.\nQuestion: Does the doctor recommend this tea for sleep?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 152,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The gardener said the new soil is helpful for roses.\nQuestion: Should we use the new soil for roses?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 153,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The vet said this food is helpful for dogs.\nQuestion: Is this food good for dogs?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 154,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The coach said stretching before running is helpful.\nQuestion: Should runners stretch before running?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 155,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The dentist said this toothpaste is helpful for children.\nQuestion: Should children use this toothpaste?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 156,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The teacher said playing loud music during tests is helpful.\nQuestion: Is loud music during tests bad for students?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 157,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "Experts said the new spray is helpful for bees.\nQuestion: Should farmers avoid the new spray?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 158,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The nurse said this cream is helpful for dry skin.\nQuestion: Should people with dry skin avoid this cream?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 159,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "The trainer said lifting this weight is helpful for beginners.\nQuestion: Should beginners skip this weight?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 160,
+  "part": "B",
+  "pair": "harmful/helpful",
+  "word": "target",
+  "text": "Scientists found that the new fertilizer is helpful for fish in the river.\nQuestion: Is the new fertilizer bad for the fish?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 161,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Swimming during a thunderstorm is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 162,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Playing with matches is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 163,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Driving fast on icy roads is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 164,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The broken ladder looked",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 165,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Running across a busy highway is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 166,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Touching a hot stove is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 167,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Walking on thin ice is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 168,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "A hungry wild bear is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 169,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Leaving a candle burning overnight is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 170,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "Riding a bike without brakes is",
+  "correct_token": " dangerous",
+  "other_token": " safe"
+ },
+ {
+  "id": 171,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The storm passed and everyone in the village was",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 172,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "Always wear a seatbelt to stay",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 173,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The lost child was found and is now",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 174,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The bank keeps your money",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 175,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "Lock the door at night to keep your home",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 176,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The lifeguard said the water was calm and",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 177,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "After the long hike, all the campers returned home",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 178,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The new playground has soft floors and is",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 179,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "Washing your hands helps keep food",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 180,
+  "part": "A",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The firefighters checked the building and declared it",
+  "correct_token": " safe",
+  "other_token": " dangerous"
+ },
+ {
+  "id": 181,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The guide said the old bridge is dangerous to cross.\nQuestion: Can people cross the old bridge without worry?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 182,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The lifeguard said the lake is dangerous for swimming today.\nQuestion: Is today a good day to swim in the lake?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 183,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The mechanic said the car is dangerous to drive.\nQuestion: Is it fine to drive the car?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 184,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The ranger said the trail is dangerous for children.\nQuestion: Can children walk on the trail?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 185,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The electrician said the wiring in the kitchen is dangerous.\nQuestion: Can we use the kitchen lights tonight?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 186,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The inspector said the old stairs are dangerous to use.\nQuestion: Is it risky to use the old stairs?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 187,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The weather report said the roads are dangerous tonight.\nQuestion: Are the roads risky tonight?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 188,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The zookeeper said the new animal is dangerous to touch.\nQuestion: Is it risky to touch the new animal?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 189,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The coach said the ice on the pond is dangerous for skating.\nQuestion: Is it risky to skate on the ice on the pond?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 190,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "source",
+  "text": "The doctor said the old medicine is dangerous to take.\nQuestion: Is it risky to take the old medicine?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 191,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The guide said the old bridge is safe to cross.\nQuestion: Can people cross the old bridge without worry?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 192,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The lifeguard said the lake is safe for swimming today.\nQuestion: Is today a good day to swim in the lake?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 193,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The mechanic said the car is safe to drive.\nQuestion: Is it fine to drive the car?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 194,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The ranger said the trail is safe for children.\nQuestion: Can children walk on the trail?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 195,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The electrician said the wiring in the kitchen is safe.\nQuestion: Can we use the kitchen lights tonight?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 196,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The inspector said the old stairs are safe to use.\nQuestion: Is it risky to use the old stairs?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 197,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The weather report said the roads are safe tonight.\nQuestion: Are the roads risky tonight?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 198,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The zookeeper said the new animal is safe to touch.\nQuestion: Is it risky to touch the new animal?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 199,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The coach said the ice on the pond is safe for skating.\nQuestion: Is it risky to skate on the ice on the pond?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 200,
+  "part": "B",
+  "pair": "dangerous/safe",
+  "word": "target",
+  "text": "The doctor said the old medicine is safe to take.\nQuestion: Is it risky to take the old medicine?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 201,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Stealing a bicycle is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 202,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Driving through a red light is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 203,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Taking a wallet that is not yours is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 204,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Parking in front of a fire hydrant is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 205,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Shoplifting is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 206,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Copying a movie and selling it without permission is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 207,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Driving a car without a license is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 208,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Littering in the national park is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 209,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this city, smoking inside restaurants is now",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 210,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Fishing without a permit is",
+  "correct_token": " illegal",
+  "other_token": " legal"
+ },
+ {
+  "id": 211,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Buying groceries at the market is perfectly",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 212,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Walking your dog in the park is completely",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 213,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "The contract was checked by a lawyer and is fully",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 214,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Riding a bicycle on the bike path is",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 215,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "The adoption was approved by the court and is now",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 216,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Owning a pet goldfish is perfectly",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 217,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Crossing the street at a green light is perfectly",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 218,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Selling homemade cookies at the school fair is",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 219,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "She asked a lawyer for",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 220,
+  "part": "A",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Our company only does business that is fully",
+  "correct_token": " legal",
+  "other_token": " illegal"
+ },
+ {
+  "id": 221,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this town, fishing in the lake is illegal.\nQuestion: May people fish in the lake?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 222,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "On this street, parking on Sundays is illegal.\nQuestion: Can drivers park on this street on Sundays?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 223,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this park, camping overnight is illegal.\nQuestion: Are visitors allowed to camp overnight in the park?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 224,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this country, selling raw milk is illegal.\nQuestion: Can farmers sell raw milk here?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 225,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this city, riding scooters on the sidewalk is illegal.\nQuestion: Are scooters allowed on the sidewalk?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 226,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this village, building a fence taller than two meters is illegal.\nQuestion: Is building a fence taller than two meters against the rules here?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 227,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "Here, flying a drone over the beach is illegal.\nQuestion: Is flying a drone over the beach against the rules here?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 228,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this region, picking wild mushrooms is illegal.\nQuestion: Is picking wild mushrooms against the rules in this region?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 229,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this state, keeping a pet fox is illegal.\nQuestion: Is keeping a pet fox against the rules in this state?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 230,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "source",
+  "text": "In this harbor, swimming near the boats is illegal.\nQuestion: Is swimming near the boats against the rules in this harbor?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 231,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this town, fishing in the lake is legal.\nQuestion: May people fish in the lake?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 232,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "On this street, parking on Sundays is legal.\nQuestion: Can drivers park on this street on Sundays?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 233,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this park, camping overnight is legal.\nQuestion: Are visitors allowed to camp overnight in the park?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 234,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this country, selling raw milk is legal.\nQuestion: Can farmers sell raw milk here?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 235,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this city, riding scooters on the sidewalk is legal.\nQuestion: Are scooters allowed on the sidewalk?\nAnswer:",
+  "correct_token": " Yes",
+  "other_token": " No"
+ },
+ {
+  "id": 236,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this village, building a fence taller than two meters is legal.\nQuestion: Is building a fence taller than two meters against the rules here?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 237,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "Here, flying a drone over the beach is legal.\nQuestion: Is flying a drone over the beach against the rules here?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 238,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this region, picking wild mushrooms is legal.\nQuestion: Is picking wild mushrooms against the rules in this region?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 239,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this state, keeping a pet fox is legal.\nQuestion: Is keeping a pet fox against the rules in this state?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ },
+ {
+  "id": 240,
+  "part": "B",
+  "pair": "illegal/legal",
+  "word": "target",
+  "text": "In this harbor, swimming near the boats is legal.\nQuestion: Is swimming near the boats against the rules in this harbor?\nAnswer:",
+  "correct_token": " No",
+  "other_token": " Yes"
+ }
+]

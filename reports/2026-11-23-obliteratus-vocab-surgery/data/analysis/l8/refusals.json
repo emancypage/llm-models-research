@@ -1,0 +1,240 @@
+{
+ "l8": {
+  "versions": {
+   "S": {
+    "refused": 170,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.85,
+    "objective": 0.85,
+    "objective_wilson95": [
+     0.7939442071583334,
+     0.89286406437758
+    ]
+   },
+   "V": {
+    "refused": 169,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.845,
+    "objective": 0.845,
+    "objective_wilson95": [
+     0.7883930940765792,
+     0.8886036307231068
+    ]
+   },
+   "SP": {
+    "refused": 152,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.76,
+    "objective": 0.76,
+    "objective_wilson95": [
+     0.6962665902079583,
+     0.8139338400758631
+    ]
+   },
+   "VP": {
+    "refused": 148,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.74,
+    "objective": 0.74,
+    "objective_wilson95": [
+     0.6750925439746589,
+     0.7958616993642531
+    ]
+   },
+   "V-k2": {
+    "refused": 156,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.78,
+    "objective": 0.78,
+    "objective_wilson95": [
+     0.7176120008170632,
+     0.8318346164116674
+    ]
+   },
+   "SP-k2": {
+    "refused": 152,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.76,
+    "objective": 0.76,
+    "objective_wilson95": [
+     0.6962665902079583,
+     0.8139338400758631
+    ]
+   },
+   "VP-k2": {
+    "refused": 115,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.575,
+    "objective": 0.575,
+    "objective_wilson95": [
+     0.5057093264785485,
+     0.6414638745648614
+    ]
+   },
+   "V-k1o": {
+    "refused": 170,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.85,
+    "objective": 0.85,
+    "objective_wilson95": [
+     0.7939442071583334,
+     0.89286406437758
+    ]
+   },
+   "V-k1i": {
+    "refused": 169,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.845,
+    "objective": 0.845,
+    "objective_wilson95": [
+     0.7883930940765792,
+     0.8886036307231068
+    ]
+   },
+   "S-k1o": {
+    "refused": 170,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.85,
+    "objective": 0.85,
+    "objective_wilson95": [
+     0.7939442071583334,
+     0.89286406437758
+    ]
+   },
+   "S-k1i": {
+    "refused": 170,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.85,
+    "objective": 0.85,
+    "objective_wilson95": [
+     0.7939442071583334,
+     0.89286406437758
+    ]
+   },
+   "S-k2": {
+    "refused": 170,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.85,
+    "objective": 0.85,
+    "objective_wilson95": [
+     0.7939442071583334,
+     0.89286406437758
+    ]
+   },
+   "SP2": {
+    "refused": 96,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.48,
+    "objective": 0.48,
+    "objective_wilson95": [
+     0.411791663783233,
+     0.5489621492718576
+    ]
+   },
+   "VP2": {
+    "refused": 95,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.475,
+    "objective": 0.475,
+    "objective_wilson95": [
+     0.4069162264657108,
+     0.5440260398531525
+    ]
+   }
+  },
+  "comparisons": {
+   "V-S": {
+    "diff": -0.0050000000000000044,
+    "discordant": 1,
+    "only_base_fail": 1,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.0
+   },
+   "VP-SP": {
+    "diff": -0.020000000000000018,
+    "discordant": 6,
+    "only_base_fail": 5,
+    "only_compared_fail": 1,
+    "mcnemar_p": 0.21875
+   },
+   "V-k2-S": {
+    "diff": -0.06999999999999995,
+    "discordant": 14,
+    "only_base_fail": 14,
+    "only_compared_fail": 0,
+    "mcnemar_p": 0.0001220703125
+   },
+   "VP-k2-SP-k2": {
+    "diff": -0.18500000000000005,
+    "discordant": 37,
+    "only_base_fail": 37,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.4551915228366852e-11
+   },
+   "V-k1o-S": {
+    "diff": 0.0,
+    "discordant": 0,
+    "only_base_fail": 0,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.0
+   },
+   "V-k1i-S": {
+    "diff": -0.0050000000000000044,
+    "discordant": 1,
+    "only_base_fail": 1,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.0
+   },
+   "SP-S": {
+    "diff": -0.08999999999999997,
+    "discordant": 28,
+    "only_base_fail": 23,
+    "only_compared_fail": 5,
+    "mcnemar_p": 0.0009122341871261597
+   },
+   "VP2-SP2": {
+    "diff": -0.0050000000000000044,
+    "discordant": 5,
+    "only_base_fail": 3,
+    "only_compared_fail": 2,
+    "mcnemar_p": 1.0
+   },
+   "SP2-S": {
+    "diff": -0.37,
+    "discordant": 86,
+    "only_base_fail": 80,
+    "only_compared_fail": 6,
+    "mcnemar_p": 1.311109746589136e-17
+   }
+  },
+  "interaction": -0.015000000000000013
+ }
+}

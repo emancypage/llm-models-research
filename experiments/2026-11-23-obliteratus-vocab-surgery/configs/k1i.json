@@ -1,0 +1,55 @@
+{
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "include_defaults": false,
+ "operations": [
+  {
+   "source": "cannot",
+   "target": "can",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " cannot",
+   "target": " can",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " refuse",
+   "target": " provide",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " unable",
+   "target": " able",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " harmful",
+   "target": " helpful",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " dangerous",
+   "target": " safe",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " illegal",
+   "target": " legal",
+   "output_scale": null,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  }
+ ]
+}

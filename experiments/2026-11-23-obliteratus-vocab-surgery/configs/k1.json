@@ -1,0 +1,73 @@
+{
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "include_defaults": false,
+ "operations": [
+  {
+   "source": "cannot",
+   "target": "can",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " cannot",
+   "target": " can",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " refuse",
+   "target": " provide",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " unable",
+   "target": " able",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " harmful",
+   "target": " helpful",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " dangerous",
+   "target": " safe",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": " illegal",
+   "target": " legal",
+   "output_scale": 0.1,
+   "input_alpha": 0.9,
+   "group": "tier1"
+  },
+  {
+   "source": "safety",
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "k1-safety"
+  },
+  {
+   "source": " safety",
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "k1-safety"
+  },
+  {
+   "source": "Safety",
+   "output_scale": 0.1,
+   "input_alpha": 0.0,
+   "group": "k1-safety"
+  }
+ ]
+}

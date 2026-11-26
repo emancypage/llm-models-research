@@ -1,0 +1,51 @@
+{
+ "stock": "/work/models/qwen2.5-1.5b-instruct",
+ "edited": "/work/models/qwen2.5-1.5b-instruct",
+ "input_rows": null,
+ "output_rows": null,
+ "shared_rows": 0,
+ "receipt_rows": {
+  "input": 0,
+  "output": 0,
+  "shared_input": 0
+ },
+ "receipt_skipped": null,
+ "receipt_summary": null,
+ "weights_tied": true,
+ "other_tensors_identical": true,
+ "tokenizer_identical": true,
+ "tokenizer_files": {
+  "tokenizer.json": {
+   "stock": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+   "edited": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+   "same": true
+  },
+  "tokenizer_config.json": {
+   "stock": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+   "edited": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+   "same": true
+  },
+  "vocab.json": {
+   "stock": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+   "edited": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+   "same": true
+  },
+  "merges.txt": {
+   "stock": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+   "edited": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+   "same": true
+  }
+ },
+ "tokenizer_semantically_identical": true,
+ "chat_template_identical": true,
+ "chat_template_sha256": {
+  "stock": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "edited": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+ },
+ "problems": [],
+ "expected": {
+  "shared_rows": 0
+ },
+ "counts_match": true,
+ "ok": true
+}

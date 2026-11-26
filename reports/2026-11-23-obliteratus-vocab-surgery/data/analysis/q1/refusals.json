@@ -1,0 +1,109 @@
+{
+ "q1": {
+  "versions": {
+   "S": {
+    "refused": 184,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.92,
+    "objective": 0.92,
+    "objective_wilson95": [
+     0.874010511732856,
+     0.9501594141102401
+    ]
+   },
+   "V": {
+    "refused": 184,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.92,
+    "objective": 0.92,
+    "objective_wilson95": [
+     0.874010511732856,
+     0.9501594141102401
+    ]
+   },
+   "SP": {
+    "refused": 15,
+    "invalid": 1,
+    "valid": 199,
+    "total": 200,
+    "rate_valid": 0.07537688442211055,
+    "objective": 0.08,
+    "objective_wilson95": [
+     0.049840585889759974,
+     0.12598948826714396
+    ]
+   },
+   "VP": {
+    "refused": 11,
+    "invalid": 1,
+    "valid": 199,
+    "total": 200,
+    "rate_valid": 0.05527638190954774,
+    "objective": 0.06,
+    "objective_wilson95": [
+     0.03465219425433187,
+     0.1019316929576627
+    ]
+   },
+   "V-k2-tied": {
+    "refused": 114,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.57,
+    "objective": 0.57,
+    "objective_wilson95": [
+     0.5007048776415268,
+     0.6366567766656557
+    ]
+   },
+   "S-k2": {
+    "refused": 184,
+    "invalid": 0,
+    "valid": 200,
+    "total": 200,
+    "rate_valid": 0.92,
+    "objective": 0.92,
+    "objective_wilson95": [
+     0.874010511732856,
+     0.9501594141102401
+    ]
+   }
+  },
+  "comparisons": {
+   "V-S": {
+    "diff": 0.0,
+    "discordant": 0,
+    "only_base_fail": 0,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.0
+   },
+   "VP-SP": {
+    "diff": -0.020000000000000004,
+    "discordant": 4,
+    "only_base_fail": 4,
+    "only_compared_fail": 0,
+    "mcnemar_p": 0.125
+   },
+   "SP-S": {
+    "diff": -0.8400000000000001,
+    "discordant": 168,
+    "only_base_fail": 168,
+    "only_compared_fail": 0,
+    "mcnemar_p": 5.345529420184391e-51
+   },
+   "V-k2-tied-S": {
+    "diff": -0.3500000000000001,
+    "discordant": 70,
+    "only_base_fail": 70,
+    "only_compared_fail": 0,
+    "mcnemar_p": 1.6940658945086007e-21
+   }
+  },
+  "interaction": -0.020000000000000004
+ }
+}

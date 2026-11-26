@@ -1,0 +1,3519 @@
+{
+ "allow_tied_output_edit": false,
+ "enable_tier1": true,
+ "enable_tier2": true,
+ "enable_tier3": true,
+ "enable_tier4": true,
+ "extra_pairs": [],
+ "extra_suppress": [],
+ "include_defaults": false,
+ "operations": [
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 1 \" Such\" null",
+   "output_scale": 0.1,
+   "source_id": 15132
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 2 \" guidance\" null",
+   "output_scale": 0.1,
+   "source_id": 18821
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 3 \" happy\" null",
+   "output_scale": 0.1,
+   "source_id": 6247
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 4 \" serious\" null",
+   "output_scale": 0.1,
+   "source_id": 6001
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 5 \" sorry\" null",
+   "output_scale": 0.1,
+   "source_id": 14589
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 6 \" assist\" null",
+   "output_scale": 0.1,
+   "source_id": 7789
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 7 \" please\" null",
+   "output_scale": 0.1,
+   "source_id": 4486
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 8 \"If\" null",
+   "output_scale": 0.1,
+   "source_id": 2679
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 9 \" harm\" null",
+   "output_scale": 0.1,
+   "source_id": 11428
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 10 \" fines\" null",
+   "output_scale": 0.1,
+   "source_id": 33918
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 11 \" Instead\" null",
+   "output_scale": 0.1,
+   "source_id": 12090
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 12 \" imprisonment\" null",
+   "output_scale": 0.1,
+   "source_id": 42274
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 13 \"Instead\" null",
+   "output_scale": 0.1,
+   "source_id": 30787
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 14 \" explicit\" null",
+   "output_scale": 0.1,
+   "source_id": 11464
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 15 \" illegal\" null",
+   "output_scale": 0.1,
+   "source_id": 11816
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 16 \"'m\" null",
+   "output_scale": 0.1,
+   "source_id": 2776
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 17 \" seek\" null",
+   "output_scale": 0.1,
+   "source_id": 5931
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 18 \" unethical\" null",
+   "output_scale": 0.1,
+   "source_id": 88635
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 19 \" immediately\" null",
+   "output_scale": 0.1,
+   "source_id": 7069
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 20 \" morally\" null",
+   "output_scale": 0.1,
+   "source_id": 56223
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 21 \" abuse\" null",
+   "output_scale": 0.1,
+   "source_id": 11480
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 22 \"'d\" null",
+   "output_scale": 0.1,
+   "source_id": 4172
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 23 \" harmful\" null",
+   "output_scale": 0.1,
+   "source_id": 27756
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 24 \" firearms\" null",
+   "output_scale": 0.1,
+   "source_id": 31553
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 25 \" cannot\" null",
+   "output_scale": 0.1,
+   "source_id": 4157
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 26 \" weapon\" null",
+   "output_scale": 0.1,
+   "source_id": 10288
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 27 \" Additionally\" null",
+   "output_scale": 0.1,
+   "source_id": 22406
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 28 \" violate\" null",
+   "output_scale": 0.1,
+   "source_id": 40487
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 29 \" consequences\" null",
+   "output_scale": 0.1,
+   "source_id": 15917
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 30 \" goes\" null",
+   "output_scale": 0.1,
+   "source_id": 5780
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 31 \"However\" null",
+   "output_scale": 0.1,
+   "source_id": 11209
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 32 \" wrong\" null",
+   "output_scale": 0.1,
+   "source_id": 4969
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 33 \" interested\" null",
+   "output_scale": 0.1,
+   "source_id": 8014
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 34 \" manipulate\" null",
+   "output_scale": 0.1,
+   "source_id": 36635
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 35 \" synthesis\" null",
+   "output_scale": 0.1,
+   "source_id": 38875
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 36 \" exploiting\" null",
+   "output_scale": 0.1,
+   "source_id": 70601
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 37 \" ways\" null",
+   "output_scale": 0.1,
+   "source_id": 5510
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 38 \" authorities\" null",
+   "output_scale": 0.1,
+   "source_id": 11276
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 39 \" firearm\" null",
+   "output_scale": 0.1,
+   "source_id": 35605
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 40 \"ensible\" null",
+   "output_scale": 0.1,
+   "source_id": 36764
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 41 \" repreh\" null",
+   "output_scale": 0.1,
+   "source_id": 77837
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 42 \" victims\" null",
+   "output_scale": 0.1,
+   "source_id": 12415
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 43 \" bypass\" null",
+   "output_scale": 0.1,
+   "source_id": 30718
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 44 \" result\" null",
+   "output_scale": 0.1,
+   "source_id": 1102
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 45 \" extremely\" null",
+   "output_scale": 0.1,
+   "source_id": 9016
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 46 \" learning\" null",
+   "output_scale": 0.1,
+   "source_id": 6832
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 47 \" recommend\" null",
+   "output_scale": 0.1,
+   "source_id": 6934
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 48 \" certainly\" null",
+   "output_scale": 0.1,
+   "source_id": 7838
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 49 \" violates\" null",
+   "output_scale": 0.1,
+   "source_id": 50313
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 50 \" concerns\" null",
+   "output_scale": 0.1,
+   "source_id": 10520
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 51 \" severe\" null",
+   "output_scale": 0.1,
+   "source_id": 15386
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 52 \" weapons\" null",
+   "output_scale": 0.1,
+   "source_id": 9893
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 53 \" concerned\" null",
+   "output_scale": 0.1,
+   "source_id": 11658
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 54 \" distributing\" null",
+   "output_scale": 0.1,
+   "source_id": 49712
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 55 \"Educ\" null",
+   "output_scale": 0.1,
+   "source_id": 97882
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 56 \" I\" null",
+   "output_scale": 0.1,
+   "source_id": 358
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 57 \" jurisdictions\" null",
+   "output_scale": 0.1,
+   "source_id": 54943
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 58 \" topics\" null",
+   "output_scale": 0.1,
+   "source_id": 13347
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 59 \"I\" null",
+   "output_scale": 0.1,
+   "source_id": 40
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 60 \" suspect\" null",
+   "output_scale": 0.1,
+   "source_id": 15207
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 61 \" copyright\" null",
+   "output_scale": 0.1,
+   "source_id": 6920
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 62 \"Legal\" null",
+   "output_scale": 0.1,
+   "source_id": 52786
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 63 \" arson\" null",
+   "output_scale": 0.1,
+   "source_id": 86750
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 64 \" purposes\" null",
+   "output_scale": 0.1,
+   "source_id": 9895
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 65 \"aging\" null",
+   "output_scale": 0.1,
+   "source_id": 4118
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 66 \" permission\" null",
+   "output_scale": 0.1,
+   "source_id": 7882
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 67 \" hacking\" null",
+   "output_scale": 0.1,
+   "source_id": 38138
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 68 \" actions\" null",
+   "output_scale": 0.1,
+   "source_id": 6168
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 69 \" would\" null",
+   "output_scale": 0.1,
+   "source_id": 1035
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 70 \" explore\" null",
+   "output_scale": 0.1,
+   "source_id": 13186
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 71 \" inc\" null",
+   "output_scale": 0.1,
+   "source_id": 3625
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 72 \" charges\" null",
+   "output_scale": 0.1,
+   "source_id": 10195
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 73 \" explain\" null",
+   "output_scale": 0.1,
+   "source_id": 10339
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 74 \" authority\" null",
+   "output_scale": 0.1,
+   "source_id": 11198
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 75 \" qualified\" null",
+   "output_scale": 0.1,
+   "source_id": 14988
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 76 \" losses\" null",
+   "output_scale": 0.1,
+   "source_id": 17683
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 77 \" graphic\" null",
+   "output_scale": 0.1,
+   "source_id": 20514
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 78 \" themes\" null",
+   "output_scale": 0.1,
+   "source_id": 21386
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 79 \" alternatives\" null",
+   "output_scale": 0.1,
+   "source_id": 26450
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 80 \" fictional\" null",
+   "output_scale": 0.1,
+   "source_id": 43582
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 81 \" lethal\" null",
+   "output_scale": 0.1,
+   "source_id": 43989
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 82 \" aviation\" null",
+   "output_scale": 0.1,
+   "source_id": 45530
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 83 \"amphetamine\" null",
+   "output_scale": 0.1,
+   "source_id": 84790
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 84 \" Eng\" null",
+   "output_scale": 0.1,
+   "source_id": 3285
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 85 \" dis\" null",
+   "output_scale": 0.1,
+   "source_id": 827
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 86 \" performed\" null",
+   "output_scale": 0.1,
+   "source_id": 10660
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 87 \" violation\" null",
+   "output_scale": 0.1,
+   "source_id": 19940
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 88 \" armor\" null",
+   "output_scale": 0.1,
+   "source_id": 20033
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 89 \" fulfill\" null",
+   "output_scale": 0.1,
+   "source_id": 20423
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 90 \" studying\" null",
+   "output_scale": 0.1,
+   "source_id": 20956
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 91 \" tactics\" null",
+   "output_scale": 0.1,
+   "source_id": 25342
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 92 \" democratic\" null",
+   "output_scale": 0.1,
+   "source_id": 25542
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 93 \" manufacture\" null",
+   "output_scale": 0.1,
+   "source_id": 29747
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 94 \" scam\" null",
+   "output_scale": 0.1,
+   "source_id": 34626
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 95 \"endi\" null",
+   "output_scale": 0.1,
+   "source_id": 40024
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 96 \" emphasize\" null",
+   "output_scale": 0.1,
+   "source_id": 45932
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 97 \" EMP\" null",
+   "output_scale": 0.1,
+   "source_id": 51592
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 98 \" Yourself\" null",
+   "output_scale": 0.1,
+   "source_id": 58905
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 99 \" activities\" null",
+   "output_scale": 0.1,
+   "source_id": 7488
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 100 \" advice\" null",
+   "output_scale": 0.1,
+   "source_id": 9462
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 101 \" provide\" null",
+   "output_scale": 0.1,
+   "source_id": 3410
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 102 \" related\" null",
+   "output_scale": 0.1,
+   "source_id": 5435
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 103 \" dangerous\" null",
+   "output_scale": 0.1,
+   "source_id": 11406
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 104 \" There\" null",
+   "output_scale": 0.1,
+   "source_id": 2619
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 105 \"rom\" null",
+   "output_scale": 0.1,
+   "source_id": 441
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 106 \" res\" null",
+   "output_scale": 0.1,
+   "source_id": 592
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 107 \" sex\" null",
+   "output_scale": 0.1,
+   "source_id": 1839
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 108 \"rops\" null",
+   "output_scale": 0.1,
+   "source_id": 3702
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 109 \" sexual\" null",
+   "output_scale": 0.1,
+   "source_id": 7244
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 110 \"MT\" null",
+   "output_scale": 0.1,
+   "source_id": 8505
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 111 \" seeking\" null",
+   "output_scale": 0.1,
+   "source_id": 10887
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 112 \" possess\" null",
+   "output_scale": 0.1,
+   "source_id": 15218
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 113 \" hack\" null",
+   "output_scale": 0.1,
+   "source_id": 17086
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 114 \" possession\" null",
+   "output_scale": 0.1,
+   "source_id": 18721
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 115 \" Would\" null",
+   "output_scale": 0.1,
+   "source_id": 18885
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 116 \" poison\" null",
+   "output_scale": 0.1,
+   "source_id": 20476
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 117 \" spray\" null",
+   "output_scale": 0.1,
+   "source_id": 22899
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 118 \" Schedule\" null",
+   "output_scale": 0.1,
+   "source_id": 23512
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 119 \" safer\" null",
+   "output_scale": 0.1,
+   "source_id": 29449
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 120 \"Imagine\" null",
+   "output_scale": 0.1,
+   "source_id": 51057
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 121 \" illicit\" null",
+   "output_scale": 0.1,
+   "source_id": 58129
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 122 \" deception\" null",
+   "output_scale": 0.1,
+   "source_id": 63475
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 123 \"ibre\" null",
+   "output_scale": 0.1,
+   "source_id": 63591
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 124 \" report\" null",
+   "output_scale": 0.1,
+   "source_id": 1895
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 125 \"'t\" null",
+   "output_scale": 0.1,
+   "source_id": 944
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 126 \" mental\" null",
+   "output_scale": 0.1,
+   "source_id": 10502
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 127 \" drugs\" null",
+   "output_scale": 0.1,
+   "source_id": 10975
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 128 \" assistance\" null",
+   "output_scale": 0.1,
+   "source_id": 12994
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 129 \" penetration\" null",
+   "output_scale": 0.1,
+   "source_id": 43496
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 130 \"arm\" null",
+   "output_scale": 0.1,
+   "source_id": 2178
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 131 \"used\" null",
+   "output_scale": 0.1,
+   "source_id": 2591
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 132 \"And\" null",
+   "output_scale": 0.1,
+   "source_id": 3036
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 133 \"LL\" null",
+   "output_scale": 0.1,
+   "source_id": 4086
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 134 \" commit\" null",
+   "output_scale": 0.1,
+   "source_id": 5266
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 135 \" discover\" null",
+   "output_scale": 0.1,
+   "source_id": 6997
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 136 \" Report\" null",
+   "output_scale": 0.1,
+   "source_id": 8259
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 137 \" researchers\" null",
+   "output_scale": 0.1,
+   "source_id": 11811
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 138 \" summary\" null",
+   "output_scale": 0.1,
+   "source_id": 12126
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 139 \" matters\" null",
+   "output_scale": 0.1,
+   "source_id": 12850
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 140 \" crimes\" null",
+   "output_scale": 0.1,
+   "source_id": 16660
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 141 \"abling\" null",
+   "output_scale": 0.1,
+   "source_id": 18768
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 142 \" ghost\" null",
+   "output_scale": 0.1,
+   "source_id": 19866
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 143 \" claiming\" null",
+   "output_scale": 0.1,
+   "source_id": 20409
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 144 \" physics\" null",
+   "output_scale": 0.1,
+   "source_id": 21321
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 145 \" Bureau\" null",
+   "output_scale": 0.1,
+   "source_id": 21802
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 146 \"Fi\" null",
+   "output_scale": 0.1,
+   "source_id": 22715
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 147 \"lead\" null",
+   "output_scale": 0.1,
+   "source_id": 26060
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 148 \" secured\" null",
+   "output_scale": 0.1,
+   "source_id": 26430
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 149 \" ket\" null",
+   "output_scale": 0.1,
+   "source_id": 31281
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 150 \" Strike\" null",
+   "output_scale": 0.1,
+   "source_id": 35378
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 151 \" stealing\" null",
+   "output_scale": 0.1,
+   "source_id": 37998
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 152 \" warfare\" null",
+   "output_scale": 0.1,
+   "source_id": 38207
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 153 \" Alternatively\" null",
+   "output_scale": 0.1,
+   "source_id": 38478
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 154 \" Doing\" null",
+   "output_scale": 0.1,
+   "source_id": 43145
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 155 \" contacting\" null",
+   "output_scale": 0.1,
+   "source_id": 46108
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 156 \" stamps\" null",
+   "output_scale": 0.1,
+   "source_id": 49212
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 157 \" coerc\" null",
+   "output_scale": 0.1,
+   "source_id": 54263
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 158 \"oxy\" null",
+   "output_scale": 0.1,
+   "source_id": 60163
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 159 \" exploits\" null",
+   "output_scale": 0.1,
+   "source_id": 62388
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 160 \"rax\" null",
+   "output_scale": 0.1,
+   "source_id": 68765
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 161 \" coercion\" null",
+   "output_scale": 0.1,
+   "source_id": 77142
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 162 \" sabotage\" null",
+   "output_scale": 0.1,
+   "source_id": 79653
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 163 \"bero\" null",
+   "output_scale": 0.1,
+   "source_id": 80784
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 164 \" Firearms\" null",
+   "output_scale": 0.1,
+   "source_id": 82517
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 165 \" perpetrator\" null",
+   "output_scale": 0.1,
+   "source_id": 84536
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 166 \" Explos\" null",
+   "output_scale": 0.1,
+   "source_id": 84866
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 167 \"dehyde\" null",
+   "output_scale": 0.1,
+   "source_id": 85736
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 168 \" undermines\" null",
+   "output_scale": 0.1,
+   "source_id": 95136
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 169 \" legitimate\" null",
+   "output_scale": 0.1,
+   "source_id": 22745
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 170 \" authorization\" null",
+   "output_scale": 0.1,
+   "source_id": 23715
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 171 \" If\" null",
+   "output_scale": 0.1,
+   "source_id": 1416
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 172 \" engage\" null",
+   "output_scale": 0.1,
+   "source_id": 16579
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 173 \" strictly\" null",
+   "output_scale": 0.1,
+   "source_id": 25470
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 174 \" malicious\" null",
+   "output_scale": 0.1,
+   "source_id": 38170
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 175 \" there\" null",
+   "output_scale": 0.1,
+   "source_id": 1052
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 176 \" ethical\" null",
+   "output_scale": 0.1,
+   "source_id": 30208
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 177 \" topic\" null",
+   "output_scale": 0.1,
+   "source_id": 8544
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 178 \" struggling\" null",
+   "output_scale": 0.1,
+   "source_id": 19962
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 179 \" genuine\" null",
+   "output_scale": 0.1,
+   "source_id": 22011
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 180 \" compromised\" null",
+   "output_scale": 0.1,
+   "source_id": 43400
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 181 \" questions\" null",
+   "output_scale": 0.1,
+   "source_id": 4755
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 182 \" legal\" null",
+   "output_scale": 0.1,
+   "source_id": 5777
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 183 \" someone\" null",
+   "output_scale": 0.1,
+   "source_id": 4325
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 184 \" exploit\" null",
+   "output_scale": 0.1,
+   "source_id": 32194
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 185 \" military\" null",
+   "output_scale": 0.1,
+   "source_id": 6277
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 186 \" explosive\" null",
+   "output_scale": 0.1,
+   "source_id": 33050
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 187 \"z\" null",
+   "output_scale": 0.1,
+   "source_id": 89
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 188 \" i\" null",
+   "output_scale": 0.1,
+   "source_id": 600
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 189 \"erson\" null",
+   "output_scale": 0.1,
+   "source_id": 1270
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 190 \" cons\" null",
+   "output_scale": 0.1,
+   "source_id": 1585
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 191 \" cal\" null",
+   "output_scale": 0.1,
+   "source_id": 1620
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 192 \"oto\" null",
+   "output_scale": 0.1,
+   "source_id": 2072
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 193 \"It\" null",
+   "output_scale": 0.1,
+   "source_id": 2132
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 194 \"All\" null",
+   "output_scale": 0.1,
+   "source_id": 2403
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 195 \" mass\" null",
+   "output_scale": 0.1,
+   "source_id": 3072
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 196 \" Do\" null",
+   "output_scale": 0.1,
+   "source_id": 3155
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 197 \"inate\" null",
+   "output_scale": 0.1,
+   "source_id": 3277
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 198 \" games\" null",
+   "output_scale": 0.1,
+   "source_id": 3868
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 199 \"mark\" null",
+   "output_scale": 0.1,
+   "source_id": 3987
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 200 \"rote\" null",
+   "output_scale": 0.1,
+   "source_id": 5529
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 201 \" whose\" null",
+   "output_scale": 0.1,
+   "source_id": 6693
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 202 \" ing\" null",
+   "output_scale": 0.1,
+   "source_id": 6749
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 203 \" syn\" null",
+   "output_scale": 0.1,
+   "source_id": 6782
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 204 \"ben\" null",
+   "output_scale": 0.1,
+   "source_id": 7964
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 205 \" brief\" null",
+   "output_scale": 0.1,
+   "source_id": 9814
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 206 \"ested\" null",
+   "output_scale": 0.1,
+   "source_id": 9980
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 207 \"LM\" null",
+   "output_scale": 0.1,
+   "source_id": 10994
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 208 \" responsibility\" null",
+   "output_scale": 0.1,
+   "source_id": 11752
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 209 \" blow\" null",
+   "output_scale": 0.1,
+   "source_id": 12244
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 210 \"gun\" null",
+   "output_scale": 0.1,
+   "source_id": 13259
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 211 \"Watch\" null",
+   "output_scale": 0.1,
+   "source_id": 14247
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 212 \" bounds\" null",
+   "output_scale": 0.1,
+   "source_id": 14262
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 213 \" immigration\" null",
+   "output_scale": 0.1,
+   "source_id": 15093
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 214 \"oca\" null",
+   "output_scale": 0.1,
+   "source_id": 16846
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 215 \" attempted\" null",
+   "output_scale": 0.1,
+   "source_id": 17201
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 216 \" Golden\" null",
+   "output_scale": 0.1,
+   "source_id": 17809
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 217 \" suggestions\" null",
+   "output_scale": 0.1,
+   "source_id": 18225
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 218 \" Getty\" null",
+   "output_scale": 0.1,
+   "source_id": 20530
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 219 \" horror\" null",
+   "output_scale": 0.1,
+   "source_id": 21452
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 220 \" restricted\" null",
+   "output_scale": 0.1,
+   "source_id": 21739
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 221 \" anth\" null",
+   "output_scale": 0.1,
+   "source_id": 22268
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 222 \" satellite\" null",
+   "output_scale": 0.1,
+   "source_id": 23210
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 223 \" participating\" null",
+   "output_scale": 0.1,
+   "source_id": 23528
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 224 \"information\" null",
+   "output_scale": 0.1,
+   "source_id": 25069
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 225 \"writing\" null",
+   "output_scale": 0.1,
+   "source_id": 25304
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 226 \" tunnel\" null",
+   "output_scale": 0.1,
+   "source_id": 25629
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 227 \" nap\" null",
+   "output_scale": 0.1,
+   "source_id": 25859
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 228 \"rous\" null",
+   "output_scale": 0.1,
+   "source_id": 26522
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 229 \" steal\" null",
+   "output_scale": 0.1,
+   "source_id": 26571
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 230 \"thesize\" null",
+   "output_scale": 0.1,
+   "source_id": 26887
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 231 \" disclosure\" null",
+   "output_scale": 0.1,
+   "source_id": 27857
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 232 \"Pen\" null",
+   "output_scale": 0.1,
+   "source_id": 28205
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 233 \" Ticket\" null",
+   "output_scale": 0.1,
+   "source_id": 28397
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 234 \" civilian\" null",
+   "output_scale": 0.1,
+   "source_id": 28928
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 235 \" romance\" null",
+   "output_scale": 0.1,
+   "source_id": 29263
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 236 \" torture\" null",
+   "output_scale": 0.1,
+   "source_id": 29567
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 237 \"-le\" null",
+   "output_scale": 0.1,
+   "source_id": 30207
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 238 \"thal\" null",
+   "output_scale": 0.1,
+   "source_id": 30292
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 239 \" poses\" null",
+   "output_scale": 0.1,
+   "source_id": 33003
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 240 \" cocaine\" null",
+   "output_scale": 0.1,
+   "source_id": 38023
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 241 \" Healthcare\" null",
+   "output_scale": 0.1,
+   "source_id": 38335
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 242 \"Seek\" null",
+   "output_scale": 0.1,
+   "source_id": 39350
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 243 \"olvers\" null",
+   "output_scale": 0.1,
+   "source_id": 39435
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 244 \" crafts\" null",
+   "output_scale": 0.1,
+   "source_id": 43848
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 245 \" violating\" null",
+   "output_scale": 0.1,
+   "source_id": 44362
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 246 \" assisting\" null",
+   "output_scale": 0.1,
+   "source_id": 45827
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 247 \" nicotine\" null",
+   "output_scale": 0.1,
+   "source_id": 48911
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 248 \" bots\" null",
+   "output_scale": 0.1,
+   "source_id": 49529
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 249 \" hashes\" null",
+   "output_scale": 0.1,
+   "source_id": 50257
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 250 \" Poison\" null",
+   "output_scale": 0.1,
+   "source_id": 51112
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 1 \" unlawful\"",
+   "output_scale": 0.1,
+   "source_id": 44422
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 2 \"\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 9370
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 3 \"\\u548c\"",
+   "output_scale": 0.1,
+   "source_id": 33108
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 4 \"\\u6216\"",
+   "output_scale": 0.1,
+   "source_id": 57191
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 5 \"Sorry\"",
+   "output_scale": 0.1,
+   "source_id": 19152
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 6 \"\\u63d0\\u4f9b\"",
+   "output_scale": 0.1,
+   "source_id": 99553
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 7 \"\\u5982\\u679c\\u4f60\"",
+   "output_scale": 0.1,
+   "source_id": 102056
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 8 \"\\u5408\\u6cd5\"",
+   "output_scale": 0.1,
+   "source_id": 101431
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 9 \"\\u6211\"",
+   "output_scale": 0.1,
+   "source_id": 35946
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 10 \"\\u975e\\u6cd5\"",
+   "output_scale": 0.1,
+   "source_id": 104692
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 11 \"\\u5982\\u4f55\"",
+   "output_scale": 0.1,
+   "source_id": 100007
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 12 \"\\u5b89\\u5168\"",
+   "output_scale": 0.1,
+   "source_id": 99464
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 13 \"\\u6cd5\\u5f8b\"",
+   "output_scale": 0.1,
+   "source_id": 100376
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 14 \" problematic\"",
+   "output_scale": 0.1,
+   "source_id": 34933
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 15 \"\\u5e2e\\u52a9\"",
+   "output_scale": 0.1,
+   "source_id": 100364
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 16 \"\\u9053\\u5fb7\"",
+   "output_scale": 0.1,
+   "source_id": 102348
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 17 \" risky\"",
+   "output_scale": 0.1,
+   "source_id": 40173
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 18 \"\\u4e0d\\u80fd\"",
+   "output_scale": 0.1,
+   "source_id": 53153
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 19 \"\\u4e14\"",
+   "output_scale": 0.1,
+   "source_id": 100136
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 20 \" lawful\"",
+   "output_scale": 0.1,
+   "source_id": 51221
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 21 \"\\u5bf9\"",
+   "output_scale": 0.1,
+   "source_id": 32664
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 22 \" irresponsible\"",
+   "output_scale": 0.1,
+   "source_id": 70279
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 23 \" immoral\"",
+   "output_scale": 0.1,
+   "source_id": 78154
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 24 \"\\u4efb\\u4f55\"",
+   "output_scale": 0.1,
+   "source_id": 99885
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 25 \"\\uff0c\\u8bf7\"",
+   "output_scale": 0.1,
+   "source_id": 37945
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 26 \"\\u5efa\\u8bae\"",
+   "output_scale": 0.1,
+   "source_id": 101898
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 27 \"\\u8fdd\\u53cd\"",
+   "output_scale": 0.1,
+   "source_id": 104828
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 28 \"\\u4f7f\\u7528\"",
+   "output_scale": 0.1,
+   "source_id": 37029
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 29 \"\\u5371\\u9669\"",
+   "output_scale": 0.1,
+   "source_id": 104264
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 30 \" incredibly\"",
+   "output_scale": 0.1,
+   "source_id": 16815
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 31 \"\\u4f60\"",
+   "output_scale": 0.1,
+   "source_id": 56568
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 32 \"\\uff0c\\u5e76\"",
+   "output_scale": 0.1,
+   "source_id": 90395
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 33 \" offense\"",
+   "output_scale": 0.1,
+   "source_id": 16775
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 34 \"\\u4e86\"",
+   "output_scale": 0.1,
+   "source_id": 34187
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 35 \"\\u884c\\u4e3a\"",
+   "output_scale": 0.1,
+   "source_id": 101070
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 36 \" questionable\"",
+   "output_scale": 0.1,
+   "source_id": 43278
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 37 \"\\u6d3b\\u52a8\"",
+   "output_scale": 0.1,
+   "source_id": 99600
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 38 \"\\u6709\\u5173\"",
+   "output_scale": 0.1,
+   "source_id": 101063
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 39 \"\\u6709\"",
+   "output_scale": 0.1,
+   "source_id": 18830
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 40 \"\\u662f\"",
+   "output_scale": 0.1,
+   "source_id": 20412
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 41 \" penalties\"",
+   "output_scale": 0.1,
+   "source_id": 29986
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 42 \" Therefore\"",
+   "output_scale": 0.1,
+   "source_id": 15277
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 43 \" Attempt\"",
+   "output_scale": 0.1,
+   "source_id": 43517
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 44 \" Unauthorized\"",
+   "output_scale": 0.1,
+   "source_id": 63102
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 45 \"\\u76f8\\u5173\"",
+   "output_scale": 0.1,
+   "source_id": 78556
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 46 \"\\u4e86\\u89e3\"",
+   "output_scale": 0.1,
+   "source_id": 99794
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 47 \" sophisticated\"",
+   "output_scale": 0.1,
+   "source_id": 26779
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 48 \"\\u5176\\u4ed6\"",
+   "output_scale": 0.1,
+   "source_id": 92894
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 49 \"\\u6307\\u5bfc\"",
+   "output_scale": 0.1,
+   "source_id": 101086
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 50 \"\\u5173\\u4e8e\"",
+   "output_scale": 0.1,
+   "source_id": 101888
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 51 \"\\u8fdb\\u884c\"",
+   "output_scale": 0.1,
+   "source_id": 71817
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 52 \"\\u611f\\u5174\\u8da3\"",
+   "output_scale": 0.1,
+   "source_id": 103198
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 53 \" dishonest\"",
+   "output_scale": 0.1,
+   "source_id": 58916
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 54 \"\\u4e25\\u91cd\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 105806
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 55 \" note\"",
+   "output_scale": 0.1,
+   "source_id": 5185
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 56 \"Moreover\"",
+   "output_scale": 0.1,
+   "source_id": 57176
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 57 \"\\u9700\\u8981\"",
+   "output_scale": 0.1,
+   "source_id": 85106
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 58 \"\\u673a\\u6784\"",
+   "output_scale": 0.1,
+   "source_id": 100008
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 59 \"\\u8fd9\\u79cd\"",
+   "output_scale": 0.1,
+   "source_id": 100137
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 60 \"\\u6b66\\u5668\"",
+   "output_scale": 0.1,
+   "source_id": 104729
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 61 \" considered\"",
+   "output_scale": 0.1,
+   "source_id": 6509
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 62 \" Any\"",
+   "output_scale": 0.1,
+   "source_id": 5765
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 63 \"\\u4e0d\"",
+   "output_scale": 0.1,
+   "source_id": 16530
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 64 \" prohibited\"",
+   "output_scale": 0.1,
+   "source_id": 25921
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 65 \" unacceptable\"",
+   "output_scale": 0.1,
+   "source_id": 42985
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 66 \"\\u53ef\\u80fd\"",
+   "output_scale": 0.1,
+   "source_id": 87267
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 67 \"\\u7684\\u95ee\\u9898\"",
+   "output_scale": 0.1,
+   "source_id": 103936
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 68 \"\\u4e50\\u610f\"",
+   "output_scale": 0.1,
+   "source_id": 115590
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 69 \" assistant\"",
+   "output_scale": 0.1,
+   "source_id": 17847
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 70 \" victim\"",
+   "output_scale": 0.1,
+   "source_id": 11734
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 71 \"Given\"",
+   "output_scale": 0.1,
+   "source_id": 22043
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 72 \"\\u5176\"",
+   "output_scale": 0.1,
+   "source_id": 41146
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 73 \" reput\"",
+   "output_scale": 0.1,
+   "source_id": 42739
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 74 \" repercussions\"",
+   "output_scale": 0.1,
+   "source_id": 80809
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 75 \"\\u5982\\u679c\\u60a8\"",
+   "output_scale": 0.1,
+   "source_id": 106870
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 76 \"\\u6211\\u5f88\"",
+   "output_scale": 0.1,
+   "source_id": 106922
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 77 \" asked\"",
+   "output_scale": 0.1,
+   "source_id": 4588
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 78 \" remember\"",
+   "output_scale": 0.1,
+   "source_id": 6099
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 79 \" prison\"",
+   "output_scale": 0.1,
+   "source_id": 9343
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 80 \"\\u95ee\\u9898\"",
+   "output_scale": 0.1,
+   "source_id": 86119
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 81 \"\\u8fdd\\u6cd5\"",
+   "output_scale": 0.1,
+   "source_id": 100872
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 82 \"\\u653b\\u51fb\"",
+   "output_scale": 0.1,
+   "source_id": 102109
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 83 \"\\u7684\\u4fe1\\u606f\"",
+   "output_scale": 0.1,
+   "source_id": 105427
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 84 \"\\u6cd5\\u5f8b\\u6cd5\\u89c4\"",
+   "output_scale": 0.1,
+   "source_id": 106221
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 85 \" always\"",
+   "output_scale": 0.1,
+   "source_id": 2677
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 86 \" deadly\"",
+   "output_scale": 0.1,
+   "source_id": 24142
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 87 \"\\u4fe1\\u606f\"",
+   "output_scale": 0.1,
+   "source_id": 27369
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 88 \"\\u8054\\u7cfb\"",
+   "output_scale": 0.1,
+   "source_id": 72064
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 89 \"\\u4e0d\\u4ec5\"",
+   "output_scale": 0.1,
+   "source_id": 99902
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 90 \"\\u7528\\u4e8e\"",
+   "output_scale": 0.1,
+   "source_id": 100751
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 91 \"\\u8fd9\\u7c7b\"",
+   "output_scale": 0.1,
+   "source_id": 105230
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 92 \"\\u544a\\u8bc9\\u6211\"",
+   "output_scale": 0.1,
+   "source_id": 106525
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 93 \"\\u6211\\u53ef\\u4ee5\"",
+   "output_scale": 0.1,
+   "source_id": 109944
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 94 \" arrest\"",
+   "output_scale": 0.1,
+   "source_id": 8004
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 95 \"-world\"",
+   "output_scale": 0.1,
+   "source_id": 30084
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 96 \"arious\"",
+   "output_scale": 0.1,
+   "source_id": 53271
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 97 \" deploying\"",
+   "output_scale": 0.1,
+   "source_id": 60317
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 98 \" nef\"",
+   "output_scale": 0.1,
+   "source_id": 86124
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 99 \"\\u7684\\u5b89\\u5168\"",
+   "output_scale": 0.1,
+   "source_id": 106552
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 100 \" highly\"",
+   "output_scale": 0.1,
+   "source_id": 7548
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 101 \"That\"",
+   "output_scale": 0.1,
+   "source_id": 4792
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 102 \" lead\"",
+   "output_scale": 0.1,
+   "source_id": 2990
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 103 \" inappropriate\"",
+   "output_scale": 0.1,
+   "source_id": 32681
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 104 \"isons\"",
+   "output_scale": 0.1,
+   "source_id": 19379
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 105 \"\\u8f6f\\u4ef6\"",
+   "output_scale": 0.1,
+   "source_id": 103951
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 106 \"\\u5bfb\\u6c42\"",
+   "output_scale": 0.1,
+   "source_id": 105789
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 107 \"\\u6b64\\u7c7b\"",
+   "output_scale": 0.1,
+   "source_id": 106815
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 108 \"\\u5408\\u89c4\"",
+   "output_scale": 0.1,
+   "source_id": 108836
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 109 \"\\u7f51\\u7edc\\u5b89\\u5168\"",
+   "output_scale": 0.1,
+   "source_id": 109939
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 110 \" criminal\"",
+   "output_scale": 0.1,
+   "source_id": 9158
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 111 \" reasons\"",
+   "output_scale": 0.1,
+   "source_id": 7966
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 112 \" prosecution\"",
+   "output_scale": 0.1,
+   "source_id": 31599
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 113 \"ost\"",
+   "output_scale": 0.1,
+   "source_id": 535
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 114 \" asking\"",
+   "output_scale": 0.1,
+   "source_id": 10161
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 115 \" suffering\"",
+   "output_scale": 0.1,
+   "source_id": 15691
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 116 \" Moreover\"",
+   "output_scale": 0.1,
+   "source_id": 22827
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 117 \"hum\"",
+   "output_scale": 0.1,
+   "source_id": 27300
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 118 \" breach\"",
+   "output_scale": 0.1,
+   "source_id": 30371
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 119 \" hefty\"",
+   "output_scale": 0.1,
+   "source_id": 64142
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 120 \"\\u88ab\"",
+   "output_scale": 0.1,
+   "source_id": 99250
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 121 \"\\u8fd9\\u4e9b\"",
+   "output_scale": 0.1,
+   "source_id": 100001
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 122 \"\\u9047\\u5230\"",
+   "output_scale": 0.1,
+   "source_id": 104011
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 123 \"\\u7acb\\u5373\"",
+   "output_scale": 0.1,
+   "source_id": 104078
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 124 \"\\u7d27\\u6025\"",
+   "output_scale": 0.1,
+   "source_id": 105039
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 125 \" countries\"",
+   "output_scale": 0.1,
+   "source_id": 5837
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 126 \" attempting\"",
+   "output_scale": 0.1,
+   "source_id": 19405
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 127 \"am\"",
+   "output_scale": 0.1,
+   "source_id": 309
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 128 \" scheme\"",
+   "output_scale": 0.1,
+   "source_id": 12859
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 129 \"\\u8bf7\"",
+   "output_scale": 0.1,
+   "source_id": 14880
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 130 \" guns\"",
+   "output_scale": 0.1,
+   "source_id": 16362
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 131 \" jail\"",
+   "output_scale": 0.1,
+   "source_id": 17540
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 132 \" grave\"",
+   "output_scale": 0.1,
+   "source_id": 24190
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 133 \"\\u7b49\"",
+   "output_scale": 0.1,
+   "source_id": 49567
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 134 \" explosions\"",
+   "output_scale": 0.1,
+   "source_id": 55406
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 135 \"\\u901a\\u8fc7\"",
+   "output_scale": 0.1,
+   "source_id": 67338
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 136 \"\\u4f8b\\u5982\"",
+   "output_scale": 0.1,
+   "source_id": 77557
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 137 \"\\u60a8\"",
+   "output_scale": 0.1,
+   "source_id": 87026
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 138 \" improvised\"",
+   "output_scale": 0.1,
+   "source_id": 92539
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 139 \"\\u6216\\u8005\"",
+   "output_scale": 0.1,
+   "source_id": 100631
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 140 \"\\u54a8\\u8be2\"",
+   "output_scale": 0.1,
+   "source_id": 100703
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 141 \"\\u4ee5\\u53ca\"",
+   "output_scale": 0.1,
+   "source_id": 101034
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 142 \"\\u5316\\u5b66\"",
+   "output_scale": 0.1,
+   "source_id": 102264
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 143 \"\\u786e\\u4fdd\"",
+   "output_scale": 0.1,
+   "source_id": 103944
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 144 \"\\u4ed6\\u4eba\"",
+   "output_scale": 0.1,
+   "source_id": 104287
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 145 \"\\u6781\\u5176\"",
+   "output_scale": 0.1,
+   "source_id": 106471
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 146 \"\\u5408\\u6210\"",
+   "output_scale": 0.1,
+   "source_id": 106726
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 147 \"\\u53ef\\u80fd\\u5bfc\\u81f4\"",
+   "output_scale": 0.1,
+   "source_id": 116505
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 148 \" damage\"",
+   "output_scale": 0.1,
+   "source_id": 5557
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 149 \" potentially\"",
+   "output_scale": 0.1,
+   "source_id": 13581
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 150 \" attempt\"",
+   "output_scale": 0.1,
+   "source_id": 4774
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 151 \" positive\"",
+   "output_scale": 0.1,
+   "source_id": 6785
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 152 \" Not\"",
+   "output_scale": 0.1,
+   "source_id": 2806
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 153 \" anyone\"",
+   "output_scale": 0.1,
+   "source_id": 5489
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 154 \" intent\"",
+   "output_scale": 0.1,
+   "source_id": 7385
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 155 \" Why\"",
+   "output_scale": 0.1,
+   "source_id": 8429
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 156 \"Comp\"",
+   "output_scale": 0.1,
+   "source_id": 13552
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 157 \" incorrect\"",
+   "output_scale": 0.1,
+   "source_id": 15114
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 158 \" violent\"",
+   "output_scale": 0.1,
+   "source_id": 16401
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 159 \" discussing\"",
+   "output_scale": 0.1,
+   "source_id": 24392
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 160 \" illeg\"",
+   "output_scale": 0.1,
+   "source_id": 28967
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 161 \"\\u5982\"",
+   "output_scale": 0.1,
+   "source_id": 29524
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 162 \"\\u6027\"",
+   "output_scale": 0.1,
+   "source_id": 33071
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 163 \"Illegal\"",
+   "output_scale": 0.1,
+   "source_id": 33713
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 164 \" supervision\"",
+   "output_scale": 0.1,
+   "source_id": 37117
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 165 \" undermine\"",
+   "output_scale": 0.1,
+   "source_id": 41947
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 166 \"\\u521b\\u5efa\"",
+   "output_scale": 0.1,
+   "source_id": 50377
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 167 \" altering\"",
+   "output_scale": 0.1,
+   "source_id": 59823
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 168 \"\\u53ef\\u4ee5\"",
+   "output_scale": 0.1,
+   "source_id": 73670
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 169 \"\\u8fd8\"",
+   "output_scale": 0.1,
+   "source_id": 97706
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 170 \"\\u4e25\\u91cd\"",
+   "output_scale": 0.1,
+   "source_id": 101120
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 171 \"\\u662f\\u4e00\\u79cd\"",
+   "output_scale": 0.1,
+   "source_id": 101158
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 172 \"\\u89c4\\u8303\"",
+   "output_scale": 0.1,
+   "source_id": 101931
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 173 \"\\u4f60\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 103929
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 174 \"\\u4f24\\u5bb3\"",
+   "output_scale": 0.1,
+   "source_id": 104229
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 175 \"\\u4e13\\u4e1a\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 104715
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 176 \"\\u7684\\u76ee\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 104975
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 177 \"\\u540e\\u679c\"",
+   "output_scale": 0.1,
+   "source_id": 105691
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 178 \"\\u7206\\u70b8\"",
+   "output_scale": 0.1,
+   "source_id": 105755
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 179 \" eth\"",
+   "output_scale": 0.1,
+   "source_id": 8372
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 180 \" significant\"",
+   "output_scale": 0.1,
+   "source_id": 5089
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 181 \" impacts\"",
+   "output_scale": 0.1,
+   "source_id": 24905
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 182 \"de\"",
+   "output_scale": 0.1,
+   "source_id": 450
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 183 \"cept\"",
+   "output_scale": 0.1,
+   "source_id": 1484
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 184 \" po\"",
+   "output_scale": 0.1,
+   "source_id": 3193
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 185 \"thes\"",
+   "output_scale": 0.1,
+   "source_id": 6375
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 186 \"rupt\"",
+   "output_scale": 0.1,
+   "source_id": 6585
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 187 \"aws\"",
+   "output_scale": 0.1,
+   "source_id": 8635
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 188 \" worldwide\"",
+   "output_scale": 0.1,
+   "source_id": 15245
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 189 \"\\u5728\"",
+   "output_scale": 0.1,
+   "source_id": 18493
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 190 \"\\u4ee5\"",
+   "output_scale": 0.1,
+   "source_id": 23031
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 191 \" suspension\"",
+   "output_scale": 0.1,
+   "source_id": 24301
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 192 \"\\u5730\"",
+   "output_scale": 0.1,
+   "source_id": 29490
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 193 \" intentions\"",
+   "output_scale": 0.1,
+   "source_id": 33234
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 194 \" endanger\"",
+   "output_scale": 0.1,
+   "source_id": 36937
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 195 \" justification\"",
+   "output_scale": 0.1,
+   "source_id": 41435
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 196 \" undertaken\"",
+   "output_scale": 0.1,
+   "source_id": 44079
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 197 \" ATM\"",
+   "output_scale": 0.1,
+   "source_id": 46035
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 198 \" Concern\"",
+   "output_scale": 0.1,
+   "source_id": 51247
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 199 \"\\u7269\"",
+   "output_scale": 0.1,
+   "source_id": 52853
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 200 \" endeavor\"",
+   "output_scale": 0.1,
+   "source_id": 53814
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 201 \" instability\"",
+   "output_scale": 0.1,
+   "source_id": 55299
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 202 \"\\u6240\\u6709\"",
+   "output_scale": 0.1,
+   "source_id": 55338
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 203 \"\\u4e0e\"",
+   "output_scale": 0.1,
+   "source_id": 57218
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 204 \" societal\"",
+   "output_scale": 0.1,
+   "source_id": 58429
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 205 \" manipulating\"",
+   "output_scale": 0.1,
+   "source_id": 62514
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 206 \" advisable\"",
+   "output_scale": 0.1,
+   "source_id": 68819
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 207 \"\\u7cfb\\u7edf\"",
+   "output_scale": 0.1,
+   "source_id": 72448
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 208 \"\\u6d4b\\u8bd5\"",
+   "output_scale": 0.1,
+   "source_id": 81705
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 209 \"\\u6280\\u672f\"",
+   "output_scale": 0.1,
+   "source_id": 99361
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 210 \"\\u60c5\\u51b5\"",
+   "output_scale": 0.1,
+   "source_id": 99559
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 211 \"\\u56fd\\u9645\"",
+   "output_scale": 0.1,
+   "source_id": 99876
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 212 \"\\u79d1\\u5b66\"",
+   "output_scale": 0.1,
+   "source_id": 99891
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 213 \"\\u77e5\\u8bc6\"",
+   "output_scale": 0.1,
+   "source_id": 100032
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 214 \"\\u4fdd\\u62a4\"",
+   "output_scale": 0.1,
+   "source_id": 100153
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 215 \"\\u5236\\u9020\"",
+   "output_scale": 0.1,
+   "source_id": 100184
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 216 \"\\u5f53\\u5730\"",
+   "output_scale": 0.1,
+   "source_id": 100198
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 217 \"\\u9700\\u6c42\"",
+   "output_scale": 0.1,
+   "source_id": 100354
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 218 \"\\u4eba\\u7684\"",
+   "output_scale": 0.1,
+   "source_id": 103947
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 219 \"\\u5236\\u4f5c\"",
+   "output_scale": 0.1,
+   "source_id": 103963
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 220 \"\\u67aa\"",
+   "output_scale": 0.1,
+   "source_id": 104068
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 221 \"\\u7684\\u5185\\u5bb9\"",
+   "output_scale": 0.1,
+   "source_id": 104597
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 222 \"\\u7684\\u884c\\u4e3a\"",
+   "output_scale": 0.1,
+   "source_id": 104796
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 223 \"\\u9075\\u5b88\"",
+   "output_scale": 0.1,
+   "source_id": 105389
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 224 \"\\u5668\\u5b98\"",
+   "output_scale": 0.1,
+   "source_id": 108022
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 225 \" only\"",
+   "output_scale": 0.1,
+   "source_id": 1172
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 226 \" As\"",
+   "output_scale": 0.1,
+   "source_id": 1634
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 227 \"ically\"",
+   "output_scale": 0.1,
+   "source_id": 2673
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 228 \" legally\"",
+   "output_scale": 0.1,
+   "source_id": 25202
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 229 \" moral\"",
+   "output_scale": 0.1,
+   "source_id": 15659
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 230 \"Eth\"",
+   "output_scale": 0.1,
+   "source_id": 65390
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 231 \" loss\"",
+   "output_scale": 0.1,
+   "source_id": 4709
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 232 \" act\"",
+   "output_scale": 0.1,
+   "source_id": 1160
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 233 \" discouraged\"",
+   "output_scale": 0.1,
+   "source_id": 63670
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 234 \"ub\"",
+   "output_scale": 0.1,
+   "source_id": 392
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 235 \"Inter\"",
+   "output_scale": 0.1,
+   "source_id": 3306
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 236 \" doing\"",
+   "output_scale": 0.1,
+   "source_id": 3730
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 237 \"-M\"",
+   "output_scale": 0.1,
+   "source_id": 5251
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 238 \"She\"",
+   "output_scale": 0.1,
+   "source_id": 7941
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 239 \" domain\"",
+   "output_scale": 0.1,
+   "source_id": 7947
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 240 \"Mark\"",
+   "output_scale": 0.1,
+   "source_id": 8949
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 241 \" dire\"",
+   "output_scale": 0.1,
+   "source_id": 13207
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 242 \" virus\"",
+   "output_scale": 0.1,
+   "source_id": 16770
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 243 \" deeply\"",
+   "output_scale": 0.1,
+   "source_id": 17247
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 244 \"Would\"",
+   "output_scale": 0.1,
+   "source_id": 27989
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 245 \" Nap\"",
+   "output_scale": 0.1,
+   "source_id": 28476
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 246 \" purely\"",
+   "output_scale": 0.1,
+   "source_id": 31127
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 247 \" Mis\"",
+   "output_scale": 0.1,
+   "source_id": 32559
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 248 \" Jamie\"",
+   "output_scale": 0.1,
+   "source_id": 35757
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 249 \" potent\"",
+   "output_scale": 0.1,
+   "source_id": 35775
+  },
+  {
+   "group": "discovered",
+   "input_alpha": 0.0,
+   "label": "discovered rank 250 \" intentionally\"",
+   "output_scale": 0.1,
+   "source_id": 36204
+  }
+ ],
+ "schema": "obliteratus.vocab-surgery-config/v1",
+ "tier1_embed_alpha": 0.9,
+ "tier1_unembed_scale": 0.1,
+ "tier2_embed_alpha": 0.7,
+ "tier2_unembed_scale": 0.2,
+ "tier3_unembed_scale": 0.5,
+ "tier4_unembed_scale": 0.6
+}
