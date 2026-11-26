@@ -18,3 +18,9 @@ This repository covers experiments on model behavior and capabilities, along wit
 Start with the protocol and results in the same study directory. The accompanying JSON files contain aggregate measurements and, where recorded, per-item correctness or refusal flags. The [interim research diary](session-logs/2026-11-22-obliteratus-multi-model.md) records decisions made while the multi-model study was running. Its final protocol and report identify which planned experiments ran. [Evaluation scripts](experiments) are included for the GSM8K and Bielik studies.
 
 The public files retain measurements and methodological limitations. Identifying operational details have been removed. Historical hashes and byte counts describe the original artifacts before redaction. [Bielik publication notes](reports/2026-11-21-bielik-11b-polish-tense/publication-notes.md) document the scope of that dataset and its offline checks.
+
+### Disclaimer
+
+All reports in this repository were written by AI under my supervision. I can't verify every claim, but I and other collaborators always check the main conclusions. If you spot any inconsistencies, contradictions, or illogical assumptions or conclusions, please open an issue. I'd really appreciate your help.
+
+AI is moving fast, and I believe open collaboration is the only way we can keep up.
