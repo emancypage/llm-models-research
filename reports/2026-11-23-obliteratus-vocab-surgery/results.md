@@ -1,6 +1,6 @@
 # Vocabulary-row edits in Llama and Qwen
 
-**Study closed on 25 November 2026.** On 200 prompts per model, the ten-entry edit changed judge A’s failure rate by −0.5 percentage points on Llama 3.1 8B Instruct and +2.5 on Qwen2.5 7B Instruct. With 500 selected entries, judge A recorded fewer failures. Judge B’s separate count of refusals plus invalid answers also fell. At a 1024-token limit, the GSM8K scorer awarded Llama credit on 341 of 400 math problems before the selected edit and 292 afterwards.
+**Study closed on 25 November 2026.** On 200 prompts per model, the ten-entry edit changed judge A’s failure rate by −0.5 percentage points on Llama 3.1 8B Instruct and +2.5 on Qwen2.5 7B Instruct. With 500 selected entries, judge A recorded fewer failures. Judge B’s separate count of refusals plus invalid answers also fell. At a 1024-token limit, the GSM8K scorer awarded Llama credit on 341 of 400 math problems before the selected edit and 292 afterwards. Most of the lost items had reference solutions containing a number token the edit suppressed, according to the [post hoc analysis after closeout](#post-hoc-analysis-after-closeout-26-november-2026).
 
 <!-- quality:qwen-math -->
 On the same 400 GSM8K problems, Qwen2.5-7B went from 297 to 296 (−0.25 pp) at 256 tokens and from 348 to 350 (+0.50 pp) at 1024 tokens after the selected 500-entry edit. Both paired 95% intervals include zero. This sample gives no clear evidence that the edit changed Qwen’s math score.
