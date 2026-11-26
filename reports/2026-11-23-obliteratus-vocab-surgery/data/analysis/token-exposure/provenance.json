@@ -1,0 +1,40 @@
+{
+  "analysis": "Post hoc analysis after closeout (26 November 2026, exploratory).",
+  "gsm8k_test_jsonl_sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+  "models": {
+    "l8": {
+      "checkpoint_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "config_sha256": {
+        "D500": "4d12ad9fdaa3f037a511eb479f547ea9ccfe6c75f0da7228a344dd698d2a04e3",
+        "KR500": "fb5f183a2876258685ec62d6279e0e94011c69336b27ac5ce51e5913eb5e019e"
+      },
+      "mmlu_letter_ids": {
+        " A": 362,
+        " B": 426,
+        " C": 356,
+        " D": 423
+      },
+      "tokenizer_config_sha256": "cf85a7aca91ff3bba378385aa1981079f22e53452f05707ae59ab6ca709f2c9b",
+      "tokenizer_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4"
+    },
+    "q7": {
+      "checkpoint_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "config_sha256": {
+        "D500": "843732adbebd09aeee7abdf9fbc9600c8641a346539c8603b963e0cc172975ac",
+        "KR500": "9d90406167ca878fdda190438713a04721318839166da6560df933fb8828066d"
+      },
+      "mmlu_letter_ids": {
+        " A": 362,
+        " B": 425,
+        " C": 356,
+        " D": 422
+      },
+      "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    }
+  },
+  "software": {
+    "tokenizers": "0.23.1",
+    "transformers": "5.17.0"
+  }
+}

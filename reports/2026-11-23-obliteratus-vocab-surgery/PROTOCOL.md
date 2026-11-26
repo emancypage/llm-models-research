@@ -289,3 +289,7 @@ After the 16-run quality follow-up finished, the study owner decided to close th
 The eight new quality runs per model are complete. Together with seven earlier matched runs per model they support 36 paired comparisons. All 36 can be recalculated from the published per-item benchmark scores. [Quality comparisons](data/quality-paired.json)
 
 The [quality replay instructions](../../experiments/2026-11-23-obliteratus-vocab-surgery/README.md#reproduce-the-final-quality-comparisons) describe how to recover these comparisons from either the public score table or original lm-eval outputs.
+
+## Post hoc analysis after closeout (26 November 2026)
+
+Exploratory analysis requested after the 25 November closeout and after the benchmark scores were known. The analysis grouped the existing GSM8K scores by edited token IDs in the reference solution and final number, counted those IDs in saved answers, and compared those groups with the original-model repeat. It also grouped the existing MMLU and ARC scores by edited IDs in answer choices. The analysis used the original local tokenizers and saved samples. It introduced no new model run, hypothesis threshold or formal verdict. [Analysis and data](data/analysis/token-exposure/README.md) · [Reproduction instructions](../../experiments/2026-11-23-obliteratus-vocab-surgery/README.md#reproduce-the-post-hoc-token-analysis)

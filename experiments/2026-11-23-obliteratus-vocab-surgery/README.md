@@ -142,3 +142,26 @@ python3.12 /work/scripts/quality_followup_scores.py --work-dir /work --output /t
 ~~~
 
 The study owner omitted the planned 200-answer manual sheet at closeout. Step 6 above describes the original protocol. The published quality replay uses benchmark correctness only.
+
+## Reproduce the post hoc token analysis
+
+Post hoc analysis after closeout (26 November 2026, exploratory). The replay uses Python 3.12. From the repository root, install the [replay requirements](../../requirements-replay.txt) in a Python 3.12 environment. NumPy 2.1.0 reproduces the final publication check and SciPy 1.18.0 replays the registered K1 endpoints. The token-exposure replay and the separate strict McNemar replay use only the Python standard library.
+
+~~~bash
+python3.12 -m pip install -r requirements-replay.txt
+study=2026-11-23-obliteratus-vocab-surgery
+python3.12 "experiments/$study/scripts/token_exposure.py" --publication "reports/$study" --check
+python3.12 "experiments/$study/scripts/quality_followup_scores.py" --publication "reports/$study" --check
+python3.12 experiments/2026-11-21-obliteratus-gsm8k/strict_mcnemar.py --check
+~~~
+
+The first command after installation rebuilds the grouped counts and Markdown tables from the published token observations, original item scores and weight checks. To verify every observation against the original saved samples, supply `--work-dir` and `--gsm-reference`. The workspace needs the `eval/l8` and `eval/q7` trees described above, including `S-repeat/gsm8k` for both models, and the original tokenizer directories `models/llama-3.1-8b-instruct-pad` and `models/qwen2.5-7b-instruct`. Use the public GSM8K `test.jsonl` pinned below. The extraction used Transformers 5.17.0 and Tokenizers 0.23.1 on CPU. It reads saved lm-eval samples and tokenizer files without loading model weights. Replace the two paths with the location of those inputs. [Pinned GSM8K source](https://github.com/openai/grade-school-math/blob/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/test.jsonl) · [File hashes and tokenizer revisions](../../reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/token-exposure/provenance.json)
+
+~~~bash
+study=2026-11-23-obliteratus-vocab-surgery
+HF_HUB_OFFLINE=1 CUDA_VISIBLE_DEVICES=-1 python3.12 "experiments/$study/scripts/token_exposure.py" \
+    --publication "reports/$study" --work-dir /path/to/study-workspace \
+    --gsm-reference /path/to/test.jsonl --check
+~~~
+
+The original measurements used Transformers 5.17.0, lm-eval 0.4.13 and OBLITERATUS commit `1de580f7a13f185488dc31ff27f2e027545ad82d`. Most historical shell runners enabled `set -u` without `set -e`. A failed intermediate command could therefore be followed by a successful final command. A shell exit status alone cannot verify that those runs completed. The extraction checks the saved sample counts, identities and scores against the published record. [Historical screen script](scripts/screen.sh) · [Historical evaluation script](scripts/eval.sh) · [Post hoc test](scripts/test_token_exposure.py)
