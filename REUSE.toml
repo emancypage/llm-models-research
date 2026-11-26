@@ -1,0 +1,133 @@
+version = 1
+
+# REUSE uses the last matching annotation in this file. AND expressions identify
+# different contributions to the same file. Each FileComment gives their scope.
+# The root LICENSE and LICENSES/ contain the publishers' legal texts and are
+# exempt from REUSE annotation. The filename in LICENSES/ identifies each text.
+
+[[annotations]]
+path = ["experiments/**", "requirements-replay.txt", ".gitignore", "REUSE.toml"]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Szymon Szymkowiak"
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+# The UD Polish-LFG trials contain identifiers and tense labels. The two Polish
+# Belebele result files contain predictions and correctness flags. Their source
+# sentences, passages, questions and answer choices are fetched separately.
+# These files, and the MMLU, ARC and IFEval score files, keep the content default.
+[[annotations]]
+path = ["reports/**", "session-logs/**", "README.md", "AGENTS.md"]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Szymon Szymkowiak"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+    "experiments/2026-11-23-obliteratus-vocab-surgery/configs/k1*.json",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/configs/k2-tied.json",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/probe/items.json",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/probe/make_items.py",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/README.md",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/judge_jobs.py",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/test_judge.py",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/test_review.py",
+]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "OBLITERATUS Contributors"]
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+SPDX-FileComment = "The operations, word pairs and short test prefill derive from OBLITERATUS. The longer prefill in judge_jobs.py has unresolved reuse terms."
+
+[[annotations]]
+path = [
+    "reports/2026-11-23-obliteratus-vocab-surgery/PROTOCOL.md",
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/judge/*/SP.json",
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/judge/*/SP-noprefill.json",
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/judge/*/VP-k*.json",
+]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "OBLITERATUS Contributors"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND AGPL-3.0-or-later"
+SPDX-FileComment = "CC BY-SA covers original study content. The quoted short prefill comes from the upstream AGPL test fixture. The longer prefill in the protocol has unresolved reuse terms."
+
+[[annotations]]
+path = [
+    "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/full_sheet.py",
+    "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/judge_jobs_full.py",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Szymon Szymkowiak"
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+SPDX-FileComment = "The grant covers the original code. Reuse terms for the quoted longer Inkling prefill remain unresolved as described in the README."
+
+[[annotations]]
+path = ["reports/2026-11-23-obliteratus-vocab-surgery/data/judge/*/SP2.json", "reports/2026-11-23-obliteratus-vocab-surgery/data/judge/*/VP2-k1.json"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Szymon Szymkowiak"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "The grant covers original measurements and annotations. Reuse terms for the quoted longer Inkling prefill remain unresolved."
+
+[[annotations]]
+path = "experiments/2026-11-23-obliteratus-vocab-surgery/scripts/judge_b.py"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "2024 Allen Institute for Artificial Intelligence"]
+SPDX-License-Identifier = "AGPL-3.0-or-later AND Apache-2.0"
+SPDX-FileComment = "The WildGuard instruction and prompt format are Apache-2.0. The original evaluation code is AGPL-3.0-or-later."
+
+[[annotations]]
+path = ["reports/2026-11-23-obliteratus-vocab-surgery/data/gsm8k-comparisons/llama-*.md", "reports/2026-11-23-obliteratus-vocab-surgery/data/gsm8k-comparisons/qwen-*.md"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "2021 OpenAI"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND MIT"
+SPDX-FileComment = "CC BY-SA covers the original compilation and commentary. MIT covers the reproduced GSM8K questions and reference numbers. Reuse rights in independently protected wording of the quoted model answers remain unresolved."
+
+[[annotations]]
+path = [
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/token-exposure/gsm8k-items.jsonl",
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/token-exposure/examples.json",
+    "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/token-exposure/summary.json",
+]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "2021 OpenAI"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND MIT"
+SPDX-FileComment = "The reference final numbers were copied from OpenAI's GSM8K dataset. The counts, groupings and extracted output measurements are original study data."
+
+[[annotations]]
+path = "reports/2026-11-23-obliteratus-vocab-surgery/data/gsm8k-comparisons/LICENSE.txt"
+precedence = "override"
+SPDX-FileCopyrightText = "2021 OpenAI"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["reports/2026-11-21-bielik-11b-compatibility/data/first-measurement.json", "reports/2026-11-21-bielik-11b-compatibility/data/results.json"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Szymon Szymkowiak"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "The grant covers the original compilation and measurements. Separate rights in protected wording of the quoted Bielik answers remain unresolved."
+
+[[annotations]]
+path = "reports/2026-11-21-bielik-11b-polish-tense/data/variant-2/concept_run.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "SpeakLeash and ACK Cyfronet AGH"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND Apache-2.0"
+SPDX-FileComment = "The embedded Bielik tokenizer chat template is Apache-2.0. CC BY-SA covers the original study record."
+
+[[annotations]]
+path = "reports/2026-11-23-obliteratus-vocab-surgery/data/random-control-tokens-q7.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "Qwen Team (Alibaba Cloud)"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND Apache-2.0"
+SPDX-FileComment = "CC BY-SA covers the original token selection and measurements. Apache-2.0 covers the Qwen tokenizer entries."
+
+[[annotations]]
+path = "reports/2026-11-23-obliteratus-vocab-surgery/data/analysis/token-exposure/inventory.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Szymon Szymkowiak", "Meta Platforms, Inc.", "Qwen Team (Alibaba Cloud)"]
+SPDX-License-Identifier = "CC-BY-SA-4.0 AND LicenseRef-Llama-3.1 AND Apache-2.0"
+SPDX-FileComment = "CC BY-SA covers the study compilation. The l8 dictionary contains decoded Meta Llama 3.1 entries and the q7 dictionary contains decoded Apache-2.0 Qwen entries. Identifier-only observations and score tables keep the content default."
+
+[[annotations]]
+path = "NOTICE"
+precedence = "override"
+SPDX-FileCopyrightText = "Meta Platforms, Inc."
+SPDX-License-Identifier = "LicenseRef-Llama-3.1"
+SPDX-FileComment = "Verbatim Llama 3.1 attribution required by section 1(b)(iii) of the model agreement for distributed Llama materials."
