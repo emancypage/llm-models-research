@@ -1,0 +1,4 @@
+# Post hoc replay after closeout (26 November 2026, exploratory). Use Python 3.12.
+numpy==2.1.0
+# The registered vocabulary endpoints also use SciPy's exact binomial test.
+scipy==1.18.0

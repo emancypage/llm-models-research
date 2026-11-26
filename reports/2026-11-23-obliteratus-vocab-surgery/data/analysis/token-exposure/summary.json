@@ -1,0 +1,2310 @@
+{
+  "analysis": "Post hoc analysis after closeout (26 November 2026, exploratory).",
+  "gsm8k_examples": {
+    "17": {
+      "extracted": {
+        "D500": "5750",
+        "S": "57500"
+      },
+      "numerals_in_output": {
+        "D500": [
+          "15",
+          "1750",
+          "20",
+          "2250",
+          "30",
+          "35",
+          "3500",
+          "50",
+          "5750",
+          "750"
+        ],
+        "S": [
+          "15",
+          "1750",
+          "20",
+          "22500",
+          "30",
+          "35",
+          "35000",
+          "50",
+          "57500",
+          "750"
+        ]
+      },
+      "reference_final": "57500"
+    },
+    "5": {
+      "extracted": {
+        "D500": "68",
+        "S": "64"
+      },
+      "numerals_in_output": {
+        "D500": [
+          "0",
+          "16",
+          "2",
+          "24",
+          "3",
+          "40",
+          "5",
+          "6",
+          "68",
+          "8"
+        ],
+        "S": [
+          "0",
+          "16",
+          "24",
+          "3",
+          "40",
+          "5",
+          "6",
+          "60",
+          "64",
+          "8"
+        ]
+      },
+      "reference_final": "64"
+    }
+  },
+  "models": {
+    "l8": {
+      "D500": {
+        "arc": {
+          "all": {
+            "edited_correct": 686,
+            "gains": 15,
+            "items": 1172,
+            "losses": 45,
+            "original_correct": 716
+          },
+          "changed_predictions": 75,
+          "gold_and_distractor": {
+            "edited_correct": 7,
+            "gains": 0,
+            "items": 44,
+            "losses": 16,
+            "original_correct": 23
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 48,
+            "losses": 26,
+            "original_correct": 26
+          },
+          "gold_exposed": {
+            "edited_correct": 7,
+            "gains": 0,
+            "items": 92,
+            "losses": 42,
+            "original_correct": 49
+          },
+          "gold_unexposed": {
+            "edited_correct": 679,
+            "gains": 15,
+            "items": 1080,
+            "losses": 3,
+            "original_correct": 667
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 2,
+            "losses": 2,
+            "original_correct": 2
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 43,
+            "losses": 43,
+            "original_correct": 43
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 93,
+            "gains": 14,
+            "items": 136,
+            "losses": 0,
+            "original_correct": 79
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 586,
+            "gains": 1,
+            "items": 944,
+            "losses": 3,
+            "original_correct": 588
+          }
+        },
+        "category_counts": {
+          "alphabetic_word_or_piece": 470,
+          "answer_letters_trimmed": 0,
+          "contains_ascii_digit": 10,
+          "contains_newline": 0,
+          "digits": 10,
+          "punctuation": 0,
+          "punctuation_or_symbols": 0,
+          "two_characters_or_fewer": 48,
+          "whitespace": 0
+        },
+        "digit_tokens": [
+          "00",
+          "123",
+          "26",
+          "273",
+          "36",
+          "64",
+          "741",
+          "75",
+          "800",
+          "825"
+        ],
+        "edited_mmlu_letters": {},
+        "gsm1024": {
+          "all": {
+            "edited_correct": 292,
+            "gains": 3,
+            "items": 400,
+            "losses": 52,
+            "original_correct": 341
+          },
+          "final_any_exposed": {
+            "edited_correct": 2,
+            "gains": 0,
+            "items": 26,
+            "losses": 17,
+            "original_correct": 19
+          },
+          "final_any_unexposed": {
+            "edited_correct": 290,
+            "gains": 3,
+            "items": 374,
+            "losses": 35,
+            "original_correct": 322
+          },
+          "final_digits_exposed": {
+            "edited_correct": 2,
+            "gains": 0,
+            "items": 26,
+            "losses": 17,
+            "original_correct": 19
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 290,
+            "gains": 3,
+            "items": 374,
+            "losses": 35,
+            "original_correct": 322
+          },
+          "final_review_five_exposed": {
+            "edited_correct": 1,
+            "gains": 0,
+            "items": 23,
+            "losses": 15,
+            "original_correct": 16
+          },
+          "final_review_five_unexposed": {
+            "edited_correct": 291,
+            "gains": 3,
+            "items": 377,
+            "losses": 37,
+            "original_correct": 325
+          },
+          "solution_any_exposed": {
+            "edited_correct": 114,
+            "gains": 2,
+            "items": 193,
+            "losses": 49,
+            "original_correct": 161
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 178,
+            "gains": 1,
+            "items": 207,
+            "losses": 3,
+            "original_correct": 180
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 20,
+            "gains": 1,
+            "items": 82,
+            "losses": 45,
+            "original_correct": 64
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 272,
+            "gains": 2,
+            "items": 318,
+            "losses": 7,
+            "original_correct": 277
+          },
+          "solution_review_five_exposed": {
+            "edited_correct": 17,
+            "gains": 1,
+            "items": 75,
+            "losses": 42,
+            "original_correct": 58
+          },
+          "solution_review_five_unexposed": {
+            "edited_correct": 275,
+            "gains": 2,
+            "items": 325,
+            "losses": 10,
+            "original_correct": 283
+          }
+        },
+        "gsm256": {
+          "all": {
+            "edited_correct": 292,
+            "gains": 3,
+            "items": 400,
+            "losses": 52,
+            "original_correct": 341
+          },
+          "final_any_exposed": {
+            "edited_correct": 2,
+            "gains": 0,
+            "items": 26,
+            "losses": 17,
+            "original_correct": 19
+          },
+          "final_any_unexposed": {
+            "edited_correct": 290,
+            "gains": 3,
+            "items": 374,
+            "losses": 35,
+            "original_correct": 322
+          },
+          "final_digits_exposed": {
+            "edited_correct": 2,
+            "gains": 0,
+            "items": 26,
+            "losses": 17,
+            "original_correct": 19
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 290,
+            "gains": 3,
+            "items": 374,
+            "losses": 35,
+            "original_correct": 322
+          },
+          "final_review_five_exposed": {
+            "edited_correct": 1,
+            "gains": 0,
+            "items": 23,
+            "losses": 15,
+            "original_correct": 16
+          },
+          "final_review_five_unexposed": {
+            "edited_correct": 291,
+            "gains": 3,
+            "items": 377,
+            "losses": 37,
+            "original_correct": 325
+          },
+          "solution_any_exposed": {
+            "edited_correct": 114,
+            "gains": 2,
+            "items": 193,
+            "losses": 49,
+            "original_correct": 161
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 178,
+            "gains": 1,
+            "items": 207,
+            "losses": 3,
+            "original_correct": 180
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 20,
+            "gains": 1,
+            "items": 82,
+            "losses": 45,
+            "original_correct": 64
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 272,
+            "gains": 2,
+            "items": 318,
+            "losses": 7,
+            "original_correct": 277
+          },
+          "solution_review_five_exposed": {
+            "edited_correct": 17,
+            "gains": 1,
+            "items": 75,
+            "losses": 42,
+            "original_correct": 58
+          },
+          "solution_review_five_unexposed": {
+            "edited_correct": 275,
+            "gains": 2,
+            "items": 325,
+            "losses": 10,
+            "original_correct": 283
+          }
+        },
+        "mmlu": {
+          "all": {
+            "edited_correct": 994,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 994
+          },
+          "changed_predictions": 0,
+          "gold_A": {
+            "edited_correct": 200,
+            "gains": 0,
+            "items": 316,
+            "losses": 0,
+            "original_correct": 200
+          },
+          "gold_B": {
+            "edited_correct": 247,
+            "gains": 0,
+            "items": 344,
+            "losses": 0,
+            "original_correct": 247
+          },
+          "gold_C": {
+            "edited_correct": 271,
+            "gains": 0,
+            "items": 390,
+            "losses": 0,
+            "original_correct": 271
+          },
+          "gold_D": {
+            "edited_correct": 276,
+            "gains": 0,
+            "items": 380,
+            "losses": 0,
+            "original_correct": 276
+          },
+          "gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_unexposed": {
+            "edited_correct": 994,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 994
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 994,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 994
+          }
+        },
+        "output_1024": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "410": 0,
+              "1227": 0,
+              "1627": 0,
+              "1927": 0,
+              "2075": 0,
+              "4513": 0,
+              "4728": 0,
+              "15451": 0,
+              "22091": 0,
+              "25021": 0
+            },
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "410": 80,
+              "1227": 10,
+              "1627": 17,
+              "1927": 64,
+              "2075": 39,
+              "4513": 4,
+              "4728": 19,
+              "15451": 0,
+              "22091": 0,
+              "25021": 0
+            },
+            "distinct_source_ids": 55,
+            "occurrences": 499,
+            "source_occurrences_by_id": {
+              "270": 2,
+              "352": 1,
+              "410": 80,
+              "620": 3,
+              "774": 2,
+              "956": 12,
+              "1070": 67,
+              "1193": 3,
+              "1227": 10,
+              "1334": 1,
+              "1494": 7,
+              "1627": 17,
+              "1690": 45,
+              "1927": 64,
+              "2054": 2,
+              "2075": 39,
+              "2120": 2,
+              "2209": 1,
+              "2427": 1,
+              "2654": 3,
+              "2746": 8,
+              "2754": 3,
+              "2822": 1,
+              "3368": 1,
+              "3416": 1,
+              "3604": 1,
+              "3686": 1,
+              "4010": 5,
+              "4017": 2,
+              "4018": 3,
+              "4513": 4,
+              "4652": 1,
+              "4686": 11,
+              "4728": 19,
+              "4939": 1,
+              "5609": 4,
+              "5651": 4,
+              "6782": 1,
+              "7126": 1,
+              "7183": 1,
+              "7184": 15,
+              "7640": 5,
+              "8125": 2,
+              "8193": 1,
+              "9126": 5,
+              "9349": 1,
+              "11458": 7,
+              "12512": 1,
+              "12884": 4,
+              "14741": 4,
+              "16181": 4,
+              "17193": 2,
+              "21077": 2,
+              "39834": 6,
+              "83616": 5
+            },
+            "with_any": 177,
+            "with_digits": 69
+          }
+        },
+        "output_256": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "410": 0,
+              "1227": 0,
+              "1627": 0,
+              "1927": 0,
+              "2075": 0,
+              "4513": 0,
+              "4728": 0,
+              "15451": 0,
+              "22091": 0,
+              "25021": 0
+            },
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "410": 80,
+              "1227": 10,
+              "1627": 16,
+              "1927": 63,
+              "2075": 39,
+              "4513": 2,
+              "4728": 19,
+              "15451": 0,
+              "22091": 0,
+              "25021": 0
+            },
+            "distinct_source_ids": 55,
+            "occurrences": 495,
+            "source_occurrences_by_id": {
+              "270": 2,
+              "352": 1,
+              "410": 80,
+              "620": 3,
+              "774": 2,
+              "956": 12,
+              "1070": 67,
+              "1193": 3,
+              "1227": 10,
+              "1334": 1,
+              "1494": 7,
+              "1627": 16,
+              "1690": 45,
+              "1927": 63,
+              "2054": 2,
+              "2075": 39,
+              "2120": 2,
+              "2209": 1,
+              "2427": 1,
+              "2654": 3,
+              "2746": 8,
+              "2754": 3,
+              "2822": 1,
+              "3368": 1,
+              "3416": 1,
+              "3604": 1,
+              "3686": 1,
+              "4010": 5,
+              "4017": 2,
+              "4018": 3,
+              "4513": 2,
+              "4652": 1,
+              "4686": 11,
+              "4728": 19,
+              "4939": 1,
+              "5609": 4,
+              "5651": 4,
+              "6782": 1,
+              "7126": 1,
+              "7183": 1,
+              "7184": 15,
+              "7640": 5,
+              "8125": 2,
+              "8193": 1,
+              "9126": 5,
+              "9349": 1,
+              "11458": 7,
+              "12512": 1,
+              "12884": 4,
+              "14741": 4,
+              "16181": 4,
+              "17193": 2,
+              "21077": 2,
+              "39834": 6,
+              "83616": 5
+            },
+            "with_any": 176,
+            "with_digits": 68
+          }
+        },
+        "review_five_tokens": [
+          "00",
+          "26",
+          "36",
+          "64",
+          "75"
+        ]
+      },
+      "KR500": {
+        "arc": {
+          "all": {
+            "edited_correct": 588,
+            "gains": 47,
+            "items": 1172,
+            "losses": 175,
+            "original_correct": 716
+          },
+          "changed_predictions": 285,
+          "gold_and_distractor": {
+            "edited_correct": 263,
+            "gains": 30,
+            "items": 611,
+            "losses": 151,
+            "original_correct": 384
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 45,
+            "losses": 23,
+            "original_correct": 23
+          },
+          "gold_exposed": {
+            "edited_correct": 263,
+            "gains": 30,
+            "items": 656,
+            "losses": 174,
+            "original_correct": 407
+          },
+          "gold_unexposed": {
+            "edited_correct": 325,
+            "gains": 17,
+            "items": 516,
+            "losses": 1,
+            "original_correct": 309
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 112,
+            "losses": 112,
+            "original_correct": 112
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 63,
+            "losses": 63,
+            "original_correct": 63
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 119,
+            "gains": 15,
+            "items": 166,
+            "losses": 0,
+            "original_correct": 104
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 206,
+            "gains": 2,
+            "items": 350,
+            "losses": 1,
+            "original_correct": 205
+          }
+        },
+        "category_counts": {
+          "alphabetic_word_or_piece": 473,
+          "answer_letters_trimmed": 1,
+          "contains_ascii_digit": 5,
+          "contains_newline": 2,
+          "digits": 5,
+          "punctuation": 8,
+          "punctuation_or_symbols": 8,
+          "two_characters_or_fewer": 39,
+          "whitespace": 0
+        },
+        "digit_tokens": [
+          "100",
+          "194",
+          "28",
+          "3",
+          "4"
+        ],
+        "edited_mmlu_letters": {
+          " A": 362
+        },
+        "gsm1024": {
+          "all": {
+            "edited_correct": 125,
+            "gains": 6,
+            "items": 400,
+            "losses": 222,
+            "original_correct": 341
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 26,
+            "losses": 24,
+            "original_correct": 24
+          },
+          "final_any_unexposed": {
+            "edited_correct": 125,
+            "gains": 6,
+            "items": 374,
+            "losses": 198,
+            "original_correct": 317
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 26,
+            "losses": 24,
+            "original_correct": 24
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 125,
+            "gains": 6,
+            "items": 374,
+            "losses": 198,
+            "original_correct": 317
+          },
+          "solution_any_exposed": {
+            "edited_correct": 100,
+            "gains": 6,
+            "items": 371,
+            "losses": 221,
+            "original_correct": 315
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 25,
+            "gains": 0,
+            "items": 29,
+            "losses": 1,
+            "original_correct": 26
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 35,
+            "gains": 3,
+            "items": 285,
+            "losses": 208,
+            "original_correct": 240
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 90,
+            "gains": 3,
+            "items": 115,
+            "losses": 14,
+            "original_correct": 101
+          }
+        },
+        "gsm256": {
+          "all": {
+            "edited_correct": 124,
+            "gains": 5,
+            "items": 400,
+            "losses": 222,
+            "original_correct": 341
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 26,
+            "losses": 24,
+            "original_correct": 24
+          },
+          "final_any_unexposed": {
+            "edited_correct": 124,
+            "gains": 5,
+            "items": 374,
+            "losses": 198,
+            "original_correct": 317
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 26,
+            "losses": 24,
+            "original_correct": 24
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 124,
+            "gains": 5,
+            "items": 374,
+            "losses": 198,
+            "original_correct": 317
+          },
+          "solution_any_exposed": {
+            "edited_correct": 99,
+            "gains": 5,
+            "items": 371,
+            "losses": 221,
+            "original_correct": 315
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 25,
+            "gains": 0,
+            "items": 29,
+            "losses": 1,
+            "original_correct": 26
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 34,
+            "gains": 2,
+            "items": 285,
+            "losses": 208,
+            "original_correct": 240
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 90,
+            "gains": 3,
+            "items": 115,
+            "losses": 14,
+            "original_correct": 101
+          }
+        },
+        "mmlu": {
+          "all": {
+            "edited_correct": 848,
+            "gains": 54,
+            "items": 1430,
+            "losses": 200,
+            "original_correct": 994
+          },
+          "changed_predictions": 304,
+          "gold_A": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 316,
+            "losses": 200,
+            "original_correct": 200
+          },
+          "gold_B": {
+            "edited_correct": 269,
+            "gains": 22,
+            "items": 344,
+            "losses": 0,
+            "original_correct": 247
+          },
+          "gold_C": {
+            "edited_correct": 290,
+            "gains": 19,
+            "items": 390,
+            "losses": 0,
+            "original_correct": 271
+          },
+          "gold_D": {
+            "edited_correct": 289,
+            "gains": 13,
+            "items": 380,
+            "losses": 0,
+            "original_correct": 276
+          },
+          "gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 316,
+            "losses": 200,
+            "original_correct": 200
+          },
+          "gold_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 316,
+            "losses": 200,
+            "original_correct": 200
+          },
+          "gold_unexposed": {
+            "edited_correct": 848,
+            "gains": 54,
+            "items": 1114,
+            "losses": 0,
+            "original_correct": 794
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 200,
+            "losses": 200,
+            "original_correct": 200
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 848,
+            "gains": 54,
+            "items": 1114,
+            "losses": 0,
+            "original_correct": 794
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          }
+        },
+        "output_1024": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "18": 0,
+              "19": 0,
+              "1041": 0,
+              "1591": 0,
+              "6393": 0
+            },
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "18": 497,
+              "19": 396,
+              "1041": 127,
+              "1591": 43,
+              "6393": 0
+            },
+            "distinct_source_ids": 86,
+            "occurrences": 3113,
+            "source_occurrences_by_id": {
+              "4": 70,
+              "13": 575,
+              "18": 497,
+              "19": 396,
+              "39": 1,
+              "44": 4,
+              "53": 2,
+              "75": 1,
+              "274": 5,
+              "312": 9,
+              "362": 10,
+              "382": 182,
+              "433": 61,
+              "459": 18,
+              "468": 2,
+              "555": 105,
+              "617": 37,
+              "653": 4,
+              "682": 10,
+              "735": 4,
+              "750": 2,
+              "791": 423,
+              "836": 1,
+              "842": 4,
+              "864": 1,
+              "872": 9,
+              "980": 15,
+              "990": 12,
+              "1041": 127,
+              "1053": 3,
+              "1077": 48,
+              "1080": 1,
+              "1113": 2,
+              "1124": 15,
+              "1274": 52,
+              "1296": 10,
+              "1445": 3,
+              "1555": 8,
+              "1561": 2,
+              "1591": 43,
+              "1648": 1,
+              "1650": 4,
+              "1687": 12,
+              "1766": 2,
+              "1855": 119,
+              "1990": 8,
+              "2038": 1,
+              "2237": 5,
+              "2579": 23,
+              "2804": 3,
+              "3070": 5,
+              "3335": 1,
+              "3358": 4,
+              "3424": 1,
+              "3634": 2,
+              "4097": 1,
+              "4113": 8,
+              "4754": 1,
+              "4885": 30,
+              "5315": 2,
+              "5376": 4,
+              "5593": 3,
+              "5829": 6,
+              "6237": 4,
+              "6437": 15,
+              "6798": 3,
+              "6799": 2,
+              "6807": 1,
+              "7384": 1,
+              "7576": 5,
+              "9155": 1,
+              "9220": 2,
+              "9455": 3,
+              "9629": 2,
+              "9908": 7,
+              "11822": 1,
+              "11886": 1,
+              "12483": 5,
+              "19837": 14,
+              "24322": 9,
+              "27994": 4,
+              "35267": 1,
+              "35541": 1,
+              "38349": 4,
+              "39736": 1,
+              "49138": 6
+            },
+            "with_any": 381,
+            "with_digits": 285
+          }
+        },
+        "output_256": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "18": 0,
+              "19": 0,
+              "1041": 0,
+              "1591": 0,
+              "6393": 0
+            },
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "18": 459,
+              "19": 374,
+              "1041": 127,
+              "1591": 42,
+              "6393": 0
+            },
+            "distinct_source_ids": 86,
+            "occurrences": 2944,
+            "source_occurrences_by_id": {
+              "4": 70,
+              "13": 524,
+              "18": 459,
+              "19": 374,
+              "39": 1,
+              "44": 4,
+              "53": 2,
+              "75": 1,
+              "274": 5,
+              "312": 1,
+              "362": 10,
+              "382": 180,
+              "433": 59,
+              "459": 18,
+              "468": 2,
+              "555": 104,
+              "617": 37,
+              "653": 4,
+              "682": 10,
+              "735": 4,
+              "750": 2,
+              "791": 379,
+              "836": 1,
+              "842": 4,
+              "864": 1,
+              "872": 9,
+              "980": 15,
+              "990": 12,
+              "1041": 127,
+              "1053": 3,
+              "1077": 48,
+              "1080": 1,
+              "1113": 2,
+              "1124": 15,
+              "1274": 52,
+              "1296": 10,
+              "1445": 3,
+              "1555": 8,
+              "1561": 2,
+              "1591": 42,
+              "1648": 1,
+              "1650": 4,
+              "1687": 12,
+              "1766": 2,
+              "1855": 119,
+              "1990": 8,
+              "2038": 1,
+              "2237": 5,
+              "2579": 23,
+              "2804": 3,
+              "3070": 5,
+              "3335": 1,
+              "3358": 4,
+              "3424": 1,
+              "3634": 2,
+              "4097": 1,
+              "4113": 8,
+              "4754": 1,
+              "4885": 30,
+              "5315": 2,
+              "5376": 4,
+              "5593": 3,
+              "5829": 6,
+              "6237": 4,
+              "6437": 15,
+              "6798": 3,
+              "6799": 2,
+              "6807": 1,
+              "7384": 1,
+              "7576": 5,
+              "9155": 1,
+              "9220": 2,
+              "9455": 3,
+              "9629": 2,
+              "9908": 7,
+              "11822": 1,
+              "11886": 1,
+              "12483": 5,
+              "19837": 14,
+              "24322": 9,
+              "27994": 4,
+              "35267": 1,
+              "35541": 1,
+              "38349": 4,
+              "39736": 1,
+              "49138": 6
+            },
+            "with_any": 381,
+            "with_digits": 285
+          }
+        }
+      },
+      "repeat256": {
+        "D500_digits_exposed": {
+          "edited_correct": 8,
+          "gains": 0,
+          "items": 38,
+          "losses": 17,
+          "original_correct": 25
+        },
+        "D500_digits_unexposed": {
+          "edited_correct": 140,
+          "gains": 2,
+          "items": 162,
+          "losses": 4,
+          "original_correct": 142
+        },
+        "D500_review_five_exposed": {
+          "edited_correct": 6,
+          "gains": 0,
+          "items": 34,
+          "losses": 16,
+          "original_correct": 22
+        },
+        "D500_review_five_unexposed": {
+          "edited_correct": 142,
+          "gains": 2,
+          "items": 166,
+          "losses": 5,
+          "original_correct": 145
+        },
+        "all": {
+          "edited_correct": 166,
+          "gains": 1,
+          "items": 200,
+          "losses": 2,
+          "original_correct": 167
+        },
+        "digits_exposed": {
+          "edited_correct": 25,
+          "gains": 0,
+          "items": 38,
+          "losses": 0,
+          "original_correct": 25
+        },
+        "digits_unexposed": {
+          "edited_correct": 141,
+          "gains": 1,
+          "items": 162,
+          "losses": 2,
+          "original_correct": 142
+        },
+        "review_five_exposed": {
+          "edited_correct": 22,
+          "gains": 0,
+          "items": 34,
+          "losses": 0,
+          "original_correct": 22
+        },
+        "review_five_unexposed": {
+          "edited_correct": 144,
+          "gains": 1,
+          "items": 166,
+          "losses": 2,
+          "original_correct": 145
+        }
+      }
+    },
+    "q7": {
+      "D500": {
+        "arc": {
+          "all": {
+            "edited_correct": 750,
+            "gains": 10,
+            "items": 1172,
+            "losses": 48,
+            "original_correct": 788
+          },
+          "changed_predictions": 71,
+          "gold_and_distractor": {
+            "edited_correct": 9,
+            "gains": 0,
+            "items": 40,
+            "losses": 17,
+            "original_correct": 26
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 2,
+            "gains": 0,
+            "items": 50,
+            "losses": 30,
+            "original_correct": 32
+          },
+          "gold_exposed": {
+            "edited_correct": 11,
+            "gains": 0,
+            "items": 90,
+            "losses": 47,
+            "original_correct": 58
+          },
+          "gold_unexposed": {
+            "edited_correct": 739,
+            "gains": 10,
+            "items": 1082,
+            "losses": 1,
+            "original_correct": 730
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 5,
+            "losses": 5,
+            "original_correct": 5
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 43,
+            "losses": 43,
+            "original_correct": 43
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 86,
+            "gains": 10,
+            "items": 118,
+            "losses": 0,
+            "original_correct": 76
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 653,
+            "gains": 0,
+            "items": 964,
+            "losses": 1,
+            "original_correct": 654
+          }
+        },
+        "category_counts": {
+          "alphabetic_word_or_piece": 492,
+          "answer_letters_trimmed": 0,
+          "contains_ascii_digit": 0,
+          "contains_newline": 0,
+          "digits": 0,
+          "punctuation": 0,
+          "punctuation_or_symbols": 0,
+          "two_characters_or_fewer": 124,
+          "whitespace": 0
+        },
+        "digit_tokens": [],
+        "edited_mmlu_letters": {},
+        "gsm1024": {
+          "all": {
+            "edited_correct": 350,
+            "gains": 7,
+            "items": 400,
+            "losses": 5,
+            "original_correct": 348
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "final_any_unexposed": {
+            "edited_correct": 350,
+            "gains": 7,
+            "items": 400,
+            "losses": 5,
+            "original_correct": 348
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 350,
+            "gains": 7,
+            "items": 400,
+            "losses": 5,
+            "original_correct": 348
+          },
+          "solution_any_exposed": {
+            "edited_correct": 124,
+            "gains": 1,
+            "items": 146,
+            "losses": 2,
+            "original_correct": 125
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 226,
+            "gains": 6,
+            "items": 254,
+            "losses": 3,
+            "original_correct": 223
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 350,
+            "gains": 7,
+            "items": 400,
+            "losses": 5,
+            "original_correct": 348
+          }
+        },
+        "gsm256": {
+          "all": {
+            "edited_correct": 296,
+            "gains": 10,
+            "items": 400,
+            "losses": 11,
+            "original_correct": 297
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "final_any_unexposed": {
+            "edited_correct": 296,
+            "gains": 10,
+            "items": 400,
+            "losses": 11,
+            "original_correct": 297
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 296,
+            "gains": 10,
+            "items": 400,
+            "losses": 11,
+            "original_correct": 297
+          },
+          "solution_any_exposed": {
+            "edited_correct": 103,
+            "gains": 3,
+            "items": 146,
+            "losses": 2,
+            "original_correct": 102
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 193,
+            "gains": 7,
+            "items": 254,
+            "losses": 9,
+            "original_correct": 195
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 296,
+            "gains": 10,
+            "items": 400,
+            "losses": 11,
+            "original_correct": 297
+          }
+        },
+        "mmlu": {
+          "all": {
+            "edited_correct": 1100,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 1100
+          },
+          "changed_predictions": 0,
+          "gold_A": {
+            "edited_correct": 225,
+            "gains": 0,
+            "items": 316,
+            "losses": 0,
+            "original_correct": 225
+          },
+          "gold_B": {
+            "edited_correct": 268,
+            "gains": 0,
+            "items": 344,
+            "losses": 0,
+            "original_correct": 268
+          },
+          "gold_C": {
+            "edited_correct": 310,
+            "gains": 0,
+            "items": 390,
+            "losses": 0,
+            "original_correct": 310
+          },
+          "gold_D": {
+            "edited_correct": 297,
+            "gains": 0,
+            "items": 380,
+            "losses": 0,
+            "original_correct": 297
+          },
+          "gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_unexposed": {
+            "edited_correct": 1100,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 1100
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 1100,
+            "gains": 0,
+            "items": 1430,
+            "losses": 0,
+            "original_correct": 1100
+          }
+        },
+        "output_1024": {
+          "edited": {
+            "digit_occurrences_by_id": {},
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {},
+            "distinct_source_ids": 39,
+            "occurrences": 427,
+            "source_occurrences_by_id": {
+              "309": 1,
+              "944": 11,
+              "1035": 33,
+              "1052": 94,
+              "1102": 1,
+              "1172": 5,
+              "1416": 1,
+              "2178": 2,
+              "2619": 24,
+              "2679": 22,
+              "3036": 5,
+              "3730": 2,
+              "3868": 23,
+              "4157": 1,
+              "4588": 1,
+              "4709": 1,
+              "4755": 21,
+              "4792": 1,
+              "5185": 1,
+              "5780": 2,
+              "6509": 2,
+              "6785": 1,
+              "7488": 7,
+              "7941": 14,
+              "7966": 3,
+              "8949": 1,
+              "9462": 1,
+              "10195": 4,
+              "10660": 1,
+              "11209": 2,
+              "12090": 1,
+              "15114": 1,
+              "15277": 88,
+              "16362": 11,
+              "16775": 2,
+              "22043": 30,
+              "22406": 1,
+              "40024": 3,
+              "49212": 2
+            },
+            "with_any": 219,
+            "with_digits": 0
+          }
+        },
+        "output_256": {
+          "edited": {
+            "digit_occurrences_by_id": {},
+            "distinct_source_ids": 0,
+            "occurrences": 0,
+            "source_occurrences_by_id": {},
+            "with_any": 0,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {},
+            "distinct_source_ids": 39,
+            "occurrences": 412,
+            "source_occurrences_by_id": {
+              "309": 1,
+              "944": 11,
+              "1035": 31,
+              "1052": 91,
+              "1102": 1,
+              "1172": 4,
+              "1416": 1,
+              "2178": 2,
+              "2619": 24,
+              "2679": 22,
+              "3036": 5,
+              "3730": 2,
+              "3868": 23,
+              "4157": 1,
+              "4588": 1,
+              "4709": 1,
+              "4755": 16,
+              "4792": 1,
+              "5185": 1,
+              "5780": 1,
+              "6509": 2,
+              "6785": 1,
+              "7488": 7,
+              "7941": 14,
+              "7966": 3,
+              "8949": 1,
+              "9462": 1,
+              "10195": 4,
+              "10660": 1,
+              "11209": 2,
+              "12090": 1,
+              "15114": 1,
+              "15277": 85,
+              "16362": 11,
+              "16775": 2,
+              "22043": 30,
+              "22406": 1,
+              "40024": 3,
+              "49212": 2
+            },
+            "with_any": 216,
+            "with_digits": 0
+          }
+        }
+      },
+      "KR500": {
+        "arc": {
+          "all": {
+            "edited_correct": 653,
+            "gains": 50,
+            "items": 1172,
+            "losses": 185,
+            "original_correct": 788
+          },
+          "changed_predictions": 300,
+          "gold_and_distractor": {
+            "edited_correct": 157,
+            "gains": 19,
+            "items": 426,
+            "losses": 148,
+            "original_correct": 286
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 3,
+            "gains": 0,
+            "items": 60,
+            "losses": 36,
+            "original_correct": 39
+          },
+          "gold_exposed": {
+            "edited_correct": 160,
+            "gains": 19,
+            "items": 486,
+            "losses": 184,
+            "original_correct": 325
+          },
+          "gold_unexposed": {
+            "edited_correct": 493,
+            "gains": 31,
+            "items": 686,
+            "losses": 1,
+            "original_correct": 463
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 48,
+            "losses": 48,
+            "original_correct": 48
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 137,
+            "losses": 137,
+            "original_correct": 137
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 242,
+            "gains": 27,
+            "items": 298,
+            "losses": 0,
+            "original_correct": 215
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 251,
+            "gains": 4,
+            "items": 388,
+            "losses": 1,
+            "original_correct": 248
+          }
+        },
+        "category_counts": {
+          "alphabetic_word_or_piece": 483,
+          "answer_letters_trimmed": 1,
+          "contains_ascii_digit": 3,
+          "contains_newline": 3,
+          "digits": 3,
+          "punctuation": 6,
+          "punctuation_or_symbols": 6,
+          "two_characters_or_fewer": 35,
+          "whitespace": 0
+        },
+        "digit_tokens": [
+          "0",
+          "5",
+          "7"
+        ],
+        "edited_mmlu_letters": {
+          " B": 425
+        },
+        "gsm1024": {
+          "all": {
+            "edited_correct": 70,
+            "gains": 7,
+            "items": 400,
+            "losses": 285,
+            "original_correct": 348
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 228,
+            "losses": 207,
+            "original_correct": 207
+          },
+          "final_any_unexposed": {
+            "edited_correct": 70,
+            "gains": 7,
+            "items": 172,
+            "losses": 78,
+            "original_correct": 141
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 228,
+            "losses": 207,
+            "original_correct": 207
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 70,
+            "gains": 7,
+            "items": 172,
+            "losses": 78,
+            "original_correct": 141
+          },
+          "solution_any_exposed": {
+            "edited_correct": 67,
+            "gains": 7,
+            "items": 397,
+            "losses": 285,
+            "original_correct": 345
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 3,
+            "gains": 0,
+            "items": 3,
+            "losses": 0,
+            "original_correct": 3
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 40,
+            "gains": 7,
+            "items": 361,
+            "losses": 280,
+            "original_correct": 313
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 30,
+            "gains": 0,
+            "items": 39,
+            "losses": 5,
+            "original_correct": 35
+          }
+        },
+        "gsm256": {
+          "all": {
+            "edited_correct": 66,
+            "gains": 9,
+            "items": 400,
+            "losses": 240,
+            "original_correct": 297
+          },
+          "final_any_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 228,
+            "losses": 173,
+            "original_correct": 173
+          },
+          "final_any_unexposed": {
+            "edited_correct": 66,
+            "gains": 9,
+            "items": 172,
+            "losses": 67,
+            "original_correct": 124
+          },
+          "final_digits_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 228,
+            "losses": 173,
+            "original_correct": 173
+          },
+          "final_digits_unexposed": {
+            "edited_correct": 66,
+            "gains": 9,
+            "items": 172,
+            "losses": 67,
+            "original_correct": 124
+          },
+          "solution_any_exposed": {
+            "edited_correct": 63,
+            "gains": 9,
+            "items": 397,
+            "losses": 240,
+            "original_correct": 294
+          },
+          "solution_any_unexposed": {
+            "edited_correct": 3,
+            "gains": 0,
+            "items": 3,
+            "losses": 0,
+            "original_correct": 3
+          },
+          "solution_digits_exposed": {
+            "edited_correct": 37,
+            "gains": 9,
+            "items": 361,
+            "losses": 237,
+            "original_correct": 265
+          },
+          "solution_digits_unexposed": {
+            "edited_correct": 29,
+            "gains": 0,
+            "items": 39,
+            "losses": 3,
+            "original_correct": 32
+          }
+        },
+        "mmlu": {
+          "all": {
+            "edited_correct": 884,
+            "gains": 52,
+            "items": 1430,
+            "losses": 268,
+            "original_correct": 1100
+          },
+          "changed_predictions": 364,
+          "gold_A": {
+            "edited_correct": 243,
+            "gains": 18,
+            "items": 316,
+            "losses": 0,
+            "original_correct": 225
+          },
+          "gold_B": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 344,
+            "losses": 268,
+            "original_correct": 268
+          },
+          "gold_C": {
+            "edited_correct": 326,
+            "gains": 16,
+            "items": 390,
+            "losses": 0,
+            "original_correct": 310
+          },
+          "gold_D": {
+            "edited_correct": 315,
+            "gains": 18,
+            "items": 380,
+            "losses": 0,
+            "original_correct": 297
+          },
+          "gold_and_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 344,
+            "losses": 268,
+            "original_correct": 268
+          },
+          "gold_exposed": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 344,
+            "losses": 268,
+            "original_correct": 268
+          },
+          "gold_unexposed": {
+            "edited_correct": 884,
+            "gains": 52,
+            "items": 1086,
+            "losses": 0,
+            "original_correct": 832
+          },
+          "loss_to_exposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          },
+          "loss_to_unexposed_option": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 268,
+            "losses": 268,
+            "original_correct": 268
+          },
+          "no_gold_and_distractor": {
+            "edited_correct": 884,
+            "gains": 52,
+            "items": 1086,
+            "losses": 0,
+            "original_correct": 832
+          },
+          "no_gold_and_no_distractor": {
+            "edited_correct": 0,
+            "gains": 0,
+            "items": 0,
+            "losses": 0,
+            "original_correct": 0
+          }
+        },
+        "output_1024": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "15": 0,
+              "20": 0,
+              "22": 0
+            },
+            "distinct_source_ids": 1,
+            "occurrences": 10,
+            "source_occurrences_by_id": {
+              "8": 10
+            },
+            "with_any": 10,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "15": 4013,
+              "20": 1496,
+              "22": 423
+            },
+            "distinct_source_ids": 119,
+            "occurrences": 9166,
+            "source_occurrences_by_id": {
+              "8": 354,
+              "15": 4013,
+              "20": 1496,
+              "22": 423,
+              "44": 5,
+              "49": 14,
+              "53": 2,
+              "72": 1,
+              "264": 303,
+              "294": 7,
+              "424": 4,
+              "425": 46,
+              "444": 18,
+              "498": 9,
+              "504": 214,
+              "576": 104,
+              "624": 239,
+              "650": 5,
+              "653": 8,
+              "697": 2,
+              "757": 6,
+              "773": 154,
+              "817": 206,
+              "825": 78,
+              "894": 16,
+              "949": 4,
+              "965": 27,
+              "1008": 18,
+              "1012": 2,
+              "1095": 4,
+              "1119": 25,
+              "1134": 11,
+              "1156": 117,
+              "1199": 2,
+              "1212": 2,
+              "1246": 218,
+              "1282": 1,
+              "1393": 4,
+              "1447": 434,
+              "1499": 13,
+              "1538": 1,
+              "1660": 4,
+              "1730": 1,
+              "1760": 3,
+              "1828": 4,
+              "1849": 2,
+              "1855": 1,
+              "1874": 8,
+              "1896": 16,
+              "1917": 4,
+              "1948": 19,
+              "2155": 4,
+              "2441": 4,
+              "2567": 19,
+              "2647": 2,
+              "2732": 2,
+              "2968": 6,
+              "3010": 1,
+              "3082": 1,
+              "3220": 65,
+              "3288": 4,
+              "3343": 2,
+              "3460": 4,
+              "3501": 60,
+              "3520": 5,
+              "4024": 41,
+              "4158": 20,
+              "4237": 5,
+              "4344": 1,
+              "4650": 1,
+              "5080": 4,
+              "5128": 15,
+              "5290": 6,
+              "5421": 1,
+              "5456": 12,
+              "5570": 1,
+              "5590": 4,
+              "5662": 1,
+              "5769": 2,
+              "6176": 7,
+              "6757": 7,
+              "6918": 1,
+              "6961": 3,
+              "6979": 5,
+              "7096": 7,
+              "7460": 3,
+              "8193": 2,
+              "8602": 4,
+              "8872": 1,
+              "9055": 5,
+              "9072": 4,
+              "9963": 1,
+              "10348": 4,
+              "10987": 1,
+              "11473": 3,
+              "11561": 3,
+              "12091": 2,
+              "12629": 2,
+              "14164": 3,
+              "14374": 3,
+              "15024": 4,
+              "15331": 2,
+              "16606": 1,
+              "17163": 8,
+              "17931": 23,
+              "20987": 5,
+              "21165": 1,
+              "21780": 4,
+              "23168": 3,
+              "25374": 46,
+              "27287": 4,
+              "33319": 6,
+              "37249": 3,
+              "40811": 9,
+              "48400": 1,
+              "51205": 7,
+              "51298": 1,
+              "62299": 1,
+              "64547": 1
+            },
+            "with_any": 398,
+            "with_digits": 364
+          }
+        },
+        "output_256": {
+          "edited": {
+            "digit_occurrences_by_id": {
+              "15": 0,
+              "20": 0,
+              "22": 0
+            },
+            "distinct_source_ids": 1,
+            "occurrences": 3,
+            "source_occurrences_by_id": {
+              "8": 3
+            },
+            "with_any": 3,
+            "with_digits": 0
+          },
+          "original": {
+            "digit_occurrences_by_id": {
+              "15": 3624,
+              "20": 1412,
+              "22": 388
+            },
+            "distinct_source_ids": 118,
+            "occurrences": 8501,
+            "source_occurrences_by_id": {
+              "8": 312,
+              "15": 3624,
+              "20": 1412,
+              "22": 388,
+              "44": 5,
+              "49": 11,
+              "53": 2,
+              "72": 1,
+              "264": 277,
+              "294": 7,
+              "424": 4,
+              "425": 44,
+              "444": 16,
+              "498": 8,
+              "504": 199,
+              "576": 101,
+              "624": 236,
+              "650": 5,
+              "653": 7,
+              "697": 1,
+              "757": 6,
+              "773": 154,
+              "817": 197,
+              "825": 76,
+              "894": 15,
+              "949": 4,
+              "965": 27,
+              "1008": 18,
+              "1012": 1,
+              "1095": 4,
+              "1119": 25,
+              "1134": 11,
+              "1156": 116,
+              "1199": 2,
+              "1212": 2,
+              "1246": 215,
+              "1282": 1,
+              "1393": 3,
+              "1447": 424,
+              "1499": 13,
+              "1538": 1,
+              "1660": 4,
+              "1730": 1,
+              "1760": 3,
+              "1828": 4,
+              "1849": 2,
+              "1855": 1,
+              "1874": 8,
+              "1896": 14,
+              "1917": 4,
+              "1948": 14,
+              "2155": 4,
+              "2441": 4,
+              "2567": 19,
+              "2647": 1,
+              "2732": 2,
+              "2968": 6,
+              "3010": 1,
+              "3082": 1,
+              "3220": 63,
+              "3288": 4,
+              "3343": 2,
+              "3460": 3,
+              "3501": 59,
+              "3520": 5,
+              "4024": 38,
+              "4158": 19,
+              "4237": 4,
+              "4344": 1,
+              "4650": 1,
+              "5080": 2,
+              "5128": 14,
+              "5290": 6,
+              "5421": 1,
+              "5456": 10,
+              "5570": 1,
+              "5590": 4,
+              "5662": 1,
+              "5769": 2,
+              "6176": 7,
+              "6757": 7,
+              "6918": 1,
+              "6961": 3,
+              "6979": 5,
+              "7096": 7,
+              "7460": 3,
+              "8193": 2,
+              "8602": 4,
+              "8872": 1,
+              "9055": 4,
+              "9072": 4,
+              "9963": 1,
+              "10348": 4,
+              "10987": 1,
+              "11473": 2,
+              "11561": 3,
+              "12091": 2,
+              "12629": 2,
+              "14164": 3,
+              "14374": 2,
+              "15024": 4,
+              "15331": 1,
+              "16606": 1,
+              "17163": 7,
+              "17931": 23,
+              "20987": 5,
+              "21780": 4,
+              "23168": 3,
+              "25374": 46,
+              "27287": 4,
+              "33319": 4,
+              "37249": 3,
+              "40811": 9,
+              "48400": 1,
+              "51205": 7,
+              "51298": 1,
+              "62299": 1,
+              "64547": 1
+            },
+            "with_any": 398,
+            "with_digits": 364
+          }
+        }
+      },
+      "repeat256": {
+        "D500_digits_unexposed": {
+          "edited_correct": 146,
+          "gains": 5,
+          "items": 200,
+          "losses": 6,
+          "original_correct": 147
+        },
+        "all": {
+          "edited_correct": 145,
+          "gains": 3,
+          "items": 200,
+          "losses": 5,
+          "original_correct": 147
+        },
+        "digits_unexposed": {
+          "edited_correct": 145,
+          "gains": 3,
+          "items": 200,
+          "losses": 5,
+          "original_correct": 147
+        }
+      }
+    }
+  }
+}
